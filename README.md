@@ -6,3 +6,4 @@
 * Third Person Camera pt.2
 * Add Player Mesh
 * Add Crouch
+* Add Character Animation
