@@ -2,12 +2,19 @@
 
 
 #include "SCharacter.h"
+#include "Camera/CameraComponent.h"
 
 // Sets default values
 ASCharacter::ASCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
+
+	/* bUsePawnControlRotation:
+	If this camera component is placed on a pawn, should it use the view/control rotation of the pawn where possible?*/
+	CameraComponent->bUsePawnControlRotation = true;
 
 }
 

@@ -6,6 +6,9 @@
 #include "GameFramework/Character.h"
 #include "SCharacter.generated.h"
 
+// Forward Declaration
+class UCameraComponent;
+
 UCLASS()
 class COOPSHOOTER_API ASCharacter : public ACharacter
 {
@@ -23,6 +26,12 @@ protected:
 	void MoveForward(float Value);
 
 	void MoveRight(float Value);
+
+	// Camera Component Class*
+	/* BlueprintReadOnly: Can't assign new object to this camera component, 
+	instead we create instance once in constructor*/
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	UCameraComponent* CameraComponent;
 
 public:	
 	// Called every frame

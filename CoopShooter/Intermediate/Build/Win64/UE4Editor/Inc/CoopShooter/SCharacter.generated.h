@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define COOPSHOOTER_SCharacter_generated_h
 
-#define CoopShooter_Source_CoopShooter_SCharacter_h_12_SPARSE_DATA
-#define CoopShooter_Source_CoopShooter_SCharacter_h_12_RPC_WRAPPERS
-#define CoopShooter_Source_CoopShooter_SCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define CoopShooter_Source_CoopShooter_SCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_SPARSE_DATA
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_RPC_WRAPPERS
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASCharacter(); \
 	friend struct Z_Construct_UClass_ASCharacter_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ASCharacter)
 
 
-#define CoopShooter_Source_CoopShooter_SCharacter_h_12_INCLASS \
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesASCharacter(); \
 	friend struct Z_Construct_UClass_ASCharacter_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ASCharacter)
 
 
-#define CoopShooter_Source_CoopShooter_SCharacter_h_12_STANDARD_CONSTRUCTORS \
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASCharacter) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define CoopShooter_Source_CoopShooter_SCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASCharacter(ASCharacter&&); \
@@ -58,28 +58,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASCharacter)
 
 
-#define CoopShooter_Source_CoopShooter_SCharacter_h_12_PRIVATE_PROPERTY_OFFSET
-#define CoopShooter_Source_CoopShooter_SCharacter_h_9_PROLOG
-#define CoopShooter_Source_CoopShooter_SCharacter_h_12_GENERATED_BODY_LEGACY \
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CameraComponent() { return STRUCT_OFFSET(ASCharacter, CameraComponent); }
+
+
+#define CoopShooter_Source_CoopShooter_SCharacter_h_12_PROLOG
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CoopShooter_Source_CoopShooter_SCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	CoopShooter_Source_CoopShooter_SCharacter_h_12_SPARSE_DATA \
-	CoopShooter_Source_CoopShooter_SCharacter_h_12_RPC_WRAPPERS \
-	CoopShooter_Source_CoopShooter_SCharacter_h_12_INCLASS \
-	CoopShooter_Source_CoopShooter_SCharacter_h_12_STANDARD_CONSTRUCTORS \
+	CoopShooter_Source_CoopShooter_SCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
+	CoopShooter_Source_CoopShooter_SCharacter_h_15_SPARSE_DATA \
+	CoopShooter_Source_CoopShooter_SCharacter_h_15_RPC_WRAPPERS \
+	CoopShooter_Source_CoopShooter_SCharacter_h_15_INCLASS \
+	CoopShooter_Source_CoopShooter_SCharacter_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define CoopShooter_Source_CoopShooter_SCharacter_h_12_GENERATED_BODY \
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CoopShooter_Source_CoopShooter_SCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	CoopShooter_Source_CoopShooter_SCharacter_h_12_SPARSE_DATA \
-	CoopShooter_Source_CoopShooter_SCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	CoopShooter_Source_CoopShooter_SCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	CoopShooter_Source_CoopShooter_SCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	CoopShooter_Source_CoopShooter_SCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
+	CoopShooter_Source_CoopShooter_SCharacter_h_15_SPARSE_DATA \
+	CoopShooter_Source_CoopShooter_SCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	CoopShooter_Source_CoopShooter_SCharacter_h_15_INCLASS_NO_PURE_DECLS \
+	CoopShooter_Source_CoopShooter_SCharacter_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
