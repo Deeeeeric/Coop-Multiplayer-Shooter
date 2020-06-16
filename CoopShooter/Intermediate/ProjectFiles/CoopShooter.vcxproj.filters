@@ -42,4 +42,14 @@
       <Filter>Source\CoopShooter</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\CoopShooter\SCharacter.h">
+      <Filter>Source\CoopShooter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\CoopShooter\SCharacter.cpp">
+      <Filter>Source\CoopShooter</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
