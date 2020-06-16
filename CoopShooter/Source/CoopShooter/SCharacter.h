@@ -8,6 +8,7 @@
 
 // Forward Declaration
 class UCameraComponent;
+class USpringArmComponent;
 
 UCLASS()
 class COOPSHOOTER_API ASCharacter : public ACharacter
@@ -32,6 +33,9 @@ protected:
 	instead we create instance once in constructor*/
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	UCameraComponent* CameraComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+		USpringArmComponent* SpringArmComponent;
 
 public:	
 	// Called every frame
