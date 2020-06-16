@@ -28,6 +28,10 @@ protected:
 
 	void MoveRight(float Value);
 
+	void BeginCrouch();
+
+	void EndCrouch();
+
 	// Camera Component Class*
 	/* BlueprintReadOnly: Can't assign new object to this camera component, 
 	instead we create instance once in constructor*/

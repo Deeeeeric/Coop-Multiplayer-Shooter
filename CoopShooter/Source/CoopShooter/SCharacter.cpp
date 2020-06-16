@@ -4,6 +4,7 @@
 #include "SCharacter.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "GameFrameWork/PawnMovementComponent.h"
 
 // Sets default values
 ASCharacter::ASCharacter()
@@ -14,6 +15,11 @@ ASCharacter::ASCharacter()
 	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
 	SpringArmComponent->SetupAttachment(RootComponent);
 	SpringArmComponent->bUsePawnControlRotation = true;
+
+	// GetMovementComponent:
+	/* Return our PawnMovementComponent, if we have one. By default, returns the first PawnMovementComponent found.
+	Native classes that create their own movement component should override this method for more efficiency. */
+	GetMovementComponent()->GetNavAgentPropertiesRef().bCanCrouch = true;
 
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
 	CameraComponent->SetupAttachment(SpringArmComponent);
@@ -41,6 +47,16 @@ void ASCharacter::MoveRight(float Value)
 	AddMovementInput(GetActorRightVector() * Value);
 }
 
+void ASCharacter::BeginCrouch()
+{
+	Crouch();
+}
+
+void ASCharacter::EndCrouch()
+{
+	UnCrouch();
+}
+
 // Called every frame
 void ASCharacter::Tick(float DeltaTime)
 {
@@ -59,5 +75,8 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 	PlayerInputComponent->BindAxis("LookUp", this, &ASCharacter::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("Turn", this, &ASCharacter::AddControllerYawInput);
+
+	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ASCharacter::BeginCrouch);
+	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &ASCharacter::EndCrouch);
 }
 
