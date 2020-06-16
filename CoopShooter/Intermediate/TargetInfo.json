@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CoopShooter",
+			"Path": "D:\\DW\\Documents\\GitHub\\Coop-Multiplayer-Shooter\\CoopShooter\\Source\\CoopShooter.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CoopShooterEditor",
+			"Path": "D:\\DW\\Documents\\GitHub\\Coop-Multiplayer-Shooter\\CoopShooter\\Source\\CoopShooterEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
