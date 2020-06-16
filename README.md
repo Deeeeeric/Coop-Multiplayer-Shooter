@@ -7,3 +7,4 @@
 * Add Player Mesh
 * Add Crouch
 * Add Character Animation
+* Setting up Player Jump
