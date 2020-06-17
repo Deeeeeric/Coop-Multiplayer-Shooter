@@ -1743,3 +1743,634 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.06.17-18.36.06:913][103]LogContentBrowser: Native class hierarchy populated in 0.0136 seconds. Added 3431 classes and 826 folders.
 [2020.06.17-18.36.06:933][103]Display: HotReload took  2.6s.
 [2020.06.17-18.36.13:858][277]LogUObjectHash: Compacting FUObjectHashTables data took   4.25ms
+[2020.06.17-18.40.40:002][578]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2020.06.17-18.40.42:190][655]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor2)
+[2020.06.17-18.40.56:214][146]LogSlate: Warning: Slate: Had to block on waiting for a draw buffer
+[2020.06.17-18.41.08:907][146]LogSlate: Window 'Pick Parent Class' being destroyed
+[2020.06.17-18.41.20:473][714]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_TargetDummy.BP_TargetDummy
+[2020.06.17-18.41.25:280][868]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.41.25:280][868]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.41.25:996][894]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.41.25:996][894]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.41.26:765][923]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.41.26:765][923]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.41.28:870][ 31]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.41.28:870][ 31]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.47.23:560][897]BlueprintLog: New page: Compile BP_TargetDummy
+[2020.06.17-18.47.23:714][897]LogUObjectHash: Compacting FUObjectHashTables data took   4.19ms
+[2020.06.17-18.47.23:816][897]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_TargetDummy" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/BP_TargetDummy.uasset" SILENT=true
+[2020.06.17-18.47.23:835][897]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/BP_TargetDummy4BB7D3014953C14DBF2D1BB0C13BC796.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/BP_TargetDummy.uasset'
+[2020.06.17-18.47.23:860][897]AssetCheck: New page: Asset Save: BP_TargetDummy
+[2020.06.17-18.47.23:860][897]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_TargetDummy.BP_TargetDummy
+[2020.06.17-18.48.13:126][316]BlueprintLog: New page: Compile PlayerPawn_BP
+[2020.06.17-18.48.13:244][316]LogUObjectHash: Compacting FUObjectHashTables data took   3.95ms
+[2020.06.17-18.48.13:332][316]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PlayerPawn_BP" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/PlayerPawn_BP.uasset" SILENT=true
+[2020.06.17-18.48.13:373][316]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/PlayerPawn_BP43140CAE413CAC52F6100F885ADFF2C1.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/PlayerPawn_BP.uasset'
+[2020.06.17-18.48.13:393][316]AssetCheck: New page: Asset Save: PlayerPawn_BP
+[2020.06.17-18.48.13:393][316]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/PlayerPawn_BP.PlayerPawn_BP
+[2020.06.17-18.48.15:110][415]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.48.15:130][415]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.48.15:130][415]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:48:15)
+[2020.06.17-18.48.15:130][415]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.48.15:137][415]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007555s)
+[2020.06.17-18.48.15:140][415]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.48.15:140][415]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002181CAF1200), frame # 116415
+[2020.06.17-18.48.15:140][415]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000217FAE542C0), frame # 116415
+[2020.06.17-18.48.15:140][415]LogPlayLevel: PIE: World Init took: (0.002326s)
+[2020.06.17-18.48.15:140][415]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.010121s)
+[2020.06.17-18.48.15:172][415]LogUObjectHash: Compacting FUObjectHashTables data took   3.72ms
+[2020.06.17-18.48.15:174][415]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.48.15:174][415]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.48.15:174][415]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.48.15:174][415]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.48.15:174][415]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.48.15:174][415]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.48.15:174][415]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.48.15:174][415]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.48.15:175][415]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.48.15:175][415]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.48.15:181][415]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.48.15:181][415]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.48.15:208][415]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.48.15:208][415]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.48.15:209][415]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.48.15:209][415]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.48.15:209][415]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.48.15:230][415]LogInit: FAudioDevice initialized.
+[2020.06.17-18.48.15:246][415]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.48.15:248][415]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.48.15
+[2020.06.17-18.48.15:249][415]LogWorld: Bringing up level for play took: 0.001860
+[2020.06.17-18.48.15:249][415]LogOnline: OSS: Creating online subsystem instance for: :Context_36
+[2020.06.17-18.48.15:251][415]PIE: Server logged in
+[2020.06.17-18.48.15:253][415]PIE: Play in editor total start time 0.128 seconds.
+[2020.06.17-18.48.26:142][ 63]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.48.26:142][ 63]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.48.26:142][ 63]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.48.26:142][ 63]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.48.26:152][ 63]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.48.26:156][ 63]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.48.26:212][ 63]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.48.26:213][ 63]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000217FAE542C0), frame # 117063
+[2020.06.17-18.48.26:213][ 63]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002181CAF1200), frame # 117063
+[2020.06.17-18.48.26:216][ 63]LogUObjectHash: Compacting FUObjectHashTables data took   2.65ms
+[2020.06.17-18.48.26:256][ 64]LogPlayLevel: Display: Destroying online subsystem :Context_36
+[2020.06.17-18.48.27:279][123]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.48.27:298][123]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.48.27:299][123]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:48:27)
+[2020.06.17-18.48.27:299][123]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.48.27:305][123]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006570s)
+[2020.06.17-18.48.27:307][123]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.48.27:307][123]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000021834542800), frame # 117123
+[2020.06.17-18.48.27:307][123]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002181A3E7240), frame # 117123
+[2020.06.17-18.48.27:307][123]LogPlayLevel: PIE: World Init took: (0.001803s)
+[2020.06.17-18.48.27:307][123]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.008621s)
+[2020.06.17-18.48.27:340][123]LogUObjectHash: Compacting FUObjectHashTables data took   3.55ms
+[2020.06.17-18.48.27:342][123]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.48.27:342][123]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.48.27:342][123]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.48.27:342][123]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.48.27:342][123]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.48.27:342][123]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.48.27:342][123]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.48.27:342][123]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.48.27:342][123]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.48.27:342][123]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.48.27:346][123]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.48.27:346][123]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.48.27:369][123]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.48.27:370][123]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.48.27:370][123]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.48.27:370][123]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.48.27:370][123]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.48.27:392][123]LogInit: FAudioDevice initialized.
+[2020.06.17-18.48.27:405][123]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.48.27:409][123]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.48.27
+[2020.06.17-18.48.27:409][123]LogWorld: Bringing up level for play took: 0.002778
+[2020.06.17-18.48.27:409][123]LogOnline: OSS: Creating online subsystem instance for: :Context_37
+[2020.06.17-18.48.27:412][123]PIE: Server logged in
+[2020.06.17-18.48.27:413][123]PIE: Play in editor total start time 0.118 seconds.
+[2020.06.17-18.48.33:431][481]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.48.33:431][481]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.48.33:432][481]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.48.33:432][481]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.48.33:447][481]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.48.33:452][481]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.48.33:484][481]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.48.33:510][481]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002181A3E7240), frame # 117481
+[2020.06.17-18.48.33:510][481]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000021834542800), frame # 117481
+[2020.06.17-18.48.33:513][481]LogUObjectHash: Compacting FUObjectHashTables data took   3.20ms
+[2020.06.17-18.48.33:558][482]LogPlayLevel: Display: Destroying online subsystem :Context_37
+[2020.06.17-18.48.49:896][375]BlueprintLog: New page: Compile PlayerPawn_BP
+[2020.06.17-18.48.49:989][375]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2020.06.17-18.48.50:063][375]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PlayerPawn_BP" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/PlayerPawn_BP.uasset" SILENT=true
+[2020.06.17-18.48.50:087][375]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/PlayerPawn_BP9A12AE2A478D519D5406A7993A8044F4.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/PlayerPawn_BP.uasset'
+[2020.06.17-18.48.50:105][375]AssetCheck: New page: Asset Save: PlayerPawn_BP
+[2020.06.17-18.48.50:105][375]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/PlayerPawn_BP.PlayerPawn_BP
+[2020.06.17-18.48.51:722][471]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.48.51:738][471]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.48.51:738][471]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:48:51)
+[2020.06.17-18.48.51:769][471]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.48.51:775][471]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006138s)
+[2020.06.17-18.48.51:777][471]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.48.51:777][471]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000218D27DCE00), frame # 118471
+[2020.06.17-18.48.51:777][471]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000218DC738CC0), frame # 118471
+[2020.06.17-18.48.51:777][471]LogPlayLevel: PIE: World Init took: (0.002022s)
+[2020.06.17-18.48.51:777][471]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.008364s)
+[2020.06.17-18.48.51:806][471]LogUObjectHash: Compacting FUObjectHashTables data took   3.31ms
+[2020.06.17-18.48.51:807][471]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.48.51:807][471]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.48.51:807][471]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.48.51:807][471]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.48.51:807][471]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.48.51:807][471]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.48.51:807][471]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.48.51:807][471]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.48.51:808][471]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.48.51:808][471]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.48.51:811][471]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.48.51:811][471]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.48.51:831][471]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.48.51:831][471]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.48.51:832][471]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.48.51:832][471]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.48.51:832][471]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.48.51:851][471]LogInit: FAudioDevice initialized.
+[2020.06.17-18.48.51:864][471]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.48.51:866][471]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.48.51
+[2020.06.17-18.48.51:866][471]LogWorld: Bringing up level for play took: 0.001488
+[2020.06.17-18.48.51:867][471]LogOnline: OSS: Creating online subsystem instance for: :Context_38
+[2020.06.17-18.48.51:869][471]PIE: Server logged in
+[2020.06.17-18.48.51:871][471]PIE: Play in editor total start time 0.135 seconds.
+[2020.06.17-18.48.53:692][578]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.48.53:692][578]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.48.53:692][578]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.48.53:692][578]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.48.53:700][578]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.48.53:704][578]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.48.53:731][578]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.48.53:754][578]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000218DC738CC0), frame # 118578
+[2020.06.17-18.48.53:754][578]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000218D27DCE00), frame # 118578
+[2020.06.17-18.48.53:757][578]LogUObjectHash: Compacting FUObjectHashTables data took   2.57ms
+[2020.06.17-18.48.53:792][579]LogPlayLevel: Display: Destroying online subsystem :Context_38
+[2020.06.17-18.48.54:557][624]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.48.54:574][624]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.48.54:574][624]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:48:54)
+[2020.06.17-18.48.54:574][624]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.48.54:581][624]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007090s)
+[2020.06.17-18.48.54:583][624]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.48.54:583][624]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002182504D200), frame # 118624
+[2020.06.17-18.48.54:583][624]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000021850045800), frame # 118624
+[2020.06.17-18.48.54:583][624]LogPlayLevel: PIE: World Init took: (0.001579s)
+[2020.06.17-18.48.54:583][624]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.008856s)
+[2020.06.17-18.48.54:610][624]LogUObjectHash: Compacting FUObjectHashTables data took   2.57ms
+[2020.06.17-18.48.54:612][624]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.48.54:612][624]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.48.54:612][624]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.48.54:612][624]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.48.54:612][624]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.48.54:612][624]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.48.54:612][624]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.48.54:612][624]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.48.54:612][624]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.48.54:612][624]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.48.54:616][624]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.48.54:616][624]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.48.54:636][624]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.48.54:636][624]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.48.54:636][624]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.48.54:636][624]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.48.54:637][624]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.48.54:654][624]LogInit: FAudioDevice initialized.
+[2020.06.17-18.48.54:665][624]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.48.54:667][624]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.48.54
+[2020.06.17-18.48.54:668][624]LogWorld: Bringing up level for play took: 0.001684
+[2020.06.17-18.48.54:668][624]LogOnline: OSS: Creating online subsystem instance for: :Context_39
+[2020.06.17-18.48.54:670][624]PIE: Server logged in
+[2020.06.17-18.48.54:671][624]PIE: Play in editor total start time 0.1 seconds.
+[2020.06.17-18.49.05:150][250]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.49.05:150][250]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.49.05:150][250]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.49.05:151][250]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.49.05:161][250]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.49.05:166][250]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.49.05:216][250]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.49.05:217][250]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000021850045800), frame # 119250
+[2020.06.17-18.49.05:217][250]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002182504D200), frame # 119250
+[2020.06.17-18.49.05:220][250]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2020.06.17-18.49.05:255][251]LogPlayLevel: Display: Destroying online subsystem :Context_39
+[2020.06.17-18.49.25:358][369]BlueprintLog: New page: Compile PlayerPawn_BP
+[2020.06.17-18.49.25:453][369]LogUObjectHash: Compacting FUObjectHashTables data took   3.28ms
+[2020.06.17-18.49.25:521][369]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PlayerPawn_BP" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/PlayerPawn_BP.uasset" SILENT=true
+[2020.06.17-18.49.25:545][369]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/PlayerPawn_BPD106E6EB4DB2012F774195B29B47B471.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/PlayerPawn_BP.uasset'
+[2020.06.17-18.49.25:563][369]AssetCheck: New page: Asset Save: PlayerPawn_BP
+[2020.06.17-18.49.25:563][369]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/PlayerPawn_BP.PlayerPawn_BP
+[2020.06.17-18.49.27:355][476]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.49.27:372][476]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.49.27:373][476]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:49:27)
+[2020.06.17-18.49.27:373][476]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.49.27:379][476]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005886s)
+[2020.06.17-18.49.27:380][476]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.49.27:380][476]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002182252C200), frame # 120476
+[2020.06.17-18.49.27:380][476]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002184F111BC0), frame # 120476
+[2020.06.17-18.49.27:381][476]LogPlayLevel: PIE: World Init took: (0.002148s)
+[2020.06.17-18.49.27:381][476]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.008281s)
+[2020.06.17-18.49.27:411][476]LogUObjectHash: Compacting FUObjectHashTables data took   3.39ms
+[2020.06.17-18.49.27:412][476]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.49.27:412][476]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.49.27:412][476]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.49.27:412][476]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.49.27:412][476]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.49.27:412][476]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.49.27:412][476]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.49.27:412][476]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.49.27:412][476]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.49.27:412][476]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.49.27:416][476]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.49.27:416][476]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.49.27:438][476]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.49.27:438][476]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.49.27:438][476]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.49.27:438][476]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.49.27:439][476]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.49.27:461][476]LogInit: FAudioDevice initialized.
+[2020.06.17-18.49.27:474][476]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.49.27:476][476]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.49.27
+[2020.06.17-18.49.27:477][476]LogWorld: Bringing up level for play took: 0.001717
+[2020.06.17-18.49.27:477][476]LogOnline: OSS: Creating online subsystem instance for: :Context_40
+[2020.06.17-18.49.27:479][476]PIE: Server logged in
+[2020.06.17-18.49.27:481][476]PIE: Play in editor total start time 0.111 seconds.
+[2020.06.17-18.49.30:621][662]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.49.30:621][662]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.49.30:622][662]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.49.30:622][662]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.49.30:635][662]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.49.30:639][662]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.49.30:694][662]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.49.30:695][662]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002184F111BC0), frame # 120662
+[2020.06.17-18.49.30:695][662]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002182252C200), frame # 120662
+[2020.06.17-18.49.30:698][662]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2020.06.17-18.49.30:734][663]LogPlayLevel: Display: Destroying online subsystem :Context_40
+[2020.06.17-18.49.31:436][704]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.49.31:451][704]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.49.31:451][704]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:49:31)
+[2020.06.17-18.49.31:451][704]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.49.31:458][704]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006417s)
+[2020.06.17-18.49.31:459][704]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.49.31:460][704]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000021890A66800), frame # 120704
+[2020.06.17-18.49.31:460][704]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000218BCFA1440), frame # 120704
+[2020.06.17-18.49.31:460][704]LogPlayLevel: PIE: World Init took: (0.001865s)
+[2020.06.17-18.49.31:460][704]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.008441s)
+[2020.06.17-18.49.31:488][704]LogUObjectHash: Compacting FUObjectHashTables data took   2.63ms
+[2020.06.17-18.49.31:489][704]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.49.31:489][704]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.49.31:489][704]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.49.31:489][704]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.49.31:489][704]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.49.31:489][704]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.49.31:489][704]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.49.31:489][704]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.49.31:489][704]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.49.31:489][704]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.49.31:493][704]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.49.31:493][704]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.49.31:516][704]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.49.31:516][704]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.49.31:516][704]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.49.31:516][704]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.49.31:517][704]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.49.31:539][704]LogInit: FAudioDevice initialized.
+[2020.06.17-18.49.31:549][704]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.49.31:552][704]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.49.31
+[2020.06.17-18.49.31:552][704]LogWorld: Bringing up level for play took: 0.001526
+[2020.06.17-18.49.31:552][704]LogOnline: OSS: Creating online subsystem instance for: :Context_41
+[2020.06.17-18.49.31:554][704]PIE: Server logged in
+[2020.06.17-18.49.31:555][704]PIE: Play in editor total start time 0.106 seconds.
+[2020.06.17-18.49.32:462][756]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.49.32:463][756]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.49.32:463][756]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.49.32:463][756]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.49.32:477][756]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.49.32:483][756]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.49.32:510][756]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.49.32:534][756]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000218BCFA1440), frame # 120756
+[2020.06.17-18.49.32:534][756]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000021890A66800), frame # 120756
+[2020.06.17-18.49.32:537][756]LogUObjectHash: Compacting FUObjectHashTables data took   2.45ms
+[2020.06.17-18.49.32:569][757]LogPlayLevel: Display: Destroying online subsystem :Context_41
+[2020.06.17-18.49.38:895][ 74]BlueprintLog: New page: Compile PlayerPawn_BP
+[2020.06.17-18.49.38:983][ 74]LogUObjectHash: Compacting FUObjectHashTables data took   3.45ms
+[2020.06.17-18.49.39:076][ 74]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PlayerPawn_BP" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/PlayerPawn_BP.uasset" SILENT=true
+[2020.06.17-18.49.39:101][ 74]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/PlayerPawn_BPBCC324004BF65EC6484823AE9939EB79.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/PlayerPawn_BP.uasset'
+[2020.06.17-18.49.39:118][ 74]AssetCheck: New page: Asset Save: PlayerPawn_BP
+[2020.06.17-18.49.39:118][ 74]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/PlayerPawn_BP.PlayerPawn_BP
+[2020.06.17-18.49.40:911][181]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.49.40:926][181]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.49.40:926][181]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:49:40)
+[2020.06.17-18.49.40:926][181]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.49.40:933][181]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006456s)
+[2020.06.17-18.49.40:934][181]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.49.40:934][181]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000217AF760C00), frame # 121181
+[2020.06.17-18.49.40:934][181]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002187FEED580), frame # 121181
+[2020.06.17-18.49.40:935][181]LogPlayLevel: PIE: World Init took: (0.001746s)
+[2020.06.17-18.49.40:935][181]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.008349s)
+[2020.06.17-18.49.40:964][181]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2020.06.17-18.49.40:965][181]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.49.40:965][181]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.49.40:965][181]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.49.40:965][181]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.49.40:965][181]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.49.40:965][181]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.49.40:965][181]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.49.40:965][181]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.49.40:965][181]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.49.40:965][181]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.49.40:969][181]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.49.40:969][181]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.49.40:990][181]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.49.40:990][181]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.49.40:990][181]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.49.40:990][181]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.49.40:990][181]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.49.41:005][181]LogInit: FAudioDevice initialized.
+[2020.06.17-18.49.41:020][181]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.49.41:022][181]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.49.41
+[2020.06.17-18.49.41:022][181]LogWorld: Bringing up level for play took: 0.001646
+[2020.06.17-18.49.41:022][181]LogOnline: OSS: Creating online subsystem instance for: :Context_42
+[2020.06.17-18.49.41:025][181]PIE: Server logged in
+[2020.06.17-18.49.41:026][181]PIE: Play in editor total start time 0.102 seconds.
+[2020.06.17-18.49.51:911][831]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.49.51:911][831]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.49.51:911][831]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.49.51:911][831]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.49.51:919][831]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.49.51:923][831]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.49.51:973][831]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.49.51:974][831]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002187FEED580), frame # 121831
+[2020.06.17-18.49.51:974][831]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000217AF760C00), frame # 121831
+[2020.06.17-18.49.51:976][831]LogUObjectHash: Compacting FUObjectHashTables data took   2.62ms
+[2020.06.17-18.49.52:012][832]LogPlayLevel: Display: Destroying online subsystem :Context_42
+[2020.06.17-18.49.52:964][888]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.49.52:981][888]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.49.52:981][888]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:49:52)
+[2020.06.17-18.49.53:019][888]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.49.53:026][888]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006392s)
+[2020.06.17-18.49.53:027][888]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.49.53:027][888]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000218D27DC600), frame # 121888
+[2020.06.17-18.49.53:027][888]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000217AECFEAC0), frame # 121888
+[2020.06.17-18.49.53:027][888]LogPlayLevel: PIE: World Init took: (0.001709s)
+[2020.06.17-18.49.53:027][888]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.008315s)
+[2020.06.17-18.49.53:055][888]LogUObjectHash: Compacting FUObjectHashTables data took   3.13ms
+[2020.06.17-18.49.53:056][888]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.49.53:056][888]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.49.53:056][888]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.49.53:056][888]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.49.53:056][888]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.49.53:056][888]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.49.53:056][888]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.49.53:056][888]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.49.53:056][888]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.49.53:056][888]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.49.53:060][888]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.49.53:060][888]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.49.53:080][888]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.49.53:081][888]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.49.53:081][888]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.49.53:081][888]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.49.53:081][888]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.49.53:111][888]LogInit: FAudioDevice initialized.
+[2020.06.17-18.49.53:127][888]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.49.53:130][888]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.49.53
+[2020.06.17-18.49.53:131][888]LogWorld: Bringing up level for play took: 0.002310
+[2020.06.17-18.49.53:131][888]LogOnline: OSS: Creating online subsystem instance for: :Context_43
+[2020.06.17-18.49.53:133][888]PIE: Server logged in
+[2020.06.17-18.49.53:135][888]PIE: Play in editor total start time 0.157 seconds.
+[2020.06.17-18.49.56:182][ 68]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.49.56:182][ 68]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.49.56:182][ 68]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.49.56:182][ 68]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.49.56:190][ 68]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.49.56:194][ 68]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.49.56:220][ 68]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.49.56:245][ 68]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000217AECFEAC0), frame # 122068
+[2020.06.17-18.49.56:245][ 68]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000218D27DC600), frame # 122068
+[2020.06.17-18.49.56:249][ 68]LogUObjectHash: Compacting FUObjectHashTables data took   3.30ms
+[2020.06.17-18.49.56:286][ 69]LogPlayLevel: Display: Destroying online subsystem :Context_43
+[2020.06.17-18.50.32:248][772]BlueprintLog: New page: Compile BP_TargetDummy
+[2020.06.17-18.50.32:310][772]LogUObjectHash: Compacting FUObjectHashTables data took   5.01ms
+[2020.06.17-18.50.32:381][772]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_TargetDummy" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/BP_TargetDummy.uasset" SILENT=true
+[2020.06.17-18.50.32:399][772]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/BP_TargetDummy44ECC5414F8360A0AF9417AF9A614BD3.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/BP_TargetDummy.uasset'
+[2020.06.17-18.50.32:420][772]AssetCheck: New page: Asset Save: BP_TargetDummy
+[2020.06.17-18.50.32:420][772]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_TargetDummy.BP_TargetDummy
+[2020.06.17-18.50.33:927][858]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.50.33:943][858]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.50.33:944][858]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:50:33)
+[2020.06.17-18.50.33:979][858]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.50.33:986][858]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006415s)
+[2020.06.17-18.50.33:987][858]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.50.33:987][858]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000218182AC400), frame # 122858
+[2020.06.17-18.50.33:988][858]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000021878884900), frame # 122858
+[2020.06.17-18.50.33:988][858]LogPlayLevel: PIE: World Init took: (0.002282s)
+[2020.06.17-18.50.33:988][858]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.008921s)
+[2020.06.17-18.50.34:020][858]LogUObjectHash: Compacting FUObjectHashTables data took   3.23ms
+[2020.06.17-18.50.34:022][858]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.50.34:022][858]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.50.34:022][858]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.50.34:022][858]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.50.34:022][858]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.50.34:022][858]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.50.34:022][858]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.50.34:022][858]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.50.34:022][858]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.50.34:022][858]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.50.34:027][858]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.50.34:027][858]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.50.34:047][858]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.50.34:047][858]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.50.34:047][858]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.50.34:047][858]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.50.34:048][858]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.50.34:067][858]LogInit: FAudioDevice initialized.
+[2020.06.17-18.50.34:081][858]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.50.34:083][858]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.50.34
+[2020.06.17-18.50.34:083][858]LogWorld: Bringing up level for play took: 0.001969
+[2020.06.17-18.50.34:084][858]LogOnline: OSS: Creating online subsystem instance for: :Context_44
+[2020.06.17-18.50.34:086][858]PIE: Server logged in
+[2020.06.17-18.50.34:087][858]PIE: Play in editor total start time 0.146 seconds.
+[2020.06.17-18.50.44:652][ 29]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.50.44:652][ 29]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.50.44:652][ 29]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.50.44:652][ 29]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.50.44:666][ 29]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.50.44:671][ 29]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.50.44:722][ 29]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.50.44:724][ 29]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000021878884900), frame # 123029
+[2020.06.17-18.50.44:724][ 29]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000218182AC400), frame # 123029
+[2020.06.17-18.50.44:727][ 29]LogUObjectHash: Compacting FUObjectHashTables data took   3.31ms
+[2020.06.17-18.50.44:765][ 30]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2020.06.17-18.50.47:247][119]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.50.47:266][119]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.50.47:266][119]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:50:47)
+[2020.06.17-18.50.47:266][119]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.50.47:273][119]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006829s)
+[2020.06.17-18.50.47:274][119]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.50.47:274][119]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000021877DC1C00), frame # 123119
+[2020.06.17-18.50.47:274][119]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000218BD31B240), frame # 123119
+[2020.06.17-18.50.47:274][119]LogPlayLevel: PIE: World Init took: (0.001435s)
+[2020.06.17-18.50.47:275][119]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.008405s)
+[2020.06.17-18.50.47:306][119]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2020.06.17-18.50.47:306][119]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.50.47:307][119]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.50.47:307][119]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.50.47:307][119]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.50.47:307][119]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.50.47:307][119]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.50.47:307][119]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.50.47:307][119]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.50.47:307][119]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.50.47:307][119]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.50.47:313][119]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.50.47:313][119]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.50.47:335][119]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.50.47:336][119]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.50.47:336][119]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.50.47:336][119]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.50.47:336][119]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.50.47:354][119]LogInit: FAudioDevice initialized.
+[2020.06.17-18.50.47:370][119]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.50.47:372][119]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.50.47
+[2020.06.17-18.50.47:372][119]LogWorld: Bringing up level for play took: 0.001785
+[2020.06.17-18.50.47:373][119]LogOnline: OSS: Creating online subsystem instance for: :Context_45
+[2020.06.17-18.50.47:375][119]PIE: Server logged in
+[2020.06.17-18.50.47:376][119]PIE: Play in editor total start time 0.112 seconds.
+[2020.06.17-18.50.49:067][215]LogBlueprintUserMessages: [BP_TargetDummy_2] 20.0
+[2020.06.17-18.50.49:741][256]LogBlueprintUserMessages: [BP_TargetDummy_2] 20.0
+[2020.06.17-18.50.50:025][273]LogBlueprintUserMessages: [BP_TargetDummy_2] 20.0
+[2020.06.17-18.50.50:159][281]LogBlueprintUserMessages: [BP_TargetDummy_2] 20.0
+[2020.06.17-18.50.50:309][290]LogBlueprintUserMessages: [BP_TargetDummy_2] 20.0
+[2020.06.17-18.50.50:609][308]LogBlueprintUserMessages: [BP_TargetDummy_2] 20.0
+[2020.06.17-18.50.50:958][329]LogBlueprintUserMessages: [BP_TargetDummy_2] 20.0
+[2020.06.17-18.50.51:125][339]LogBlueprintUserMessages: [BP_TargetDummy_2] 20.0
+[2020.06.17-18.50.54:441][536]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.50.54:441][536]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.50.54:441][536]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.50.54:441][536]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.50.54:453][536]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.50.54:457][536]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.50.54:483][536]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.50.54:507][536]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000218BD31B240), frame # 123536
+[2020.06.17-18.50.54:507][536]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000021877DC1C00), frame # 123536
+[2020.06.17-18.50.54:510][536]LogUObjectHash: Compacting FUObjectHashTables data took   2.63ms
+[2020.06.17-18.50.54:544][537]LogPlayLevel: Display: Destroying online subsystem :Context_45
+[2020.06.17-18.51.38:546][817]LogSlate: Window 'Color Picker' being destroyed
+[2020.06.17-18.51.48:344][246]BlueprintLog: New page: Compile BP_TargetDummy
+[2020.06.17-18.51.48:396][246]LogUObjectHash: Compacting FUObjectHashTables data took   3.18ms
+[2020.06.17-18.51.48:495][246]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_TargetDummy" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/BP_TargetDummy.uasset" SILENT=true
+[2020.06.17-18.51.48:513][246]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/BP_TargetDummyDA72BD99406CD995F0E3C9A8D20B40D3.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/BP_TargetDummy.uasset'
+[2020.06.17-18.51.48:536][246]AssetCheck: New page: Asset Save: BP_TargetDummy
+[2020.06.17-18.51.48:536][246]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_TargetDummy.BP_TargetDummy
+[2020.06.17-18.51.49:977][331]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.51.49:996][331]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.51.49:996][331]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:51:49)
+[2020.06.17-18.51.49:996][331]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.51.50:003][331]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007420s)
+[2020.06.17-18.51.50:005][331]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.51.50:005][331]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000021868D7D000), frame # 125331
+[2020.06.17-18.51.50:005][331]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000217AF4F2980), frame # 125331
+[2020.06.17-18.51.50:005][331]LogPlayLevel: PIE: World Init took: (0.001725s)
+[2020.06.17-18.51.50:005][331]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.009341s)
+[2020.06.17-18.51.50:037][331]LogUObjectHash: Compacting FUObjectHashTables data took   3.83ms
+[2020.06.17-18.51.50:038][331]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.51.50:038][331]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.51.50:038][331]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.51.50:038][331]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.51.50:038][331]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.51.50:038][331]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.51.50:038][331]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.51.50:038][331]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.51.50:039][331]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.51.50:039][331]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.51.50:042][331]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.51.50:042][331]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.51.50:066][331]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.51.50:067][331]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.51.50:067][331]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.51.50:067][331]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.51.50:067][331]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.51.50:089][331]LogInit: FAudioDevice initialized.
+[2020.06.17-18.51.50:107][331]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.51.50:110][331]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.51.50
+[2020.06.17-18.51.50:110][331]LogWorld: Bringing up level for play took: 0.002409
+[2020.06.17-18.51.50:111][331]LogOnline: OSS: Creating online subsystem instance for: :Context_46
+[2020.06.17-18.51.50:113][331]PIE: Server logged in
+[2020.06.17-18.51.50:114][331]PIE: Play in editor total start time 0.121 seconds.
+[2020.06.17-18.52.26:231][730]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.52.26:231][730]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.52.26:231][730]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.52.26:231][730]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.52.26:242][730]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.52.26:248][730]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.52.26:298][730]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.52.26:300][730]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000217AF4F2980), frame # 126730
+[2020.06.17-18.52.26:300][730]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000021868D7D000), frame # 126730
+[2020.06.17-18.52.26:303][730]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2020.06.17-18.52.26:337][731]LogPlayLevel: Display: Destroying online subsystem :Context_46
+[2020.06.17-18.52.42:959][468]BlueprintLog: New page: Compile BP_TargetDummy
+[2020.06.17-18.52.43:011][468]LogUObjectHash: Compacting FUObjectHashTables data took   3.01ms
+[2020.06.17-18.52.43:087][468]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_TargetDummy" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/BP_TargetDummy.uasset" SILENT=true
+[2020.06.17-18.52.43:102][468]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/BP_TargetDummy8D67407D462B81D07B2B64A0867F0238.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/BP_TargetDummy.uasset'
+[2020.06.17-18.52.43:127][468]AssetCheck: New page: Asset Save: BP_TargetDummy
+[2020.06.17-18.52.43:127][468]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_TargetDummy.BP_TargetDummy
+[2020.06.17-18.52.44:742][564]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.17-18.52.44:758][564]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.17-18.52.44:758][564]PIE: New page: PIE session: Gulag (17 Jun 2020, 20:52:44)
+[2020.06.17-18.52.44:799][564]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.52.44:807][564]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008319s)
+[2020.06.17-18.52.44:809][564]LogAIModule: Creating AISystem for world Gulag
+[2020.06.17-18.52.44:809][564]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000217AEE6FE00), frame # 127564
+[2020.06.17-18.52.44:809][564]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000217AF4F2980), frame # 127564
+[2020.06.17-18.52.44:809][564]LogPlayLevel: PIE: World Init took: (0.002238s)
+[2020.06.17-18.52.44:810][564]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.010931s)
+[2020.06.17-18.52.44:841][564]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2020.06.17-18.52.44:842][564]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.17-18.52.44:842][564]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.17-18.52.44:842][564]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.17-18.52.44:842][564]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.17-18.52.44:842][564]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.17-18.52.44:842][564]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.17-18.52.44:842][564]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.17-18.52.44:842][564]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.17-18.52.44:843][564]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.17-18.52.44:843][564]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.17-18.52.44:846][564]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.17-18.52.44:846][564]LogAudioMixer: Display: 1: FrontRight
+[2020.06.17-18.52.44:867][564]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.17-18.52.44:867][564]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.17-18.52.44:867][564]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.17-18.52.44:867][564]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.17-18.52.44:867][564]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.17-18.52.44:886][564]LogInit: FAudioDevice initialized.
+[2020.06.17-18.52.44:897][564]LogLoad: Game class is 'GameModeBase'
+[2020.06.17-18.52.44:900][564]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.17-19.52.44
+[2020.06.17-18.52.44:900][564]LogWorld: Bringing up level for play took: 0.002216
+[2020.06.17-18.52.44:900][564]LogOnline: OSS: Creating online subsystem instance for: :Context_47
+[2020.06.17-18.52.44:904][564]PIE: Server logged in
+[2020.06.17-18.52.44:905][564]PIE: Play in editor total start time 0.149 seconds.
+[2020.06.17-18.52.51:632][964]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.52.51:632][964]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.17-18.52.51:632][964]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.17-18.52.51:633][964]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.52.51:647][964]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.17-18.52.51:652][964]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.17-18.52.51:680][964]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.17-18.52.51:705][964]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000217AF4F2980), frame # 127964
+[2020.06.17-18.52.51:705][964]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000217AEE6FE00), frame # 127964
+[2020.06.17-18.52.51:709][964]LogUObjectHash: Compacting FUObjectHashTables data took   2.96ms
+[2020.06.17-18.52.51:747][965]LogPlayLevel: Display: Destroying online subsystem :Context_47
+[2020.06.17-18.53.15:494][144]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Level/Gulag" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.06.17-18.53.15:532][144]LogUObjectHash: Compacting FUObjectHashTables data took   3.43ms
+[2020.06.17-18.53.15:640][144]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/GulagBF75302143566D04B05432A6E9BA4CA7.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag.umap'
+[2020.06.17-18.53.15:668][144]LogFileHelpers: Saving map 'Gulag' took 0.174
+[2020.06.17-18.53.15:668][144]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Level/Gulag_BuiltData" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag_BuiltData.uasset" SILENT=true
+[2020.06.17-18.53.15:682][144]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Gulag_BuiltDataDDE43E2D4CEBBCA4CF175D8B066DA607.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag_BuiltData.uasset'
+[2020.06.17-18.53.15:721][144]AssetCheck: New page: Asset Save: multiple assets
+[2020.06.17-18.53.15:721][144]LogContentValidation: Display: Validating World /Game/Level/Gulag.Gulag
+[2020.06.17-18.53.15:721][144]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Level/Gulag_BuiltData.Gulag_BuiltData
