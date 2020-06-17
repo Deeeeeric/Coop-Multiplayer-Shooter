@@ -46,10 +46,24 @@
     <ClInclude Include="..\..\Source\CoopShooter\SCharacter.h">
       <Filter>Source\CoopShooter</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SWeapon.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\CoopShooter\SCharacter.cpp">
       <Filter>Source\CoopShooter</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SWeapon.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\CoopShooter\Public">
+      <UniqueIdentifier>{9f20eba1-df9b-4e5c-9d0a-02c7f0bc7cca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\CoopShooter\Private">
+      <UniqueIdentifier>{643edbb4-fb1a-42aa-9c97-29d3be151114}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

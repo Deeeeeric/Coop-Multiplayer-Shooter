@@ -72,3 +72,18 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+CoopShooter/Intermediate/CachedAssetRegistry.bin
+*.bin
+CoopShooter/Saved/Logs/CoopShooter.log
+CoopShooter/Saved/Logs/CoopShooter-backup-2020.06.16-20.51.09.log
+CoopShooter/Saved/Config/Windows/Engine.ini
+CoopShooter/Saved/Config/Windows/EditorPerProjectUserSettings.ini
+CoopShooter/Saved/Config/CrashReportClient/UE4CC-Windows-6AA4B7EB4BDCF5CF89F7C580413119A1/CrashReportClient.ini
+CoopShooter/Intermediate/CachedAssetRegistry.bin
+CoopShooter/Saved/Logs/CoopShooter.log
+CoopShooter/Saved/Config/Windows/Engine.ini
+CoopShooter/Saved/Config/Windows/EditorPerProjectUserSettings.ini
+CoopShooter/Intermediate/CachedAssetRegistry.bin
+*.ini
+*.bin
+*.ini
