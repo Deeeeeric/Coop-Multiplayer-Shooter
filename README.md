@@ -9,3 +9,4 @@
 * Add Character Animation
 * Setting up Player Jump
 * Create Weapon Class
+* Line Tracing pt.1
