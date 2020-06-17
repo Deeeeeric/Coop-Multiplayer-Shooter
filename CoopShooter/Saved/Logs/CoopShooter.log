@@ -1728,3 +1728,18 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.06.17-18.13.36:329][868]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000021864E11800), frame # 99868
 [2020.06.17-18.13.36:332][868]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
 [2020.06.17-18.13.36:368][869]LogPlayLevel: Display: Destroying online subsystem :Context_33
+[2020.06.17-18.30.45:185][ 59]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.17-18.31.24:322][176]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.17-18.31.33:063][202]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.17-18.32.24:574][356]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.17-18.35.06:160][839]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.17-18.36.03:009][ 98]LogHotReload: New module detected: UE4Editor-CoopShooter-0015.dll
+[2020.06.17-18.36.04:374][103]LogHotReload: Starting Hot-Reload from IDE
+[2020.06.17-18.36.06:686][103]LogClass: Could not find existing class SWeapon in package /Script/CoopShooter for HotReload, assuming new class
+[2020.06.17-18.36.06:686][103]LogClass: Function Fire is new.
+[2020.06.17-18.36.06:701][103]LogHotReload: Re-instancing SWeapon after hot-reload.
+[2020.06.17-18.36.06:786][103]LogContentBrowser: Native class hierarchy updated for 'CoopShooter' in 0.0007 seconds. Added 3 classes and 3 folders.
+[2020.06.17-18.36.06:790][103]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.06.17-18.36.06:913][103]LogContentBrowser: Native class hierarchy populated in 0.0136 seconds. Added 3431 classes and 826 folders.
+[2020.06.17-18.36.06:933][103]Display: HotReload took  2.6s.
+[2020.06.17-18.36.13:858][277]LogUObjectHash: Compacting FUObjectHashTables data took   4.25ms
