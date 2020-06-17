@@ -13,3 +13,4 @@
 * Line Tracing pt.2
 * Apply Damage to Actors
 * Create a Target Dummy
+* Add Muzzle and Impact Effects
