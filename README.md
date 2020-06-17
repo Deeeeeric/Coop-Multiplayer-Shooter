@@ -14,3 +14,4 @@
 * Apply Damage to Actors
 * Create a Target Dummy
 * Add Muzzle and Impact Effects
+* Add Simple Crosshair
