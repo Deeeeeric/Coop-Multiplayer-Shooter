@@ -9,11 +9,11 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  SProjectileWeapon.cpp (0:01.64 at +0:00)
-  UE4Editor-CoopShooter-0037.dll (0:01.15 at +0:01)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0037.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0037.suppressed.exp
-  UE4Editor-CoopShooter-0037.lib (0:00.18 at +0:02)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0037.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0037.exp
+  SWeapon.cpp (0:01.96 at +0:00)
+  UE4Editor-CoopShooter-0040.dll (0:01.03 at +0:02)
+     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0040.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0040.suppressed.exp
+  UE4Editor-CoopShooter-0040.lib (0:00.23 at +0:03)
+     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0040.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0040.exp
   CoopShooterEditor.target (0:00.26 at +0:03)
   ---------------------- Done ----------------------
   
@@ -22,5 +22,5 @@
   1 build system warning(s):
      - License is invalid
   
-  Total time in XGE executor: 3.43 seconds
-  Total execution time: 4.57 seconds
+  Total time in XGE executor: 3.81 seconds
+  Total execution time: 4.91 seconds
