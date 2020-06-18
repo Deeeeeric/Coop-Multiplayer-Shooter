@@ -18,3 +18,4 @@
 * Creating Grenade Launcher
 * Aiming Down Sights
 * Create Debug Console Variables
+* Polish Weapon Code

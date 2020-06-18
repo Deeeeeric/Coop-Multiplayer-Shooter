@@ -9,6 +9,7 @@
 // Forward Declaration
 class UCameraComponent;
 class USpringArmComponent;
+class ASWeapon;
 
 UCLASS()
 class COOPSHOOTER_API ASCharacter : public ACharacter
@@ -55,6 +56,16 @@ protected:
 	void BeginADS();
 
 	void EndADS();
+
+	ASWeapon* CurrentWeapon;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Player")
+	TSubclassOf<ASWeapon> StarterWeaponClass;
+
+	UPROPERTY(VisibleDefaultsOnly, Category = "Player")
+	FName WeaponAttachSocketName;
+
+	void Fire();
 
 public:	
 	// Called every frame
