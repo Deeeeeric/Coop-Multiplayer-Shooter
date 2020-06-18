@@ -86,4 +86,6 @@ CoopShooter/Saved/Config/Windows/EditorPerProjectUserSettings.ini
 CoopShooter/Intermediate/CachedAssetRegistry.bin
 *.ini
 *.bin
-*.ini
+*.uasset
+*.log
+
