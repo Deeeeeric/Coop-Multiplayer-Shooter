@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeCoopShooter_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x8BADE51D,
+				0x4DB664C9,
 				0x07B4E25F,
 				METADATA_PARAMS(nullptr, 0)
 			};

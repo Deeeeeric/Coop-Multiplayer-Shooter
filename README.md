@@ -19,3 +19,4 @@
 * Aiming Down Sights
 * Create Debug Console Variables
 * Polish Weapon Code
+* Add Camera Shake When Firing
