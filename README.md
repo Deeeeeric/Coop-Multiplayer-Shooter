@@ -17,3 +17,4 @@
 * Add Simple Crosshair
 * Creating Grenade Launcher
 * Aiming Down Sights
+* Create Debug Console Variables
