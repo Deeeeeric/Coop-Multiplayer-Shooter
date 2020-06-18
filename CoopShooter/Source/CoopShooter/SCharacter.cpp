@@ -28,12 +28,16 @@ ASCharacter::ASCharacter()
 	/* bUsePawnControlRotation:
 	If this camera component is placed on a pawn, should it use the view/control rotation of the pawn where possible?*/
 
+	ADS_FOV = 65.f;
+	ADSInterpSpeed = 20.f;
 }
 
 // Called when the game starts or when spawned
 void ASCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	DefaultFOV = CameraComponent->FieldOfView;
 	
 }
 
@@ -58,11 +62,26 @@ void ASCharacter::EndCrouch()
 	UnCrouch();
 }
 
+void ASCharacter::BeginADS()
+{
+	bWantsToADS = true;
+}
+
+void ASCharacter::EndADS()
+{
+	bWantsToADS = false;
+}
+
 // Called every frame
 void ASCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	float TargetFOV = bWantsToADS ? ADS_FOV : DefaultFOV;
+
+	float NewFOV= FMath::FInterpTo(CameraComponent->FieldOfView, TargetFOV, DeltaTime, ADSInterpSpeed);
+
+	CameraComponent->SetFieldOfView(NewFOV);
 }
 
 // Called to bind functionality to input
@@ -81,6 +100,9 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &ASCharacter::EndCrouch);
 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+
+	PlayerInputComponent->BindAction("ADS", IE_Pressed, this, &ASCharacter::BeginADS);
+	PlayerInputComponent->BindAction("ADS", IE_Released, this, &ASCharacter::EndADS);
 }
 
 FVector ASCharacter::GetPawnViewLocation() const

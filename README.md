@@ -16,3 +16,4 @@
 * Add Muzzle and Impact Effects
 * Add Simple Crosshair
 * Creating Grenade Launcher
+* Aiming Down Sights

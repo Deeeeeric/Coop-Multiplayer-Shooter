@@ -41,6 +41,21 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USpringArmComponent* SpringArmComponent;
 
+	bool bWantsToADS;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Player")
+	float ADS_FOV;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Player", meta = (ClampMin = 0.1, ClampMax = 100))
+	float ADSInterpSpeed;
+
+	/* Default FOV set during begin play*/
+	float DefaultFOV;
+
+	void BeginADS();
+
+	void EndADS();
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
