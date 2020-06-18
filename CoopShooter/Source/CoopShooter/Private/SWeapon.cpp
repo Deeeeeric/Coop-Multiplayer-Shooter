@@ -1,9 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Components/SkeletalMeshComponent.h"
+#include "CoopShooter/CoopShooter.h"
 #include "DrawDebugHelpers.h"
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystem.h"
+#include "PhysicalMaterials/PhysicalMaterial.h"
 #include "SWeapon.h"
 
 static int32 DebugWeaponDrawing = 0;
@@ -39,8 +41,8 @@ void ASWeapon::Fire()
 		FCollisionQueryParams QueryParams;
 		QueryParams.AddIgnoredActor(MyOwner);
 		QueryParams.AddIgnoredActor(this);
-		QueryParams.bTraceComplex = true; // trace against each individual triangle of the mesh we are hitting
-		// getting the exact result we are hitting
+		QueryParams.bTraceComplex = true; // trace against each individual triangle of the mesh we are hitting getting the exact result we are hitting
+		QueryParams.bReturnPhysicalMaterial = true;
 
 		FHitResult Hit;
 		// ECC_Visibility channel to trace the world, anything that blocks the channel will block our trace, 
@@ -54,9 +56,24 @@ void ASWeapon::Fire()
 			// get effects
 			UGameplayStatics::ApplyPointDamage(HitActor, 20.0f, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
 
-			if (ImpactEffect)
+			// Get the material and determine the surface type
+			EPhysicalSurface SurfaceType = UPhysicalMaterial::DetermineSurfaceType(Hit.PhysMaterial.Get());
+
+			UParticleSystem* SelectedEffect = nullptr;
+			switch (SurfaceType)
 			{
-				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactEffect, Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
+			case SURFACE_FLESHDEFAULT:
+				case SURFACE_FLESHVUNERABLE:
+					SelectedEffect = FleshImpactEffect;
+					break;
+				default:
+					SelectedEffect = DefaultImpactEffect;
+					break;
+			}
+
+			if (SelectedEffect)
+			{
+				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), SelectedEffect, Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
 			}
 		}
 
