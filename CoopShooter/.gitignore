@@ -89,3 +89,9 @@ CoopShooter/Intermediate/CachedAssetRegistry.bin
 *.uasset
 *.log
 
+*.pdb
+*.modules
+*.bin
+*.response
+*.exp
+*.umap

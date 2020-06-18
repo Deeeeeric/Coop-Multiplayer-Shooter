@@ -47,7 +47,7 @@ void ASWeapon::Fire()
 		FHitResult Hit;
 		// ECC_Visibility channel to trace the world, anything that blocks the channel will block our trace, 
 		// checks if something we can damage
-		if (GetWorld()->LineTraceSingleByChannel(Hit, EyeLocation, TraceEnd, ECC_Visibility, QueryParams))
+		if (GetWorld()->LineTraceSingleByChannel(Hit, EyeLocation, TraceEnd, COLLISION_WEAPON, QueryParams))
 		{
 			// blocking hit! process damage
 

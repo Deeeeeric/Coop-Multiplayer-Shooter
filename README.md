@@ -22,3 +22,4 @@
 * Add Camera Shake When Firing
 * Setup Custom Surface Types
 * Add Multiple Hit Effect Types
+* Add Custom Collision Channel
