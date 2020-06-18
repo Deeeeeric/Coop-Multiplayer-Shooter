@@ -22,8 +22,9 @@ ASWeapon::ASWeapon()
 	RootComponent = MeshComponent;
 
 	MuzzleSocketName = "MuzzleSocket";
-}
 
+	BaseDamage = 20.0f;
+}
 void ASWeapon::Fire()
 {
 	// Trace the world from pawn eyes to crosshair location (center screen)
@@ -50,20 +51,25 @@ void ASWeapon::Fire()
 		if (GetWorld()->LineTraceSingleByChannel(Hit, EyeLocation, TraceEnd, COLLISION_WEAPON, QueryParams))
 		{
 			// blocking hit! process damage
-
 			AActor* HitActor = Hit.GetActor();
-
-			// get effects
-			UGameplayStatics::ApplyPointDamage(HitActor, 20.0f, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
-
+		
 			// Get the material and determine the surface type
 			EPhysicalSurface SurfaceType = UPhysicalMaterial::DetermineSurfaceType(Hit.PhysMaterial.Get());
+
+			float ActualDamage = BaseDamage;
+			if (SurfaceType == SURFACE_FLESHVUNERABLE)
+			{
+				ActualDamage *= 4.0f;
+			}
+			// get effects
+			UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
+
 
 			UParticleSystem* SelectedEffect = nullptr;
 			switch (SurfaceType)
 			{
 			case SURFACE_FLESHDEFAULT:
-				case SURFACE_FLESHVUNERABLE:
+			case SURFACE_FLESHVUNERABLE:
 					SelectedEffect = FleshImpactEffect;
 					break;
 				default:

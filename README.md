@@ -23,3 +23,4 @@
 * Setup Custom Surface Types
 * Add Multiple Hit Effect Types
 * Add Custom Collision Channel
+* Apply Bonus Damage to Headshot
