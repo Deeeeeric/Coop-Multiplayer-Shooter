@@ -28,3 +28,4 @@
 * Handle Damage Events
 * Add Custom Health Event
 * Add Death Animation
+* Gears of War Style Health Indicator
