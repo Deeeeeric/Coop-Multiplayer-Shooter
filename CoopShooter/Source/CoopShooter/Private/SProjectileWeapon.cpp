@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "SWeapon.h"
 #include "SProjectileWeapon.h"
+#include "SWeapon.h"
 
 void ASProjectileWeapon::Fire()
 {

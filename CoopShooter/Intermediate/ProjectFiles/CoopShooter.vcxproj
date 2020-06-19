@@ -371,9 +371,11 @@
     <AdditionalOptions>/std:c++14</AdditionalOptions>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SHealthComponent.cpp" />
     <ClCompile Include="..\..\Source\CoopShooter\Private\SProjectileWeapon.cpp" />
     <ClCompile Include="..\..\Source\CoopShooter\Private\SWeapon.cpp" />
     <ClCompile Include="..\..\Source\CoopShooter\SCharacter.cpp" />
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SHealthComponent.h" />
     <ClInclude Include="..\..\Source\CoopShooter\Public\SProjectileWeapon.h" />
     <ClInclude Include="..\..\Source\CoopShooter\Public\SWeapon.h" />
     <ClInclude Include="..\..\Source\CoopShooter\SCharacter.h" />

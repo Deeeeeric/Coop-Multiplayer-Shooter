@@ -24,3 +24,4 @@
 * Add Multiple Hit Effect Types
 * Add Custom Collision Channel
 * Apply Bonus Damage to Headshot
+* Create Health Component
