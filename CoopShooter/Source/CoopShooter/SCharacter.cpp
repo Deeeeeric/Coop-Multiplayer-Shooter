@@ -71,6 +71,7 @@ void ASCharacter::MoveRight(float Value)
 
 void ASCharacter::BeginCrouch()
 {
+
 	Crouch();
 }
 

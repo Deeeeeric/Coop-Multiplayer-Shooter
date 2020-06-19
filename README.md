@@ -26,3 +26,4 @@
 * Apply Bonus Damage to Headshot
 * Create Health Component
 * Handle Damage Events
+* Add Custom Health Event
