@@ -1,7 +1,10 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+  Parsing headers for CoopShooterEditor
+    Running UnrealHeaderTool "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\CoopShooterEditor\Development\CoopShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\DW\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for CoopShooterEditor in 15.0660814 seconds
   Building CoopShooterEditor...
   Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 4 actions to XGE
+  Distributing 6 actions to XGE
   --------------------Build System Warning---------------------------------------
   License is invalid:
       License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
@@ -9,18 +12,35 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  SWeapon.cpp (0:01.07 at +0:00)
-  UE4Editor-CoopShooter-0046.dll (0:00.82 at +0:01)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0046.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0046.suppressed.exp
-  UE4Editor-CoopShooter-0046.lib (0:00.21 at +0:01)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0046.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0046.exp
-  CoopShooterEditor.target (0:00.28 at +0:02)
+  SHealthComponent.gen.cpp (0:06.09 at +0:00)
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter/Public/SHealthComponent.h(29): error C2061: syntax error: identifier 'OnTakeAnyDamage'
+  
+  Error executing D:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\cl-filter\cl-filter.exe (tool returned code: 2)
+  CoopShooter.init.gen.cpp (0:01.14 at +0:06)
+  SHealthComponent.cpp (0:02.68 at +0:07)
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\SHealthComponent.h(29): error C2061: syntax error: identifier 'OnTakeAnyDamage'
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SHealthComponent.cpp(21): error C2664: 'void TSparseDynamicDelegate<FTakeAnyDamageSignature_MCSignature,AActor,FTakeAnyDamageSignatureInfoGetter>::__Internal_AddDynamic<USHealthComponent>(UserClass *,void (__cdecl USHealthComponent::* )(AActor *,float,const UDamageType *,AController *,AActor *),FName)': cannot convert argument 2 from 'void (__cdecl USHealthComponent::* )(AActor)' to 'void (__cdecl USHealthComponent::* )(AActor *,float,const UDamageType *,AController *,AActor *)'
+          with
+          [
+              UserClass=USHealthComponent
+          ]
+  D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SHealthComponent.cpp(21): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/SparseDelegate.h(359): note: see declaration of 'TSparseDynamicDelegate<FTakeAnyDamageSignature_MCSignature,AActor,FTakeAnyDamageSignatureInfoGetter>::__Internal_AddDynamic'
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SHealthComponent.cpp(28): error C2511: 'void USHealthComponent::HandleTakeAnyDamage(AActor *,float,const UDamageType *,AController *,AActor *)': overloaded member function not found in 'USHealthComponent'
+  D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\SHealthComponent.h(11): note: see declaration of 'USHealthComponent'
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SHealthComponent.cpp(35): error C2597: illegal reference to non-static member 'USHealthComponent::Health'
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SHealthComponent.cpp(35): error C3867: 'USHealthComponent::Health': non-standard syntax; use '&' to create a pointer to member
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SHealthComponent.cpp(35): error C2597: illegal reference to non-static member 'USHealthComponent::DefaultHealth'
+  D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\SHealthComponent.h(27): note: see declaration of 'USHealthComponent::DefaultHealth'
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SHealthComponent.cpp(37): error C2597: illegal reference to non-static member 'USHealthComponent::Health'
+  D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\SHealthComponent.h(24): note: see declaration of 'USHealthComponent::Health'
+  
+  Error executing D:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\cl-filter\cl-filter.exe (tool returned code: 2)
   ---------------------- Done ----------------------
   
-      Rebuild All: 1 succeeded, 0 failed, 0 skipped
+      Rebuild All: 0 succeeded, 1 failed, 0 skipped
   
   1 build system warning(s):
      - License is invalid
   
-  Total time in XGE executor: 2.65 seconds
-  Total execution time: 3.83 seconds
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073: The command "chcp 65001 >NUL && "D:\Program Files\Epic Games\UE_4.25\Engine\Build\BatchFiles\Build.bat" CoopShooterEditor Win64 Development -Project="D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" -WaitMutex -FromMsBuild" exited with code 6.

@@ -25,3 +25,4 @@
 * Add Custom Collision Channel
 * Apply Bonus Damage to Headshot
 * Create Health Component
+* Handle Damage Events

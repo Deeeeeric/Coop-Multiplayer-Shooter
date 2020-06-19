@@ -6,6 +6,8 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFrameWork/PawnMovementComponent.h"
+#include "Components/CapsuleComponent.h"
+#include "CoopShooter/CoopShooter.h"
 #include "SWeapon.h"
 
 // Sets default values
@@ -22,6 +24,8 @@ ASCharacter::ASCharacter()
 	/* Return our PawnMovementComponent, if we have one. By default, returns the first PawnMovementComponent found.
 	Native classes that create their own movement component should override this method for more efficiency. */
 	GetMovementComponent()->GetNavAgentPropertiesRef().bCanCrouch = true;
+
+	GetCapsuleComponent()->SetCollisionResponseToChannel(COLLISION_WEAPON, ECR_Ignore);
 
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
 	CameraComponent->SetupAttachment(SpringArmComponent);
