@@ -23,7 +23,7 @@ ASWeapon::ASWeapon()
 
 	MuzzleSocketName = "MuzzleSocket";
 
-	BaseDamage = 20.0f;
+	BaseDamage = 33.33f;
 }
 void ASWeapon::Fire()
 {
@@ -59,7 +59,7 @@ void ASWeapon::Fire()
 			float ActualDamage = BaseDamage;
 			if (SurfaceType == SURFACE_FLESHVUNERABLE)
 			{
-				ActualDamage *= 4.0f;
+				ActualDamage *= 3.1f;
 			}
 			// get effects
 			UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);

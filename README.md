@@ -27,3 +27,4 @@
 * Create Health Component
 * Handle Damage Events
 * Add Custom Health Event
+* Add Death Animation
