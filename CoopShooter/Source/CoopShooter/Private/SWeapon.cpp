@@ -24,6 +24,10 @@ ASWeapon::ASWeapon()
 	MuzzleSocketName = "MuzzleSocket";
 
 	BaseDamage = 33.33f;
+
+	// Replicate the weapon so that it spawns on the client side
+	SetReplicates(true);
+
 }
 void ASWeapon::Fire()
 {

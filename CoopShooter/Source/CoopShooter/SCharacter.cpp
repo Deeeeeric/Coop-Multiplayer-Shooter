@@ -9,12 +9,13 @@
 #include "Components/CapsuleComponent.h"
 #include "CoopShooter/CoopShooter.h"
 #include "SHealthComponent.h"
+#include "Net/UnrealNetwork.h"
 #include "SWeapon.h"
 
 // Sets default values
 ASCharacter::ASCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
@@ -49,18 +50,22 @@ void ASCharacter::BeginPlay()
 
 	DefaultFOV = CameraComponent->FieldOfView;
 
-	// spawn default weapon
-	FActorSpawnParameters SpawnParams;
-	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-
-	CurrentWeapon = GetWorld()->SpawnActor<ASWeapon>(StarterWeaponClass, FVector::ZeroVector, FRotator::ZeroRotator, SpawnParams);
-	if (CurrentWeapon)
-	{
-		CurrentWeapon->SetOwner(this);
-		CurrentWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, WeaponAttachSocketName);
-	}
-
 	HealthComponent->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
+
+	if (GetLocalRole() == ROLE_Authority) // Only run code if we run the game from a server
+	{
+		// spawn default weapon
+		FActorSpawnParameters SpawnParams;
+		SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+
+		// Runs both on client and server
+		CurrentWeapon = GetWorld()->SpawnActor<ASWeapon>(StarterWeaponClass, FVector::ZeroVector, FRotator::ZeroRotator, SpawnParams);
+		if (CurrentWeapon)
+		{
+			CurrentWeapon->SetOwner(this);
+			CurrentWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, WeaponAttachSocketName);
+		}
+	}
 }
 
 void ASCharacter::MoveForward(float Value)
@@ -116,7 +121,7 @@ void ASCharacter::OnHealthChanged(USHealthComponent* HealthComp, float Health, f
 
 	DetachFromControllerPendingDestroy();
 
-	SetLifeSpan(10.0f);
+	SetLifeSpan(1.0f);
 }
 
 // Called every frame
@@ -126,7 +131,7 @@ void ASCharacter::Tick(float DeltaTime)
 
 	float TargetFOV = bWantsToADS ? ADS_FOV : DefaultFOV;
 
-	float NewFOV= FMath::FInterpTo(CameraComponent->FieldOfView, TargetFOV, DeltaTime, ADSInterpSpeed);
+	float NewFOV = FMath::FInterpTo(CameraComponent->FieldOfView, TargetFOV, DeltaTime, ADSInterpSpeed);
 
 	CameraComponent->SetFieldOfView(NewFOV);
 }
@@ -164,3 +169,10 @@ FVector ASCharacter::GetPawnViewLocation() const
 	return Super::GetPawnViewLocation();
 }
 
+// lets us specify exactly what we want to replicate and how we want to replicate something
+void ASCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ASCharacter, CurrentWeapon); // replicate to any client connected to us
+}

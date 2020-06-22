@@ -29,3 +29,6 @@
 * Add Custom Health Event
 * Add Death Animation
 * Gears of War Style Health Indicator
+
+# Multiplayer
+* Replicate Weapon Code pt.1

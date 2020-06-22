@@ -61,6 +61,7 @@ protected:
 
 	void EndADS();
 
+	UPROPERTY(Replicated) // REPLICATE THE WEAPON Functionality to Client
 	ASWeapon* CurrentWeapon;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Player")
