@@ -21,7 +21,7 @@ public:
 	ASWeapon();
 
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
-	virtual void Fire();
+		virtual void Fire();
 
 protected:
 
@@ -50,4 +50,10 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Weapon")
 	float BaseDamage;
+
+	// Server: push request to hosting server
+// Reliable: Guaranteed to eventually get to the server
+// WithValidation: specify a server
+	UFUNCTION(Server, Reliable, WithValidation)
+	void ServerFire(); // push to the server
 };

@@ -15,15 +15,23 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_SPARSE_DATA
 #define CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_RPC_WRAPPERS \
+	virtual bool ServerFire_Validate(); \
+	virtual void ServerFire_Implementation(); \
  \
+	DECLARE_FUNCTION(execServerFire); \
 	DECLARE_FUNCTION(execFire);
 
 
 #define CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual bool ServerFire_Validate(); \
+	virtual void ServerFire_Implementation(); \
  \
+	DECLARE_FUNCTION(execServerFire); \
 	DECLARE_FUNCTION(execFire);
 
 
+#define CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_EVENT_PARMS
+#define CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_CALLBACK_WRAPPERS
 #define CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASWeapon(); \
@@ -77,13 +85,17 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASWeapon); \
 	FORCEINLINE static uint32 __PPO__BaseDamage() { return STRUCT_OFFSET(ASWeapon, BaseDamage); }
 
 
-#define CoopShooter_Source_CoopShooter_Public_SWeapon_h_14_PROLOG
+#define CoopShooter_Source_CoopShooter_Public_SWeapon_h_14_PROLOG \
+	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_EVENT_PARMS
+
+
 #define CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_PRIVATE_PROPERTY_OFFSET \
 	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_SPARSE_DATA \
 	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_RPC_WRAPPERS \
+	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_CALLBACK_WRAPPERS \
 	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_INCLASS \
 	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_STANDARD_CONSTRUCTORS \
 public: \
@@ -96,6 +108,7 @@ public: \
 	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_PRIVATE_PROPERTY_OFFSET \
 	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_SPARSE_DATA \
 	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_CALLBACK_WRAPPERS \
 	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_INCLASS_NO_PURE_DECLS \
 	CoopShooter_Source_CoopShooter_Public_SWeapon_h_17_ENHANCED_CONSTRUCTORS \
 private: \

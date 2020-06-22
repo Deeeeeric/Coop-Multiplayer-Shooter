@@ -33,6 +33,11 @@ void ASWeapon::Fire()
 {
 	// Trace the world from pawn eyes to crosshair location (center screen)
 
+	if (GetLocalRole() < ROLE_Authority) // if role is not authority aka client
+	{
+		ServerFire();
+	}
+
 	AActor* MyOwner = GetOwner();
 	if (MyOwner)
 	{
@@ -65,7 +70,7 @@ void ASWeapon::Fire()
 			{
 				ActualDamage *= 3.1f;
 			}
-			// get effects
+			// APPLY DAMAGE
 			UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
 
 
@@ -113,4 +118,14 @@ void ASWeapon::PlayFireEffects()
 		}
 	}
 
+}
+
+void ASWeapon::ServerFire_Implementation()
+{
+	Fire();
+}
+
+bool ASWeapon::ServerFire_Validate()
+{
+	return true;
 }

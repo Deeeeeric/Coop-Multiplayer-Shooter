@@ -23,6 +23,18 @@ void EmptyLinkFunctionForGeneratedCodeSWeapon() {}
 	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ASWeapon::execServerFire)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		if (!P_THIS->ServerFire_Validate())
+		{
+			RPC_ValidateFailed(TEXT("ServerFire_Validate"));
+			return;
+		}
+		P_THIS->ServerFire_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ASWeapon::execFire)
 	{
 		P_FINISH;
@@ -30,11 +42,17 @@ void EmptyLinkFunctionForGeneratedCodeSWeapon() {}
 		P_THIS->Fire();
 		P_NATIVE_END;
 	}
+	static FName NAME_ASWeapon_ServerFire = FName(TEXT("ServerFire"));
+	void ASWeapon::ServerFire()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ASWeapon_ServerFire),NULL);
+	}
 	void ASWeapon::StaticRegisterNativesASWeapon()
 	{
 		UClass* Class = ASWeapon::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Fire", &ASWeapon::execFire },
+			{ "ServerFire", &ASWeapon::execServerFire },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -58,6 +76,30 @@ void EmptyLinkFunctionForGeneratedCodeSWeapon() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASWeapon_Fire_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ASWeapon_ServerFire_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASWeapon_ServerFire_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// Server: push request to hosting server\n// Reliable: Guaranteed to eventually get to the server\n// WithValidation: specify a server\n" },
+		{ "ModuleRelativePath", "Public/SWeapon.h" },
+		{ "ToolTip", "Server: push request to hosting server\nReliable: Guaranteed to eventually get to the server\nWithValidation: specify a server" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASWeapon_ServerFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASWeapon, nullptr, "ServerFire", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASWeapon_ServerFire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASWeapon_ServerFire_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASWeapon_ServerFire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASWeapon_ServerFire_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -114,6 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeSWeapon() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASWeapon_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ASWeapon_Fire, "Fire" }, // 3042390082
+		{ &Z_Construct_UFunction_ASWeapon_ServerFire, "ServerFire" }, // 2752564073
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASWeapon_Statics::Class_MetaDataParams[] = {
@@ -215,7 +258,7 @@ void EmptyLinkFunctionForGeneratedCodeSWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASWeapon, 3133753652);
+	IMPLEMENT_CLASS(ASWeapon, 1959663177);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASWeapon>()
 	{
 		return ASWeapon::StaticClass();
