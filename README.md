@@ -33,3 +33,4 @@
 # Multiplayer
 * Replicate Weapon Code pt.1
 * Replicate Weapon Code pt.2
+* Replicate Weapon Code pt.3
