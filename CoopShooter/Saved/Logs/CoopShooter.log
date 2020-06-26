@@ -12425,3 +12425,93 @@ Script Stack (0 frames):
 [2020.06.26-15.35.20:021][516]LogPlayLevel: Display: Destroying online subsystem :Context_47
 [2020.06.26-15.35.20:022][516]LogPlayLevel: Display: Destroying online subsystem :Context_46
 [2020.06.26-15.46.19:465][679]LogUObjectHash: Compacting FUObjectHashTables data took   4.49ms
+[2020.06.26-15.52.06:452][167]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2020.06.26-15.52.33:534][938]LogMaterial: Display: Missing cached shader map for material T_Statue_M_Mat, compiling. 
+[2020.06.26-15.52.33:842][939]LogMaterial: Display: Material /Game/StarterContent/Textures/T_Statue_M_Mat.T_Statue_M_Mat needed to have new flag set bUsedWithStaticLighting !
+[2020.06.26-15.52.33:852][939]LogMaterial: Display: Missing cached shader map for material T_Statue_M_Mat, compiling. 
+[2020.06.26-15.52.42:974][448]Cmd: DELETE
+[2020.06.26-15.52.42:974][448]Cmd: ACTOR DELETE
+[2020.06.26-15.52.43:462][448]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.06.26-15.52.43:550][448]LogUObjectHash: Compacting FUObjectHashTables data took   4.18ms
+[2020.06.26-15.52.43:554][448]LogEditorActor: Deleted 1 Actors (0.169 secs)
+[2020.06.26-15.52.44:032][470]LogUObjectHash: Compacting FUObjectHashTables data took   4.50ms
+[2020.06.26-15.52.46:539][470]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.26-15.52.47:434][560]Cmd: TRANSACTION UNDO
+[2020.06.26-15.52.47:483][560]LogEditorTransaction: Undo Delete Actors
+[2020.06.26-15.52.47:649][560]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.52.48:529][602]Cmd: TRANSACTION UNDO
+[2020.06.26-15.52.48:529][602]LogEditorTransaction: Undo Create Actors
+[2020.06.26-15.52.48:667][602]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.52.49:124][628]Cmd: TRANSACTION UNDO
+[2020.06.26-15.52.49:124][628]LogEditorTransaction: Undo Clicking on Actors
+[2020.06.26-15.52.49:244][628]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.52.52:523][792]LogUObjectHash: Compacting FUObjectHashTables data took   1.40ms
+[2020.06.26-15.52.54:196][792]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.26-15.52.54:485][792]LogUObjectHash: Compacting FUObjectHashTables data took   4.41ms
+[2020.06.26-15.53.23:196][607]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor2)
+[2020.06.26-15.53.28:116][  9]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2020.06.26-15.54.29:682][335]Cmd: TRANSACTION UNDO
+[2020.06.26-15.54.29:682][335]LogEditorTransaction: Undo Select Brush Surface
+[2020.06.26-15.54.29:817][335]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.54.31:078][398]Cmd: TRANSACTION UNDO
+[2020.06.26-15.54.31:078][398]LogEditorTransaction: Undo Create Actors
+[2020.06.26-15.54.31:227][398]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.54.33:796][527]Cmd: TRANSACTION UNDO
+[2020.06.26-15.54.33:796][527]LogEditorTransaction: Undo Create Actors
+[2020.06.26-15.54.33:817][527]LogPhysics: Warning: UBodySetup::GetCookInfo: Triangle data from '/Game/Level/Gulag.Gulag:PersistentLevel.ModelComponent_9' invalid (942 verts, 0 indices).
+[2020.06.26-15.54.33:817][527]LogPhysics: Warning: Attempt to build physics data for /Game/Level/Gulag.Gulag:PersistentLevel.ModelComponent_9.BodySetup_0 when we are unable to.
+[2020.06.26-15.54.33:939][527]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.54.46:601][693]LogEditorViewport: Clicking on Actor (LMB): Brush (Linear Stair Brush2)
+[2020.06.26-15.58.15:729][945]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor5)
+[2020.06.26-15.58.16:666][ 36]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Floor4)
+[2020.06.26-15.58.17:336][ 98]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Floor2)
+[2020.06.26-15.58.34:286][443]Cmd: TRANSACTION UNDO
+[2020.06.26-15.58.34:286][443]LogEditorTransaction: Undo Create Actors
+[2020.06.26-15.58.34:294][443]LogPhysics: Warning: UBodySetup::GetCookInfo: Triangle data from '/Game/Level/Gulag.Gulag:PersistentLevel.ModelComponent_12' invalid (812 verts, 0 indices).
+[2020.06.26-15.58.34:294][443]LogPhysics: Warning: Attempt to build physics data for /Game/Level/Gulag.Gulag:PersistentLevel.ModelComponent_12.BodySetup_0 when we are unable to.
+[2020.06.26-15.58.34:421][443]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.58.34:527][446]Cmd: TRANSACTION UNDO
+[2020.06.26-15.58.34:527][446]LogEditorTransaction: Undo Create Actors
+[2020.06.26-15.58.34:638][446]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.58.35:049][467]Cmd: TRANSACTION UNDO
+[2020.06.26-15.58.35:049][467]LogEditorTransaction: Undo Create Actors
+[2020.06.26-15.58.35:186][467]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.58.35:340][478]Cmd: TRANSACTION UNDO
+[2020.06.26-15.58.35:340][478]LogEditorTransaction: Undo Create Actors
+[2020.06.26-15.58.35:467][478]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.58.35:739][496]Cmd: TRANSACTION UNDO
+[2020.06.26-15.58.35:739][496]LogEditorTransaction: Undo Move Actors
+[2020.06.26-15.58.35:877][496]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.58.36:466][532]Cmd: TRANSACTION UNDO
+[2020.06.26-15.58.36:466][532]LogEditorTransaction: Undo Clicking on Actors
+[2020.06.26-15.58.36:609][532]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.58.37:497][579]Cmd: TRANSACTION UNDO
+[2020.06.26-15.58.37:497][579]LogEditorTransaction: Undo Clicking on Actors
+[2020.06.26-15.58.37:672][579]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.58.37:893][588]Cmd: TRANSACTION UNDO
+[2020.06.26-15.58.37:894][588]LogEditorTransaction: Undo Create Actors
+[2020.06.26-15.58.38:068][588]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-15.59.12:938][ 36]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor2)
+[2020.06.26-16.00.34:152][134]Cmd: TRANSACTION UNDO
+[2020.06.26-16.00.34:152][134]LogEditorTransaction: Undo Create Actors
+[2020.06.26-16.00.34:155][134]LogPhysics: Warning: UBodySetup::GetCookInfo: Triangle data from '/Game/Level/Gulag.Gulag:PersistentLevel.ModelComponent_14' invalid (812 verts, 0 indices).
+[2020.06.26-16.00.34:155][134]LogPhysics: Warning: Attempt to build physics data for /Game/Level/Gulag.Gulag:PersistentLevel.ModelComponent_14.BodySetup_0 when we are unable to.
+[2020.06.26-16.00.34:298][134]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-16.00.36:820][273]Cmd: TRANSACTION UNDO
+[2020.06.26-16.00.36:820][273]LogEditorTransaction: Undo Create Actors
+[2020.06.26-16.00.36:998][273]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-16.00.37:170][281]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Floor2)
+[2020.06.26-16.00.37:318][289]Cmd: TRANSACTION UNDO
+[2020.06.26-16.00.37:318][289]LogEditorTransaction: Undo Clicking on Actors
+[2020.06.26-16.00.37:453][289]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.06.26-16.00.37:456][289]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Floor2)
+[2020.06.26-16.01.01:226][100]LogUObjectHash: Compacting FUObjectHashTables data took   4.87ms
+[2020.06.26-16.01.01:299][100]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Level/Gulag" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.06.26-16.01.01:585][100]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2020.06.26-16.01.01:713][100]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Gulag070A21A34A7FCD9125CA5E9C9EC0B0F1.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag.umap'
+[2020.06.26-16.01.01:777][100]LogFileHelpers: Saving map 'Gulag' took 0.480
+[2020.06.26-16.01.01:778][100]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Level/Gulag_BuiltData" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag_BuiltData.uasset" SILENT=true
+[2020.06.26-16.01.02:284][100]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Gulag_BuiltData445E25574EB3BA3A3ED52FBEDFFCFA66.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag_BuiltData.uasset'
+[2020.06.26-16.01.02:323][100]AssetCheck: New page: Asset Save: multiple assets
+[2020.06.26-16.01.02:323][100]LogContentValidation: Display: Validating World /Game/Level/Gulag.Gulag
+[2020.06.26-16.01.02:323][100]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Level/Gulag_BuiltData.Gulag_BuiltData
