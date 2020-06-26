@@ -57,7 +57,7 @@ void ASCharacter::BeginPlay()
 		// spawn default weapon
 		FActorSpawnParameters SpawnParams;
 		SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-
+		
 		// Runs both on client and server
 		CurrentWeapon = GetWorld()->SpawnActor<ASWeapon>(StarterWeaponClass, FVector::ZeroVector, FRotator::ZeroRotator, SpawnParams);
 		if (CurrentWeapon)
@@ -115,13 +115,14 @@ void ASCharacter::OnHealthChanged(USHealthComponent* HealthComp, float Health, f
 	{
 		// Die
 		bDied = true;
+
 		GetMovementComponent()->StopMovementImmediately();
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+		DetachFromControllerPendingDestroy();
+
+		SetLifeSpan(1.0f);
 	}
-
-	DetachFromControllerPendingDestroy();
-
-	SetLifeSpan(1.0f);
 }
 
 // Called every frame
@@ -175,4 +176,5 @@ void ASCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ASCharacter, CurrentWeapon); // replicate to any client connected to us
+	DOREPLIFETIME(ASCharacter, bDied);
 }

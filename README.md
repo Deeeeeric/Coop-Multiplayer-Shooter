@@ -30,7 +30,8 @@
 * Add Death Animation
 * Gears of War Style Health Indicator
 
-# Multiplayer
+# Multiplayer - Game Networking
 * Replicate Weapon Code pt.1
 * Replicate Weapon Code pt.2
 * Replicate Weapon Code pt.3
+* Replicate Health and Death
