@@ -35,3 +35,6 @@
 * Replicate Weapon Code pt.2
 * Replicate Weapon Code pt.3
 * Replicate Health and Death
+
+# AI Spawning Basics
+* Setup AI Pawn and Navigation Mesh
