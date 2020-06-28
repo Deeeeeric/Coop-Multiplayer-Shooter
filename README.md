@@ -38,3 +38,4 @@
 
 # AI Spawning Basics
 * Setup AI Pawn and Navigation Mesh
+* Add Move-to Logic
