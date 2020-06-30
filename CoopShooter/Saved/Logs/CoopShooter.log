@@ -6526,3 +6526,906 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.06.30-14.10.23:159][443]AssetCheck: New page: Asset Save: multiple assets
 [2020.06.30-14.10.23:159][443]LogContentValidation: Display: Validating World /Game/Level/Gulag.Gulag
 [2020.06.30-14.10.23:159][443]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Level/Gulag_BuiltData.Gulag_BuiltData
+[2020.06.30-14.33.05:278][536]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.30-14.35.25:802][956]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.30-14.35.43:539][  9]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.30-14.40.36:418][945]Candidate modules for hot reload:
+[2020.06.30-14.40.36:418][945]  CoopShooter
+[2020.06.30-14.40.36:418][945]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=CoopShooter,2331 CoopShooterEditor Win64 Development -Project="D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject" "D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject"  -IgnoreJunk]
+[2020.06.30-14.40.36:420][945]Warning: Starting HotReload took  0.1s.
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog: New page: Compilation - 30 Jun 2020, 16:41:10
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog: Parsing headers for CoopShooterEditor
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog:   Running UnrealHeaderTool "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\CoopShooterEditor\Development\CoopShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\DW\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog: Reflection code generated for CoopShooterEditor in 14.8242079 seconds
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog: Building CoopShooterEditor...
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog: Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog: Distributing 6 actions to XGE
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog: License is invalid:
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog:     This build will run in standalone mode.
+[2020.06.30-14.41.10:937][ 92]CompilerResultsLog: 
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: -------------------------------------------------------------------------------
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: STrackerBot.gen.cpp (0:03.73 at +0:00)
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: CoopShooter.init.gen.cpp (0:00.82 at +0:03)
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: STrackerBot.cpp (0:13.14 at +0:04)
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: Error: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\STrackerBot.cpp(43) : error C2039: 'HandleTakedamage': is not a member of 'ASTrackerBot'
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\STrackerBot.h(13): note: see declaration of 'ASTrackerBot'
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: Error: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\STrackerBot.cpp(48) : error C3861: 'GetName': identifier not found
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: 
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: Error executing D:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\cl-filter\cl-filter.exe (tool returned code: 2)
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: ---------------------- Done ----------------------
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: 
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog:     Rebuild All: 0 succeeded, 1 failed, 0 skipped
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: 
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: 1 build system warning(s):
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog:    - License is invalid
+[2020.06.30-14.41.10:938][ 92]CompilerResultsLog: 
+[2020.06.30-14.41.10:938][ 92]LogMainFrame: MainFrame: Module compiling took 34.534 seconds
+[2020.06.30-14.41.10:938][ 92]Warning: HotReload failed, recompile failed
+[2020.06.30-14.41.31:236][325]Candidate modules for hot reload:
+[2020.06.30-14.41.31:236][325]  CoopShooter
+[2020.06.30-14.41.31:236][325]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=CoopShooter,8907 CoopShooterEditor Win64 Development -Project="D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject" "D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject"  -IgnoreJunk]
+[2020.06.30-14.41.31:238][325]Warning: Starting HotReload took  0.0s.
+[2020.06.30-14.41.33:577][390]LogSlate: Window 'Message Log' being destroyed
+[2020.06.30-14.41.33:619][390]LogSlate: Window 'Message Log' being destroyed
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: New page: Compilation - 30 Jun 2020, 16:41:39
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: Building CoopShooterEditor...
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: Distributing 4 actions to XGE
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: License is invalid:
+[2020.06.30-14.41.39:428][448]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2020.06.30-14.41.39:428][448]CompilerResultsLog:     This build will run in standalone mode.
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: 
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: -------------------------------------------------------------------------------
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: STrackerBot.cpp (0:06.39 at +0:00)
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: Error: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\STrackerBot.cpp(43) : error C4458: declaration of 'HealthComp' hides class member
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\STrackerBot.h(33): note: see declaration of 'ASTrackerBot::HealthComp'
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: 
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: Error executing D:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\cl-filter\cl-filter.exe (tool returned code: 2)
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: ---------------------- Done ----------------------
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: 
+[2020.06.30-14.41.39:428][448]CompilerResultsLog:     Rebuild All: 0 succeeded, 1 failed, 0 skipped
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: 
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: 1 build system warning(s):
+[2020.06.30-14.41.39:428][448]CompilerResultsLog:    - License is invalid
+[2020.06.30-14.41.39:428][448]CompilerResultsLog: 
+[2020.06.30-14.41.39:428][448]LogMainFrame: MainFrame: Module compiling took 8.216 seconds
+[2020.06.30-14.41.39:428][448]Warning: HotReload failed, recompile failed
+[2020.06.30-14.42.07:313][713]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.30-14.42.20:263][792]Candidate modules for hot reload:
+[2020.06.30-14.42.20:263][792]  CoopShooter
+[2020.06.30-14.42.20:263][792]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=CoopShooter,2581 CoopShooterEditor Win64 Development -Project="D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject" "D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject"  -IgnoreJunk]
+[2020.06.30-14.42.20:266][792]Warning: Starting HotReload took  0.0s.
+[2020.06.30-14.42.21:343][827]LogSlate: Window 'Message Log' being destroyed
+[2020.06.30-14.42.21:375][827]LogSlate: Window 'Message Log' being destroyed
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: New page: Compilation - 30 Jun 2020, 16:42:46
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: Parsing headers for CoopShooterEditor
+[2020.06.30-14.42.46:617][967]CompilerResultsLog:   Running UnrealHeaderTool "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\CoopShooterEditor\Development\CoopShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\DW\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: Reflection code generated for CoopShooterEditor in 8.6971139 seconds
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: Building CoopShooterEditor...
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: Distributing 6 actions to XGE
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: License is invalid:
+[2020.06.30-14.42.46:617][967]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2020.06.30-14.42.46:617][967]CompilerResultsLog:     This build will run in standalone mode.
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: 
+[2020.06.30-14.42.46:617][967]CompilerResultsLog: -------------------------------------------------------------------------------
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: STrackerBot.gen.cpp (0:00.92 at +0:00)
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: CoopShooter.init.gen.cpp (0:00.67 at +0:00)
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: STrackerBot.cpp (0:12.43 at +0:01)
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: UE4Editor-CoopShooter-2581.dll (0:01.12 at +0:14)
+[2020.06.30-14.42.46:618][967]CompilerResultsLog:    Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-2581.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-2581.suppressed.exp
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: UE4Editor-CoopShooter-2581.lib (0:00.20 at +0:15)
+[2020.06.30-14.42.46:618][967]CompilerResultsLog:    Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-2581.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-2581.exp
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: CoopShooterEditor.target (0:00.51 at +0:15)
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: ---------------------- Done ----------------------
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: 
+[2020.06.30-14.42.46:618][967]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: 
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: 1 build system warning(s):
+[2020.06.30-14.42.46:618][967]CompilerResultsLog:    - License is invalid
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: 
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: Total time in XGE executor: 16.19 seconds
+[2020.06.30-14.42.46:618][967]CompilerResultsLog: Total execution time: 26.15 seconds
+[2020.06.30-14.42.46:618][967]LogMainFrame: MainFrame: Module compiling took 26.369 seconds
+[2020.06.30-14.42.48:895][967]LogClass: Could not find existing class STrackerBot in package /Script/CoopShooter for HotReload, assuming new class
+[2020.06.30-14.42.48:896][967]LogClass: HitScanTrace HotReload.
+[2020.06.30-14.42.48:955][967]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2020.06.30-14.42.51:382][967]LogStats: FPlatformStackWalk::StackWalkAndDump -  2.428 s
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: === Handled ensure: ===
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: 
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: Ensure condition failed: this->IsBound() [File:D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Delegates/DelegateSignatureImpl.inl] [Line: 1132]
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: Unable to bind delegate to 'HandleTakeDamage' (function might not be marked as a UFUNCTION or object may be pending kill)
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: Stack: 
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffdc5730588 UE4Editor-CoopShooter-2581.dll!DispatchCheckVerify<bool,<lambda_d89397bd78b3c8d03dc84fa74969e6d8> >() [D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffdc57249be UE4Editor-CoopShooter-2581.dll!ASTrackerBot::ASTrackerBot() [D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\STrackerBot.cpp:26]
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd878ac223 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd87b58461 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd87b35bcf UE4Editor-CoreUObject.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd87a543b5 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd8816987a UE4Editor-Core.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd88189a00 UE4Editor-Core.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd88188b18 UE4Editor-Core.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd5ad2b9b2 UE4Editor-HotReload.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd5ad29617 UE4Editor-HotReload.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd5ad2a1ad UE4Editor-HotReload.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd5ad3c057 UE4Editor-HotReload.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffd87eed0a9 UE4Editor-Core.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ff70a22a213 UE4Editor.exe!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ff70a23ba7c UE4Editor.exe!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ff70a23bb5a UE4Editor.exe!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ff70a24e31d UE4Editor.exe!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ff70a25145a UE4Editor.exe!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffddd4b7bd4 KERNEL32.DLL!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: [Callstack] 0x00007ffddf38ce51 ntdll.dll!UnknownFunction []
+[2020.06.30-14.42.51:389][967]LogOutputDevice: Error: 
+[2020.06.30-14.42.51:435][967]LogStats:                SubmitErrorReport -  0.000 s
+[2020.06.30-14.43.03:010][967]LogStats:                    SendNewReport - 11.574 s
+[2020.06.30-14.43.03:010][967]LogStats:             FDebug::EnsureFailed - 14.055 s
+[2020.06.30-14.43.03:029][967]LogHotReload: Re-instancing STrackerBot after hot-reload.
+[2020.06.30-14.43.03:215][967]LogContentBrowser: Native class hierarchy updated for 'CoopShooter' in 0.0012 seconds. Added 6 classes and 3 folders.
+[2020.06.30-14.43.03:221][967]Display: HotReload successful (5 functions remapped  1 scriptstructs remapped)
+[2020.06.30-14.43.03:383][967]LogContentBrowser: Native class hierarchy populated in 0.0158 seconds. Added 3433 classes and 824 folders.
+[2020.06.30-14.43.03:383][967]Display: HotReload took 43.2s.
+[2020.06.30-14.44.21:391][419]BlueprintLog: New page: Compile TrackerBot_BP
+[2020.06.30-14.44.21:527][419]LogUObjectHash: Compacting FUObjectHashTables data took   5.61ms
+[2020.06.30-14.44.22:146][450]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/TrackerBot_BP" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/TrackerBot_BP.uasset" SILENT=true
+[2020.06.30-14.44.22:193][450]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/TrackerBot_BP58A6EB984B7EDC80048CBE990FB45F9C.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/TrackerBot_BP.uasset'
+[2020.06.30-14.44.22:218][450]AssetCheck: New page: Asset Save: TrackerBot_BP
+[2020.06.30-14.44.22:218][450]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/TrackerBot_BP.TrackerBot_BP
+[2020.06.30-14.44.58:415][480]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/PlayerPawn_BP.PlayerPawn_BP
+[2020.06.30-14.45.17:185][555]LogEditorTransaction: Undo Align Center
+[2020.06.30-14.45.59:614][212]BlueprintLog: New page: Compile PlayerPawn_BP
+[2020.06.30-14.45.59:741][212]LogUObjectHash: Compacting FUObjectHashTables data took   4.28ms
+[2020.06.30-14.46.00:524][253]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PlayerPawn_BP" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/PlayerPawn_BP.uasset" SILENT=true
+[2020.06.30-14.46.00:631][253]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/PlayerPawn_BPAFEBC6364F5D193F54FCA8BF0AD1AB56.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/PlayerPawn_BP.uasset'
+[2020.06.30-14.46.00:655][253]AssetCheck: New page: Asset Save: PlayerPawn_BP
+[2020.06.30-14.46.00:655][253]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/PlayerPawn_BP.PlayerPawn_BP
+[2020.06.30-14.46.18:545][485]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.30-14.46.18:572][485]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.30-14.46.18:572][485]PIE: New page: PIE session: Gulag (30 Jun 2020, 16:46:18)
+[2020.06.30-14.46.18:572][485]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.46.18:590][485]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017767s)
+[2020.06.30-14.46.18:592][485]LogAIModule: Creating AISystem for world Gulag
+[2020.06.30-14.46.18:592][485]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025807F76800), frame # 23485
+[2020.06.30-14.46.18:592][485]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000258139A91C0), frame # 23485
+[2020.06.30-14.46.18:592][485]LogPlayLevel: PIE: World Init took: (0.001633s)
+[2020.06.30-14.46.18:592][485]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.019570s)
+[2020.06.30-14.46.18:623][485]LogUObjectHash: Compacting FUObjectHashTables data took   3.34ms
+[2020.06.30-14.46.18:624][485]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.30-14.46.18:624][485]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.30-14.46.18:624][485]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.30-14.46.18:624][485]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.30-14.46.18:625][485]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.30-14.46.18:625][485]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.30-14.46.18:625][485]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.30-14.46.18:625][485]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.30-14.46.18:625][485]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.30-14.46.18:625][485]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.30-14.46.18:631][485]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.30-14.46.18:632][485]LogAudioMixer: Display: 1: FrontRight
+[2020.06.30-14.46.18:658][485]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.30-14.46.18:659][485]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.30-14.46.18:659][485]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.30-14.46.18:659][485]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.30-14.46.18:659][485]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.30-14.46.18:677][485]LogInit: FAudioDevice initialized.
+[2020.06.30-14.46.18:697][485]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.06.30-14.46.18:699][485]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.30-15.46.18
+[2020.06.30-14.46.18:700][485]LogWorld: Bringing up level for play took: 0.001895
+[2020.06.30-14.46.18:700][485]LogOnline: OSS: Creating online subsystem instance for: :Context_18
+[2020.06.30-14.46.18:703][485]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.06.30-14.46.18:703][485]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.06.30-14.46.18:704][485]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.06.30-14.46.18:704][485]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.06.30-14.46.18:704][485]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.06.30-14.46.18:704][485]LogNet: GameNetDriver IpNetDriver_7 IpNetDriver listening on port 17777
+[2020.06.30-14.46.18:705][485]PIE: Server logged in
+[2020.06.30-14.46.18:706][485]PIE: Play in editor total start time 0.142 seconds.
+[2020.06.30-14.46.23:761][784]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.06.30-14.46.23:761][784]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.46.23:761][784]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.46.23:762][784]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.30-14.46.23:762][784]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.46.23:770][784]LogNet: World NetDriver shutdown IpNetDriver_7 [GameNetDriver]
+[2020.06.30-14.46.23:770][784]LogNet: DestroyNamedNetDriver IpNetDriver_7 [GameNetDriver]
+[2020.06.30-14.46.23:770][784]LogExit: GameNetDriver IpNetDriver_7 shut down
+[2020.06.30-14.46.23:771][784]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.30-14.46.23:776][784]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.46.23:825][784]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.46.23:826][784]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000258139A91C0), frame # 23784
+[2020.06.30-14.46.23:826][784]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025807F76800), frame # 23784
+[2020.06.30-14.46.23:829][784]LogUObjectHash: Compacting FUObjectHashTables data took   2.56ms
+[2020.06.30-14.46.23:875][785]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2020.06.30-14.46.26:202][920]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.30-14.46.26:221][920]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.30-14.46.26:221][920]PIE: New page: PIE session: Gulag (30 Jun 2020, 16:46:26)
+[2020.06.30-14.46.26:221][920]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.46.26:230][920]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008786s)
+[2020.06.30-14.46.26:232][920]LogAIModule: Creating AISystem for world Gulag
+[2020.06.30-14.46.26:232][920]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025808AC7400), frame # 23920
+[2020.06.30-14.46.26:232][920]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002580EDC8400), frame # 23920
+[2020.06.30-14.46.26:232][920]LogPlayLevel: PIE: World Init took: (0.001787s)
+[2020.06.30-14.46.26:232][920]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.010745s)
+[2020.06.30-14.46.26:263][920]LogUObjectHash: Compacting FUObjectHashTables data took   3.32ms
+[2020.06.30-14.46.26:264][920]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.30-14.46.26:264][920]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.30-14.46.26:264][920]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.30-14.46.26:264][920]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.30-14.46.26:264][920]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.30-14.46.26:264][920]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.30-14.46.26:264][920]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.30-14.46.26:264][920]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.30-14.46.26:264][920]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.30-14.46.26:264][920]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.30-14.46.26:269][920]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.30-14.46.26:269][920]LogAudioMixer: Display: 1: FrontRight
+[2020.06.30-14.46.26:292][920]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.30-14.46.26:293][920]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.30-14.46.26:293][920]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.30-14.46.26:293][920]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.30-14.46.26:293][920]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.30-14.46.26:313][920]LogInit: FAudioDevice initialized.
+[2020.06.30-14.46.26:325][920]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.06.30-14.46.26:328][920]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.30-15.46.26
+[2020.06.30-14.46.26:329][920]LogWorld: Bringing up level for play took: 0.002194
+[2020.06.30-14.46.26:329][920]LogOnline: OSS: Creating online subsystem instance for: :Context_19
+[2020.06.30-14.46.26:333][920]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.06.30-14.46.26:333][920]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.06.30-14.46.26:333][920]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.06.30-14.46.26:333][920]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.06.30-14.46.26:333][920]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.06.30-14.46.26:333][920]LogNet: GameNetDriver IpNetDriver_8 IpNetDriver listening on port 17777
+[2020.06.30-14.46.26:335][920]PIE: Server logged in
+[2020.06.30-14.46.26:338][920]PIE: Play in editor total start time 0.119 seconds.
+[2020.06.30-14.46.30:210][151]LogTemp: Warning: Health Changed: 66.669998
+[2020.06.30-14.46.34:528][410]LogTemp: Warning: Health Changed: 33.339996
+[2020.06.30-14.46.38:637][656]LogTemp: Warning: Health Changed: 0.009995
+[2020.06.30-14.46.40:988][797]LogTemp: Warning: Health Changed: 0.0
+[2020.06.30-14.46.42:171][868]LogTemp: Warning: Health Changed: 0.0
+[2020.06.30-14.46.42:721][901]LogTemp: Warning: Health Changed: 0.0
+[2020.06.30-14.46.43:089][923]LogTemp: Warning: Health Changed: 0.0
+[2020.06.30-14.46.43:981][975]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.06.30-14.46.43:981][975]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.46.43:981][975]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.46.43:981][975]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.30-14.46.43:982][975]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.46.43:992][975]LogNet: World NetDriver shutdown IpNetDriver_8 [GameNetDriver]
+[2020.06.30-14.46.43:992][975]LogNet: DestroyNamedNetDriver IpNetDriver_8 [GameNetDriver]
+[2020.06.30-14.46.43:993][975]LogExit: GameNetDriver IpNetDriver_8 shut down
+[2020.06.30-14.46.43:993][975]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.30-14.46.43:998][975]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.46.44:027][975]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.46.44:051][975]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002580EDC8400), frame # 24975
+[2020.06.30-14.46.44:051][975]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025808AC7400), frame # 24975
+[2020.06.30-14.46.44:054][975]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
+[2020.06.30-14.46.44:098][976]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2020.06.30-14.47.02:738][ 81]BlueprintLog: New page: Compile TrackerBot_BP
+[2020.06.30-14.47.02:784][ 81]LogUObjectHash: Compacting FUObjectHashTables data took   2.63ms
+[2020.06.30-14.47.03:482][119]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/TrackerBot_BP" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/TrackerBot_BP.uasset" SILENT=true
+[2020.06.30-14.47.03:500][119]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/TrackerBot_BPB8B9D3294581353C22F874A606D54C2F.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/TrackerBot_BP.uasset'
+[2020.06.30-14.47.03:518][119]AssetCheck: New page: Asset Save: TrackerBot_BP
+[2020.06.30-14.47.03:518][119]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/TrackerBot_BP.TrackerBot_BP
+[2020.06.30-14.47.05:319][227]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.30-14.47.05:339][227]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.30-14.47.05:339][227]PIE: New page: PIE session: Gulag (30 Jun 2020, 16:47:05)
+[2020.06.30-14.47.05:339][227]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.47.05:349][227]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009845s)
+[2020.06.30-14.47.05:350][227]LogAIModule: Creating AISystem for world Gulag
+[2020.06.30-14.47.05:352][227]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000258098AB400), frame # 26227
+[2020.06.30-14.47.05:355][227]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025857FEB380), frame # 26227
+[2020.06.30-14.47.05:355][227]LogPlayLevel: PIE: World Init took: (0.005308s)
+[2020.06.30-14.47.05:355][227]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.015301s)
+[2020.06.30-14.47.05:389][227]LogUObjectHash: Compacting FUObjectHashTables data took   3.76ms
+[2020.06.30-14.47.05:390][227]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.30-14.47.05:390][227]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.30-14.47.05:390][227]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.30-14.47.05:390][227]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.30-14.47.05:390][227]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.30-14.47.05:390][227]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.30-14.47.05:390][227]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.30-14.47.05:390][227]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.30-14.47.05:391][227]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.30-14.47.05:391][227]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.30-14.47.05:396][227]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.30-14.47.05:396][227]LogAudioMixer: Display: 1: FrontRight
+[2020.06.30-14.47.05:418][227]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.30-14.47.05:419][227]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.30-14.47.05:419][227]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.30-14.47.05:419][227]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.30-14.47.05:419][227]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.30-14.47.05:436][227]LogInit: FAudioDevice initialized.
+[2020.06.30-14.47.05:454][227]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.06.30-14.47.05:456][227]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.30-15.47.05
+[2020.06.30-14.47.05:457][227]LogWorld: Bringing up level for play took: 0.001900
+[2020.06.30-14.47.05:457][227]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2020.06.30-14.47.05:460][227]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.06.30-14.47.05:460][227]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.06.30-14.47.05:461][227]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.06.30-14.47.05:461][227]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.06.30-14.47.05:461][227]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.06.30-14.47.05:461][227]LogNet: GameNetDriver IpNetDriver_9 IpNetDriver listening on port 17777
+[2020.06.30-14.47.05:462][227]PIE: Server logged in
+[2020.06.30-14.47.05:464][227]PIE: Play in editor total start time 0.128 seconds.
+[2020.06.30-14.47.07:121][325]LogTemp: Warning: Health Changed: 65.669998
+[2020.06.30-14.47.11:184][567]LogTemp: Warning: Health Changed: 32.339996
+[2020.06.30-14.47.12:483][645]LogTemp: Warning: Health Changed: 0.0
+[2020.06.30-14.47.14:910][785]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.06.30-14.47.14:910][785]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.47.14:910][785]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.47.14:910][785]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.30-14.47.14:911][785]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.47.14:918][785]LogNet: World NetDriver shutdown IpNetDriver_9 [GameNetDriver]
+[2020.06.30-14.47.14:918][785]LogNet: DestroyNamedNetDriver IpNetDriver_9 [GameNetDriver]
+[2020.06.30-14.47.14:918][785]LogExit: GameNetDriver IpNetDriver_9 shut down
+[2020.06.30-14.47.14:919][785]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.30-14.47.14:923][785]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.47.14:949][785]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.47.14:972][785]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025857FEB380), frame # 26785
+[2020.06.30-14.47.14:972][785]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000258098AB400), frame # 26785
+[2020.06.30-14.47.14:974][785]LogUObjectHash: Compacting FUObjectHashTables data took   2.44ms
+[2020.06.30-14.47.15:019][786]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2020.06.30-14.47.43:354][900]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.30-14.48.25:900][ 78]Candidate modules for hot reload:
+[2020.06.30-14.48.25:900][ 78]  CoopShooter
+[2020.06.30-14.48.25:900][ 78]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=CoopShooter,3947 CoopShooterEditor Win64 Development -Project="D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject" "D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject"  -IgnoreJunk]
+[2020.06.30-14.48.25:902][ 78]Warning: Starting HotReload took  0.1s.
+[2020.06.30-14.48.58:394][208]CompilerResultsLog: New page: Compilation - 30 Jun 2020, 16:48:58
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: Parsing headers for CoopShooterEditor
+[2020.06.30-14.48.58:395][208]CompilerResultsLog:   Running UnrealHeaderTool "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\CoopShooterEditor\Development\CoopShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\DW\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: Reflection code generated for CoopShooterEditor in 9.6526019 seconds
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: Building CoopShooterEditor...
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: Distributing 6 actions to XGE
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: License is invalid:
+[2020.06.30-14.48.58:395][208]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2020.06.30-14.48.58:395][208]CompilerResultsLog:     This build will run in standalone mode.
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: 
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: -------------------------------------------------------------------------------
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: STrackerBot.gen.cpp (0:01.73 at +0:00)
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: CoopShooter.init.gen.cpp (0:00.75 at +0:01)
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: STrackerBot.cpp (0:16.28 at +0:02)
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: UE4Editor-CoopShooter-3947.dll (0:01.21 at +0:18)
+[2020.06.30-14.48.58:395][208]CompilerResultsLog:    Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-3947.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-3947.suppressed.exp
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: UE4Editor-CoopShooter-3947.lib (0:00.32 at +0:20)
+[2020.06.30-14.48.58:395][208]CompilerResultsLog:    Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-3947.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-3947.exp
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: CoopShooterEditor.target (0:00.35 at +0:20)
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: ---------------------- Done ----------------------
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: 
+[2020.06.30-14.48.58:395][208]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: 
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: 1 build system warning(s):
+[2020.06.30-14.48.58:395][208]CompilerResultsLog:    - License is invalid
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: 
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: Total time in XGE executor: 20.96 seconds
+[2020.06.30-14.48.58:395][208]CompilerResultsLog: Total execution time: 32.05 seconds
+[2020.06.30-14.48.58:395][208]LogMainFrame: MainFrame: Module compiling took 32.509 seconds
+[2020.06.30-14.49.00:605][208]LogClass: Could not find existing class STrackerBot in package /Script/CoopShooter for HotReload, assuming new class
+[2020.06.30-14.49.00:605][208]LogClass: Function HandleTakeDamage is new.
+[2020.06.30-14.49.00:605][208]LogClass: HitScanTrace HotReload.
+[2020.06.30-14.49.00:618][208]LogHotReload: Re-instancing STrackerBot after hot-reload.
+[2020.06.30-14.49.00:671][208]LogContentBrowser: Native class hierarchy updated for 'CoopShooter' in 0.0009 seconds. Added 6 classes and 3 folders.
+[2020.06.30-14.49.00:676][208]Display: HotReload successful (5 functions remapped  1 scriptstructs remapped)
+[2020.06.30-14.49.00:789][208]LogContentBrowser: Native class hierarchy populated in 0.0108 seconds. Added 3433 classes and 824 folders.
+[2020.06.30-14.49.00:790][208]Display: HotReload took 35.0s.
+[2020.06.30-14.50.00:655][895]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.30-14.50.08:006][917]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.06.30-14.50.13:756][975]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2020.06.30-14.50.14:798][ 26]Candidate modules for hot reload:
+[2020.06.30-14.50.14:798][ 26]  CoopShooter
+[2020.06.30-14.50.14:798][ 26]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=CoopShooter,2942 CoopShooterEditor Win64 Development -Project="D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject" "D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject"  -IgnoreJunk]
+[2020.06.30-14.50.14:800][ 26]Warning: Starting HotReload took  0.0s.
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: New page: Compilation - 30 Jun 2020, 16:50:22
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: Building CoopShooterEditor...
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: Distributing 4 actions to XGE
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: License is invalid:
+[2020.06.30-14.50.22:856][483]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2020.06.30-14.50.22:856][483]CompilerResultsLog:     This build will run in standalone mode.
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: 
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: -------------------------------------------------------------------------------
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: SHealthComponent.cpp (0:05.07 at +0:00)
+[2020.06.30-14.50.22:856][483]CompilerResultsLog: UE4Editor-CoopShooter-2942.dll (0:00.81 at +0:05)
+[2020.06.30-14.50.22:856][483]CompilerResultsLog:    Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-2942.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-2942.suppressed.exp
+[2020.06.30-14.50.22:857][483]CompilerResultsLog: UE4Editor-CoopShooter-2942.lib (0:00.25 at +0:05)
+[2020.06.30-14.50.22:857][483]CompilerResultsLog:    Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-2942.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-2942.exp
+[2020.06.30-14.50.22:857][483]CompilerResultsLog: CoopShooterEditor.target (0:00.35 at +0:06)
+[2020.06.30-14.50.22:857][483]CompilerResultsLog: ---------------------- Done ----------------------
+[2020.06.30-14.50.22:857][483]CompilerResultsLog: 
+[2020.06.30-14.50.22:857][483]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2020.06.30-14.50.22:857][483]CompilerResultsLog: 
+[2020.06.30-14.50.22:857][483]CompilerResultsLog: 1 build system warning(s):
+[2020.06.30-14.50.22:857][483]CompilerResultsLog:    - License is invalid
+[2020.06.30-14.50.22:857][483]CompilerResultsLog: 
+[2020.06.30-14.50.22:857][483]CompilerResultsLog: Total time in XGE executor: 6.73 seconds
+[2020.06.30-14.50.22:857][483]CompilerResultsLog: Total execution time: 7.95 seconds
+[2020.06.30-14.50.22:857][483]LogMainFrame: MainFrame: Module compiling took 8.072 seconds
+[2020.06.30-14.50.23:121][483]LogClass: HitScanTrace HotReload.
+[2020.06.30-14.50.23:131][483]LogContentBrowser: Native class hierarchy updated for 'CoopShooter' in 0.0006 seconds. Added 6 classes and 3 folders.
+[2020.06.30-14.50.23:136][483]Display: HotReload successful (6 functions remapped  1 scriptstructs remapped)
+[2020.06.30-14.50.23:275][483]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 3433 classes and 824 folders.
+[2020.06.30-14.50.23:275][483]Display: HotReload took  8.5s.
+[2020.06.30-14.50.25:714][586]Candidate modules for hot reload:
+[2020.06.30-14.50.25:715][586]  CoopShooter
+[2020.06.30-14.50.25:715][586]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=CoopShooter,5570 CoopShooterEditor Win64 Development -Project="D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject" "D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject"  -IgnoreJunk]
+[2020.06.30-14.50.25:716][586]Warning: Starting HotReload took  0.0s.
+[2020.06.30-14.50.27:897][665]CompilerResultsLog: New page: Compilation - 30 Jun 2020, 16:50:27
+[2020.06.30-14.50.27:897][665]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+[2020.06.30-14.50.27:897][665]CompilerResultsLog: Building CoopShooterEditor...
+[2020.06.30-14.50.27:897][665]CompilerResultsLog: Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.06.30-14.50.27:897][665]CompilerResultsLog: Distributing 3 actions to XGE
+[2020.06.30-14.50.27:897][665]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2020.06.30-14.50.27:897][665]CompilerResultsLog: License is invalid:
+[2020.06.30-14.50.27:897][665]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2020.06.30-14.50.27:897][665]CompilerResultsLog:     This build will run in standalone mode.
+[2020.06.30-14.50.27:897][665]CompilerResultsLog: 
+[2020.06.30-14.50.27:897][665]CompilerResultsLog: -------------------------------------------------------------------------------
+[2020.06.30-14.50.27:897][665]LogMainFrame: MainFrame: Module compiling took 2.210 seconds
+[2020.06.30-14.50.27:897][665]Warning: HotReload failed, recompile failed
+[2020.06.30-14.50.28:648][692]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.30-14.50.28:670][692]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.30-14.50.28:670][692]PIE: New page: PIE session: Gulag (30 Jun 2020, 16:50:28)
+[2020.06.30-14.50.28:670][692]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.50.28:687][692]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016602s)
+[2020.06.30-14.50.28:689][692]LogAIModule: Creating AISystem for world Gulag
+[2020.06.30-14.50.28:689][692]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002587775EE00), frame # 28692
+[2020.06.30-14.50.28:689][692]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025877523D80), frame # 28692
+[2020.06.30-14.50.28:689][692]LogPlayLevel: PIE: World Init took: (0.002275s)
+[2020.06.30-14.50.28:689][692]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.019130s)
+[2020.06.30-14.50.28:799][692]LogUObjectHash: Compacting FUObjectHashTables data took   7.20ms
+[2020.06.30-14.50.28:801][692]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.30-14.50.28:801][692]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.30-14.50.28:801][692]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.30-14.50.28:801][692]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.30-14.50.28:801][692]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.30-14.50.28:801][692]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.30-14.50.28:801][692]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.30-14.50.28:801][692]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.30-14.50.28:802][692]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.30-14.50.28:802][692]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.30-14.50.28:806][692]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.30-14.50.28:806][692]LogAudioMixer: Display: 1: FrontRight
+[2020.06.30-14.50.28:827][692]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.30-14.50.28:827][692]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.30-14.50.28:827][692]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.30-14.50.28:827][692]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.30-14.50.28:827][692]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.30-14.50.28:844][692]LogInit: FAudioDevice initialized.
+[2020.06.30-14.50.28:855][692]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.06.30-14.50.28:857][692]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.30-15.50.28
+[2020.06.30-14.50.28:858][692]LogWorld: Bringing up level for play took: 0.002072
+[2020.06.30-14.50.28:858][692]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2020.06.30-14.50.28:861][692]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.06.30-14.50.28:861][692]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.06.30-14.50.28:861][692]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.06.30-14.50.28:861][692]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.06.30-14.50.28:861][692]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.06.30-14.50.28:861][692]LogNet: GameNetDriver IpNetDriver_10 IpNetDriver listening on port 17777
+[2020.06.30-14.50.28:863][692]PIE: Server logged in
+[2020.06.30-14.50.28:864][692]PIE: Play in editor total start time 0.2 seconds.
+[2020.06.30-14.50.39:040][272]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.06.30-14.50.39:041][272]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.50.39:041][272]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.50.39:041][272]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.30-14.50.39:041][272]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.50.39:049][272]LogNet: World NetDriver shutdown IpNetDriver_10 [GameNetDriver]
+[2020.06.30-14.50.39:049][272]LogNet: DestroyNamedNetDriver IpNetDriver_10 [GameNetDriver]
+[2020.06.30-14.50.39:049][272]LogExit: GameNetDriver IpNetDriver_10 shut down
+[2020.06.30-14.50.39:050][272]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.30-14.50.39:055][272]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.50.39:086][272]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.50.39:122][272]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002587775EE00), frame # 29272
+[2020.06.30-14.50.39:122][272]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025877523D80), frame # 29272
+[2020.06.30-14.50.39:139][272]LogUObjectHash: Compacting FUObjectHashTables data took   4.74ms
+[2020.06.30-14.50.39:189][273]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2020.06.30-14.50.55:417][117]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.30-14.50.55:437][117]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.30-14.50.55:437][117]PIE: New page: PIE session: Gulag (30 Jun 2020, 16:50:55)
+[2020.06.30-14.50.55:437][117]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.50.55:449][117]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012297s)
+[2020.06.30-14.50.55:451][117]LogAIModule: Creating AISystem for world Gulag
+[2020.06.30-14.50.55:452][117]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025867561400), frame # 30117
+[2020.06.30-14.50.55:452][117]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025867454E00), frame # 30117
+[2020.06.30-14.50.55:452][117]LogPlayLevel: PIE: World Init took: (0.002556s)
+[2020.06.30-14.50.55:452][117]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.015061s)
+[2020.06.30-14.50.55:492][117]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2020.06.30-14.50.55:494][117]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.30-14.50.55:494][117]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.30-14.50.55:494][117]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.30-14.50.55:494][117]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.30-14.50.55:494][117]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.30-14.50.55:494][117]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.30-14.50.55:494][117]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.30-14.50.55:494][117]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.30-14.50.55:495][117]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.30-14.50.55:495][117]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.30-14.50.55:499][117]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.30-14.50.55:499][117]LogAudioMixer: Display: 1: FrontRight
+[2020.06.30-14.50.55:519][117]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.30-14.50.55:520][117]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.30-14.50.55:520][117]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.30-14.50.55:520][117]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.30-14.50.55:520][117]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.30-14.50.55:536][117]LogInit: FAudioDevice initialized.
+[2020.06.30-14.50.55:551][117]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.06.30-14.50.55:553][117]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.30-15.50.55
+[2020.06.30-14.50.55:553][117]LogWorld: Bringing up level for play took: 0.001511
+[2020.06.30-14.50.55:553][117]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2020.06.30-14.50.55:556][117]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.06.30-14.50.55:556][117]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.06.30-14.50.55:556][117]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.06.30-14.50.55:556][117]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.06.30-14.50.55:557][117]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.06.30-14.50.55:557][117]LogNet: GameNetDriver IpNetDriver_11 IpNetDriver listening on port 17777
+[2020.06.30-14.50.55:557][117]PIE: Server logged in
+[2020.06.30-14.50.55:559][117]PIE: Play in editor total start time 0.125 seconds.
+[2020.06.30-14.51.06:180][752]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.06.30-14.51.06:180][752]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.51.06:180][752]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.51.06:181][752]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.30-14.51.06:181][752]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.51.06:190][752]LogNet: World NetDriver shutdown IpNetDriver_11 [GameNetDriver]
+[2020.06.30-14.51.06:190][752]LogNet: DestroyNamedNetDriver IpNetDriver_11 [GameNetDriver]
+[2020.06.30-14.51.06:191][752]LogExit: GameNetDriver IpNetDriver_11 shut down
+[2020.06.30-14.51.06:191][752]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.30-14.51.06:196][752]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.51.06:226][752]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.51.06:252][752]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025867454E00), frame # 30752
+[2020.06.30-14.51.06:252][752]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025867561400), frame # 30752
+[2020.06.30-14.51.06:256][752]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2020.06.30-14.51.06:301][753]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2020.06.30-14.51.07:074][798]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.30-14.51.07:118][798]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.30-14.51.07:118][798]PIE: New page: PIE session: Gulag (30 Jun 2020, 16:51:07)
+[2020.06.30-14.51.07:159][798]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.51.07:167][798]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007909s)
+[2020.06.30-14.51.07:168][798]LogAIModule: Creating AISystem for world Gulag
+[2020.06.30-14.51.07:169][798]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002581CFBD800), frame # 30798
+[2020.06.30-14.51.07:169][798]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025867455300), frame # 30798
+[2020.06.30-14.51.07:169][798]LogPlayLevel: PIE: World Init took: (0.001883s)
+[2020.06.30-14.51.07:169][798]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.010039s)
+[2020.06.30-14.51.07:204][798]LogUObjectHash: Compacting FUObjectHashTables data took   3.87ms
+[2020.06.30-14.51.07:205][798]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.30-14.51.07:205][798]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.30-14.51.07:205][798]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.30-14.51.07:205][798]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.30-14.51.07:205][798]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.30-14.51.07:205][798]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.30-14.51.07:205][798]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.30-14.51.07:205][798]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.30-14.51.07:206][798]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.30-14.51.07:206][798]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.30-14.51.07:210][798]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.30-14.51.07:210][798]LogAudioMixer: Display: 1: FrontRight
+[2020.06.30-14.51.07:231][798]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.30-14.51.07:232][798]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.30-14.51.07:232][798]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.30-14.51.07:232][798]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.30-14.51.07:232][798]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.30-14.51.07:250][798]LogInit: FAudioDevice initialized.
+[2020.06.30-14.51.07:264][798]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.06.30-14.51.07:266][798]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.30-15.51.07
+[2020.06.30-14.51.07:267][798]LogWorld: Bringing up level for play took: 0.001764
+[2020.06.30-14.51.07:267][798]LogOnline: OSS: Creating online subsystem instance for: :Context_23
+[2020.06.30-14.51.07:270][798]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.06.30-14.51.07:270][798]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.06.30-14.51.07:271][798]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.06.30-14.51.07:271][798]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.06.30-14.51.07:271][798]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.06.30-14.51.07:271][798]LogNet: GameNetDriver IpNetDriver_12 IpNetDriver listening on port 17777
+[2020.06.30-14.51.07:272][798]PIE: Server logged in
+[2020.06.30-14.51.07:273][798]PIE: Play in editor total start time 0.158 seconds.
+[2020.06.30-14.51.12:827][130]LogTemp: Warning: 65.669998 Health Changed: HealthComponent
+[2020.06.30-14.51.12:827][130]LogTemp: Warning: Health 65.669998 of TrackerBot_BP_11
+[2020.06.30-14.51.19:519][530]LogTemp: Warning: 32.339996 Health Changed: HealthComponent
+[2020.06.30-14.51.19:519][530]LogTemp: Warning: Health 32.339996 of TrackerBot_BP_11
+[2020.06.30-14.51.21:610][653]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.06.30-14.51.21:611][653]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.51.21:611][653]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.51.21:611][653]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.30-14.51.21:612][653]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.51.21:623][653]LogNet: World NetDriver shutdown IpNetDriver_12 [GameNetDriver]
+[2020.06.30-14.51.21:623][653]LogNet: DestroyNamedNetDriver IpNetDriver_12 [GameNetDriver]
+[2020.06.30-14.51.21:623][653]LogExit: GameNetDriver IpNetDriver_12 shut down
+[2020.06.30-14.51.21:623][653]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.30-14.51.21:629][653]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.51.21:660][653]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.51.21:685][653]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025867455300), frame # 31653
+[2020.06.30-14.51.21:685][653]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002581CFBD800), frame # 31653
+[2020.06.30-14.51.21:690][653]LogUObjectHash: Compacting FUObjectHashTables data took   4.95ms
+[2020.06.30-14.51.21:734][654]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2020.06.30-14.52.26:155][851]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor2)
+[2020.06.30-14.52.27:331][905]Candidate modules for hot reload:
+[2020.06.30-14.52.27:331][905]  CoopShooter
+[2020.06.30-14.52.27:332][905]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=CoopShooter,1905 CoopShooterEditor Win64 Development -Project="D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject" "D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/CoopShooter.uproject"  -IgnoreJunk]
+[2020.06.30-14.52.27:333][905]Warning: Starting HotReload took  0.0s.
+[2020.06.30-14.52.35:803][971]CompilerResultsLog: New page: Compilation - 30 Jun 2020, 16:52:35
+[2020.06.30-14.52.35:803][971]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+[2020.06.30-14.52.35:803][971]CompilerResultsLog: Building CoopShooterEditor...
+[2020.06.30-14.52.35:803][971]CompilerResultsLog: Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.06.30-14.52.35:803][971]CompilerResultsLog: Distributing 5 actions to XGE
+[2020.06.30-14.52.35:803][971]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2020.06.30-14.52.35:803][971]CompilerResultsLog: License is invalid:
+[2020.06.30-14.52.35:803][971]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2020.06.30-14.52.35:803][971]CompilerResultsLog:     This build will run in standalone mode.
+[2020.06.30-14.52.35:803][971]CompilerResultsLog: 
+[2020.06.30-14.52.35:803][971]CompilerResultsLog: -------------------------------------------------------------------------------
+[2020.06.30-14.52.35:803][971]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: STrackerBot.cpp (0:04.54 at +0:00)
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: SHealthComponent.cpp (0:01.06 at +0:04)
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: UE4Editor-CoopShooter-1905.dll (0:00.76 at +0:05)
+[2020.06.30-14.52.35:804][971]CompilerResultsLog:    Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-1905.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-1905.suppressed.exp
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: UE4Editor-CoopShooter-1905.lib (0:00.18 at +0:06)
+[2020.06.30-14.52.35:804][971]CompilerResultsLog:    Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-1905.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-1905.exp
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: CoopShooterEditor.target (0:00.23 at +0:06)
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: ---------------------- Done ----------------------
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: 
+[2020.06.30-14.52.35:804][971]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: 
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: 1 build system warning(s):
+[2020.06.30-14.52.35:804][971]CompilerResultsLog:    - License is invalid
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: 
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: Total time in XGE executor: 7.03 seconds
+[2020.06.30-14.52.35:804][971]CompilerResultsLog: Total execution time: 8.19 seconds
+[2020.06.30-14.52.35:804][971]LogMainFrame: MainFrame: Module compiling took 8.487 seconds
+[2020.06.30-14.52.38:188][971]LogClass: HitScanTrace HotReload.
+[2020.06.30-14.52.38:202][971]LogContentBrowser: Native class hierarchy updated for 'CoopShooter' in 0.0006 seconds. Added 6 classes and 3 folders.
+[2020.06.30-14.52.38:207][971]Display: HotReload successful (6 functions remapped  1 scriptstructs remapped)
+[2020.06.30-14.52.38:354][971]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 3433 classes and 824 folders.
+[2020.06.30-14.52.38:354][971]Display: HotReload took 11.1s.
+[2020.06.30-14.54.12:029][250]LogUObjectHash: Compacting FUObjectHashTables data took   6.49ms
+[2020.06.30-14.54.12:117][250]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Gulag_Auto3D758B010422D0F6822219AB28F25E550.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Autosaves/Game/Level/Gulag_Auto3.umap'
+[2020.06.30-14.54.12:120][250]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.205
+[2020.06.30-14.54.12:120][250]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.205
+[2020.06.30-14.59.17:664][221]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.30-14.59.17:689][221]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.30-14.59.17:689][221]PIE: New page: PIE session: Gulag (30 Jun 2020, 16:59:17)
+[2020.06.30-14.59.17:689][221]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.59.17:701][221]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011887s)
+[2020.06.30-14.59.17:703][221]LogAIModule: Creating AISystem for world Gulag
+[2020.06.30-14.59.17:703][221]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000258524C1600), frame # 34221
+[2020.06.30-14.59.17:703][221]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000258524E2C00), frame # 34221
+[2020.06.30-14.59.17:703][221]LogPlayLevel: PIE: World Init took: (0.002358s)
+[2020.06.30-14.59.17:703][221]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.014389s)
+[2020.06.30-14.59.17:782][221]LogUObjectHash: Compacting FUObjectHashTables data took   6.56ms
+[2020.06.30-14.59.17:783][221]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.30-14.59.17:784][221]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.30-14.59.17:784][221]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.30-14.59.17:784][221]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.30-14.59.17:784][221]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.30-14.59.17:784][221]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.30-14.59.17:784][221]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.30-14.59.17:784][221]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.30-14.59.17:784][221]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.30-14.59.17:784][221]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.30-14.59.17:790][221]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.30-14.59.17:790][221]LogAudioMixer: Display: 1: FrontRight
+[2020.06.30-14.59.17:818][221]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.30-14.59.17:819][221]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.30-14.59.17:819][221]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.30-14.59.17:819][221]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.30-14.59.17:819][221]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.30-14.59.17:841][221]LogInit: FAudioDevice initialized.
+[2020.06.30-14.59.17:856][221]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.06.30-14.59.17:862][221]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.30-15.59.17
+[2020.06.30-14.59.17:862][221]LogWorld: Bringing up level for play took: 0.005008
+[2020.06.30-14.59.17:863][221]LogOnline: OSS: Creating online subsystem instance for: :Context_24
+[2020.06.30-14.59.17:866][221]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.06.30-14.59.17:867][221]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.06.30-14.59.17:867][221]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.06.30-14.59.17:867][221]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.06.30-14.59.17:867][221]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.06.30-14.59.17:867][221]LogNet: GameNetDriver IpNetDriver_13 IpNetDriver listening on port 17777
+[2020.06.30-14.59.17:868][221]PIE: Server logged in
+[2020.06.30-14.59.17:870][221]PIE: Play in editor total start time 0.187 seconds.
+[2020.06.30-14.59.21:710][444]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.06.30-14.59.21:711][444]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.59.21:711][444]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-14.59.21:711][444]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.30-14.59.21:711][444]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.59.21:718][444]LogNet: World NetDriver shutdown IpNetDriver_13 [GameNetDriver]
+[2020.06.30-14.59.21:718][444]LogNet: DestroyNamedNetDriver IpNetDriver_13 [GameNetDriver]
+[2020.06.30-14.59.21:718][444]LogExit: GameNetDriver IpNetDriver_13 shut down
+[2020.06.30-14.59.21:719][444]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.30-14.59.21:724][444]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-14.59.21:778][444]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-14.59.21:779][444]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000258524E2C00), frame # 34444
+[2020.06.30-14.59.21:779][444]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000258524C1600), frame # 34444
+[2020.06.30-14.59.21:784][444]LogUObjectHash: Compacting FUObjectHashTables data took   4.73ms
+[2020.06.30-14.59.21:835][445]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2020.06.30-14.59.36:000][277]LogActorFactory: Actor Factory created Cube
+[2020.06.30-14.59.37:300][340]LogActorFactory: Actor Factory created Cube
+[2020.06.30-14.59.37:853][368]Cmd: DELETE
+[2020.06.30-14.59.37:853][368]Cmd: ACTOR DELETE
+[2020.06.30-14.59.37:986][368]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.06.30-14.59.38:021][368]LogUObjectHash: Compacting FUObjectHashTables data took   3.97ms
+[2020.06.30-14.59.38:023][368]LogEditorActor: Deleted 1 Actors (0.127 secs)
+[2020.06.30-14.59.43:354][675]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2020.06.30-14.59.45:764][809]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2020.06.30-15.01.32:797][ 90]LogEditorViewport: Clicking on Actor (LMB): NavMeshBoundsVolume (NavMeshBoundsVolume)
+[2020.06.30-15.02.48:539][599]Cmd: TRANSACTION UNDO
+[2020.06.30-15.02.48:540][599]LogEditorTransaction: Undo Move Actors
+[2020.06.30-15.05.15:592][142]LogToolMenus: Error: UI command not found for menu entry: GroupActors, menu: LevelEditor.LevelEditorSceneOutliner.ContextMenu.GroupMenu
+[2020.06.30-15.05.31:316][955]LogToolMenus: Error: UI command not found for menu entry: GroupActors, menu: LevelEditor.LevelEditorSceneOutliner.ContextMenu.GroupMenu
+[2020.06.30-15.05.50:892][928]LogEditorViewport: Clicking on Actor (LMB): TrackerBot_BP_C (TrackerBot_BP)
+[2020.06.30-15.05.55:667][206]Cmd: TRANSACTION UNDO
+[2020.06.30-15.05.55:667][206]LogEditorTransaction: Undo Clicking on Actors
+[2020.06.30-15.05.56:176][218]Cmd: TRANSACTION UNDO
+[2020.06.30-15.05.56:176][218]LogEditorTransaction: Undo Move Actors
+[2020.06.30-15.05.56:656][242]Cmd: TRANSACTION UNDO
+[2020.06.30-15.05.56:656][242]LogEditorTransaction: Undo Move Actors
+[2020.06.30-15.05.57:083][265]Cmd: TRANSACTION UNDO
+[2020.06.30-15.05.57:083][265]LogEditorTransaction: Undo Move Actors
+[2020.06.30-15.06.28:947][ 28]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2020.06.30-15.06.48:164][166]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor2)
+[2020.06.30-15.06.49:519][236]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor2)
+[2020.06.30-15.07.40:293][705]Cmd: TRANSACTION UNDO
+[2020.06.30-15.07.40:293][705]LogEditorTransaction: Undo Set Material
+[2020.06.30-15.07.50:945][100]Cmd: ACTOR SELECT MATCHINGMATERIAL
+[2020.06.30-15.09.32:230][405]Cmd: TRANSACTION UNDO
+[2020.06.30-15.09.32:230][405]LogEditorTransaction: Undo Create Actors
+[2020.06.30-15.09.45:744][ 55]Cmd: TRANSACTION UNDO
+[2020.06.30-15.09.45:744][ 55]LogEditorTransaction: Undo Create Actors
+[2020.06.30-15.10.36:128][934]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.30-15.10.36:150][934]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.30-15.10.36:150][934]PIE: New page: PIE session: Gulag (30 Jun 2020, 17:10:36)
+[2020.06.30-15.10.36:150][934]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-15.10.36:161][934]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010873s)
+[2020.06.30-15.10.36:162][934]LogAIModule: Creating AISystem for world Gulag
+[2020.06.30-15.10.36:162][934]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002587362FE00), frame # 71934
+[2020.06.30-15.10.36:163][934]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000258247E42C0), frame # 71934
+[2020.06.30-15.10.36:163][934]LogPlayLevel: PIE: World Init took: (0.001310s)
+[2020.06.30-15.10.36:163][934]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.012343s)
+[2020.06.30-15.10.36:265][934]LogUObjectHash: Compacting FUObjectHashTables data took   4.63ms
+[2020.06.30-15.10.36:288][934]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.30-15.10.36:288][934]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.30-15.10.36:288][934]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.30-15.10.36:289][934]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.30-15.10.36:289][934]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.30-15.10.36:289][934]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.30-15.10.36:289][934]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.30-15.10.36:289][934]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.30-15.10.36:289][934]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.30-15.10.36:289][934]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.30-15.10.36:295][934]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.30-15.10.36:295][934]LogAudioMixer: Display: 1: FrontRight
+[2020.06.30-15.10.36:322][934]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.30-15.10.36:322][934]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.30-15.10.36:323][934]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.30-15.10.36:323][934]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.30-15.10.36:324][934]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.30-15.10.36:344][934]LogInit: FAudioDevice initialized.
+[2020.06.30-15.10.36:360][934]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.06.30-15.10.36:362][934]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.06.30-16.10.36
+[2020.06.30-15.10.36:363][934]LogWorld: Bringing up level for play took: 0.001828
+[2020.06.30-15.10.36:363][934]LogOnline: OSS: Creating online subsystem instance for: :Context_28
+[2020.06.30-15.10.36:367][934]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.06.30-15.10.36:367][934]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.06.30-15.10.36:367][934]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.06.30-15.10.36:367][934]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.06.30-15.10.36:367][934]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.06.30-15.10.36:367][934]LogNet: GameNetDriver IpNetDriver_14 IpNetDriver listening on port 17777
+[2020.06.30-15.10.36:368][934]PIE: Server logged in
+[2020.06.30-15.10.36:370][934]PIE: Play in editor total start time 0.223 seconds.
+[2020.06.30-15.10.40:600][186]LogTemp: 65.669998 Health Changed: 65.669998
+[2020.06.30-15.10.40:600][186]LogTemp: Health 65.669998 of TrackerBot_BP_11
+[2020.06.30-15.10.40:901][204]LogTemp: 32.339996 Health Changed: 32.339996
+[2020.06.30-15.10.40:901][204]LogTemp: Health 32.339996 of TrackerBot_BP_11
+[2020.06.30-15.10.41:067][214]LogTemp: 0.0 Health Changed: 0.0
+[2020.06.30-15.10.41:067][214]LogTemp: Health 0.0 of TrackerBot_BP_11
+[2020.06.30-15.10.41:218][223]LogTemp: 0.0 Health Changed: 0.0
+[2020.06.30-15.10.41:218][223]LogTemp: Health 0.0 of TrackerBot_BP_11
+[2020.06.30-15.10.41:334][230]LogTemp: 0.0 Health Changed: 0.0
+[2020.06.30-15.10.41:334][230]LogTemp: Health 0.0 of TrackerBot_BP_11
+[2020.06.30-15.10.43:191][339]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.06.30-15.10.43:191][339]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-15.10.43:191][339]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-15.10.43:191][339]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.30-15.10.43:192][339]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-15.10.43:201][339]LogNet: World NetDriver shutdown IpNetDriver_14 [GameNetDriver]
+[2020.06.30-15.10.43:201][339]LogNet: DestroyNamedNetDriver IpNetDriver_14 [GameNetDriver]
+[2020.06.30-15.10.43:201][339]LogExit: GameNetDriver IpNetDriver_14 shut down
+[2020.06.30-15.10.43:202][339]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.30-15.10.43:208][339]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-15.10.43:241][339]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-15.10.43:263][339]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000258247E42C0), frame # 72339
+[2020.06.30-15.10.43:263][339]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002587362FE00), frame # 72339
+[2020.06.30-15.10.43:267][339]LogUObjectHash: Compacting FUObjectHashTables data took   3.44ms
+[2020.06.30-15.10.43:299][340]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2020.06.30-15.11.15:467][709]Cmd: TRANSACTION UNDO
+[2020.06.30-15.11.15:467][709]LogEditorTransaction: Undo Move Actors
+[2020.06.30-15.11.22:015][248]Cmd: TRANSACTION UNDO
+[2020.06.30-15.11.22:015][248]LogEditorTransaction: Undo Move Actors
+[2020.06.30-15.11.53:172][543]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor2)
+[2020.06.30-15.12.34:658][812]LogTemp: Repeating last play command: Selected Viewport
+[2020.06.30-15.12.34:680][812]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.06.30-15.12.34:680][812]PIE: New page: PIE session: Gulag (30 Jun 2020, 17:12:34)
+[2020.06.30-15.12.34:680][812]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-15.12.34:689][812]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009120s)
+[2020.06.30-15.12.34:691][812]LogAIModule: Creating AISystem for world Gulag
+[2020.06.30-15.12.34:691][812]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002587647A000), frame # 81812
+[2020.06.30-15.12.34:691][812]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025808684400), frame # 81812
+[2020.06.30-15.12.34:691][812]LogPlayLevel: PIE: World Init took: (0.001805s)
+[2020.06.30-15.12.34:691][812]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.011190s)
+[2020.06.30-15.12.34:732][812]LogUObjectHash: Compacting FUObjectHashTables data took   5.25ms
+[2020.06.30-15.12.34:738][812]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.06.30-15.12.34:738][812]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.06.30-15.12.34:738][812]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.06.30-15.12.34:738][812]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.06.30-15.12.34:738][812]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.06.30-15.12.34:738][812]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.06.30-15.12.34:739][812]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.06.30-15.12.34:739][812]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.06.30-15.12.34:739][812]LogAudio: Display: Using built-in audio occlusion.
+[2020.06.30-15.12.34:739][812]LogAudioMixer: Display: Initializing audio mixer.
+[2020.06.30-15.12.34:743][812]LogAudioMixer: Display: 0: FrontLeft
+[2020.06.30-15.12.34:743][812]LogAudioMixer: Display: 1: FrontRight
+[2020.06.30-15.12.34:766][812]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.06.30-15.12.34:766][812]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.06.30-15.12.34:766][812]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.06.30-15.12.34:766][812]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.06.30-15.12.34:767][812]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.06.30-15.12.34:786][812]LogInit: FAudioDevice initialized.
+[2020.06.30-15.12.34:803][812]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.06.30-15.12.34:806][812]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 0) at 2020.06.30-16.12.34
+[2020.06.30-15.12.34:806][812]LogWorld: Bringing up level for play took: 0.002221
+[2020.06.30-15.12.34:806][812]LogOnline: OSS: Creating online subsystem instance for: :Context_29
+[2020.06.30-15.12.34:811][812]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.06.30-15.12.34:811][812]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.06.30-15.12.34:811][812]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.06.30-15.12.34:811][812]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.06.30-15.12.34:811][812]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.06.30-15.12.34:811][812]LogNet: GameNetDriver IpNetDriver_15 IpNetDriver listening on port 17777
+[2020.06.30-15.12.34:812][812]PIE: Server logged in
+[2020.06.30-15.12.34:814][812]PIE: Play in editor total start time 0.138 seconds.
+[2020.06.30-15.12.36:894][ 48]LogTemp: 65.669998 Health Changed: 65.669998
+[2020.06.30-15.12.36:894][ 48]LogTemp: Health 65.669998 of TrackerBot_BP_11
+[2020.06.30-15.12.39:381][332]LogTemp: 32.339996 Health Changed: 32.339996
+[2020.06.30-15.12.39:381][332]LogTemp: Health 32.339996 of TrackerBot_BP_11
+[2020.06.30-15.12.43:463][803]LogTemp: 0.0 Health Changed: 0.0
+[2020.06.30-15.12.43:463][803]LogTemp: Health 0.0 of TrackerBot_BP_11
+[2020.06.30-15.12.46:937][205]LogTemp: 0.0 Health Changed: 0.0
+[2020.06.30-15.12.46:937][205]LogTemp: Health 0.0 of TrackerBot_BP_11
+[2020.06.30-15.12.47:821][303]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.06.30-15.12.47:821][303]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-15.12.47:821][303]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.06.30-15.12.47:821][303]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.06.30-15.12.47:822][303]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-15.12.47:829][303]LogNet: World NetDriver shutdown IpNetDriver_15 [GameNetDriver]
+[2020.06.30-15.12.47:829][303]LogNet: DestroyNamedNetDriver IpNetDriver_15 [GameNetDriver]
+[2020.06.30-15.12.47:829][303]LogExit: GameNetDriver IpNetDriver_15 shut down
+[2020.06.30-15.12.47:830][303]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.06.30-15.12.47:835][303]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.06.30-15.12.47:890][303]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.06.30-15.12.47:891][303]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025808684400), frame # 83303
+[2020.06.30-15.12.47:891][303]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002587647A000), frame # 83303
+[2020.06.30-15.12.47:895][303]LogUObjectHash: Compacting FUObjectHashTables data took   3.23ms
+[2020.06.30-15.12.47:926][304]LogPlayLevel: Display: Destroying online subsystem :Context_29
+[2020.06.30-15.13.01:415][521]LogUObjectHash: Compacting FUObjectHashTables data took   5.32ms
+[2020.06.30-15.13.01:463][521]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Level/Gulag" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.06.30-15.13.01:504][521]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2020.06.30-15.13.01:593][521]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/GulagAB8A805A462E04924BC0A7997744D8C8.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag.umap'
+[2020.06.30-15.13.01:639][521]LogFileHelpers: Saving map 'Gulag' took 0.177
+[2020.06.30-15.13.01:639][521]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Level/Gulag_BuiltData" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag_BuiltData.uasset" SILENT=true
+[2020.06.30-15.13.01:690][521]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Gulag_BuiltData25DF03E44451140F5D6C2B80B7BEE2CF.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag_BuiltData.uasset'
+[2020.06.30-15.13.01:715][521]AssetCheck: New page: Asset Save: multiple assets
+[2020.06.30-15.13.01:715][521]LogContentValidation: Display: Validating World /Game/Level/Gulag.Gulag
+[2020.06.30-15.13.01:715][521]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Level/Gulag_BuiltData.Gulag_BuiltData

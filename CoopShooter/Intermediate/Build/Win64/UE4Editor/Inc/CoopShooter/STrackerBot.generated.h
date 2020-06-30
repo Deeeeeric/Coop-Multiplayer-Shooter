@@ -8,15 +8,27 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class USHealthComponent;
+class UDamageType;
+class AController;
+class AActor;
 #ifdef COOPSHOOTER_STrackerBot_generated_h
 #error "STrackerBot.generated.h already included, missing '#pragma once' in STrackerBot.h"
 #endif
 #define COOPSHOOTER_STrackerBot_generated_h
 
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_SPARSE_DATA
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_RPC_WRAPPERS
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_INCLASS_NO_PURE_DECLS \
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_SPARSE_DATA
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleTakeDamage);
+
+
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleTakeDamage);
+
+
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASTrackerBot(); \
 	friend struct Z_Construct_UClass_ASTrackerBot_Statics; \
@@ -25,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(ASTrackerBot)
 
 
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_INCLASS \
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesASTrackerBot(); \
 	friend struct Z_Construct_UClass_ASTrackerBot_Statics; \
@@ -34,7 +46,7 @@ public: \
 	DECLARE_SERIALIZER(ASTrackerBot)
 
 
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_STANDARD_CONSTRUCTORS \
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASTrackerBot(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASTrackerBot) \
@@ -47,7 +59,7 @@ private: \
 public:
 
 
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_ENHANCED_CONSTRUCTORS \
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASTrackerBot(ASTrackerBot&&); \
@@ -58,34 +70,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASTrackerBot); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASTrackerBot)
 
 
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_PRIVATE_PROPERTY_OFFSET \
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__MeshComp() { return STRUCT_OFFSET(ASTrackerBot, MeshComp); } \
+	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ASTrackerBot, HealthComponent); } \
 	FORCEINLINE static uint32 __PPO__MovementForce() { return STRUCT_OFFSET(ASTrackerBot, MovementForce); } \
 	FORCEINLINE static uint32 __PPO__bUseVelocityChange() { return STRUCT_OFFSET(ASTrackerBot, bUseVelocityChange); } \
 	FORCEINLINE static uint32 __PPO__RequiredDistanceToTarget() { return STRUCT_OFFSET(ASTrackerBot, RequiredDistanceToTarget); }
 
 
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_11_PROLOG
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_GENERATED_BODY_LEGACY \
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_12_PROLOG
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_PRIVATE_PROPERTY_OFFSET \
-	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_SPARSE_DATA \
-	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_RPC_WRAPPERS \
-	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_INCLASS \
-	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_STANDARD_CONSTRUCTORS \
+	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_PRIVATE_PROPERTY_OFFSET \
+	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_SPARSE_DATA \
+	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_RPC_WRAPPERS \
+	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_INCLASS \
+	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_GENERATED_BODY \
+#define CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_PRIVATE_PROPERTY_OFFSET \
-	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_SPARSE_DATA \
-	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_INCLASS_NO_PURE_DECLS \
-	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_14_ENHANCED_CONSTRUCTORS \
+	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_PRIVATE_PROPERTY_OFFSET \
+	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_SPARSE_DATA \
+	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_INCLASS_NO_PURE_DECLS \
+	CoopShooter_Source_CoopShooter_Public_STrackerBot_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

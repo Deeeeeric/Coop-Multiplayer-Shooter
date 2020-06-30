@@ -40,3 +40,4 @@
 * Setup AI Pawn and Navigation Mesh
 * Add Move-to Logic
 * Move Pawn using Forces
+* Add TakeDamage Support
