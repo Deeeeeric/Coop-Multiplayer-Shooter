@@ -41,3 +41,4 @@
 * Add Move-to Logic
 * Move Pawn using Forces
 * Add TakeDamage Support
+* Pulse Material on TakeDamage
