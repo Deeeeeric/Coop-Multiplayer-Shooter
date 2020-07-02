@@ -42,3 +42,4 @@
 * Move Pawn using Forces
 * Add TakeDamage Support
 * Pulse Material on TakeDamage
+* Add Self-Destruct on Death
