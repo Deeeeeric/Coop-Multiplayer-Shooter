@@ -43,3 +43,4 @@
 * Add TakeDamage Support
 * Pulse Material on TakeDamage
 * Add Self-Destruct on Death
+* Explode When Near Player

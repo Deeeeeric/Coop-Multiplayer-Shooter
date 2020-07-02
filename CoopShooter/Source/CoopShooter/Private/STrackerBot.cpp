@@ -9,6 +9,8 @@
 #include "GameFramework/Character.h"
 #include "NavigationSystem/Public/NavigationSystem.h"
 #include "NavigationSystem/Public/NavigationPath.h"
+#include "CoopShooter/SCharacter.h"
+#include "Components/SphereComponent.h"
 #include "SHealthComponent.h"
 
 // Sets default values
@@ -25,6 +27,13 @@ ASTrackerBot::ASTrackerBot()
 	HealthComponent = CreateDefaultSubobject<USHealthComponent>(TEXT("HealthComponent"));
 	HealthComponent->OnHealthChanged.AddDynamic(this, &ASTrackerBot::HandleTakeDamage);
 
+	SphereComp = CreateDefaultSubobject<USphereComponent>(TEXT("Spherecomponent"));
+	SphereComp->SetSphereRadius(200);
+	SphereComp->SetCollisionEnabled(ECollisionEnabled::QueryOnly); // no physics on collision
+	SphereComp->SetCollisionResponseToAllChannels(ECR_Ignore); 
+	SphereComp->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap); // only enable collision for pawn, so we dont get additional overlaps
+	SphereComp->SetupAttachment(RootComponent);
+
 	bUseVelocityChange = false;
 	MovementForce = 1000;
 	RequiredDistanceToTarget = 100;
@@ -40,7 +49,6 @@ void ASTrackerBot::BeginPlay()
 
 	// find initial move-to
 	NextPathPoint = GetNextPathPoint();
-
 }
 
 void ASTrackerBot::HandleTakeDamage(USHealthComponent* HealthComp, float Health, float HealthDelta,
@@ -117,7 +125,7 @@ void ASTrackerBot::SelfDestruct()
 	Destroy();
 }
 
-	// Called every frame
+// Called every frame
 	void ASTrackerBot::Tick(float DeltaTime)
 	{
 		Super::Tick(DeltaTime);
@@ -144,4 +152,27 @@ void ASTrackerBot::SelfDestruct()
 		}
 
 		DrawDebugSphere(GetWorld(), NextPathPoint, 20, 12, FColor::Yellow, false, 0.0f, 1.0f);
+	}
+
+	// Check if this is a player
+	void ASTrackerBot::NotifyActorBeginOverlap(AActor* OtherActor)
+	{
+		if (!bStarSelftDestructionTimer)
+		{
+			ASCharacter* PlayerPawn = Cast<ASCharacter>(OtherActor);
+			if (PlayerPawn)
+			{
+				// We overlapped with a player
+
+				// start self destruct sequence
+				GetWorldTimerManager().SetTimer(TimerHandle_SelfDamage, this, &ASTrackerBot::DamageSelf, 0.5f, true, 0.0f);
+
+				bStarSelftDestructionTimer = true;
+			}
+		}
+	}
+
+	void ASTrackerBot::DamageSelf()
+	{
+		UGameplayStatics::ApplyDamage(this, 20, GetInstigatorController(), this, nullptr);
 	}
