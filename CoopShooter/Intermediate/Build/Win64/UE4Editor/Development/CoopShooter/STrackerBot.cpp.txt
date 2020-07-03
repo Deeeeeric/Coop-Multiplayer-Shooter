@@ -67,3 +67,7 @@ D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
 D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\SHealthComponent.h
 D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Inc\CoopShooter\SHealthComponent.generated.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Sound/SoundCue.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Sound/SoundNode.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundNode.generated.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundCue.generated.h

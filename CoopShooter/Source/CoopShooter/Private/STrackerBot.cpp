@@ -12,6 +12,7 @@
 #include "CoopShooter/SCharacter.h"
 #include "Components/SphereComponent.h"
 #include "SHealthComponent.h"
+#include "Sound/SoundCue.h"
 
 // Sets default values
 ASTrackerBot::ASTrackerBot()
@@ -40,6 +41,8 @@ ASTrackerBot::ASTrackerBot()
 
 	ExplosionDamage = 40;
 	ExplosionRadius = 200;
+
+	SelfDamageInterval = 0.25;
 }
 
 // Called when the game starts or when spawned
@@ -121,6 +124,8 @@ void ASTrackerBot::SelfDestruct()
 
 	DrawDebugSphere(GetWorld(), GetActorLocation(), ExplosionRadius, 12, FColor::Blue, false, 2.0f, 0, 1.0f);
 
+	UGameplayStatics::PlaySoundAtLocation(this, ExplodeSound, GetActorLocation());
+
 	//Delete Actor immediately
 	Destroy();
 }
@@ -165,9 +170,11 @@ void ASTrackerBot::SelfDestruct()
 				// We overlapped with a player
 
 				// start self destruct sequence
-				GetWorldTimerManager().SetTimer(TimerHandle_SelfDamage, this, &ASTrackerBot::DamageSelf, 0.5f, true, 0.0f);
+				GetWorldTimerManager().SetTimer(TimerHandle_SelfDamage, this, &ASTrackerBot::DamageSelf, SelfDamageInterval, true, 0.0f);
 
 				bStarSelftDestructionTimer = true;
+
+				UGameplayStatics::SpawnSoundAttached(SelfDestructSound, RootComponent);
 			}
 		}
 	}
