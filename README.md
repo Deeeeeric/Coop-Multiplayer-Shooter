@@ -45,3 +45,4 @@
 * Add Self-Destruct on Death
 * Explode When Near Player
 * Setup Sound Effects
+* Setup Network Replication

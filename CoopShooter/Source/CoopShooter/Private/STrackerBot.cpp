@@ -50,8 +50,11 @@ void ASTrackerBot::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// find initial move-to
-	NextPathPoint = GetNextPathPoint();
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		// find initial move-to
+		NextPathPoint = GetNextPathPoint();
+	}
 }
 
 void ASTrackerBot::HandleTakeDamage(USHealthComponent* HealthComp, float Health, float HealthDelta,
@@ -107,27 +110,40 @@ void ASTrackerBot::SelfDestruct()
 
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplosionEffect, GetActorLocation());
 
-	TArray<AActor*> IgnoredActors;
-	IgnoredActors.Add(this);
-
-	// apply Damage
-	UGameplayStatics::ApplyRadialDamage(
-		this,
-		ExplosionDamage,
-		GetActorLocation(),
-		ExplosionRadius,
-		nullptr,
-		IgnoredActors,
-		this,
-		GetInstigatorController(),
-		true);
-
-	DrawDebugSphere(GetWorld(), GetActorLocation(), ExplosionRadius, 12, FColor::Blue, false, 2.0f, 0, 1.0f);
-
 	UGameplayStatics::PlaySoundAtLocation(this, ExplodeSound, GetActorLocation());
 
-	//Delete Actor immediately
-	Destroy();
+	MeshComp->SetVisibility(false, true);
+	MeshComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		TArray<AActor*> IgnoredActors;
+		IgnoredActors.Add(this);
+
+		// apply Damage
+		UGameplayStatics::ApplyRadialDamage(
+			this,
+			ExplosionDamage,
+			GetActorLocation(),
+			ExplosionRadius,
+			nullptr,
+			IgnoredActors,
+			this,
+			GetInstigatorController(),
+			true);
+
+		DrawDebugSphere(GetWorld(), GetActorLocation(), ExplosionRadius, 12, FColor::Blue, false, 2.0f, 0, 1.0f);
+
+		//Delete Actor immediately
+		//Destroy();
+
+		SetLifeSpan(2.0f);
+	}
+}
+
+void ASTrackerBot::DamageSelf()
+{
+	UGameplayStatics::ApplyDamage(this, 20, GetInstigatorController(), this, nullptr);
 }
 
 // Called every frame
@@ -135,42 +151,48 @@ void ASTrackerBot::SelfDestruct()
 	{
 		Super::Tick(DeltaTime);
 
-		float DistanceToTarget = (GetActorLocation() - NextPathPoint).Size();
-
-		if (DistanceToTarget <= RequiredDistanceToTarget)
+		if (GetLocalRole() == ROLE_Authority && !bExploded)
 		{
-			NextPathPoint = GetNextPathPoint();
+			float DistanceToTarget = (GetActorLocation() - NextPathPoint).Size();
 
-			DrawDebugString(GetWorld(), GetActorLocation(), "Target Reached!");
+			if (DistanceToTarget <= RequiredDistanceToTarget)
+			{
+				NextPathPoint = GetNextPathPoint();
+
+				DrawDebugString(GetWorld(), GetActorLocation(), "Target Reached!");
+			}
+			else
+			{
+				// Keep adding force to move towards next target
+				FVector ForceDirection = NextPathPoint - GetActorLocation();
+				ForceDirection.Normalize();
+
+				ForceDirection *= MovementForce;
+
+				MeshComp->AddForce(ForceDirection, NAME_None, bUseVelocityChange);
+
+				DrawDebugDirectionalArrow(GetWorld(), GetActorLocation(), GetActorLocation() + ForceDirection, 32, FColor::Yellow, false, 0.0f, 0, 1.0f);
+			}
+
+			DrawDebugSphere(GetWorld(), NextPathPoint, 20, 12, FColor::Yellow, false, 0.0f, 1.0f);
 		}
-		else
-		{
-			// Keep adding force to move towards next target
-			FVector ForceDirection = NextPathPoint - GetActorLocation();
-			ForceDirection.Normalize();
-
-			ForceDirection *= MovementForce;
-
-			MeshComp->AddForce(ForceDirection, NAME_None, bUseVelocityChange);
-
-			DrawDebugDirectionalArrow(GetWorld(), GetActorLocation(), GetActorLocation() + ForceDirection, 32, FColor::Yellow, false, 0.0f, 0, 1.0f);
-		}
-
-		DrawDebugSphere(GetWorld(), NextPathPoint, 20, 12, FColor::Yellow, false, 0.0f, 1.0f);
 	}
 
 	// Check if this is a player
 	void ASTrackerBot::NotifyActorBeginOverlap(AActor* OtherActor)
 	{
-		if (!bStarSelftDestructionTimer)
+		if (!bStarSelftDestructionTimer && !bExploded)
 		{
 			ASCharacter* PlayerPawn = Cast<ASCharacter>(OtherActor);
 			if (PlayerPawn)
 			{
 				// We overlapped with a player
 
-				// start self destruct sequence
-				GetWorldTimerManager().SetTimer(TimerHandle_SelfDamage, this, &ASTrackerBot::DamageSelf, SelfDamageInterval, true, 0.0f);
+				if (GetLocalRole() == ROLE_Authority)
+				{
+					// start self destruct sequence
+					GetWorldTimerManager().SetTimer(TimerHandle_SelfDamage, this, &ASTrackerBot::DamageSelf, SelfDamageInterval, true, 0.0f);
+				}
 
 				bStarSelftDestructionTimer = true;
 
@@ -179,7 +201,3 @@ void ASTrackerBot::SelfDestruct()
 		}
 	}
 
-	void ASTrackerBot::DamageSelf()
-	{
-		UGameplayStatics::ApplyDamage(this, 20, GetInstigatorController(), this, nullptr);
-	}
