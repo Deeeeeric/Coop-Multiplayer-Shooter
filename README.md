@@ -46,3 +46,6 @@
 * Explode When Near Player
 * Setup Sound Effects
 * Setup Network Replication
+
+# GameMode Setup
+* Create GameModeBase

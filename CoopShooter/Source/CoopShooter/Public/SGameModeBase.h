@@ -14,4 +14,8 @@ class COOPSHOOTER_API ASGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+
+
+
+
 };

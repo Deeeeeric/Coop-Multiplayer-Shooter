@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CoopShooter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E9517389-0518-4CAF-B693-CA5B810525BA}</UniqueIdentifier>
+      <UniqueIdentifier>{034CBFAC-71F2-4137-8BE8-9EBBBF35E919}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoopShooter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{C9F0C014-D3EF-4C9D-AC34-7BEB07927DD9}</UniqueIdentifier>
+      <UniqueIdentifier>{F8F47187-FADD-4B0C-9D96-C1180A85E238}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,8 +23,11 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\CoopShooter">
-      <UniqueIdentifier>{41205835-B91F-4B71-BA20-1E85BECA60BD}</UniqueIdentifier>
+      <UniqueIdentifier>{C1F81B79-A123-4FBF-8473-5A40C452AB92}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoopShooter\CoopShooter.Build.cs">
       <Filter>Source\CoopShooter</Filter>
@@ -35,59 +38,47 @@
     <ClInclude Include="..\..\Source\CoopShooter\CoopShooter.h">
       <Filter>Source\CoopShooter</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\CoopShooter\CoopShooterGameModeBase.cpp">
-      <Filter>Source\CoopShooter</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\CoopShooter\CoopShooterGameModeBase.h">
-      <Filter>Source\CoopShooter</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\CoopShooter\SCharacter.h">
-      <Filter>Source\CoopShooter</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\SWeapon.h">
-      <Filter>Source\CoopShooter\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\SProjectileWeapon.h">
-      <Filter>Source\CoopShooter\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\SHealthComponent.h">
-      <Filter>Source\CoopShooter\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\STrackerBot.h">
-      <Filter>Source\CoopShooter\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\SGameModeBase.h">
-      <Filter>Source\CoopShooter\Public</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\Source\CoopShooter\SCharacter.cpp">
       <Filter>Source\CoopShooter</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\CoopShooter\Private\SWeapon.cpp">
-      <Filter>Source\CoopShooter\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\CoopShooter\Private\SProjectileWeapon.cpp">
+    <ClInclude Include="..\..\Source\CoopShooter\SCharacter.h">
+      <Filter>Source\CoopShooter</Filter>
+    </ClInclude>
+    <Filter Include="Source\CoopShooter\Private">
+      <UniqueIdentifier>{6371A722-B661-4A7F-8DF5-81FD85DE2D2F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SGameModeBase.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SHealthComponent.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SProjectileWeapon.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CoopShooter\Private\STrackerBot.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\CoopShooter\Private\SGameModeBase.cpp">
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SWeapon.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Source\CoopShooter\Public">
-      <UniqueIdentifier>{9f20eba1-df9b-4e5c-9d0a-02c7f0bc7cca}</UniqueIdentifier>
+      <UniqueIdentifier>{881D843B-3FD8-4512-86E9-0D95B2C90AA2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\CoopShooter\Private">
-      <UniqueIdentifier>{643edbb4-fb1a-42aa-9c97-29d3be151114}</UniqueIdentifier>
-    </Filter>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SGameModeBase.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SHealthComponent.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SProjectileWeapon.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\STrackerBot.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SWeapon.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
