@@ -49,3 +49,4 @@
 
 # GameMode Setup
 * Create GameModeBase
+* Setting Up Environmental Query System
