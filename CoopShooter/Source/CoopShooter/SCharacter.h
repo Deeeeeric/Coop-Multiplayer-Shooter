@@ -34,6 +34,10 @@ protected:
 
 	void EndCrouch();
 
+	void BeginRun();
+
+	void Walk();
+
 	// Camera Component Class*
 	/* BlueprintReadOnly: Can't assign new object to this camera component, 
 	instead we create instance once in constructor*/
@@ -53,6 +57,12 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Player", meta = (ClampMin = 0.1, ClampMax = 100))
 	float ADSInterpSpeed;
+
+	UPROPERTY(EditDefaultsOnly)
+	float RunSpeed;
+
+	UPROPERTY(EditDefaultsOnly)
+	float WalkSpeed;
 
 	/* Default FOV set during begin play*/
 	float DefaultFOV;

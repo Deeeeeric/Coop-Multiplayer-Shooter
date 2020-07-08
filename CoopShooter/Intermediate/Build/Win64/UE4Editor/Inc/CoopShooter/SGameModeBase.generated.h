@@ -36,7 +36,7 @@ public: \
 
 #define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ASGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API ASGameModeBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASGameModeBase) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ASGameModeBase); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASGameModeBase); \
@@ -48,8 +48,6 @@ public:
 
 
 #define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ASGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASGameModeBase(ASGameModeBase&&); \
@@ -57,7 +55,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ASGameModeBase); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASGameModeBase); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASGameModeBase)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASGameModeBase)
 
 
 #define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET

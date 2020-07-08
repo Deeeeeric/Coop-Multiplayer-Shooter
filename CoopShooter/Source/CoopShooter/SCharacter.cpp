@@ -10,6 +10,7 @@
 #include "CoopShooter/CoopShooter.h"
 #include "SHealthComponent.h"
 #include "Net/UnrealNetwork.h"
+#include "Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h"
 #include "SWeapon.h"
 
 // Sets default values
@@ -39,6 +40,9 @@ ASCharacter::ASCharacter()
 
 	ADS_FOV = 65.f;
 	ADSInterpSpeed = 20.f;
+
+	WalkSpeed = 500.f;
+	RunSpeed = 800.f;
 
 	WeaponAttachSocketName = "WeaponSocket";
 }
@@ -81,13 +85,23 @@ void ASCharacter::MoveRight(float Value)
 
 void ASCharacter::BeginCrouch()
 {
-
 	Crouch();
 }
 
 void ASCharacter::EndCrouch()
 {
 	UnCrouch();
+}
+
+void ASCharacter::BeginRun()
+{
+	GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+}
+
+
+void ASCharacter::Walk()
+{
+	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }
 
 void ASCharacter::BeginADS()
@@ -151,6 +165,9 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ASCharacter::BeginCrouch);
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &ASCharacter::EndCrouch);
+
+	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &ASCharacter::BeginRun);
+	PlayerInputComponent->BindAction("Run", IE_Released, this, &ASCharacter::Walk);
 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 

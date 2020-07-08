@@ -62,3 +62,8 @@ void USHealthComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Ou
 
 	DOREPLIFETIME(USHealthComponent, Health); // replicate to any client connected to us
 }
+
+float USHealthComponent::GetHealth() const
+{
+	return Health;
+}

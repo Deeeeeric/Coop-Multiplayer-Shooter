@@ -14,8 +14,20 @@ class COOPSHOOTER_API ASGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+protected:
 
+	void CheckAnyPlayerAlive();
 
+	void RoundRestart();
 
+	void GameOver();
+
+public:
+
+	ASGameModeBase();
+
+	virtual void StartPlay() override;
+
+	virtual void Tick(float DeltaSeconds) override;
 
 };

@@ -92,6 +92,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASCharacter); \
 	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ASCharacter, HealthComponent); } \
 	FORCEINLINE static uint32 __PPO__ADS_FOV() { return STRUCT_OFFSET(ASCharacter, ADS_FOV); } \
 	FORCEINLINE static uint32 __PPO__ADSInterpSpeed() { return STRUCT_OFFSET(ASCharacter, ADSInterpSpeed); } \
+	FORCEINLINE static uint32 __PPO__RunSpeed() { return STRUCT_OFFSET(ASCharacter, RunSpeed); } \
+	FORCEINLINE static uint32 __PPO__WalkSpeed() { return STRUCT_OFFSET(ASCharacter, WalkSpeed); } \
 	FORCEINLINE static uint32 __PPO__CurrentWeapon() { return STRUCT_OFFSET(ASCharacter, CurrentWeapon); } \
 	FORCEINLINE static uint32 __PPO__StarterWeaponClass() { return STRUCT_OFFSET(ASCharacter, StarterWeaponClass); } \
 	FORCEINLINE static uint32 __PPO__WeaponAttachSocketName() { return STRUCT_OFFSET(ASCharacter, WeaponAttachSocketName); } \
