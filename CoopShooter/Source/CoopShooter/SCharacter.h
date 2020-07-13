@@ -50,6 +50,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USHealthComponent* HealthComponent;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Player")
 	bool bWantsToADS;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Player")
@@ -67,7 +68,7 @@ protected:
 	/* Default FOV set during begin play*/
 	float DefaultFOV;
 
-	void BeginADS();
+	void BeginADS(); 
 
 	void EndADS();
 
