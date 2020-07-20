@@ -45,6 +45,9 @@ ASCharacter::ASCharacter()
 	RunSpeed = 800.f;
 
 	WeaponAttachSocketName = "WeaponSocket";
+
+	LoadedAmmo = 5;
+	AmmoPool = 5;
 }
 
 // Called when the game starts or when spawned
@@ -116,10 +119,24 @@ void ASCharacter::EndADS()
 
 void ASCharacter::Fire()
 {
+	// Check to see if there is any loaded ammo
+	if (LoadedAmmo <= 0)
+	{
+		return;
+	}
+
+	LoadedAmmo = LoadedAmmo - 1;
+
 	if (CurrentWeapon)
 	{
 		CurrentWeapon->Fire();
 	}
+}
+
+void ASCharacter::OnReload()
+{
+	FHitResult Hit;
+
 }
 
 void ASCharacter::OnHealthChanged(USHealthComponent* HealthComp, float Health, float HealthDelta,
@@ -194,4 +211,5 @@ void ASCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
 
 	DOREPLIFETIME(ASCharacter, CurrentWeapon); // replicate to any client connected to us
 	DOREPLIFETIME(ASCharacter, bDied);
+	DOREPLIFETIME(ASCharacter, LoadedAmmo);
 }

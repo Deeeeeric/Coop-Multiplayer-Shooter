@@ -1,7 +1,12 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+  Parsing headers for CoopShooterEditor
+    Running UnrealHeaderTool "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\CoopShooterEditor\Development\CoopShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\DW\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for CoopShooterEditor in 16.3216726 seconds
+  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter-0002.dll
+  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0002.lib
   Building CoopShooterEditor...
   Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 1 action to XGE
+  Distributing 7 actions to XGE
   --------------------Build System Warning---------------------------------------
   License is invalid:
       License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
@@ -9,7 +14,15 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  CoopShooterEditor.target (0:01.39 at +0:00)
+  SCharacter.gen.cpp (2:15.10 at +0:00)
+  CoopShooter.init.gen.cpp (0:02.09 at +2:15)
+  STrackerBot.cpp (6:08.65 at +2:17)
+  SCharacter.cpp (0:24.95 at +8:26)
+  UE4Editor-CoopShooter.dll (0:05.36 at +8:50)
+     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.exp
+  UE4Editor-CoopShooter.lib (0:00.92 at +8:56)
+     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.exp
+  CoopShooterEditor.target (0:00.26 at +8:57)
   ---------------------- Done ----------------------
   
       Rebuild All: 1 succeeded, 0 failed, 0 skipped
@@ -17,5 +30,5 @@
   1 build system warning(s):
      - License is invalid
   
-  Total time in XGE executor: 3.88 seconds
-  Total execution time: 8.31 seconds
+  Total time in XGE executor: 538.20 seconds
+  Total execution time: 557.29 seconds

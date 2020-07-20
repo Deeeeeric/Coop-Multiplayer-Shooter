@@ -81,4 +81,14 @@
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SAmmoCrate.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SAmmoCrate.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

@@ -83,6 +83,8 @@ protected:
 
 	void Fire();
 
+	void OnReload();
+
 	UFUNCTION()
 	void OnHealthChanged(USHealthComponent* HealthComp, float Health, float HealthDelta, const class UDamageType* DamageType, 
 		class AController* InstigatedBy, AActor* DamageCauser);
@@ -90,6 +92,12 @@ protected:
 	// Pawn died previously
 	UPROPERTY(Replicated, BlueprintReadOnly, Category = "Player")
 	bool bDied;
+
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Ammo")
+	int32 LoadedAmmo;
+
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Ammo")
+	int32 AmmoPool;
 
 public:	
 	// Called every frame
