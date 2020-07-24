@@ -67,3 +67,9 @@ float USHealthComponent::GetHealth() const
 {
 	return Health;
 }
+
+
+bool USHealthComponent::IsAlive() const
+{
+	return Health > 0;
+}

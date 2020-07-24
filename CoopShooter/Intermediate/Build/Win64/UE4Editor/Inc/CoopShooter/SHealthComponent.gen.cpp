@@ -104,6 +104,13 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComponent() {}
 		P_THIS->HandleTakeAnyDamage(Z_Param_DamagedActor,Z_Param_Damage,Z_Param_DamageType,Z_Param_InstigatedBy,Z_Param_DamageCauser);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(USHealthComponent::execIsAlive)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->IsAlive();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(USHealthComponent::execOnRep_Health)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_OldHealth);
@@ -117,6 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComponent() {}
 		UClass* Class = USHealthComponent::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "HandleTakeAnyDamage", &USHealthComponent::execHandleTakeAnyDamage },
+			{ "IsAlive", &USHealthComponent::execIsAlive },
 			{ "OnRep_Health", &USHealthComponent::execOnRep_Health },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -174,6 +182,44 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComponent() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_USHealthComponent_HandleTakeAnyDamage_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_USHealthComponent_IsAlive_Statics
+	{
+		struct SHealthComponent_eventIsAlive_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((SHealthComponent_eventIsAlive_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(SHealthComponent_eventIsAlive_Parms), &Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::Function_MetaDataParams[] = {
+		{ "Category", "PlayerCondition" },
+		{ "ModuleRelativePath", "Public/SHealthComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USHealthComponent, nullptr, "IsAlive", nullptr, nullptr, sizeof(SHealthComponent_eventIsAlive_Parms), Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_USHealthComponent_IsAlive()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_USHealthComponent_IsAlive_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -242,6 +288,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComponent() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_USHealthComponent_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_USHealthComponent_HandleTakeAnyDamage, "HandleTakeAnyDamage" }, // 927780053
+		{ &Z_Construct_UFunction_USHealthComponent_IsAlive, "IsAlive" }, // 324314406
 		{ &Z_Construct_UFunction_USHealthComponent_OnRep_Health, "OnRep_Health" }, // 3216427270
 	};
 #if WITH_METADATA
@@ -305,7 +352,7 @@ void EmptyLinkFunctionForGeneratedCodeSHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USHealthComponent, 1357663318);
+	IMPLEMENT_CLASS(USHealthComponent, 1382522170);
 	template<> COOPSHOOTER_API UClass* StaticClass<USHealthComponent>()
 	{
 		return USHealthComponent::StaticClass();

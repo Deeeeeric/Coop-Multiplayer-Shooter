@@ -85,9 +85,15 @@
     <ClInclude Include="..\..\Source\CoopShooter\Public\SAmmoCrate.h">
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SPlayerState.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SAmmoCrate.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SPlayerState.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
   </ItemGroup>

@@ -21,22 +21,21 @@ public:
 	// Sets default values for this character's properties
 	ASCharacter();
 
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual FVector GetPawnViewLocation() const override;
+
+	/* Retrieve Pitch/Yaw from current camera */
+	UFUNCTION(BlueprintCallable, Category = "Targeting")
+	FRotator GetAimOffsets() const;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-	// We don't want anyone accessing this function, so we protect it
-	void MoveForward(float Value);
-
-	void MoveRight(float Value);
-
-	void BeginCrouch();
-
-	void EndCrouch();
-
-	void BeginRun();
-
-	void Walk();
 
 	// Camera Component Class*
 	/* BlueprintReadOnly: Can't assign new object to this camera component, 
@@ -50,6 +49,55 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USHealthComponent* HealthComponent;
 
+	/************************************************************************/
+	/* Movement                                                            */
+	/************************************************************************/
+	
+	virtual void MoveForward(float Value);
+
+	virtual void MoveRight(float Value);
+
+	void BeginCrouch();
+
+	void EndCrouch();
+
+	void BeginSprint();
+
+	void EndSprint();
+
+	UPROPERTY(EditDefaultsOnly)
+	float SprintSpeed;
+
+	UPROPERTY(EditDefaultsOnly)
+	float WalkSpeed;
+
+	/* Character wants to run, checked during Tick to see if allowed */
+	UPROPERTY(Transient, Replicated)
+	bool bWantsToSprint;
+
+	/* Client/local call to update sprint state  */
+	void SetSprinting(bool NewSprinting);
+
+	/* Server side call to update actual sprint state */
+	UFUNCTION(Server, Reliable, WithValidation)
+	void ServerSetSprinting(bool NewSprinting);
+
+	UFUNCTION(BlueprintCallable, Category = Movement)
+		bool IsSprinting() const;
+
+	float GetSprintingSpeedModifier() const;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Movement")
+	float SprintingSpeedModifier;
+
+	/************************************************************************/
+	/* Aim Down Sights                                                      */
+	/************************************************************************/
+
+	void BeginADS();
+
+	void EndADS();
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Player")
 	bool bWantsToADS;
 
@@ -59,18 +107,13 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Player", meta = (ClampMin = 0.1, ClampMax = 100))
 	float ADSInterpSpeed;
 
-	UPROPERTY(EditDefaultsOnly)
-	float RunSpeed;
-
-	UPROPERTY(EditDefaultsOnly)
-	float WalkSpeed;
-
 	/* Default FOV set during begin play*/
 	float DefaultFOV;
 
-	void BeginADS(); 
 
-	void EndADS();
+	/************************************************************************/
+	/* Weapon                                                               */
+	/************************************************************************/
 
 	UPROPERTY(Replicated) // REPLICATE THE WEAPON Functionality to Client
 	ASWeapon* CurrentWeapon;
@@ -85,6 +128,16 @@ protected:
 
 	void OnReload();
 
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Ammo")
+	int32 LoadedAmmo;
+
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Ammo")
+	int32 AmmoPool;
+
+	/************************************************************************/
+	/* Player status                                                        */
+	/************************************************************************/
+
 	UFUNCTION()
 	void OnHealthChanged(USHealthComponent* HealthComp, float Health, float HealthDelta, const class UDamageType* DamageType, 
 		class AController* InstigatedBy, AActor* DamageCauser);
@@ -92,20 +145,4 @@ protected:
 	// Pawn died previously
 	UPROPERTY(Replicated, BlueprintReadOnly, Category = "Player")
 	bool bDied;
-
-	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Ammo")
-	int32 LoadedAmmo;
-
-	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Ammo")
-	int32 AmmoPool;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	virtual FVector GetPawnViewLocation() const override;
-
 };

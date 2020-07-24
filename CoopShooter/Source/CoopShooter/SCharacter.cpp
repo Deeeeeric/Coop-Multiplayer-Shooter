@@ -42,7 +42,7 @@ ASCharacter::ASCharacter()
 	ADSInterpSpeed = 20.f;
 
 	WalkSpeed = 500.f;
-	RunSpeed = 800.f;
+	SprintSpeed = 800.f;
 
 	WeaponAttachSocketName = "WeaponSocket";
 
@@ -78,12 +78,29 @@ void ASCharacter::BeginPlay()
 void ASCharacter::MoveForward(float Value)
 {
 	// GetActorForwardVector: Get the forward (X) vector (length 1.0) from this Actor, in world space.
-	AddMovementInput(GetActorForwardVector() * Value);
+
+	if ((Controller != NULL) && (Value != 0.0f))
+	{
+		// Limit pitch when walking or falling
+		const bool bLimitRotation = (GetCharacterMovement()->IsMovingOnGround() || GetCharacterMovement()->IsFalling());
+
+		// Find out which way is forward
+		const FRotator Rotation = Controller->GetControlRotation();
+
+		//add movement in that direction
+		const FVector Direction = FRotationMatrix(Rotation).GetScaledAxis(EAxis::X);
+		AddMovementInput(Direction * Value);
+	}
 }
 
 void ASCharacter::MoveRight(float Value)
 {
-	AddMovementInput(GetActorRightVector() * Value);
+	if (Value != 0.f)
+	{
+		const FRotator Rotation = GetActorRotation();
+		const FVector Direction = FRotationMatrix(Rotation).GetScaledAxis(EAxis::Y);
+		AddMovementInput(Direction * Value);
+	}
 }
 
 void ASCharacter::BeginCrouch()
@@ -96,15 +113,53 @@ void ASCharacter::EndCrouch()
 	UnCrouch();
 }
 
-void ASCharacter::BeginRun()
+void ASCharacter::BeginSprint()
 {
-	GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+	SetSprinting(true);
+	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
 }
 
 
-void ASCharacter::Walk()
+void ASCharacter::EndSprint()
 {
+	SetSprinting(false);
 	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+}
+
+void ASCharacter::SetSprinting(bool NewSprinting)
+{
+	bWantsToSprint = NewSprinting;
+
+	if (bIsCrouched)
+		UnCrouch();
+
+	// TODO: Stop weapon fire
+
+	if (GetLocalRole() < ROLE_Authority)
+	{
+		ServerSetSprinting(NewSprinting);
+	}
+}
+
+void ASCharacter::ServerSetSprinting_Implementation(bool NewSprinting)
+{
+	SetSprinting(NewSprinting);
+}
+
+
+bool ASCharacter::ServerSetSprinting_Validate(bool NewSprinting)
+{
+	return true;
+}
+
+bool ASCharacter::IsSprinting() const
+{
+	if (!GetCharacterMovement())
+		return false;
+
+	return bWantsToSprint && !bWantsToADS && !GetVelocity().IsZero()
+		// Don't allow sprint while strafing sideways or standing still (1.0 is straight forward, -1.0 is backward while near 0 is sideways or standing still)
+		&& (GetVelocity().GetSafeNormal2D() | GetActorRotation().Vector()) > 0.8; // Changing this value to 0.1 allows for diagonal sprinting. (holding W+A or W+D keys)
 }
 
 void ASCharacter::BeginADS()
@@ -115,6 +170,15 @@ void ASCharacter::BeginADS()
 void ASCharacter::EndADS()
 {
 	bWantsToADS = false;
+}
+
+FRotator ASCharacter::GetAimOffsets() const
+{
+	const FVector AimDirWS = GetBaseAimRotation().Vector();
+	const FVector AimDirLS = ActorToWorld().InverseTransformVectorNoScale(AimDirWS);
+	const FRotator AimRotLS = AimDirLS.Rotation();
+
+	return AimRotLS;
 }
 
 void ASCharacter::Fire()
@@ -166,7 +230,14 @@ void ASCharacter::Tick(float DeltaTime)
 	float NewFOV = FMath::FInterpTo(CameraComponent->FieldOfView, TargetFOV, DeltaTime, ADSInterpSpeed);
 
 	CameraComponent->SetFieldOfView(NewFOV);
+
+	if (bWantsToSprint && !IsSprinting())
+	{
+		SetSprinting(true);
+	}
+
 }
+
 
 // Called to bind functionality to input
 void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -183,8 +254,8 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ASCharacter::BeginCrouch);
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &ASCharacter::EndCrouch);
 
-	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &ASCharacter::BeginRun);
-	PlayerInputComponent->BindAction("Run", IE_Released, this, &ASCharacter::Walk);
+	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ASCharacter::BeginSprint);
+	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ASCharacter::EndSprint);
 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 
@@ -208,6 +279,10 @@ FVector ASCharacter::GetPawnViewLocation() const
 void ASCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	// Value is already updated locally, skip in replication step
+	DOREPLIFETIME_CONDITION(ASCharacter, bWantsToSprint, COND_SkipOwner);
+	//DOREPLIFETIME_CONDITION(ASCharacter, bIsADS, COND_SkipOwner);
 
 	DOREPLIFETIME(ASCharacter, CurrentWeapon); // replicate to any client connected to us
 	DOREPLIFETIME(ASCharacter, bDied);

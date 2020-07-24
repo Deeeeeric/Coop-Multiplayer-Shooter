@@ -27,8 +27,8 @@ ASWeapon::ASWeapon()
 	MuzzleSocketName = "MuzzleSocket";
 	TracerTargetName = "Target";
 
-	BaseDamage = 33.33f;
-
+	BaseDamage = 34.0f;
+	
 	// Replicate the weapon so that it spawns on the client side
 	SetReplicates(true);
 
@@ -79,7 +79,7 @@ void ASWeapon::Fire()
 			float ActualDamage = BaseDamage;
 			if (SurfaceType == SURFACE_FLESHVUNERABLE)
 			{
-				ActualDamage *= 3.1f;
+				ActualDamage *= 3.0f;
 			}
 			// APPLY DAMAGE
 			UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
@@ -87,8 +87,6 @@ void ASWeapon::Fire()
 			PlayImpactEffects(SurfaceType, Hit.ImpactPoint);
 
 			TracerEndPoint = Hit.ImpactPoint;
-
-
 		}
 
 		if (DebugWeaponDrawing > 0)

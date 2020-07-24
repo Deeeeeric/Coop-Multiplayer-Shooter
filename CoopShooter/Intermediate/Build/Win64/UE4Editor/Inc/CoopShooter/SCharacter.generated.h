@@ -12,6 +12,7 @@ class USHealthComponent;
 class UDamageType;
 class AController;
 class AActor;
+struct FRotator;
 #ifdef COOPSHOOTER_SCharacter_generated_h
 #error "SCharacter.generated.h already included, missing '#pragma once' in SCharacter.h"
 #endif
@@ -19,15 +20,33 @@ class AActor;
 
 #define CoopShooter_Source_CoopShooter_SCharacter_h_18_SPARSE_DATA
 #define CoopShooter_Source_CoopShooter_SCharacter_h_18_RPC_WRAPPERS \
+	virtual bool ServerSetSprinting_Validate(bool ); \
+	virtual void ServerSetSprinting_Implementation(bool NewSprinting); \
  \
-	DECLARE_FUNCTION(execOnHealthChanged);
+	DECLARE_FUNCTION(execOnHealthChanged); \
+	DECLARE_FUNCTION(execIsSprinting); \
+	DECLARE_FUNCTION(execServerSetSprinting); \
+	DECLARE_FUNCTION(execGetAimOffsets);
 
 
 #define CoopShooter_Source_CoopShooter_SCharacter_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual bool ServerSetSprinting_Validate(bool ); \
+	virtual void ServerSetSprinting_Implementation(bool NewSprinting); \
  \
-	DECLARE_FUNCTION(execOnHealthChanged);
+	DECLARE_FUNCTION(execOnHealthChanged); \
+	DECLARE_FUNCTION(execIsSprinting); \
+	DECLARE_FUNCTION(execServerSetSprinting); \
+	DECLARE_FUNCTION(execGetAimOffsets);
 
 
+#define CoopShooter_Source_CoopShooter_SCharacter_h_18_EVENT_PARMS \
+	struct SCharacter_eventServerSetSprinting_Parms \
+	{ \
+		bool NewSprinting; \
+	};
+
+
+#define CoopShooter_Source_CoopShooter_SCharacter_h_18_CALLBACK_WRAPPERS
 #define CoopShooter_Source_CoopShooter_SCharacter_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASCharacter(); \
@@ -39,11 +58,12 @@ public: \
 	enum class ENetFields_Private : uint16 \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
-		CurrentWeapon=NETFIELD_REP_START, \
-		bDied, \
+		bWantsToSprint=NETFIELD_REP_START, \
+		CurrentWeapon, \
 		LoadedAmmo, \
 		AmmoPool, \
-		NETFIELD_REP_END=AmmoPool	}; \
+		bDied, \
+		NETFIELD_REP_END=bDied	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
@@ -58,11 +78,12 @@ public: \
 	enum class ENetFields_Private : uint16 \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
-		CurrentWeapon=NETFIELD_REP_START, \
-		bDied, \
+		bWantsToSprint=NETFIELD_REP_START, \
+		CurrentWeapon, \
 		LoadedAmmo, \
 		AmmoPool, \
-		NETFIELD_REP_END=AmmoPool	}; \
+		bDied, \
+		NETFIELD_REP_END=bDied	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
@@ -94,26 +115,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASCharacter); \
 	FORCEINLINE static uint32 __PPO__CameraComponent() { return STRUCT_OFFSET(ASCharacter, CameraComponent); } \
 	FORCEINLINE static uint32 __PPO__SpringArmComponent() { return STRUCT_OFFSET(ASCharacter, SpringArmComponent); } \
 	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ASCharacter, HealthComponent); } \
+	FORCEINLINE static uint32 __PPO__SprintSpeed() { return STRUCT_OFFSET(ASCharacter, SprintSpeed); } \
+	FORCEINLINE static uint32 __PPO__WalkSpeed() { return STRUCT_OFFSET(ASCharacter, WalkSpeed); } \
+	FORCEINLINE static uint32 __PPO__bWantsToSprint() { return STRUCT_OFFSET(ASCharacter, bWantsToSprint); } \
+	FORCEINLINE static uint32 __PPO__SprintingSpeedModifier() { return STRUCT_OFFSET(ASCharacter, SprintingSpeedModifier); } \
 	FORCEINLINE static uint32 __PPO__bWantsToADS() { return STRUCT_OFFSET(ASCharacter, bWantsToADS); } \
 	FORCEINLINE static uint32 __PPO__ADS_FOV() { return STRUCT_OFFSET(ASCharacter, ADS_FOV); } \
 	FORCEINLINE static uint32 __PPO__ADSInterpSpeed() { return STRUCT_OFFSET(ASCharacter, ADSInterpSpeed); } \
-	FORCEINLINE static uint32 __PPO__RunSpeed() { return STRUCT_OFFSET(ASCharacter, RunSpeed); } \
-	FORCEINLINE static uint32 __PPO__WalkSpeed() { return STRUCT_OFFSET(ASCharacter, WalkSpeed); } \
 	FORCEINLINE static uint32 __PPO__CurrentWeapon() { return STRUCT_OFFSET(ASCharacter, CurrentWeapon); } \
 	FORCEINLINE static uint32 __PPO__StarterWeaponClass() { return STRUCT_OFFSET(ASCharacter, StarterWeaponClass); } \
 	FORCEINLINE static uint32 __PPO__WeaponAttachSocketName() { return STRUCT_OFFSET(ASCharacter, WeaponAttachSocketName); } \
-	FORCEINLINE static uint32 __PPO__bDied() { return STRUCT_OFFSET(ASCharacter, bDied); } \
 	FORCEINLINE static uint32 __PPO__LoadedAmmo() { return STRUCT_OFFSET(ASCharacter, LoadedAmmo); } \
-	FORCEINLINE static uint32 __PPO__AmmoPool() { return STRUCT_OFFSET(ASCharacter, AmmoPool); }
+	FORCEINLINE static uint32 __PPO__AmmoPool() { return STRUCT_OFFSET(ASCharacter, AmmoPool); } \
+	FORCEINLINE static uint32 __PPO__bDied() { return STRUCT_OFFSET(ASCharacter, bDied); }
 
 
-#define CoopShooter_Source_CoopShooter_SCharacter_h_15_PROLOG
+#define CoopShooter_Source_CoopShooter_SCharacter_h_15_PROLOG \
+	CoopShooter_Source_CoopShooter_SCharacter_h_18_EVENT_PARMS
+
+
 #define CoopShooter_Source_CoopShooter_SCharacter_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	CoopShooter_Source_CoopShooter_SCharacter_h_18_PRIVATE_PROPERTY_OFFSET \
 	CoopShooter_Source_CoopShooter_SCharacter_h_18_SPARSE_DATA \
 	CoopShooter_Source_CoopShooter_SCharacter_h_18_RPC_WRAPPERS \
+	CoopShooter_Source_CoopShooter_SCharacter_h_18_CALLBACK_WRAPPERS \
 	CoopShooter_Source_CoopShooter_SCharacter_h_18_INCLASS \
 	CoopShooter_Source_CoopShooter_SCharacter_h_18_STANDARD_CONSTRUCTORS \
 public: \
@@ -126,6 +153,7 @@ public: \
 	CoopShooter_Source_CoopShooter_SCharacter_h_18_PRIVATE_PROPERTY_OFFSET \
 	CoopShooter_Source_CoopShooter_SCharacter_h_18_SPARSE_DATA \
 	CoopShooter_Source_CoopShooter_SCharacter_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	CoopShooter_Source_CoopShooter_SCharacter_h_18_CALLBACK_WRAPPERS \
 	CoopShooter_Source_CoopShooter_SCharacter_h_18_INCLASS_NO_PURE_DECLS \
 	CoopShooter_Source_CoopShooter_SCharacter_h_18_ENHANCED_CONSTRUCTORS \
 private: \

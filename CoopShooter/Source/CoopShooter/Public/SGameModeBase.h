@@ -6,6 +6,11 @@
 #include "GameFramework/GameModeBase.h"
 #include "SGameModeBase.generated.h"
 
+
+#define SURFACE_FLESHDEFAULT		SurfaceType1
+#define SURFACE_FLESHVUNERABLE		SurfaceType2
+
+#define COLLISION_WEAPON			ECCGameTraceChannel1
 /**
  * 
  */

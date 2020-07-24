@@ -36,6 +36,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HealthComponent")
 	float DefaultHealth;
 
+	UFUNCTION(BlueprintCallable, Category = "PlayerCondition")
+		bool IsAlive() const;
+
 	UFUNCTION()
 	void HandleTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 

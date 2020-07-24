@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 	COOPSHOOTER_API UClass* Z_Construct_UClass_ASCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_CoopShooter();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
@@ -39,13 +40,123 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		P_THIS->OnHealthChanged(Z_Param_HealthComp,Z_Param_Health,Z_Param_HealthDelta,Z_Param_DamageType,Z_Param_InstigatedBy,Z_Param_DamageCauser);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ASCharacter::execIsSprinting)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=P_THIS->IsSprinting();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ASCharacter::execServerSetSprinting)
+	{
+		P_GET_UBOOL(Z_Param_NewSprinting);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		if (!P_THIS->ServerSetSprinting_Validate(Z_Param_NewSprinting))
+		{
+			RPC_ValidateFailed(TEXT("ServerSetSprinting_Validate"));
+			return;
+		}
+		P_THIS->ServerSetSprinting_Implementation(Z_Param_NewSprinting);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ASCharacter::execGetAimOffsets)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FRotator*)Z_Param__Result=P_THIS->GetAimOffsets();
+		P_NATIVE_END;
+	}
+	static FName NAME_ASCharacter_ServerSetSprinting = FName(TEXT("ServerSetSprinting"));
+	void ASCharacter::ServerSetSprinting(bool NewSprinting)
+	{
+		SCharacter_eventServerSetSprinting_Parms Parms;
+		Parms.NewSprinting=NewSprinting ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_ASCharacter_ServerSetSprinting),&Parms);
+	}
 	void ASCharacter::StaticRegisterNativesASCharacter()
 	{
 		UClass* Class = ASCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetAimOffsets", &ASCharacter::execGetAimOffsets },
+			{ "IsSprinting", &ASCharacter::execIsSprinting },
 			{ "OnHealthChanged", &ASCharacter::execOnHealthChanged },
+			{ "ServerSetSprinting", &ASCharacter::execServerSetSprinting },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics
+	{
+		struct SCharacter_eventGetAimOffsets_Parms
+		{
+			FRotator ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SCharacter_eventGetAimOffsets_Parms, ReturnValue), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Targeting" },
+		{ "Comment", "/* Retrieve Pitch/Yaw from current camera */" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+		{ "ToolTip", "Retrieve Pitch/Yaw from current camera" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASCharacter, nullptr, "GetAimOffsets", nullptr, nullptr, sizeof(SCharacter_eventGetAimOffsets_Parms), Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASCharacter_GetAimOffsets()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASCharacter_GetAimOffsets_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ASCharacter_IsSprinting_Statics
+	{
+		struct SCharacter_eventIsSprinting_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((SCharacter_eventIsSprinting_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(SCharacter_eventIsSprinting_Parms), &Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASCharacter, nullptr, "IsSprinting", nullptr, nullptr, sizeof(SCharacter_eventIsSprinting_Parms), Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASCharacter_IsSprinting()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASCharacter_IsSprinting_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ASCharacter_OnHealthChanged_Statics
 	{
@@ -102,6 +213,7 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASCharacter_OnHealthChanged_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "/************************************************************************/" },
 		{ "ModuleRelativePath", "SCharacter.h" },
 	};
 #endif
@@ -112,6 +224,41 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASCharacter_OnHealthChanged_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics
+	{
+		static void NewProp_NewSprinting_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_NewSprinting;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::NewProp_NewSprinting_SetBit(void* Obj)
+	{
+		((SCharacter_eventServerSetSprinting_Parms*)Obj)->NewSprinting = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::NewProp_NewSprinting = { "NewSprinting", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(SCharacter_eventServerSetSprinting_Parms), &Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::NewProp_NewSprinting_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::NewProp_NewSprinting,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "/* Server side call to update actual sprint state */" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+		{ "ToolTip", "Server side call to update actual sprint state" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASCharacter, nullptr, "ServerSetSprinting", nullptr, nullptr, sizeof(SCharacter_eventServerSetSprinting_Parms), Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASCharacter_ServerSetSprinting()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASCharacter_ServerSetSprinting_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -127,6 +274,11 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bDied_MetaData[];
+#endif
+		static void NewProp_bDied_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bDied;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AmmoPool_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_AmmoPool;
@@ -134,11 +286,6 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LoadedAmmo_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_LoadedAmmo;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bDied_MetaData[];
-#endif
-		static void NewProp_bDied_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bDied;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponAttachSocketName_MetaData[];
 #endif
@@ -152,14 +299,6 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentWeapon;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WalkSpeed_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_WalkSpeed;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RunSpeed_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_RunSpeed;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ADSInterpSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ADSInterpSpeed;
@@ -172,6 +311,23 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 #endif
 		static void NewProp_bWantsToADS_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bWantsToADS;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SprintingSpeedModifier_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SprintingSpeedModifier;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bWantsToSprint_MetaData[];
+#endif
+		static void NewProp_bWantsToSprint_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bWantsToSprint;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WalkSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_WalkSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SprintSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SprintSpeed;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthComponent_MetaData[];
 #endif
@@ -193,7 +349,10 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CoopShooter,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ASCharacter_OnHealthChanged, "OnHealthChanged" }, // 252898529
+		{ &Z_Construct_UFunction_ASCharacter_GetAimOffsets, "GetAimOffsets" }, // 3804233154
+		{ &Z_Construct_UFunction_ASCharacter_IsSprinting, "IsSprinting" }, // 1427425509
+		{ &Z_Construct_UFunction_ASCharacter_OnHealthChanged, "OnHealthChanged" }, // 1212946911
+		{ &Z_Construct_UFunction_ASCharacter_ServerSetSprinting, "ServerSetSprinting" }, // 3185146401
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::Class_MetaDataParams[] = {
@@ -202,6 +361,19 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		{ "ModuleRelativePath", "SCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_MetaData[] = {
+		{ "Category", "Player" },
+		{ "Comment", "// Pawn died previously\n" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+		{ "ToolTip", "Pawn died previously" },
+	};
+#endif
+	void Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_SetBit(void* Obj)
+	{
+		((ASCharacter*)Obj)->bDied = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied = { "bDied", nullptr, (EPropertyFlags)0x0020080000000034, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ASCharacter), &Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_SetBit, METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool_MetaData[] = {
 		{ "Category", "Ammo" },
@@ -216,19 +388,6 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo = { "LoadedAmmo", nullptr, (EPropertyFlags)0x0020080000000025, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, LoadedAmmo), METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_MetaData[] = {
-		{ "Category", "Player" },
-		{ "Comment", "// Pawn died previously\n" },
-		{ "ModuleRelativePath", "SCharacter.h" },
-		{ "ToolTip", "Pawn died previously" },
-	};
-#endif
-	void Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_SetBit(void* Obj)
-	{
-		((ASCharacter*)Obj)->bDied = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied = { "bDied", nullptr, (EPropertyFlags)0x0020080000000034, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ASCharacter), &Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_SetBit, METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_WeaponAttachSocketName_MetaData[] = {
 		{ "Category", "Player" },
@@ -245,26 +404,12 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_StarterWeaponClass = { "StarterWeaponClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, StarterWeaponClass), Z_Construct_UClass_ASWeapon_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_StarterWeaponClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_StarterWeaponClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_CurrentWeapon_MetaData[] = {
-		{ "Comment", "// REPLICATE THE WEAPON Functionality to Client\n" },
+		{ "Comment", "/************************************************************************/// REPLICATE THE WEAPON Functionality to Client\n" },
 		{ "ModuleRelativePath", "SCharacter.h" },
-		{ "ToolTip", "REPLICATE THE WEAPON Functionality to Client" },
+		{ "ToolTip", "********************************************************************// REPLICATE THE WEAPON Functionality to Client" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_CurrentWeapon = { "CurrentWeapon", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, CurrentWeapon), Z_Construct_UClass_ASWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_CurrentWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_CurrentWeapon_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_WalkSpeed_MetaData[] = {
-		{ "Category", "SCharacter" },
-		{ "ModuleRelativePath", "SCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_WalkSpeed = { "WalkSpeed", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, WalkSpeed), METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_WalkSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_WalkSpeed_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_RunSpeed_MetaData[] = {
-		{ "Category", "SCharacter" },
-		{ "ModuleRelativePath", "SCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_RunSpeed = { "RunSpeed", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, RunSpeed), METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_RunSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_RunSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_ADSInterpSpeed_MetaData[] = {
 		{ "Category", "Player" },
@@ -293,6 +438,39 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToADS = { "bWantsToADS", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ASCharacter), &Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToADS_SetBit, METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToADS_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToADS_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_SprintingSpeedModifier_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_SprintingSpeedModifier = { "SprintingSpeedModifier", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, SprintingSpeedModifier), METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_SprintingSpeedModifier_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_SprintingSpeedModifier_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToSprint_MetaData[] = {
+		{ "Comment", "/* Character wants to run, checked during Tick to see if allowed */" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+		{ "ToolTip", "Character wants to run, checked during Tick to see if allowed" },
+	};
+#endif
+	void Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToSprint_SetBit(void* Obj)
+	{
+		((ASCharacter*)Obj)->bWantsToSprint = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToSprint = { "bWantsToSprint", nullptr, (EPropertyFlags)0x0020080000002020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ASCharacter), &Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToSprint_SetBit, METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToSprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToSprint_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_WalkSpeed_MetaData[] = {
+		{ "Category", "SCharacter" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_WalkSpeed = { "WalkSpeed", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, WalkSpeed), METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_WalkSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_WalkSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_SprintSpeed_MetaData[] = {
+		{ "Category", "SCharacter" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_SprintSpeed = { "SprintSpeed", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, SprintSpeed), METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_SprintSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_SprintSpeed_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_HealthComponent_MetaData[] = {
 		{ "Category", "Components" },
 		{ "EditInline", "true" },
@@ -319,17 +497,19 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_CameraComponent = { "CameraComponent", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, CameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_CameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_CameraComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_WeaponAttachSocketName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_StarterWeaponClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_CurrentWeapon,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_WalkSpeed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_RunSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_ADSInterpSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_ADS_FOV,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToADS,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_SprintingSpeedModifier,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_bWantsToSprint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_WalkSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_SprintSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_HealthComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_SpringArmComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_CameraComponent,
@@ -361,7 +541,7 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASCharacter, 2341756723);
+	IMPLEMENT_CLASS(ASCharacter, 3070697492);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASCharacter>()
 	{
 		return ASCharacter::StaticClass();
@@ -370,16 +550,18 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 
 	void ASCharacter::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
 	{
+		static const FName Name_bWantsToSprint(TEXT("bWantsToSprint"));
 		static const FName Name_CurrentWeapon(TEXT("CurrentWeapon"));
-		static const FName Name_bDied(TEXT("bDied"));
 		static const FName Name_LoadedAmmo(TEXT("LoadedAmmo"));
 		static const FName Name_AmmoPool(TEXT("AmmoPool"));
+		static const FName Name_bDied(TEXT("bDied"));
 
 		const bool bIsValid = true
+			&& Name_bWantsToSprint == ClassReps[(int32)ENetFields_Private::bWantsToSprint].Property->GetFName()
 			&& Name_CurrentWeapon == ClassReps[(int32)ENetFields_Private::CurrentWeapon].Property->GetFName()
-			&& Name_bDied == ClassReps[(int32)ENetFields_Private::bDied].Property->GetFName()
 			&& Name_LoadedAmmo == ClassReps[(int32)ENetFields_Private::LoadedAmmo].Property->GetFName()
-			&& Name_AmmoPool == ClassReps[(int32)ENetFields_Private::AmmoPool].Property->GetFName();
+			&& Name_AmmoPool == ClassReps[(int32)ENetFields_Private::AmmoPool].Property->GetFName()
+			&& Name_bDied == ClassReps[(int32)ENetFields_Private::bDied].Property->GetFName();
 
 		checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in ASCharacter"));
 	}
