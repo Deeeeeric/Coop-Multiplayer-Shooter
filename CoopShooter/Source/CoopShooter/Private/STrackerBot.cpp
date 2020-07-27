@@ -181,6 +181,8 @@ void ASTrackerBot::DamageSelf()
 	// Check if this is a player
 	void ASTrackerBot::NotifyActorBeginOverlap(AActor* OtherActor)
 	{
+		Super::NotifyActorBeginOverlap(OtherActor);
+
 		if (!bStarSelftDestructionTimer && !bExploded)
 		{
 			ASCharacter* PlayerPawn = Cast<ASCharacter>(OtherActor);

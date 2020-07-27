@@ -51,3 +51,4 @@
 * Create GameModeBase
 * Setting Up Environmental Query System
 * Spawn AI Usng EQS
+* Creating Pickup Class
