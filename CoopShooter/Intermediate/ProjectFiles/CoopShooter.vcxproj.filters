@@ -91,6 +91,9 @@
     <ClInclude Include="..\..\Source\CoopShooter\Public\SPickupActor.h">
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SPowerUpActor.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SAmmoCrate.cpp">
@@ -100,6 +103,9 @@
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SPickupActor.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SPowerUpActor.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
   </ItemGroup>
