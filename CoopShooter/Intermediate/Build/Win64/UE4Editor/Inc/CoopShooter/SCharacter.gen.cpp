@@ -279,14 +279,6 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		static void NewProp_bDied_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bDied;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AmmoPool_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_AmmoPool;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LoadedAmmo_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_LoadedAmmo;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponAttachSocketName_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_WeaponAttachSocketName;
@@ -340,6 +332,14 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AmmoPool_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_AmmoPool;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LoadedAmmo_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_LoadedAmmo;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -374,20 +374,6 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		((ASCharacter*)Obj)->bDied = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied = { "bDied", nullptr, (EPropertyFlags)0x0020080000000034, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ASCharacter), &Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_SetBit, METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool_MetaData[] = {
-		{ "Category", "Ammo" },
-		{ "ModuleRelativePath", "SCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool = { "AmmoPool", nullptr, (EPropertyFlags)0x0020080000000025, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, AmmoPool), METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo_MetaData[] = {
-		{ "Category", "Ammo" },
-		{ "ModuleRelativePath", "SCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo = { "LoadedAmmo", nullptr, (EPropertyFlags)0x0020080000000025, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, LoadedAmmo), METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_WeaponAttachSocketName_MetaData[] = {
 		{ "Category", "Player" },
@@ -496,10 +482,22 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_CameraComponent = { "CameraComponent", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, CameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_CameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_CameraComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool_MetaData[] = {
+		{ "Category", "Ammo" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool = { "AmmoPool", nullptr, (EPropertyFlags)0x0010000000000025, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, AmmoPool), METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo_MetaData[] = {
+		{ "Category", "Ammo" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo = { "LoadedAmmo", nullptr, (EPropertyFlags)0x0010000000000025, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASCharacter, LoadedAmmo), METADATA_PARAMS(Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_bDied,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_WeaponAttachSocketName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_StarterWeaponClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_CurrentWeapon,
@@ -513,6 +511,8 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_HealthComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_SpringArmComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_CameraComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_AmmoPool,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_LoadedAmmo,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASCharacter>::IsAbstract,
@@ -541,7 +541,7 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASCharacter, 3070697492);
+	IMPLEMENT_CLASS(ASCharacter, 1118027002);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASCharacter>()
 	{
 		return ASCharacter::StaticClass();
@@ -550,17 +550,17 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 
 	void ASCharacter::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
 	{
-		static const FName Name_bWantsToSprint(TEXT("bWantsToSprint"));
-		static const FName Name_CurrentWeapon(TEXT("CurrentWeapon"));
 		static const FName Name_LoadedAmmo(TEXT("LoadedAmmo"));
 		static const FName Name_AmmoPool(TEXT("AmmoPool"));
+		static const FName Name_bWantsToSprint(TEXT("bWantsToSprint"));
+		static const FName Name_CurrentWeapon(TEXT("CurrentWeapon"));
 		static const FName Name_bDied(TEXT("bDied"));
 
 		const bool bIsValid = true
-			&& Name_bWantsToSprint == ClassReps[(int32)ENetFields_Private::bWantsToSprint].Property->GetFName()
-			&& Name_CurrentWeapon == ClassReps[(int32)ENetFields_Private::CurrentWeapon].Property->GetFName()
 			&& Name_LoadedAmmo == ClassReps[(int32)ENetFields_Private::LoadedAmmo].Property->GetFName()
 			&& Name_AmmoPool == ClassReps[(int32)ENetFields_Private::AmmoPool].Property->GetFName()
+			&& Name_bWantsToSprint == ClassReps[(int32)ENetFields_Private::bWantsToSprint].Property->GetFName()
+			&& Name_CurrentWeapon == ClassReps[(int32)ENetFields_Private::CurrentWeapon].Property->GetFName()
 			&& Name_bDied == ClassReps[(int32)ENetFields_Private::bDied].Property->GetFName();
 
 		checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in ASCharacter"));

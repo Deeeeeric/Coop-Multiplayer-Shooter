@@ -58,10 +58,10 @@ public: \
 	enum class ENetFields_Private : uint16 \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
-		bWantsToSprint=NETFIELD_REP_START, \
-		CurrentWeapon, \
-		LoadedAmmo, \
+		LoadedAmmo=NETFIELD_REP_START, \
 		AmmoPool, \
+		bWantsToSprint, \
+		CurrentWeapon, \
 		bDied, \
 		NETFIELD_REP_END=bDied	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
@@ -78,10 +78,10 @@ public: \
 	enum class ENetFields_Private : uint16 \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
-		bWantsToSprint=NETFIELD_REP_START, \
-		CurrentWeapon, \
-		LoadedAmmo, \
+		LoadedAmmo=NETFIELD_REP_START, \
 		AmmoPool, \
+		bWantsToSprint, \
+		CurrentWeapon, \
 		bDied, \
 		NETFIELD_REP_END=bDied	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
@@ -125,8 +125,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASCharacter); \
 	FORCEINLINE static uint32 __PPO__CurrentWeapon() { return STRUCT_OFFSET(ASCharacter, CurrentWeapon); } \
 	FORCEINLINE static uint32 __PPO__StarterWeaponClass() { return STRUCT_OFFSET(ASCharacter, StarterWeaponClass); } \
 	FORCEINLINE static uint32 __PPO__WeaponAttachSocketName() { return STRUCT_OFFSET(ASCharacter, WeaponAttachSocketName); } \
-	FORCEINLINE static uint32 __PPO__LoadedAmmo() { return STRUCT_OFFSET(ASCharacter, LoadedAmmo); } \
-	FORCEINLINE static uint32 __PPO__AmmoPool() { return STRUCT_OFFSET(ASCharacter, AmmoPool); } \
 	FORCEINLINE static uint32 __PPO__bDied() { return STRUCT_OFFSET(ASCharacter, bDied); }
 
 

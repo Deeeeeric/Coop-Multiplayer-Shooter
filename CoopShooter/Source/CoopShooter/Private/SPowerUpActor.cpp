@@ -10,18 +10,6 @@ ASPowerUpActor::ASPowerUpActor()
 	TotalNumOfTicks = 0;
 }
 
-void ASPowerUpActor::ActivatePowerup()
-{
-	if (PowerupInterval > 0.0f)
-	{
-		GetWorldTimerManager().SetTimer(TimerHandle_PowerupTick, this, &ASPowerUpActor::OnTickPowerup, PowerupInterval, true, 0.0f);
-	}
-	else
-	{
-		OnTickPowerup();
-	}
-}
-
 // Called when the game starts or when spawned
 void ASPowerUpActor::BeginPlay()
 {
@@ -40,5 +28,19 @@ void ASPowerUpActor::OnTickPowerup()
 
 		// Delete Timer
 		GetWorldTimerManager().ClearTimer(TimerHandle_PowerupTick);
+	}
+}
+
+void ASPowerUpActor::ActivatePowerup()
+{
+	OnActivated();
+
+	if (PowerupInterval > 0.0f)
+	{
+		GetWorldTimerManager().SetTimer(TimerHandle_PowerupTick, this, &ASPowerUpActor::OnTickPowerup, PowerupInterval, true);
+	}
+	else
+	{
+		OnTickPowerup();
 	}
 }

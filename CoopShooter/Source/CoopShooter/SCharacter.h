@@ -33,6 +33,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Targeting")
 	FRotator GetAimOffsets() const;
 
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Ammo")
+		int32 LoadedAmmo;
+
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Ammo")
+		int32 AmmoPool;
+
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -127,12 +134,6 @@ protected:
 	void Fire();
 
 	void OnReload();
-
-	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Ammo")
-	int32 LoadedAmmo;
-
-	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Ammo")
-	int32 AmmoPool;
 
 	/************************************************************************/
 	/* Player status                                                        */

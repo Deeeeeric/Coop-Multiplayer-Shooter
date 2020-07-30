@@ -2,13 +2,23 @@
 
 
 #include "SAmmoCrate.h"
+#include "CoopShooter/SCharacter.h"
+#include "Components/SphereComponent.h"
 
 // Sets default values
 ASAmmoCrate::ASAmmoCrate()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	Count = 2;
 
+	SphereComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
+	SphereComponent->SetSphereRadius(45.f);
+	SphereComponent->SetCollisionProfileName(TEXT("Trigger"));
+	RootComponent = SphereComponent;
+
+	SphereComponent->OnComponentBeginOverlap.AddDynamic(this, &ASAmmoCrate::OnPickup);
+
+	StaticMesh = CreateAbstractDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
+	StaticMesh->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
@@ -18,10 +28,20 @@ void ASAmmoCrate::BeginPlay()
 	
 }
 
-// Called every frame
-void ASAmmoCrate::Tick(float DeltaTime)
+void ASAmmoCrate::OnPickup(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	Super::Tick(DeltaTime);
+	ASCharacter *Character = Cast<ASCharacter>(OtherActor);
 
+	if (Character)
+	{
+		Character->LoadedAmmo = Character->LoadedAmmo + Count;
+	}
+	else if (LoadedAmmo > 3 && != 5)
+	{
+		Character->LoadedAmmo = Character->LoadedAmmo + 1;
+	}
+
+	Destroy();
 }
+
 

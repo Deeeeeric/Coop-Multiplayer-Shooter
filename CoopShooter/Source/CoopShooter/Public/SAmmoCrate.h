@@ -10,8 +10,8 @@ UCLASS()
 class COOPSHOOTER_API ASAmmoCrate : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	ASAmmoCrate();
 
@@ -19,8 +19,17 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+public:
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "AmmoCrate")
+		class USphereComponent* SphereComponent;
 
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "AmmoCrate")
+		class UStaticMeshComponent* StaticMesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AmmoCrate")
+		int32 Count;
+
+	UFUNCTION()
+	void OnPickup(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, 
+		int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 };

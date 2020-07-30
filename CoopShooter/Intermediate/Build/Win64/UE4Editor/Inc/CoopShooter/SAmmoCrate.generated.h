@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef COOPSHOOTER_SAmmoCrate_generated_h
 #error "SAmmoCrate.generated.h already included, missing '#pragma once' in SAmmoCrate.h"
 #endif
 #define COOPSHOOTER_SAmmoCrate_generated_h
 
 #define CoopShooter_Source_CoopShooter_Public_SAmmoCrate_h_12_SPARSE_DATA
-#define CoopShooter_Source_CoopShooter_Public_SAmmoCrate_h_12_RPC_WRAPPERS
-#define CoopShooter_Source_CoopShooter_Public_SAmmoCrate_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define CoopShooter_Source_CoopShooter_Public_SAmmoCrate_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnPickup);
+
+
+#define CoopShooter_Source_CoopShooter_Public_SAmmoCrate_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnPickup);
+
+
 #define CoopShooter_Source_CoopShooter_Public_SAmmoCrate_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASAmmoCrate(); \
