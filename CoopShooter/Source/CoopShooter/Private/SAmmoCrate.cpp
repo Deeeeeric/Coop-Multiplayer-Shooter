@@ -17,7 +17,7 @@ ASAmmoCrate::ASAmmoCrate()
 
 	SphereComponent->OnComponentBeginOverlap.AddDynamic(this, &ASAmmoCrate::OnPickup);
 
-	StaticMesh = CreateAbstractDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
+	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
 	StaticMesh->SetupAttachment(RootComponent);
 }
 
@@ -34,11 +34,7 @@ void ASAmmoCrate::OnPickup(class UPrimitiveComponent* OverlappedComp, class AAct
 
 	if (Character)
 	{
-		Character->LoadedAmmo = Character->LoadedAmmo + Count;
-	}
-	else if (LoadedAmmo > 3 && != 5)
-	{
-		Character->LoadedAmmo = Character->LoadedAmmo + 1;
+		Character->AmmoPool = Character->AmmoPool + Count;
 	}
 
 	Destroy();

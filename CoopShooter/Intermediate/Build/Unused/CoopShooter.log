@@ -1,7 +1,7 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
   Building CoopShooterEditor...
   Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 5 actions to XGE
+  Distributing 4 actions to XGE
   --------------------Build System Warning---------------------------------------
   License is invalid:
       License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
@@ -9,19 +9,18 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  SPowerUpActor.cpp (0:52.14 at +0:00)
-  SAmmoCrate.cpp (0:01.11 at +0:52)
-D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SAmmoCrate.cpp(20): warning C4996: 'UObject::CreateAbstractDefaultSubobject': CreateAbstract did not work as intended and has been deprecated in favor of CreateDefaultObject Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SAmmoCrate.cpp(39): error C2065: 'LoadedAmmo': undeclared identifier
-D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SAmmoCrate.cpp(39): error C2059: syntax error: '!='
-D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SAmmoCrate.cpp(40): error C2143: syntax error: missing ';' before '{'
-  
-  Error executing D:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\cl-filter\cl-filter.exe (tool returned code: 2)
+  SAmmoCrate.cpp (2:24.89 at +0:00)
+  UE4Editor-CoopShooter-0017.dll (0:03.46 at +2:25)
+     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0017.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0017.suppressed.exp
+  UE4Editor-CoopShooter-0017.lib (0:00.65 at +2:28)
+     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0017.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0017.exp
+  CoopShooterEditor.target (0:00.43 at +2:29)
   ---------------------- Done ----------------------
   
-      Rebuild All: 0 succeeded, 1 failed, 0 skipped
+      Rebuild All: 1 succeeded, 0 failed, 0 skipped
   
   1 build system warning(s):
      - License is invalid
   
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073: The command "chcp 65001 >NUL && "D:\Program Files\Epic Games\UE_4.25\Engine\Build\BatchFiles\Build.bat" CoopShooterEditor Win64 Development -Project="D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" -WaitMutex -FromMsBuild" exited with code 6.
+  Total time in XGE executor: 149.78 seconds
+  Total execution time: 151.74 seconds
