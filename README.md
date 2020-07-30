@@ -53,3 +53,4 @@
 * Spawn AI Usng EQS
 * Creating Pickup Class
 * Creating a Powerup Class
+* Replicate Powerups for Multiplayer

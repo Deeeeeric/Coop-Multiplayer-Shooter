@@ -16,15 +16,23 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_SPARSE_DATA
 #define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execOnRep_PowerupActive); \
 	DECLARE_FUNCTION(execOnTickPowerup);
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnRep_PowerupActive); \
 	DECLARE_FUNCTION(execOnTickPowerup);
 
 
-#define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_EVENT_PARMS
+#define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_EVENT_PARMS \
+	struct SPowerUpActor_eventOnPowerupStateChange_Parms \
+	{ \
+		bool bNewIsActive; \
+	};
+
+
 #define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_CALLBACK_WRAPPERS
 #define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_INCLASS_NO_PURE_DECLS \
 private: \
@@ -32,7 +40,14 @@ private: \
 	friend struct Z_Construct_UClass_ASPowerUpActor_Statics; \
 public: \
 	DECLARE_CLASS(ASPowerUpActor, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoopShooter"), NO_API) \
-	DECLARE_SERIALIZER(ASPowerUpActor)
+	DECLARE_SERIALIZER(ASPowerUpActor) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		bIsPowerupActive=NETFIELD_REP_START, \
+		NETFIELD_REP_END=bIsPowerupActive	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_INCLASS \
@@ -41,7 +56,14 @@ private: \
 	friend struct Z_Construct_UClass_ASPowerUpActor_Statics; \
 public: \
 	DECLARE_CLASS(ASPowerUpActor, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoopShooter"), NO_API) \
-	DECLARE_SERIALIZER(ASPowerUpActor)
+	DECLARE_SERIALIZER(ASPowerUpActor) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		bIsPowerupActive=NETFIELD_REP_START, \
+		NETFIELD_REP_END=bIsPowerupActive	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_STANDARD_CONSTRUCTORS \
@@ -70,7 +92,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASPowerUpActor); \
 
 #define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PowerupInterval() { return STRUCT_OFFSET(ASPowerUpActor, PowerupInterval); } \
-	FORCEINLINE static uint32 __PPO__TotalNumOfTicks() { return STRUCT_OFFSET(ASPowerUpActor, TotalNumOfTicks); }
+	FORCEINLINE static uint32 __PPO__TotalNumOfTicks() { return STRUCT_OFFSET(ASPowerUpActor, TotalNumOfTicks); } \
+	FORCEINLINE static uint32 __PPO__bIsPowerupActive() { return STRUCT_OFFSET(ASPowerUpActor, bIsPowerupActive); }
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_9_PROLOG \
