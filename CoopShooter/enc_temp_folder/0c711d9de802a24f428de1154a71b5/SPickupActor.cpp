@@ -57,7 +57,7 @@ void ASPickupActor::NotifyActorBeginOverlap(AActor* OtherActor)
 	if (GetLocalRole() == ROLE_Authority && PowerupInstance)
 	{
 	//TODO grants a powerup to player if available
-		PowerupInstance->ActivatePowerup(OtherActor);
+		PowerupInstance->ActivatePowerup();
 		PowerupInstance = nullptr;
 
 		// Set timer to respawn

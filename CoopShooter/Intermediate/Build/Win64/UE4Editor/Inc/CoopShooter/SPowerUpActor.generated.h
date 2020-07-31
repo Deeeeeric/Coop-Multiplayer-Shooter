@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef COOPSHOOTER_SPowerUpActor_generated_h
 #error "SPowerUpActor.generated.h already included, missing '#pragma once' in SPowerUpActor.h"
 #endif
@@ -27,6 +28,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPowerUpActor_h_12_EVENT_PARMS \
+	struct SPowerUpActor_eventOnActivated_Parms \
+	{ \
+		AActor* ActivateFor; \
+	}; \
 	struct SPowerUpActor_eventOnPowerupStateChange_Parms \
 	{ \
 		bool bNewIsActive; \

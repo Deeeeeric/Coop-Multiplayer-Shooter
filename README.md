@@ -55,3 +55,4 @@
 * Creating a Powerup Class
 * Replicate Powerups for Multiplayer
 * Update Powerup with Base Class
+* Replicate Powerups for Multiplayer 2

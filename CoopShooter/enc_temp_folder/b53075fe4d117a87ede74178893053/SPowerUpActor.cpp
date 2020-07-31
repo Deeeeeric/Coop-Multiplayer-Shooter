@@ -38,9 +38,9 @@ void ASPowerUpActor::OnRep_PowerupActive()
 	OnPowerupStateChange(bIsPowerupActive);
 }
 
-void ASPowerUpActor::ActivatePowerup(AActor* ActivateFor)
+void ASPowerUpActor::ActivatePowerup()
 {
-	OnActivated(ActivateFor);
+	OnActivated();
 
 	bIsPowerupActive = true; // replicate to all clients
 	OnRep_PowerupActive(); // client sees the change

@@ -16,7 +16,7 @@ public:
 	ASPowerUpActor();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "PowerUps")
-	void OnActivated(AActor* ActivateFor);
+	void OnActivated();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "PowerUps")
 	void OnExpired();
@@ -24,7 +24,7 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category = "PowerUps")
 	void OnPowerupTicked();
 
-	void ActivatePowerup(AActor* ActivateFor);
+	void ActivatePowerup();
 protected:
 
 	// time etween powerup ticks

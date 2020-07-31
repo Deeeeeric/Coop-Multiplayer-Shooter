@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeSPowerUpActor() {}
 	COOPSHOOTER_API UClass* Z_Construct_UClass_ASPowerUpActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_CoopShooter();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ASPowerUpActor::execOnRep_PowerupActive)
 	{
@@ -33,9 +34,11 @@ void EmptyLinkFunctionForGeneratedCodeSPowerUpActor() {}
 		P_NATIVE_END;
 	}
 	static FName NAME_ASPowerUpActor_OnActivated = FName(TEXT("OnActivated"));
-	void ASPowerUpActor::OnActivated()
+	void ASPowerUpActor::OnActivated(AActor* ActivateFor)
 	{
-		ProcessEvent(FindFunctionChecked(NAME_ASPowerUpActor_OnActivated),NULL);
+		SPowerUpActor_eventOnActivated_Parms Parms;
+		Parms.ActivateFor=ActivateFor;
+		ProcessEvent(FindFunctionChecked(NAME_ASPowerUpActor_OnActivated),&Parms);
 	}
 	static FName NAME_ASPowerUpActor_OnExpired = FName(TEXT("OnExpired"));
 	void ASPowerUpActor::OnExpired()
@@ -65,10 +68,16 @@ void EmptyLinkFunctionForGeneratedCodeSPowerUpActor() {}
 	}
 	struct Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics
 	{
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ActivateFor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::NewProp_ActivateFor = { "ActivateFor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SPowerUpActor_eventOnActivated_Parms, ActivateFor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::NewProp_ActivateFor,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::Function_MetaDataParams[] = {
@@ -76,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeSPowerUpActor() {}
 		{ "ModuleRelativePath", "Public/SPowerUpActor.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASPowerUpActor, nullptr, "OnActivated", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASPowerUpActor, nullptr, "OnActivated", nullptr, nullptr, sizeof(SPowerUpActor_eventOnActivated_Parms), Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASPowerUpActor_OnActivated_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_ASPowerUpActor_OnActivated()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -245,7 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeSPowerUpActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CoopShooter,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASPowerUpActor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ASPowerUpActor_OnActivated, "OnActivated" }, // 441108780
+		{ &Z_Construct_UFunction_ASPowerUpActor_OnActivated, "OnActivated" }, // 2471737632
 		{ &Z_Construct_UFunction_ASPowerUpActor_OnExpired, "OnExpired" }, // 3746327724
 		{ &Z_Construct_UFunction_ASPowerUpActor_OnPowerupStateChange, "OnPowerupStateChange" }, // 2301092935
 		{ &Z_Construct_UFunction_ASPowerUpActor_OnPowerupTicked, "OnPowerupTicked" }, // 1955833767
@@ -320,7 +329,7 @@ void EmptyLinkFunctionForGeneratedCodeSPowerUpActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASPowerUpActor, 3537459853);
+	IMPLEMENT_CLASS(ASPowerUpActor, 2389780833);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASPowerUpActor>()
 	{
 		return ASPowerUpActor::StaticClass();
