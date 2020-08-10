@@ -8,6 +8,7 @@
 #include "Particles/ParticleSystem.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "PhysicalMaterials/PhysicalMaterial.h"
+#include "Math/UnrealMathUtility.h"
 #include "Net/UnrealNetwork.h"
 
 
@@ -28,6 +29,7 @@ ASWeapon::ASWeapon()
 	TracerTargetName = "Target";
 
 	BaseDamage = 34.0f;
+	BulletSpread = 4.0f;
 	
 	// Replicate the weapon so that it spawns on the client side
 	SetReplicates(true);
@@ -40,7 +42,7 @@ void ASWeapon::Fire()
 {
 	// Trace the world from pawn eyes to crosshair location (center screen)
 
-	if (GetLocalRole() < ROLE_Authority) // if role is not authority aka client
+	if (!HasAuthority()) // if role is not authority aka client
 	{
 		ServerFire();
 	}
@@ -52,8 +54,13 @@ void ASWeapon::Fire()
 		FRotator EyeRotation;
 		MyOwner->GetActorEyesViewPoint(EyeLocation, EyeRotation); // GetActorEyesViewPoint: Returns the point of view of the actor. 
 		
-		FVector TraceEnd = EyeLocation + (EyeRotation.Vector() * 10000);
 		FVector ShotDirection = EyeRotation.Vector();
+
+		// BulletSpread
+		float HalfRad = FMath::DegreesToRadians(BulletSpread);
+		ShotDirection = FMath::VRandCone(ShotDirection, HalfRad, HalfRad);
+
+		FVector TraceEnd = EyeLocation + (ShotDirection * 10000);
 		// Particle "Target" parameter
 		FVector TracerEndPoint = TraceEnd;
 

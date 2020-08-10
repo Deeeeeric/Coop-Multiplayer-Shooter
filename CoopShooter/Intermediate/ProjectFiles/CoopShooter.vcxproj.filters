@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CoopShooter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{034CBFAC-71F2-4137-8BE8-9EBBBF35E919}</UniqueIdentifier>
+      <UniqueIdentifier>{C4C594DA-72E4-4C77-94A0-741BB9A5284D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoopShooter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F8F47187-FADD-4B0C-9D96-C1180A85E238}</UniqueIdentifier>
+      <UniqueIdentifier>{5D6BAD69-4897-4D63-AF88-576CFD65BD86}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\CoopShooter">
-      <UniqueIdentifier>{C1F81B79-A123-4FBF-8473-5A40C452AB92}</UniqueIdentifier>
+      <UniqueIdentifier>{F22C39E9-F262-46D0-8041-6C8A756090FB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoopShooter\CoopShooter.Build.cs">
       <Filter>Source\CoopShooter</Filter>
@@ -45,12 +45,27 @@
       <Filter>Source\CoopShooter</Filter>
     </ClInclude>
     <Filter Include="Source\CoopShooter\Private">
-      <UniqueIdentifier>{6371A722-B661-4A7F-8DF5-81FD85DE2D2F}</UniqueIdentifier>
+      <UniqueIdentifier>{C14572FE-0C54-45E3-B373-892A387052E6}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SAmmoCrate.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SGameModeBase.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SGameState.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SHealthComponent.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SPickupActor.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SPlayerState.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SPowerUpActor.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SProjectileWeapon.cpp">
@@ -63,12 +78,27 @@
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
     <Filter Include="Source\CoopShooter\Public">
-      <UniqueIdentifier>{881D843B-3FD8-4512-86E9-0D95B2C90AA2}</UniqueIdentifier>
+      <UniqueIdentifier>{4BA9D7C5-2AB2-4A2D-8EA6-4530EC41975E}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SAmmoCrate.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\CoopShooter\Public\SGameModeBase.h">
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SGameState.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\CoopShooter\Public\SHealthComponent.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SPickupActor.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SPlayerState.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SPowerUpActor.h">
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\CoopShooter\Public\SProjectileWeapon.h">
@@ -82,30 +112,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\SAmmoCrate.h">
-      <Filter>Source\CoopShooter\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\SPlayerState.h">
-      <Filter>Source\CoopShooter\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\SPickupActor.h">
-      <Filter>Source\CoopShooter\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\SPowerUpActor.h">
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SCharacterMovementComponent.h">
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\CoopShooter\Private\SAmmoCrate.cpp">
-      <Filter>Source\CoopShooter\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\CoopShooter\Private\SPlayerState.cpp">
-      <Filter>Source\CoopShooter\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\CoopShooter\Private\SPickupActor.cpp">
-      <Filter>Source\CoopShooter\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\CoopShooter\Private\SPowerUpActor.cpp">
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SCharacterMovementComponent.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
   </ItemGroup>

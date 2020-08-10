@@ -11,6 +11,7 @@
 #include "SHealthComponent.h"
 #include "Net/UnrealNetwork.h"
 #include "Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h"
+#include "SCharacterMovementComponent.h"
 #include "SWeapon.h"
 
 // Sets default values
@@ -24,6 +25,7 @@ ASCharacter::ASCharacter()
 	SpringArmComponent->bUsePawnControlRotation = true;
 
 	// GetMovementComponent:
+
 	/* Return our PawnMovementComponent, if we have one. By default, returns the first PawnMovementComponent found.
 	Native classes that create their own movement component should override this method for more efficiency. */
 	GetMovementComponent()->GetNavAgentPropertiesRef().bCanCrouch = true;
@@ -31,7 +33,6 @@ ASCharacter::ASCharacter()
 	GetCapsuleComponent()->SetCollisionResponseToChannel(COLLISION_WEAPON, ECR_Ignore);
 
 	HealthComponent = CreateDefaultSubobject<USHealthComponent>(TEXT("HealthComponent"));
-
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
 	CameraComponent->SetupAttachment(SpringArmComponent);
 
@@ -41,8 +42,9 @@ ASCharacter::ASCharacter()
 	ADS_FOV = 65.f;
 	ADSInterpSpeed = 20.f;
 
-	WalkSpeed = 500.f;
+	WalkSpeed = 300.f;
 	SprintSpeed = 800.f;
+	SprintingSpeedModifier = 2.5f;
 
 	WeaponAttachSocketName = "WeaponSocket";
 
@@ -59,7 +61,7 @@ void ASCharacter::BeginPlay()
 
 	HealthComponent->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
 
-	if (GetLocalRole() == ROLE_Authority) // Only run code if we run the game from a server
+	if (HasAuthority()) // Only run code if we run the game from a server
 	{
 		// spawn default weapon
 		FActorSpawnParameters SpawnParams;
@@ -79,7 +81,7 @@ void ASCharacter::MoveForward(float Value)
 {
 	// GetActorForwardVector: Get the forward (X) vector (length 1.0) from this Actor, in world space.
 
-	if ((Controller != NULL) && (Value != 0.0f))
+	if ((Controller != nullptr) && (Value != 0.0f))
 	{
 		// Limit pitch when walking or falling
 		const bool bLimitRotation = (GetCharacterMovement()->IsMovingOnGround() || GetCharacterMovement()->IsFalling());
@@ -116,14 +118,14 @@ void ASCharacter::EndCrouch()
 void ASCharacter::BeginSprint()
 {
 	SetSprinting(true);
-	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
+	//GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
 }
 
 
 void ASCharacter::EndSprint()
 {
 	SetSprinting(false);
-	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+	//GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }
 
 void ASCharacter::SetSprinting(bool NewSprinting)
@@ -160,6 +162,11 @@ bool ASCharacter::IsSprinting() const
 	return bWantsToSprint && !bWantsToADS && !GetVelocity().IsZero()
 		// Don't allow sprint while strafing sideways or standing still (1.0 is straight forward, -1.0 is backward while near 0 is sideways or standing still)
 		&& (GetVelocity().GetSafeNormal2D() | GetActorRotation().Vector()) > 0.8; // Changing this value to 0.1 allows for diagonal sprinting. (holding W+A or W+D keys)
+}
+
+float ASCharacter::GetSprintingSpeedModifier() const
+{
+	return SprintingSpeedModifier;
 }
 
 void ASCharacter::BeginADS()
@@ -203,7 +210,7 @@ void ASCharacter::OnReload()
 
 }
 
-void ASCharacter::OnHealthChanged(USHealthComponent* HealthComp, float Health, float HealthDelta,
+void ASCharacter::OnHealthChanged(USHealthComponent* OwningHealthComponent, float Health, float HealthDelta,
 	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
 {
 	if (Health <= 0.0f && !bDied)
@@ -216,7 +223,7 @@ void ASCharacter::OnHealthChanged(USHealthComponent* HealthComp, float Health, f
 
 		DetachFromControllerPendingDestroy();
 
-		SetLifeSpan(1.0f);
+		SetLifeSpan(5.0f);
 	}
 }
 

@@ -7,10 +7,8 @@
 #include "SGameModeBase.generated.h"
 
 
-#define SURFACE_FLESHDEFAULT		SurfaceType1
-#define SURFACE_FLESHVUNERABLE		SurfaceType2
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FOnActorKilled, AActor*, KilledActor, AActor*, KillerActor, AController*, KillerController);
 
-#define COLLISION_WEAPON			ECCGameTraceChannel1
 /**
  * 
  */
@@ -35,4 +33,6 @@ public:
 
 	virtual void Tick(float DeltaSeconds) override;
 
+	UPROPERTY(BlueprintAssignable, Category = "GameMode")
+	FOnActorKilled OnActorKilled;
 };

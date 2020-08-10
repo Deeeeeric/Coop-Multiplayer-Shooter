@@ -2,12 +2,14 @@
 
 
 #include "SHealthComponent.h"
+#include "SGameModeBase.h"
 #include "Net/UnrealNetwork.h"
 
 // Sets default values for this component's properties
 USHealthComponent::USHealthComponent()
 {
 	DefaultHealth = 100.0f;
+	bIsDead = false;
 
 	SetIsReplicatedByDefault(true);
 }
@@ -22,7 +24,6 @@ void USHealthComponent::BeginPlay()
 	// GetOwnerRole because we are a component, not an Actor (GetLocalRole)
 	if (GetOwnerRole() == ROLE_Authority)
 	{
-
 		AActor* MyOwner = GetOwner();
 		if (MyOwner)
 		{
@@ -42,7 +43,7 @@ void USHealthComponent::OnRep_Health(float OldHealth)
 
 void USHealthComponent::HandleTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
 {
-	if (Damage <= 0.0f)
+	if (Damage <= 0.0f || bIsDead)
 	{
 		return;
 	}
@@ -52,7 +53,18 @@ void USHealthComponent::HandleTakeAnyDamage(AActor* DamagedActor, float Damage, 
 
 	UE_LOG(LogTemp, Log, TEXT("Health Changed: %s"), *FString::SanitizeFloat(Health));
 
+	bIsDead = Health <= 0.0f;
+
 	OnHealthChanged.Broadcast(this, Health, Damage, DamageType, InstigatedBy, DamageCauser);
+
+	if (bIsDead)
+	{
+		ASGameModeBase* GameMode = Cast<ASGameModeBase>(GetWorld()->GetAuthGameMode());
+		if (GameMode)
+		{
+			GameMode->OnActorKilled.Broadcast(GetOwner(), DamageCauser, InstigatedBy);
+		}
+	}
 }
 
 void USHealthComponent::Heal(float HealAmount)

@@ -48,13 +48,14 @@ protected:
 	/* BlueprintReadOnly: Can't assign new object to this camera component, 
 	instead we create instance once in constructor*/
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	USHealthComponent* HealthComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	UCameraComponent* CameraComponent;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USpringArmComponent* SpringArmComponent;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-	USHealthComponent* HealthComponent;
 
 	/************************************************************************/
 	/* Movement                                                            */
@@ -89,13 +90,6 @@ protected:
 	UFUNCTION(Server, Reliable, WithValidation)
 	void ServerSetSprinting(bool NewSprinting);
 
-	UFUNCTION(BlueprintCallable, Category = Movement)
-		bool IsSprinting() const;
-
-	float GetSprintingSpeedModifier() const;
-
-	UPROPERTY(EditDefaultsOnly, Category = "Movement")
-	float SprintingSpeedModifier;
 
 	/************************************************************************/
 	/* Aim Down Sights                                                      */
@@ -105,18 +99,28 @@ protected:
 
 	void EndADS();
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Player")
-	bool bWantsToADS;
+	/* Default FOV set during begin play*/
+	float DefaultFOV;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Player")
 	float ADS_FOV;
 
+public:
+	UFUNCTION(BlueprintCallable, Category = Movement)
+		bool IsSprinting() const;
+
+	float GetSprintingSpeedModifier() const;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Movement")
+	float SprintingSpeedModifier;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Player")
+	bool bWantsToADS;
+
 	UPROPERTY(EditDefaultsOnly, Category = "Player", meta = (ClampMin = 0.1, ClampMax = 100))
 	float ADSInterpSpeed;
 
-	/* Default FOV set during begin play*/
-	float DefaultFOV;
-
+protected:
 
 	/************************************************************************/
 	/* Weapon                                                               */
@@ -140,7 +144,7 @@ protected:
 	/************************************************************************/
 
 	UFUNCTION()
-	void OnHealthChanged(USHealthComponent* HealthComp, float Health, float HealthDelta, const class UDamageType* DamageType, 
+	void OnHealthChanged(USHealthComponent* OwningHealthComponent, float Health, float HealthDelta, const class UDamageType* DamageType,
 		class AController* InstigatedBy, AActor* DamageCauser);
 
 	// Pawn died previously

@@ -77,6 +77,8 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Weapon")
 	float BaseDamage;
 
+	FHitScanTrace ReloadOnHit;
+
 	// Server: push request to hosting server
 // Reliable: Guaranteed to eventually get to the server
 // WithValidation: specify a server
@@ -89,4 +91,8 @@ protected:
 
 	UFUNCTION()
 	void OnRep_HitScanTrace();
+	
+	// Bullet Spread in degrees
+	UPROPERTY(EditDefaultsOnly, Category = "Weapon", meta = (ClampMin = 0.0f))
+	float BulletSpread;
 };

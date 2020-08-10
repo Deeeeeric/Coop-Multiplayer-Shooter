@@ -20,17 +20,17 @@ class AActor;
 #define CoopShooter_Source_CoopShooter_Public_SHealthComponent_h_10_DELEGATE \
 struct _Script_CoopShooter_eventOnHealthChangedSignature_Parms \
 { \
-	USHealthComponent* HealthComponent; \
+	USHealthComponent* OwningHealthComponent; \
 	float Health; \
 	float HealthDelta; \
 	const UDamageType* DamageType; \
 	AController* InstigatedBy; \
 	AActor* DamageCauser; \
 }; \
-static inline void FOnHealthChangedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnHealthChangedSignature, USHealthComponent* HealthComponent, float Health, float HealthDelta, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser) \
+static inline void FOnHealthChangedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnHealthChangedSignature, USHealthComponent* OwningHealthComponent, float Health, float HealthDelta, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser) \
 { \
 	_Script_CoopShooter_eventOnHealthChangedSignature_Parms Parms; \
-	Parms.HealthComponent=HealthComponent; \
+	Parms.OwningHealthComponent=OwningHealthComponent; \
 	Parms.Health=Health; \
 	Parms.HealthDelta=HealthDelta; \
 	Parms.DamageType=DamageType; \

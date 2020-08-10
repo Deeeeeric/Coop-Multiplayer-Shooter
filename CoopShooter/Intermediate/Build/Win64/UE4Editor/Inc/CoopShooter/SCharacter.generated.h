@@ -112,16 +112,13 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASCharacter); \
 
 
 #define CoopShooter_Source_CoopShooter_SCharacter_h_18_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ASCharacter, HealthComponent); } \
 	FORCEINLINE static uint32 __PPO__CameraComponent() { return STRUCT_OFFSET(ASCharacter, CameraComponent); } \
 	FORCEINLINE static uint32 __PPO__SpringArmComponent() { return STRUCT_OFFSET(ASCharacter, SpringArmComponent); } \
-	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ASCharacter, HealthComponent); } \
 	FORCEINLINE static uint32 __PPO__SprintSpeed() { return STRUCT_OFFSET(ASCharacter, SprintSpeed); } \
 	FORCEINLINE static uint32 __PPO__WalkSpeed() { return STRUCT_OFFSET(ASCharacter, WalkSpeed); } \
 	FORCEINLINE static uint32 __PPO__bWantsToSprint() { return STRUCT_OFFSET(ASCharacter, bWantsToSprint); } \
-	FORCEINLINE static uint32 __PPO__SprintingSpeedModifier() { return STRUCT_OFFSET(ASCharacter, SprintingSpeedModifier); } \
-	FORCEINLINE static uint32 __PPO__bWantsToADS() { return STRUCT_OFFSET(ASCharacter, bWantsToADS); } \
 	FORCEINLINE static uint32 __PPO__ADS_FOV() { return STRUCT_OFFSET(ASCharacter, ADS_FOV); } \
-	FORCEINLINE static uint32 __PPO__ADSInterpSpeed() { return STRUCT_OFFSET(ASCharacter, ADSInterpSpeed); } \
 	FORCEINLINE static uint32 __PPO__CurrentWeapon() { return STRUCT_OFFSET(ASCharacter, CurrentWeapon); } \
 	FORCEINLINE static uint32 __PPO__StarterWeaponClass() { return STRUCT_OFFSET(ASCharacter, StarterWeaponClass); } \
 	FORCEINLINE static uint32 __PPO__WeaponAttachSocketName() { return STRUCT_OFFSET(ASCharacter, WeaponAttachSocketName); } \

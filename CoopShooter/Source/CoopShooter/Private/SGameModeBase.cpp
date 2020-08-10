@@ -3,9 +3,12 @@
 
 #include "SGameModeBase.h"
 #include "SHealthComponent.h"
+#include "SPlayerState.h"
 
 ASGameModeBase::ASGameModeBase()
 {
+	PlayerStateClass = ASPlayerState::StaticClass();
+
 	PrimaryActorTick.bCanEverTick = true;
 	PrimaryActorTick.TickInterval = 1.0f;
 }
@@ -18,8 +21,8 @@ void ASGameModeBase::CheckAnyPlayerAlive()
 		if (PC && PC->GetPawn())
 		{
 			APawn* MyPawn = PC->GetPawn();
-			USHealthComponent* HealthComp = Cast<USHealthComponent>(MyPawn->GetComponentByClass(USHealthComponent::StaticClass()));
-			if (ensure(HealthComp) && HealthComp->GetHealth() > 0.0f)
+			USHealthComponent* HealthComponent = Cast<USHealthComponent>(MyPawn->GetComponentByClass(USHealthComponent::StaticClass()));
+			if (ensure(HealthComponent) && HealthComponent->GetHealth() > 0.0f)
 			{
 				// Player is still alive
 				return;
