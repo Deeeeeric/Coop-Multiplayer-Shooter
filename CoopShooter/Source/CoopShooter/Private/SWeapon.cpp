@@ -8,6 +8,7 @@
 #include "Particles/ParticleSystem.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "PhysicalMaterials/PhysicalMaterial.h"
+#include "CoopShooter/SCharacter.h"
 #include "Math/UnrealMathUtility.h"
 #include "Net/UnrealNetwork.h"
 
@@ -91,9 +92,17 @@ void ASWeapon::Fire()
 			// APPLY DAMAGE
 			UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
 
+
 			PlayImpactEffects(SurfaceType, Hit.ImpactPoint);
 
 			TracerEndPoint = Hit.ImpactPoint;
+
+			ASCharacter* Character = Cast<ASCharacter>(this);
+
+			if (Character)
+			{
+				Character->LoadedAmmo = Character->LoadedAmmo + 1;
+			}
 		}
 
 		if (DebugWeaponDrawing > 0)

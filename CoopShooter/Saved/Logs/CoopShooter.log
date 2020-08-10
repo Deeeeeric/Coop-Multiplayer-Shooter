@@ -4870,3 +4870,1085 @@ Make sure 'Powerup_Health_C' has been compiled for  Set isSprint
 [2020.08.10-16.59.45:840][610]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/UE4ASP_HeroTPP_AnimBlueprintDD5554C845EBE0297ECDB7AFC8E73B85.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
 [2020.08.10-16.59.45:868][610]AssetCheck: New page: Asset Save: UE4ASP_HeroTPP_AnimBlueprint
 [2020.08.10-16.59.45:868][610]LogContentValidation: Display: Validating AnimBlueprint /Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint
+[2020.08.10-17.00.35:760][304]LogUObjectHash: Compacting FUObjectHashTables data took   7.06ms
+[2020.08.10-17.00.35:767][304]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.073
+[2020.08.10-17.10.36:271][229]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2020.08.10-17.10.36:274][229]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.057
+[2020.08.10-17.20.36:903][ 20]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2020.08.10-17.20.36:905][ 20]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.066
+[2020.08.10-17.30.37:507][812]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2020.08.10-17.30.37:509][812]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.051
+[2020.08.10-17.40.38:107][604]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2020.08.10-17.40.38:109][604]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.056
+[2020.08.10-17.50.38:550][394]LogUObjectHash: Compacting FUObjectHashTables data took   1.09ms
+[2020.08.10-17.50.38:551][394]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.051
+[2020.08.10-18.00.39:141][184]LogUObjectHash: Compacting FUObjectHashTables data took   1.52ms
+[2020.08.10-18.00.39:143][184]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.060
+[2020.08.10-18.10.39:587][973]LogUObjectHash: Compacting FUObjectHashTables data took   1.21ms
+[2020.08.10-18.10.39:589][973]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.055
+[2020.08.10-18.17.38:555][791]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/UE4ASP_HeroTPP_AnimBlueprintF08D70F44630F1E7FBB9AB89AC4426D7.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2020.08.10-18.17.39:231][791]AssetCheck: New page: Asset Save: UE4ASP_HeroTPP_AnimBlueprint
+[2020.08.10-18.17.39:231][791]LogContentValidation: Display: Validating AnimBlueprint /Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint
+[2020.08.10-18.18.40:118][ 20]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.08.10-18.19.54:684][267]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.08.10-18.19.59:026][280]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.08.10-18.20.09:043][346]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.08.10-18.20.36:893][450]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.08.10-18.20.55:495][504]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2020.08.10-18.20.55:503][504]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.081
+[2020.08.10-18.30.56:091][297]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2020.08.10-18.30.56:094][297]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.084
+[2020.08.10-18.36.45:807][341]LogHotReload: New module detected: UE4Editor-CoopShooter-0008.dll
+[2020.08.10-18.36.56:032][373]LogHotReload: Starting Hot-Reload from IDE
+[2020.08.10-18.37.04:547][373]LogClass: Could not find existing class SProjectileWeapon in package /Script/CoopShooter for HotReload, assuming new class
+[2020.08.10-18.37.04:550][373]LogClass: Could not find existing class SWeapon in package /Script/CoopShooter for HotReload, assuming new class
+[2020.08.10-18.37.04:593][373]LogClass: Function Fire is new.
+[2020.08.10-18.37.04:594][373]LogClass: Function OnRep_HitScanTrace is new.
+[2020.08.10-18.37.04:594][373]LogClass: Function ServerFire is new.
+[2020.08.10-18.37.04:627][373]LogClass: HitScanTrace HotReload.
+[2020.08.10-18.37.05:171][373]LogHotReload: Re-instancing SProjectileWeapon after hot-reload.
+[2020.08.10-18.37.05:973][373]LogHotReload: Re-instancing SWeapon after hot-reload.
+[2020.08.10-18.37.06:952][373]LogContentBrowser: Native class hierarchy updated for 'CoopShooter' in 0.2873 seconds. Added 12 classes and 3 folders.
+[2020.08.10-18.37.06:995][373]Display: HotReload successful (13 functions remapped  1 scriptstructs remapped)
+[2020.08.10-18.37.14:675][373]LogContentBrowser: Native class hierarchy populated in 1.4889 seconds. Added 3447 classes and 828 folders.
+[2020.08.10-18.37.15:272][373]Display: HotReload took 19.2s.
+[2020.08.10-18.37.17:161][374]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.08.10-18.41.17:070][ 86]LogUObjectHash: Compacting FUObjectHashTables data took  16.92ms
+[2020.08.10-18.41.17:074][ 86]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 1.192
+[2020.08.10-18.51.17:940][872]LogUObjectHash: Compacting FUObjectHashTables data took  24.03ms
+[2020.08.10-18.51.17:945][872]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.619
+[2020.08.10-19.01.18:468][665]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2020.08.10-19.01.18:512][665]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.114
+[2020.08.10-19.11.19:131][458]LogUObjectHash: Compacting FUObjectHashTables data took   2.12ms
+[2020.08.10-19.11.19:133][458]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.062
+[2020.08.10-19.21.19:551][250]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2020.08.10-19.21.19:552][250]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.103
+[2020.08.10-19.29.32:416][355]LogTemp: Repeating last play command: Selected Viewport
+[2020.08.10-19.29.32:765][355]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.10-19.29.32:887][355]PIE: New page: PIE session: Gulag (10 Aug 2020, 21:29:32)
+[2020.08.10-19.29.33:095][355]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.08.10-19.29.34:333][355]LogPlayLevel: PIE: StaticDuplicateObject took: (1.195258s)
+[2020.08.10-19.29.34:917][355]LogAIModule: Creating AISystem for world Gulag
+[2020.08.10-19.29.34:929][355]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BEE3B4BC00), frame # 231355
+[2020.08.10-19.29.34:932][355]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BF3B4CF740), frame # 231355
+[2020.08.10-19.29.35:058][355]LogPlayLevel: PIE: World Init took: (0.724780s)
+[2020.08.10-19.29.35:068][355]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (1.989009s)
+[2020.08.10-19.29.35:215][355]LogUObjectHash: Compacting FUObjectHashTables data took   6.28ms
+[2020.08.10-19.29.35:318][355]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.10-19.29.35:318][355]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.10-19.29.35:318][355]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.10-19.29.35:319][355]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.10-19.29.35:319][355]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.10-19.29.35:319][355]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.10-19.29.35:319][355]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.10-19.29.35:341][355]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.10-19.29.35:409][355]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.10-19.29.35:409][355]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.10-19.29.35:496][355]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.10-19.29.35:496][355]LogAudioMixer: Display: 1: FrontRight
+[2020.08.10-19.29.35:525][355]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.08.10-19.29.35:575][355]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.10-19.29.35:575][355]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.10-19.29.35:588][355]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.10-19.29.35:714][355]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.10-19.29.35:716][355]LogInit: FAudioDevice initialized.
+[2020.08.10-19.29.36:212][355]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.08.10-19.29.36:607][355]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.08.10-20.29.36
+[2020.08.10-19.29.36:657][355]LogWorld: Bringing up level for play took: 0.379894
+[2020.08.10-19.29.36:821][355]LogOnline: OSS: Creating online subsystem instance for: :Context_80
+[2020.08.10-19.29.37:731][355]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.08.10-19.29.37:742][355]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.08.10-19.29.37:763][355]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.08.10-19.29.37:764][355]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.08.10-19.29.37:804][355]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-19.29.37:816][355]LogNet: GameNetDriver IpNetDriver_22 IpNetDriver listening on port 17777
+[2020.08.10-19.29.38:115][355]PIE: Server logged in
+[2020.08.10-19.29.38:137][355]PIE: Play in editor total start time 5.578 seconds.
+[2020.08.10-19.29.38:213][355]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.10-19.29.38:213][355]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.10-19.29.38:213][355]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.10-19.29.38:213][355]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.10-19.29.38:213][355]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.10-19.29.38:213][355]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.10-19.29.38:213][355]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.10-19.29.38:213][355]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.10-19.29.38:213][355]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.10-19.29.38:213][355]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.10-19.29.38:217][355]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.10-19.29.38:217][355]LogAudioMixer: Display: 1: FrontRight
+[2020.08.10-19.29.38:239][355]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.08.10-19.29.38:242][355]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.10-19.29.38:242][355]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.10-19.29.38:242][355]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.10-19.29.38:268][355]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.10-19.29.38:280][355]LogInit: FAudioDevice initialized.
+[2020.08.10-19.29.38:438][355]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.29.38:459][355]LogNet: Browse: 127.0.0.1:17777//Game/Level/Gulag
+[2020.08.10-19.29.38:461][355]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2020.08.10-19.29.38:462][355]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2020.08.10-19.29.38:483][355]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-19.29.38:492][355]LogNet: Game client on port 17777, rate 10000
+[2020.08.10-19.29.39:008][355]PIE: Client logged in
+[2020.08.10-19.29.39:011][355]PIE: Play in editor total start time 6.452 seconds.
+[2020.08.10-19.29.40:217][356]LogNet: UNetDriver::TickDispatch: Very long time between ticks. DeltaTime: 7.73, Realtime: 1.10. IpNetDriver_22
+[2020.08.10-19.29.40:331][356]LogNet: UNetDriver::TickDispatch: Very long time between ticks. DeltaTime: 7.73, Realtime: 0.92. IpNetDriver_23
+[2020.08.10-19.29.40:354][357]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:57298
+[2020.08.10-19.29.40:417][357]LogHandshake: SendConnectChallenge. Timestamp: 7.953902, Cookie: 163248123195237096039175223016089177088218125153123150090155
+[2020.08.10-19.29.40:430][357]LogHandshake: SendChallengeResponse. Timestamp: 7.953902, Cookie: 163248123195237096039175223016089177088218125153123150090155
+[2020.08.10-19.29.40:469][358]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:57298
+[2020.08.10-19.29.40:469][358]LogHandshake: SendChallengeAck. InCookie: 163248123195237096039175223016089177088218125153123150090155
+[2020.08.10-19.29.40:469][358]LogNet: Server accepting post-challenge connection from: 127.0.0.1:57298
+[2020.08.10-19.29.40:470][358]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-19.29.40:499][358]LogNet: NotifyAcceptedConnection: Name: Gulag, TimeStamp: 08/10/20 20:29:40, [UNetConnection] RemoteAddr: 127.0.0.1:57298, Name: IpConnection_23, Driver: GameNetDriver IpNetDriver_22, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-19.29.40:499][358]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:57298, Name: IpConnection_23, Driver: GameNetDriver IpNetDriver_22, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-19.29.40:572][358]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_22, Driver: PendingNetDriver IpNetDriver_23, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-19.29.40:592][359]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Level/UEDPIE_0_Gulag.Gulag: Accepted
+[2020.08.10-19.29.40:612][359]LogNet: Remote platform little endian=1
+[2020.08.10-19.29.40:612][359]LogNet: This platform little endian=1
+[2020.08.10-19.29.40:627][359]LogOnline: OSS: Creating online subsystem instance for: :Context_81
+[2020.08.10-19.29.40:695][360]LogNet: Login request: ?Name=LAPTOP-205H8F92-9C9AE39D46B6BDB6589316A52B4CBE43 userId: NULL:LAPTOP-205H8F92-9C9AE39D46B6BDB6589316A52B4CBE43 platform: NULL
+[2020.08.10-19.29.40:697][360]LogNet: Welcomed by server (Level: /Game/Level/UEDPIE_0_Gulag, Game: /Game/Blueprints/BP_TestGameMode_Auto4.BP_TestGameMode_C)
+[2020.08.10-19.29.40:723][360]LogLoad: LoadMap: 127.0.0.1:17777//Game/Level/UEDPIE_0_Gulag?game=/Game/Blueprints/BP_TestGameMode_Auto4.BP_TestGameMode_C
+[2020.08.10-19.29.40:723][360]LogWorld: BeginTearingDown for /Temp/Untitled_12
+[2020.08.10-19.29.40:811][360]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-19.29.40:849][360]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.29.41:362][360]LogUObjectHash: Compacting FUObjectHashTables data took   5.04ms
+[2020.08.10-19.29.41:460][360]LogAIModule: Creating AISystem for world Gulag
+[2020.08.10-19.29.41:460][360]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BF68CE0800), frame # 231360
+[2020.08.10-19.29.41:460][360]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BFAFBEDA80), frame # 231360
+[2020.08.10-19.29.41:556][360]LogWorld: Bringing World /Game/Level/UEDPIE_1_Gulag.Gulag up for play (max tick rate 60) at 2020.08.10-20.29.41
+[2020.08.10-19.29.41:586][360]LogWorld: Bringing up level for play took: 0.032659
+[2020.08.10-19.29.41:590][360]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.08.10-19.29.41:591][360]LogLoad: Took 0.867853 seconds to LoadMap(/Game/Level/UEDPIE_0_Gulag)
+[2020.08.10-19.29.41:608][360]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.08.10-19.29.41:654][361]LogNet: Client netspeed is 10000
+[2020.08.10-19.29.41:654][361]LogNet: Join request: /Game/Level/Gulag?Name=LAPTOP-205H8F92-9C9AE39D46B6BDB6589316A52B4CBE43?SplitscreenCount=1
+[2020.08.10-19.29.41:668][361]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-19.29.41:824][361]LogNet: Join succeeded: LAPTOP-205H8F92-9C9A
+[2020.08.10-19.29.42:369][367]LogNetPackageMap: Warning: Forged object: got Rifle_BP_C /Game/Level/UEDPIE_1_Gulag.Gulag:PersistentLevel.Rifle_BP_C_0, expecting Class /Engine/Transient.HOTRELOADED_SWeapon_1
+[2020.08.10-19.29.42:381][368]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-19.29.42:504][371]LogNetPackageMap: Warning: Forged object: got Rifle_BP_C /Game/Level/UEDPIE_1_Gulag.Gulag:PersistentLevel.Rifle_BP_C_1, expecting Class /Engine/Transient.HOTRELOADED_SWeapon_1
+[2020.08.10-19.29.42:515][372]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-19.29.51:445][869]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.29.51:445][869]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_1_Gulag
+[2020.08.10-19.29.51:456][869]LogSlate: Window 'CoopShooter Preview [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2020.08.10-19.29.51:566][869]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-19.29.51:697][869]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.29.51:724][869]LogNet: World NetDriver shutdown IpNetDriver_23 [GameNetDriver]
+[2020.08.10-19.29.51:724][869]LogNet: DestroyNamedNetDriver IpNetDriver_23 [GameNetDriver]
+[2020.08.10-19.29.51:741][869]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_22, Driver: GameNetDriver IpNetDriver_23, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-9C9AE39D46B6BDB6589316A52B4CBE43, Channels: 16, Time: 2020.08.10-19.29.51
+[2020.08.10-19.29.51:745][869]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_22, Driver: GameNetDriver IpNetDriver_23, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-9C9AE39D46B6BDB6589316A52B4CBE43
+[2020.08.10-19.29.51:760][869]LogExit: GameNetDriver IpNetDriver_23 shut down
+[2020.08.10-19.29.51:784][869]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.08.10-19.29.51:840][869]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.08.10-19.29.51:850][869]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.29.51:890][869]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-19.29.51:890][869]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.29.51:903][869]LogNet: World NetDriver shutdown IpNetDriver_22 [GameNetDriver]
+[2020.08.10-19.29.51:903][869]LogNet: DestroyNamedNetDriver IpNetDriver_22 [GameNetDriver]
+[2020.08.10-19.29.51:925][869]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:57298, Name: IpConnection_23, Driver: GameNetDriver IpNetDriver_22, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-9C9AE39D46B6BDB6589316A52B4CBE43
+[2020.08.10-19.29.51:925][869]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:57298, Name: IpConnection_23, Driver: GameNetDriver IpNetDriver_22, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-9C9AE39D46B6BDB6589316A52B4CBE43, Channels: 16, Time: 2020.08.10-19.29.51
+[2020.08.10-19.29.51:925][869]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:57298, Name: IpConnection_23, Driver: GameNetDriver IpNetDriver_22, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-9C9AE39D46B6BDB6589316A52B4CBE43
+[2020.08.10-19.29.51:937][869]LogExit: GameNetDriver IpNetDriver_22 shut down
+[2020.08.10-19.29.51:938][869]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.10-19.29.51:972][869]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.29.52:292][869]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.29.52:431][869]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BFAFBEDA80), frame # 231869
+[2020.08.10-19.29.52:445][869]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BF68CE0800), frame # 231869
+[2020.08.10-19.29.52:550][869]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BF3B4CF740), frame # 231869
+[2020.08.10-19.29.52:550][869]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BEE3B4BC00), frame # 231869
+[2020.08.10-19.29.52:569][869]LogUObjectHash: Compacting FUObjectHashTables data took   4.95ms
+[2020.08.10-19.29.52:689][870]LogPlayLevel: Display: Destroying online subsystem :Context_81
+[2020.08.10-19.29.52:743][870]LogPlayLevel: Display: Destroying online subsystem :Context_80
+[2020.08.10-19.29.53:564][918]LogTemp: Repeating last play command: Selected Viewport
+[2020.08.10-19.29.53:594][918]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.10-19.29.53:594][918]PIE: New page: PIE session: Gulag (10 Aug 2020, 21:29:53)
+[2020.08.10-19.29.53:597][918]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.08.10-19.29.53:635][918]LogPlayLevel: PIE: StaticDuplicateObject took: (0.037651s)
+[2020.08.10-19.29.53:636][918]LogAIModule: Creating AISystem for world Gulag
+[2020.08.10-19.29.53:636][918]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BF52E0F000), frame # 231918
+[2020.08.10-19.29.53:636][918]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BF867C1800), frame # 231918
+[2020.08.10-19.29.53:636][918]LogPlayLevel: PIE: World Init took: (0.001211s)
+[2020.08.10-19.29.53:636][918]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.039032s)
+[2020.08.10-19.29.53:687][918]LogUObjectHash: Compacting FUObjectHashTables data took   4.74ms
+[2020.08.10-19.29.53:688][918]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.10-19.29.53:688][918]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.10-19.29.53:688][918]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.10-19.29.53:688][918]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.10-19.29.53:688][918]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.10-19.29.53:688][918]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.10-19.29.53:688][918]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.10-19.29.53:689][918]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.10-19.29.53:689][918]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.10-19.29.53:689][918]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.10-19.29.53:692][918]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.10-19.29.53:692][918]LogAudioMixer: Display: 1: FrontRight
+[2020.08.10-19.29.53:713][918]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.08.10-19.29.53:713][918]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.10-19.29.53:713][918]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.10-19.29.53:714][918]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.10-19.29.53:719][918]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.10-19.29.53:730][918]LogInit: FAudioDevice initialized.
+[2020.08.10-19.29.53:742][918]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.08.10-19.29.53:745][918]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.08.10-20.29.53
+[2020.08.10-19.29.53:746][918]LogWorld: Bringing up level for play took: 0.002401
+[2020.08.10-19.29.53:746][918]LogOnline: OSS: Creating online subsystem instance for: :Context_82
+[2020.08.10-19.29.53:751][918]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.08.10-19.29.53:751][918]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.08.10-19.29.53:751][918]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.08.10-19.29.53:751][918]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.08.10-19.29.53:751][918]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-19.29.53:751][918]LogNet: GameNetDriver IpNetDriver_24 IpNetDriver listening on port 17777
+[2020.08.10-19.29.53:753][918]PIE: Server logged in
+[2020.08.10-19.29.53:754][918]PIE: Play in editor total start time 0.162 seconds.
+[2020.08.10-19.29.53:755][918]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.10-19.29.53:755][918]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.10-19.29.53:756][918]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.10-19.29.53:756][918]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.10-19.29.53:756][918]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.10-19.29.53:756][918]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.10-19.29.53:756][918]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.10-19.29.53:756][918]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.10-19.29.53:756][918]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.10-19.29.53:756][918]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.10-19.29.53:760][918]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.10-19.29.53:760][918]LogAudioMixer: Display: 1: FrontRight
+[2020.08.10-19.29.53:777][918]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.08.10-19.29.53:777][918]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.10-19.29.53:777][918]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.10-19.29.53:777][918]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.10-19.29.53:778][918]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.10-19.29.53:793][918]LogInit: FAudioDevice initialized.
+[2020.08.10-19.29.53:848][918]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.29.53:849][918]LogNet: Browse: 127.0.0.1:17777//Game/Level/Gulag
+[2020.08.10-19.29.53:849][918]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2020.08.10-19.29.53:850][918]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2020.08.10-19.29.53:850][918]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-19.29.53:850][918]LogNet: Game client on port 17777, rate 10000
+[2020.08.10-19.29.53:855][918]PIE: Client logged in
+[2020.08.10-19.29.53:859][918]PIE: Play in editor total start time 0.268 seconds.
+[2020.08.10-19.29.54:870][956]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:58118
+[2020.08.10-19.29.54:870][956]LogHandshake: SendConnectChallenge. Timestamp: 1.321906, Cookie: 160219124241170087189211194170147191173188165168025095062225
+[2020.08.10-19.29.54:871][956]LogHandshake: SendChallengeResponse. Timestamp: 1.321906, Cookie: 160219124241170087189211194170147191173188165168025095062225
+[2020.08.10-19.29.54:887][957]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:58118
+[2020.08.10-19.29.54:887][957]LogHandshake: SendChallengeAck. InCookie: 160219124241170087189211194170147191173188165168025095062225
+[2020.08.10-19.29.54:887][957]LogNet: Server accepting post-challenge connection from: 127.0.0.1:58118
+[2020.08.10-19.29.54:887][957]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-19.29.54:887][957]LogNet: NotifyAcceptedConnection: Name: Gulag, TimeStamp: 08/10/20 20:29:54, [UNetConnection] RemoteAddr: 127.0.0.1:58118, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_24, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-19.29.54:887][957]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:58118, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_24, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-19.29.54:889][957]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_24, Driver: PendingNetDriver IpNetDriver_25, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-19.29.54:903][958]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Level/UEDPIE_0_Gulag.Gulag: Accepted
+[2020.08.10-19.29.54:903][958]LogNet: Remote platform little endian=1
+[2020.08.10-19.29.54:903][958]LogNet: This platform little endian=1
+[2020.08.10-19.29.54:904][958]LogOnline: OSS: Creating online subsystem instance for: :Context_83
+[2020.08.10-19.29.54:920][959]LogNet: Login request: ?Name=LAPTOP-205H8F92-7B943D8B4FA88ABE1C3CDABCC4BC1274 userId: NULL:LAPTOP-205H8F92-7B943D8B4FA88ABE1C3CDABCC4BC1274 platform: NULL
+[2020.08.10-19.29.54:921][959]LogNet: Welcomed by server (Level: /Game/Level/UEDPIE_0_Gulag, Game: /Game/Blueprints/BP_TestGameMode_Auto4.BP_TestGameMode_C)
+[2020.08.10-19.29.54:921][959]LogLoad: LoadMap: 127.0.0.1:17777//Game/Level/UEDPIE_0_Gulag?game=/Game/Blueprints/BP_TestGameMode_Auto4.BP_TestGameMode_C
+[2020.08.10-19.29.54:921][959]LogWorld: BeginTearingDown for /Temp/Untitled_13
+[2020.08.10-19.29.54:921][959]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-19.29.54:921][959]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.29.54:977][959]LogUObjectHash: Compacting FUObjectHashTables data took   5.66ms
+[2020.08.10-19.29.55:017][959]LogAIModule: Creating AISystem for world Gulag
+[2020.08.10-19.29.55:017][959]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BF89C29A00), frame # 231959
+[2020.08.10-19.29.55:027][959]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BF757BAC00), frame # 231959
+[2020.08.10-19.29.55:029][959]LogWorld: Bringing World /Game/Level/UEDPIE_1_Gulag.Gulag up for play (max tick rate 60) at 2020.08.10-20.29.55
+[2020.08.10-19.29.55:030][959]LogWorld: Bringing up level for play took: 0.001783
+[2020.08.10-19.29.55:031][959]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.08.10-19.29.55:031][959]LogLoad: Took 0.110286 seconds to LoadMap(/Game/Level/UEDPIE_0_Gulag)
+[2020.08.10-19.29.55:031][959]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.08.10-19.29.55:040][960]LogNet: Client netspeed is 10000
+[2020.08.10-19.29.55:040][960]LogNet: Join request: /Game/Level/Gulag?Name=LAPTOP-205H8F92-7B943D8B4FA88ABE1C3CDABCC4BC1274?SplitscreenCount=1
+[2020.08.10-19.29.55:040][960]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-19.29.55:043][960]LogNet: Join succeeded: LAPTOP-205H8F92-7B94
+[2020.08.10-19.29.55:253][968]LogNetPackageMap: Warning: Forged object: got Rifle_BP_C /Game/Level/UEDPIE_1_Gulag.Gulag:PersistentLevel.Rifle_BP_C_0, expecting Class /Engine/Transient.HOTRELOADED_SWeapon_1
+[2020.08.10-19.29.55:303][970]LogNetPackageMap: Warning: Forged object: got Rifle_BP_C /Game/Level/UEDPIE_1_Gulag.Gulag:PersistentLevel.Rifle_BP_C_1, expecting Class /Engine/Transient.HOTRELOADED_SWeapon_1
+[2020.08.10-19.29.55:331][972]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-19.29.55:363][974]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-19.29.59:772][201]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.29.59:772][201]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_1_Gulag
+[2020.08.10-19.29.59:772][201]LogSlate: Window 'CoopShooter Preview [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2020.08.10-19.29.59:775][201]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-19.29.59:776][201]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.29.59:783][201]LogNet: World NetDriver shutdown IpNetDriver_25 [GameNetDriver]
+[2020.08.10-19.29.59:783][201]LogNet: DestroyNamedNetDriver IpNetDriver_25 [GameNetDriver]
+[2020.08.10-19.29.59:783][201]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_24, Driver: GameNetDriver IpNetDriver_25, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-7B943D8B4FA88ABE1C3CDABCC4BC1274, Channels: 16, Time: 2020.08.10-19.29.59
+[2020.08.10-19.29.59:783][201]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_24, Driver: GameNetDriver IpNetDriver_25, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-7B943D8B4FA88ABE1C3CDABCC4BC1274
+[2020.08.10-19.29.59:784][201]LogExit: GameNetDriver IpNetDriver_25 shut down
+[2020.08.10-19.29.59:784][201]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.08.10-19.29.59:785][201]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.08.10-19.29.59:785][201]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.29.59:785][201]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-19.29.59:786][201]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.29.59:795][201]LogNet: World NetDriver shutdown IpNetDriver_24 [GameNetDriver]
+[2020.08.10-19.29.59:795][201]LogNet: DestroyNamedNetDriver IpNetDriver_24 [GameNetDriver]
+[2020.08.10-19.29.59:795][201]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:58118, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_24, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-7B943D8B4FA88ABE1C3CDABCC4BC1274
+[2020.08.10-19.29.59:795][201]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:58118, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_24, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-7B943D8B4FA88ABE1C3CDABCC4BC1274, Channels: 16, Time: 2020.08.10-19.29.59
+[2020.08.10-19.29.59:795][201]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:58118, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_24, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-7B943D8B4FA88ABE1C3CDABCC4BC1274
+[2020.08.10-19.29.59:795][201]LogExit: GameNetDriver IpNetDriver_24 shut down
+[2020.08.10-19.29.59:796][201]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.10-19.29.59:804][201]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.29.59:900][201]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.29.59:902][201]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BF757BAC00), frame # 232201
+[2020.08.10-19.29.59:902][201]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BF89C29A00), frame # 232201
+[2020.08.10-19.29.59:903][201]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BF867C1800), frame # 232201
+[2020.08.10-19.29.59:903][201]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BF52E0F000), frame # 232201
+[2020.08.10-19.29.59:908][201]LogUObjectHash: Compacting FUObjectHashTables data took   4.92ms
+[2020.08.10-19.30.00:105][202]LogPlayLevel: Display: Destroying online subsystem :Context_83
+[2020.08.10-19.30.00:105][202]LogPlayLevel: Display: Destroying online subsystem :Context_82
+[2020.08.10-19.31.44:959][682]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2020.08.10-19.31.45:027][682]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.131
+[2020.08.10-19.41.45:370][474]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2020.08.10-19.41.45:374][474]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.068
+[2020.08.10-19.42.59:934][697]LogHotReload: New module detected: UE4Editor-CoopShooter-0009.dll
+[2020.08.10-19.43.07:652][721]LogHotReload: Starting Hot-Reload from IDE
+[2020.08.10-19.43.14:056][721]LogClass: HitScanTrace HotReload.
+[2020.08.10-19.43.14:072][721]LogContentBrowser: Native class hierarchy updated for 'CoopShooter' in 0.0009 seconds. Added 12 classes and 3 folders.
+[2020.08.10-19.43.14:081][721]Display: HotReload successful (16 functions remapped  1 scriptstructs remapped)
+[2020.08.10-19.43.14:416][721]LogContentBrowser: Native class hierarchy populated in 0.0151 seconds. Added 3447 classes and 828 folders.
+[2020.08.10-19.43.14:430][721]Display: HotReload took  6.8s.
+[2020.08.10-19.43.30:569][900]LogTemp: Repeating last play command: Selected Viewport
+[2020.08.10-19.43.30:599][900]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.10-19.43.30:600][900]PIE: New page: PIE session: Gulag (10 Aug 2020, 21:43:30)
+[2020.08.10-19.43.30:602][900]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.08.10-19.43.30:645][900]LogPlayLevel: PIE: StaticDuplicateObject took: (0.042931s)
+[2020.08.10-19.43.30:646][900]LogAIModule: Creating AISystem for world Gulag
+[2020.08.10-19.43.30:646][900]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BFB143CC00), frame # 234900
+[2020.08.10-19.43.30:646][900]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BFB208FD80), frame # 234900
+[2020.08.10-19.43.30:646][900]LogPlayLevel: PIE: World Init took: (0.001329s)
+[2020.08.10-19.43.30:646][900]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.044456s)
+[2020.08.10-19.43.30:941][900]LogUObjectHash: Compacting FUObjectHashTables data took   8.16ms
+[2020.08.10-19.43.30:942][900]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.10-19.43.30:942][900]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.10-19.43.30:942][900]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.10-19.43.30:942][900]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.10-19.43.30:942][900]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.10-19.43.30:942][900]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.10-19.43.30:943][900]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.10-19.43.30:943][900]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.10-19.43.30:943][900]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.10-19.43.30:943][900]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.10-19.43.30:996][900]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.10-19.43.30:996][900]LogAudioMixer: Display: 1: FrontRight
+[2020.08.10-19.43.31:020][900]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.08.10-19.43.31:022][900]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.10-19.43.31:022][900]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.10-19.43.31:022][900]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.10-19.43.31:034][900]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.10-19.43.31:039][900]LogInit: FAudioDevice initialized.
+[2020.08.10-19.43.31:057][900]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.08.10-19.43.31:060][900]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.08.10-20.43.31
+[2020.08.10-19.43.31:060][900]LogWorld: Bringing up level for play took: 0.001985
+[2020.08.10-19.43.31:061][900]LogOnline: OSS: Creating online subsystem instance for: :Context_84
+[2020.08.10-19.43.31:092][900]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.08.10-19.43.31:092][900]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.08.10-19.43.31:092][900]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.08.10-19.43.31:093][900]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.08.10-19.43.31:093][900]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-19.43.31:093][900]LogNet: GameNetDriver IpNetDriver_26 IpNetDriver listening on port 17777
+[2020.08.10-19.43.31:095][900]PIE: Server logged in
+[2020.08.10-19.43.31:097][900]PIE: Play in editor total start time 0.504 seconds.
+[2020.08.10-19.43.31:098][900]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.10-19.43.31:098][900]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.10-19.43.31:098][900]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.10-19.43.31:099][900]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.10-19.43.31:099][900]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.10-19.43.31:099][900]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.10-19.43.31:099][900]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.10-19.43.31:099][900]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.10-19.43.31:123][900]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.10-19.43.31:123][900]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.10-19.43.31:126][900]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.10-19.43.31:126][900]LogAudioMixer: Display: 1: FrontRight
+[2020.08.10-19.43.31:227][900]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.08.10-19.43.31:227][900]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.10-19.43.31:227][900]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.10-19.43.31:227][900]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.10-19.43.31:228][900]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.10-19.43.31:248][900]LogInit: FAudioDevice initialized.
+[2020.08.10-19.43.31:313][900]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.43.31:313][900]LogNet: Browse: 127.0.0.1:17777//Game/Level/Gulag
+[2020.08.10-19.43.31:314][900]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2020.08.10-19.43.31:314][900]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2020.08.10-19.43.31:314][900]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-19.43.31:314][900]LogNet: Game client on port 17777, rate 10000
+[2020.08.10-19.43.31:321][900]PIE: Client logged in
+[2020.08.10-19.43.31:326][900]PIE: Play in editor total start time 0.733 seconds.
+[2020.08.10-19.43.32:337][958]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59318
+[2020.08.10-19.43.32:338][958]LogHandshake: SendConnectChallenge. Timestamp: 1.783587, Cookie: 234076096098215010131098242239189197046247040187196252108065
+[2020.08.10-19.43.32:339][958]LogHandshake: SendChallengeResponse. Timestamp: 1.783587, Cookie: 234076096098215010131098242239189197046247040187196252108065
+[2020.08.10-19.43.32:353][959]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59318
+[2020.08.10-19.43.32:353][959]LogHandshake: SendChallengeAck. InCookie: 234076096098215010131098242239189197046247040187196252108065
+[2020.08.10-19.43.32:353][959]LogNet: Server accepting post-challenge connection from: 127.0.0.1:59318
+[2020.08.10-19.43.32:354][959]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-19.43.32:354][959]LogNet: NotifyAcceptedConnection: Name: Gulag, TimeStamp: 08/10/20 20:43:32, [UNetConnection] RemoteAddr: 127.0.0.1:59318, Name: IpConnection_27, Driver: GameNetDriver IpNetDriver_26, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-19.43.32:354][959]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:59318, Name: IpConnection_27, Driver: GameNetDriver IpNetDriver_26, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-19.43.32:355][959]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_26, Driver: PendingNetDriver IpNetDriver_27, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-19.43.32:370][960]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Level/UEDPIE_0_Gulag.Gulag: Accepted
+[2020.08.10-19.43.32:370][960]LogNet: Remote platform little endian=1
+[2020.08.10-19.43.32:370][960]LogNet: This platform little endian=1
+[2020.08.10-19.43.32:371][960]LogOnline: OSS: Creating online subsystem instance for: :Context_85
+[2020.08.10-19.43.32:403][961]LogNet: Login request: ?Name=LAPTOP-205H8F92-27CD408F451315F378046FBE519B4FE0 userId: NULL:LAPTOP-205H8F92-27CD408F451315F378046FBE519B4FE0 platform: NULL
+[2020.08.10-19.43.32:404][961]LogNet: Welcomed by server (Level: /Game/Level/UEDPIE_0_Gulag, Game: /Game/Blueprints/BP_TestGameMode_Auto4.BP_TestGameMode_C)
+[2020.08.10-19.43.32:404][961]LogLoad: LoadMap: 127.0.0.1:17777//Game/Level/UEDPIE_0_Gulag?game=/Game/Blueprints/BP_TestGameMode_Auto4.BP_TestGameMode_C
+[2020.08.10-19.43.32:404][961]LogWorld: BeginTearingDown for /Temp/Untitled_14
+[2020.08.10-19.43.32:404][961]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-19.43.32:404][961]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.43.32:577][961]LogUObjectHash: Compacting FUObjectHashTables data took   6.50ms
+[2020.08.10-19.43.32:620][961]LogAIModule: Creating AISystem for world Gulag
+[2020.08.10-19.43.32:620][961]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BF86002600), frame # 234961
+[2020.08.10-19.43.32:620][961]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BFB208E480), frame # 234961
+[2020.08.10-19.43.32:623][961]LogWorld: Bringing World /Game/Level/UEDPIE_1_Gulag.Gulag up for play (max tick rate 60) at 2020.08.10-20.43.32
+[2020.08.10-19.43.32:624][961]LogWorld: Bringing up level for play took: 0.001657
+[2020.08.10-19.43.32:624][961]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.08.10-19.43.32:625][961]LogLoad: Took 0.220739 seconds to LoadMap(/Game/Level/UEDPIE_0_Gulag)
+[2020.08.10-19.43.32:625][961]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.08.10-19.43.32:714][962]LogNet: Client netspeed is 10000
+[2020.08.10-19.43.32:714][962]LogNet: Join request: /Game/Level/Gulag?Name=LAPTOP-205H8F92-27CD408F451315F378046FBE519B4FE0?SplitscreenCount=1
+[2020.08.10-19.43.32:715][962]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-19.43.32:716][962]LogNet: Join succeeded: LAPTOP-205H8F92-27CD
+[2020.08.10-19.43.32:871][970]LogNetPackageMap: Warning: Forged object: got Rifle_BP_C /Game/Level/UEDPIE_1_Gulag.Gulag:PersistentLevel.Rifle_BP_C_0, expecting Class /Engine/Transient.HOTRELOADED_SWeapon_1
+[2020.08.10-19.43.32:927][973]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-19.43.32:962][975]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-19.43.32:978][976]LogNetPackageMap: Warning: Forged object: got Rifle_BP_C /Game/Level/UEDPIE_1_Gulag.Gulag:PersistentLevel.Rifle_BP_C_1, expecting Class /Engine/Transient.HOTRELOADED_SWeapon_1
+[2020.08.10-19.43.39:492][356]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.43.39:492][356]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_1_Gulag
+[2020.08.10-19.43.39:492][356]LogSlate: Window 'CoopShooter Preview [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2020.08.10-19.43.39:497][356]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-19.43.39:498][356]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.43.39:507][356]LogNet: World NetDriver shutdown IpNetDriver_27 [GameNetDriver]
+[2020.08.10-19.43.39:507][356]LogNet: DestroyNamedNetDriver IpNetDriver_27 [GameNetDriver]
+[2020.08.10-19.43.39:507][356]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_26, Driver: GameNetDriver IpNetDriver_27, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-27CD408F451315F378046FBE519B4FE0, Channels: 16, Time: 2020.08.10-19.43.39
+[2020.08.10-19.43.39:507][356]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_26, Driver: GameNetDriver IpNetDriver_27, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-27CD408F451315F378046FBE519B4FE0
+[2020.08.10-19.43.39:507][356]LogExit: GameNetDriver IpNetDriver_27 shut down
+[2020.08.10-19.43.39:508][356]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.08.10-19.43.39:509][356]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.08.10-19.43.39:509][356]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.43.39:509][356]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-19.43.39:510][356]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.43.39:518][356]LogNet: World NetDriver shutdown IpNetDriver_26 [GameNetDriver]
+[2020.08.10-19.43.39:518][356]LogNet: DestroyNamedNetDriver IpNetDriver_26 [GameNetDriver]
+[2020.08.10-19.43.39:519][356]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:59318, Name: IpConnection_27, Driver: GameNetDriver IpNetDriver_26, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-27CD408F451315F378046FBE519B4FE0
+[2020.08.10-19.43.39:519][356]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:59318, Name: IpConnection_27, Driver: GameNetDriver IpNetDriver_26, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-27CD408F451315F378046FBE519B4FE0, Channels: 16, Time: 2020.08.10-19.43.39
+[2020.08.10-19.43.39:519][356]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:59318, Name: IpConnection_27, Driver: GameNetDriver IpNetDriver_26, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-27CD408F451315F378046FBE519B4FE0
+[2020.08.10-19.43.39:520][356]LogExit: GameNetDriver IpNetDriver_26 shut down
+[2020.08.10-19.43.39:521][356]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.10-19.43.39:530][356]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-19.43.39:576][356]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-19.43.39:635][356]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BFB208FD80), frame # 235356
+[2020.08.10-19.43.39:635][356]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BFB143CC00), frame # 235356
+[2020.08.10-19.43.39:635][356]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BFB208E480), frame # 235356
+[2020.08.10-19.43.39:636][356]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BF86002600), frame # 235356
+[2020.08.10-19.43.39:643][356]LogUObjectHash: Compacting FUObjectHashTables data took   7.38ms
+[2020.08.10-19.43.39:699][357]LogPlayLevel: Display: Destroying online subsystem :Context_85
+[2020.08.10-19.43.39:700][357]LogPlayLevel: Display: Destroying online subsystem :Context_84
+[2020.08.10-19.43.47:236][424]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.08.10-19.52.01:725][ 11]LogUObjectHash: Compacting FUObjectHashTables data took   6.41ms
+[2020.08.10-19.52.01:728][ 11]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.100
+[2020.08.10-19.55.52:256][915]LogHotReload: New module detected: UE4Editor-CoopShooter-0010.dll
+[2020.08.10-19.55.55:630][926]LogHotReload: Starting Hot-Reload from IDE
+[2020.08.10-19.55.59:046][926]LogClass: HitScanTrace HotReload.
+[2020.08.10-19.55.59:068][926]LogContentBrowser: Native class hierarchy updated for 'CoopShooter' in 0.0010 seconds. Added 12 classes and 3 folders.
+[2020.08.10-19.55.59:080][926]Display: HotReload successful (16 functions remapped  1 scriptstructs remapped)
+[2020.08.10-19.55.59:347][926]LogContentBrowser: Native class hierarchy populated in 0.0124 seconds. Added 3447 classes and 828 folders.
+[2020.08.10-19.55.59:358][926]Display: HotReload took  3.7s.
+[2020.08.10-20.02.06:279][ 19]LogUObjectHash: Compacting FUObjectHashTables data took   9.50ms
+[2020.08.10-20.02.06:285][ 19]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.170
+[2020.08.10-20.11.55:370][920]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.10-20.11.55:370][920]PIE: New page: PIE session: Gulag (10 Aug 2020, 22:11:55)
+[2020.08.10-20.11.55:387][920]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_Gulag
+[2020.08.10-20.11.55:521][920]LogPlayLevel: PIE: StaticDuplicateObject took: (0.134005s)
+[2020.08.10-20.11.55:631][920]LogAIModule: Creating AISystem for world Gulag
+[2020.08.10-20.11.55:632][920]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BEB1811400), frame # 240920
+[2020.08.10-20.11.55:646][920]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BF131D3D80), frame # 240920
+[2020.08.10-20.11.55:647][920]LogPlayLevel: PIE: World Init took: (0.125460s)
+[2020.08.10-20.11.55:647][920]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/Gulag.Gulag to /Game/Level/UEDPIE_0_Gulag.Gulag (0.259707s)
+[2020.08.10-20.11.55:790][920]LogUObjectHash: Compacting FUObjectHashTables data took   8.14ms
+[2020.08.10-20.11.55:812][920]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.10-20.11.55:812][920]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.10-20.11.55:812][920]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.10-20.11.55:812][920]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.10-20.11.55:812][920]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.10-20.11.55:812][920]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.10-20.11.55:812][920]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.10-20.11.55:812][920]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.10-20.11.55:838][920]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.10-20.11.55:839][920]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.10-20.11.55:856][920]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.10-20.11.55:856][920]LogAudioMixer: Display: 1: FrontRight
+[2020.08.10-20.11.55:880][920]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.08.10-20.11.55:882][920]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.10-20.11.55:882][920]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.10-20.11.55:882][920]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.10-20.11.55:882][920]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.10-20.11.55:899][920]LogInit: FAudioDevice initialized.
+[2020.08.10-20.11.55:971][920]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-20.11.55:976][920]LogLoad: Game class is 'BP_TestGameMode_C'
+[2020.08.10-20.11.55:980][920]LogWorld: Bringing World /Game/Level/UEDPIE_0_Gulag.Gulag up for play (max tick rate 60) at 2020.08.10-21.11.55
+[2020.08.10-20.11.55:980][920]LogWorld: Bringing up level for play took: 0.002555
+[2020.08.10-20.11.55:999][920]LogOnline: OSS: Creating online subsystem instance for: :Context_86
+[2020.08.10-20.11.56:035][920]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2020.08.10-20.11.56:035][920]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2020.08.10-20.11.56:035][920]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2020.08.10-20.11.56:035][920]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2020.08.10-20.11.56:064][920]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-20.11.56:064][920]LogNet: GameNetDriver IpNetDriver_28 IpNetDriver listening on port 17777
+[2020.08.10-20.11.56:101][920]PIE: Server logged in
+[2020.08.10-20.11.56:104][920]PIE: Play in editor total start time 0.74 seconds.
+[2020.08.10-20.11.56:105][920]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.10-20.11.56:105][920]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.10-20.11.56:105][920]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.10-20.11.56:105][920]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.10-20.11.56:105][920]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.10-20.11.56:105][920]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.10-20.11.56:105][920]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.10-20.11.56:105][920]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.10-20.11.56:106][920]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.10-20.11.56:106][920]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.10-20.11.56:110][920]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.10-20.11.56:110][920]LogAudioMixer: Display: 1: FrontRight
+[2020.08.10-20.11.56:129][920]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2020.08.10-20.11.56:130][920]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.10-20.11.56:130][920]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.10-20.11.56:130][920]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.10-20.11.56:131][920]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.10-20.11.56:155][920]LogInit: FAudioDevice initialized.
+[2020.08.10-20.11.56:211][920]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-20.11.56:211][920]LogNet: Browse: 127.0.0.1:17777//Game/Level/Gulag
+[2020.08.10-20.11.56:211][920]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2020.08.10-20.11.56:211][920]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2020.08.10-20.11.56:211][920]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-20.11.56:212][920]LogNet: Game client on port 17777, rate 10000
+[2020.08.10-20.11.56:218][920]PIE: Client logged in
+[2020.08.10-20.11.56:222][920]PIE: Play in editor total start time 0.858 seconds.
+[2020.08.10-20.11.57:253][951]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:57961
+[2020.08.10-20.11.57:253][951]LogHandshake: SendConnectChallenge. Timestamp: 1.985029, Cookie: 080126125030111034205009243025086253113233038022212034084178
+[2020.08.10-20.11.57:254][951]LogHandshake: SendChallengeResponse. Timestamp: 1.985029, Cookie: 080126125030111034205009243025086253113233038022212034084178
+[2020.08.10-20.11.57:275][952]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:57961
+[2020.08.10-20.11.57:275][952]LogHandshake: SendChallengeAck. InCookie: 080126125030111034205009243025086253113233038022212034084178
+[2020.08.10-20.11.57:275][952]LogNet: Server accepting post-challenge connection from: 127.0.0.1:57961
+[2020.08.10-20.11.57:275][952]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2020.08.10-20.11.57:275][952]LogNet: NotifyAcceptedConnection: Name: Gulag, TimeStamp: 08/10/20 21:11:57, [UNetConnection] RemoteAddr: 127.0.0.1:57961, Name: IpConnection_29, Driver: GameNetDriver IpNetDriver_28, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-20.11.57:275][952]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:57961, Name: IpConnection_29, Driver: GameNetDriver IpNetDriver_28, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-20.11.57:276][952]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_28, Driver: PendingNetDriver IpNetDriver_29, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2020.08.10-20.11.57:309][953]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Level/UEDPIE_0_Gulag.Gulag: Accepted
+[2020.08.10-20.11.57:309][953]LogNet: Remote platform little endian=1
+[2020.08.10-20.11.57:309][953]LogNet: This platform little endian=1
+[2020.08.10-20.11.57:310][953]LogOnline: OSS: Creating online subsystem instance for: :Context_87
+[2020.08.10-20.11.57:344][954]LogNet: Login request: ?Name=LAPTOP-205H8F92-9E8381FF43FDE77278E2F7AAE6E893B1 userId: NULL:LAPTOP-205H8F92-9E8381FF43FDE77278E2F7AAE6E893B1 platform: NULL
+[2020.08.10-20.11.57:345][954]LogNet: Welcomed by server (Level: /Game/Level/UEDPIE_0_Gulag, Game: /Game/Blueprints/BP_TestGameMode_Auto4.BP_TestGameMode_C)
+[2020.08.10-20.11.57:345][954]LogLoad: LoadMap: 127.0.0.1:17777//Game/Level/UEDPIE_0_Gulag?game=/Game/Blueprints/BP_TestGameMode_Auto4.BP_TestGameMode_C
+[2020.08.10-20.11.57:345][954]LogWorld: BeginTearingDown for /Temp/Untitled_15
+[2020.08.10-20.11.57:345][954]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.11.57:345][954]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.11.57:441][954]LogUObjectHash: Compacting FUObjectHashTables data took   5.25ms
+[2020.08.10-20.11.57:487][954]LogAIModule: Creating AISystem for world Gulag
+[2020.08.10-20.11.57:487][954]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BF57C0B400), frame # 240954
+[2020.08.10-20.11.57:487][954]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BF96EA8900), frame # 240954
+[2020.08.10-20.11.57:489][954]LogWorld: Bringing World /Game/Level/UEDPIE_1_Gulag.Gulag up for play (max tick rate 60) at 2020.08.10-21.11.57
+[2020.08.10-20.11.57:490][954]LogWorld: Bringing up level for play took: 0.001742
+[2020.08.10-20.11.57:490][954]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.08.10-20.11.57:491][954]LogLoad: Took 0.145722 seconds to LoadMap(/Game/Level/UEDPIE_0_Gulag)
+[2020.08.10-20.11.57:503][954]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2020.08.10-20.11.57:518][955]LogNet: Client netspeed is 10000
+[2020.08.10-20.11.57:518][955]LogNet: Join request: /Game/Level/Gulag?Name=LAPTOP-205H8F92-9E8381FF43FDE77278E2F7AAE6E893B1?SplitscreenCount=1
+[2020.08.10-20.11.57:518][955]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-20.11.57:546][955]LogNet: Join succeeded: LAPTOP-205H8F92-9E83
+[2020.08.10-20.11.57:685][961]LogNetPackageMap: Warning: Forged object: got Rifle_BP_C /Game/Level/UEDPIE_1_Gulag.Gulag:PersistentLevel.Rifle_BP_C_0, expecting Class /Engine/Transient.HOTRELOADED_SWeapon_1
+[2020.08.10-20.11.57:714][962]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-20.11.57:735][963]LogNetPackageMap: Warning: Forged object: got Rifle_BP_C /Game/Level/UEDPIE_1_Gulag.Gulag:PersistentLevel.Rifle_BP_C_1, expecting Class /Engine/Transient.HOTRELOADED_SWeapon_1
+[2020.08.10-20.11.57:770][964]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2020.08.10-20.12.07:935][341]LogTemp: Health Changed: 66.0
+[2020.08.10-20.12.13:201][544]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-20.12.13:201][544]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_1_Gulag
+[2020.08.10-20.12.13:201][544]LogSlate: Window 'CoopShooter Preview [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2020.08.10-20.12.13:205][544]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.12.13:205][544]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.12.13:247][544]LogNet: World NetDriver shutdown IpNetDriver_29 [GameNetDriver]
+[2020.08.10-20.12.13:247][544]LogNet: DestroyNamedNetDriver IpNetDriver_29 [GameNetDriver]
+[2020.08.10-20.12.13:247][544]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_28, Driver: GameNetDriver IpNetDriver_29, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-9E8381FF43FDE77278E2F7AAE6E893B1, Channels: 16, Time: 2020.08.10-20.12.13
+[2020.08.10-20.12.13:247][544]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_28, Driver: GameNetDriver IpNetDriver_29, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-9E8381FF43FDE77278E2F7AAE6E893B1
+[2020.08.10-20.12.13:248][544]LogExit: GameNetDriver IpNetDriver_29 shut down
+[2020.08.10-20.12.13:249][544]LogWorld: BeginTearingDown for /Game/Level/UEDPIE_0_Gulag
+[2020.08.10-20.12.13:265][544]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2020.08.10-20.12.13:266][544]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.10-20.12.13:266][544]LogSlate: Window 'CoopShooter Preview [NetMode: Server] (64-bit/Windows) ' being destroyed
+[2020.08.10-20.12.13:279][544]LogWorld: UWorld::CleanupWorld for Gulag, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.12.13:280][544]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.12.13:287][544]LogNet: World NetDriver shutdown IpNetDriver_28 [GameNetDriver]
+[2020.08.10-20.12.13:287][544]LogNet: DestroyNamedNetDriver IpNetDriver_28 [GameNetDriver]
+[2020.08.10-20.12.13:287][544]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:57961, Name: IpConnection_29, Driver: GameNetDriver IpNetDriver_28, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-9E8381FF43FDE77278E2F7AAE6E893B1
+[2020.08.10-20.12.13:287][544]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:57961, Name: IpConnection_29, Driver: GameNetDriver IpNetDriver_28, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-9E8381FF43FDE77278E2F7AAE6E893B1, Channels: 16, Time: 2020.08.10-20.12.13
+[2020.08.10-20.12.13:287][544]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:57961, Name: IpConnection_29, Driver: GameNetDriver IpNetDriver_28, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:LAPTOP-205H8F92-9E8381FF43FDE77278E2F7AAE6E893B1
+[2020.08.10-20.12.13:298][544]LogExit: GameNetDriver IpNetDriver_28 shut down
+[2020.08.10-20.12.13:299][544]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.10-20.12.13:307][544]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.12.13:413][544]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BF96EA8900), frame # 241544
+[2020.08.10-20.12.13:414][544]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BF57C0B400), frame # 241544
+[2020.08.10-20.12.13:436][544]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BF131D3D80), frame # 241544
+[2020.08.10-20.12.13:436][544]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BEB1811400), frame # 241544
+[2020.08.10-20.12.13:441][544]LogUObjectHash: Compacting FUObjectHashTables data took   5.04ms
+[2020.08.10-20.12.13:490][545]LogPlayLevel: Display: Destroying online subsystem :Context_87
+[2020.08.10-20.12.13:490][545]LogPlayLevel: Display: Destroying online subsystem :Context_86
+[2020.08.10-20.12.38:716][633]LogUObjectHash: Compacting FUObjectHashTables data took   6.10ms
+[2020.08.10-20.12.38:720][633]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Level/Gulag' took 0.065
+[2020.08.10-20.14.00:913][160]LogUObjectHash: Compacting FUObjectHashTables data took   4.39ms
+[2020.08.10-20.14.01:115][160]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Level/Gulag" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.08.10-20.14.01:245][160]LogUObjectHash: Compacting FUObjectHashTables data took   1.19ms
+[2020.08.10-20.14.04:584][160]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Gulag221032F74A0C5EA1776EA9866143D6F0.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag.umap'
+[2020.08.10-20.14.06:059][160]LogFileHelpers: Saving map 'Gulag' took 5.036
+[2020.08.10-20.14.06:074][160]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Level/Gulag_BuiltData" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag_BuiltData.uasset" SILENT=true
+[2020.08.10-20.14.06:577][160]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Gulag_BuiltData73D7A09449362026891988A7D031DFA2.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag_BuiltData.uasset'
+[2020.08.10-20.14.08:282][160]AssetCheck: New page: Asset Save: multiple assets
+[2020.08.10-20.14.08:283][160]LogContentValidation: Display: Validating World /Game/Level/Gulag.Gulag
+[2020.08.10-20.14.08:283][160]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Level/Gulag_BuiltData.Gulag_BuiltData
+[2020.08.10-20.14.11:853][354]LogUObjectHash: Compacting FUObjectHashTables data took   5.94ms
+[2020.08.10-20.14.12:649][354]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.12:649][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.14.15:082][354]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.15:082][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.14.15:200][354]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.15:200][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.14.16:547][354]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2020.08.10-20.14.16:547][354]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.16:547][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.14.19:850][354]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.19:850][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.14.20:494][354]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.20:494][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.14.20:533][354]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.20:534][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.10-20.14.21:107][354]LogSlate: Window 'CoopShooter - Unreal Editor' being destroyed
+[2020.08.10-20.14.21:126][354]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2020.08.10-20.14.22:598][355]Cmd: QUIT_EDITOR
+[2020.08.10-20.14.22:598][355]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2020.08.10-20.14.22:823][355]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2020.08.10-20.14.24:862][355]LogExit: Preparing to exit.
+[2020.08.10-20.14.27:035][355]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.27:043][355]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.27:052][355]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.27:061][355]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.27:069][355]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.27:077][355]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.27:084][355]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.27:091][355]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.27:099][355]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.27:817][355]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2020.08.10-20.14.28:918][355]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2020.08.10-20.14.28:930][355]LogExit: Editor shut down
+[2020.08.10-20.14.29:018][355]LogExit: Transaction tracking system shut down
+[2020.08.10-20.14.33:131][355]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (000001BE0B8F5B40), frame # 242355
+[2020.08.10-20.14.33:131][355]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE0B851E40), frame # 242355
+[2020.08.10-20.14.33:188][355]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE0B89DE00), frame # 242355
+[2020.08.10-20.14.35:609][355]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE045D3600), frame # 242355
+[2020.08.10-20.14.35:609][355]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE0462CA40), frame # 242355
+[2020.08.10-20.14.36:603][355]LogExit: Object subsystem successfully closed.
+[2020.08.10-20.14.36:972][355]LogShaderCompilers: Display: Shaders left to compile 0
+[2020.08.10-20.14.40:680][355]LogModuleManager: Shutting down and abandoning module CoopShooter (814)
+[2020.08.10-20.14.40:680][355]LogModuleManager: Shutting down and abandoning module AnimationEditor (811)
+[2020.08.10-20.14.40:696][355]LogModuleManager: Shutting down and abandoning module PinnedCommandList (809)
+[2020.08.10-20.14.40:696][355]LogModuleManager: Shutting down and abandoning module SkeletonEditor (807)
+[2020.08.10-20.14.40:717][355]LogModuleManager: Shutting down and abandoning module SequencerWidgets (803)
+[2020.08.10-20.14.40:718][355]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (801)
+[2020.08.10-20.14.40:718][355]LogModuleManager: Shutting down and abandoning module Voice (799)
+[2020.08.10-20.14.40:731][355]LogModuleManager: Shutting down and abandoning module BlueprintGraph (797)
+[2020.08.10-20.14.40:757][355]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (794)
+[2020.08.10-20.14.40:757][355]LogModuleManager: Shutting down and abandoning module AddContentDialog (792)
+[2020.08.10-20.14.41:000][355]LogModuleManager: Shutting down and abandoning module WidgetCarousel (791)
+[2020.08.10-20.14.41:001][355]LogModuleManager: Shutting down and abandoning module EditorWidgets (788)
+[2020.08.10-20.14.41:001][355]LogModuleManager: Shutting down and abandoning module CollectionManager (786)
+[2020.08.10-20.14.41:020][355]LogModuleManager: Shutting down and abandoning module SceneOutliner (784)
+[2020.08.10-20.14.41:020][355]LogModuleManager: Shutting down and abandoning module StatsViewer (782)
+[2020.08.10-20.14.41:051][355]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (780)
+[2020.08.10-20.14.41:051][355]LogModuleManager: Shutting down and abandoning module FoliageEdit (778)
+[2020.08.10-20.14.41:062][355]LogModuleManager: Shutting down and abandoning module LandscapeEditor (776)
+[2020.08.10-20.14.41:116][355]LogModuleManager: Shutting down and abandoning module MeshPaintMode (774)
+[2020.08.10-20.14.41:127][355]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (772)
+[2020.08.10-20.14.41:127][355]LogModuleManager: Shutting down and abandoning module ActorPickerMode (770)
+[2020.08.10-20.14.41:127][355]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (768)
+[2020.08.10-20.14.41:228][355]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (766)
+[2020.08.10-20.14.41:228][355]LogModuleManager: Shutting down and abandoning module AutomationWorker (764)
+[2020.08.10-20.14.41:242][355]LogModuleManager: Shutting down and abandoning module SteamVREditor (762)
+[2020.08.10-20.14.41:242][355]LogModuleManager: Shutting down and abandoning module OculusMR (760)
+[2020.08.10-20.14.41:242][355]LogModuleManager: Shutting down and abandoning module GooglePADEditor (758)
+[2020.08.10-20.14.41:248][355]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (756)
+[2020.08.10-20.14.41:260][355]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (754)
+[2020.08.10-20.14.41:311][355]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (752)
+[2020.08.10-20.14.41:337][355]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (750)
+[2020.08.10-20.14.41:381][355]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (748)
+[2020.08.10-20.14.41:389][355]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (746)
+[2020.08.10-20.14.41:389][355]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (744)
+[2020.08.10-20.14.41:389][355]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (742)
+[2020.08.10-20.14.41:402][355]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (740)
+[2020.08.10-20.14.41:402][355]LogModuleManager: Shutting down and abandoning module WebMMedia (738)
+[2020.08.10-20.14.41:414][355]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (736)
+[2020.08.10-20.14.41:477][355]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (734)
+[2020.08.10-20.14.41:495][355]LogModuleManager: Shutting down and abandoning module SequenceRecorder (733)
+[2020.08.10-20.14.41:498][355]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (730)
+[2020.08.10-20.14.41:506][355]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (728)
+[2020.08.10-20.14.41:506][355]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (726)
+[2020.08.10-20.14.41:506][355]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (724)
+[2020.08.10-20.14.41:506][355]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (722)
+[2020.08.10-20.14.41:506][355]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (720)
+[2020.08.10-20.14.41:506][355]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (718)
+[2020.08.10-20.14.41:506][355]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (716)
+[2020.08.10-20.14.41:530][355]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (714)
+[2020.08.10-20.14.41:541][355]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (712)
+[2020.08.10-20.14.41:541][355]LogModuleManager: Shutting down and abandoning module PlanarCut (710)
+[2020.08.10-20.14.41:554][355]LogModuleManager: Shutting down and abandoning module CharacterAI (708)
+[2020.08.10-20.14.41:554][355]LogModuleManager: Shutting down and abandoning module TextureAlignMode (706)
+[2020.08.10-20.14.41:554][355]LogModuleManager: Shutting down and abandoning module BspMode (704)
+[2020.08.10-20.14.41:591][355]LogModuleManager: Shutting down and abandoning module PlacementMode (703)
+[2020.08.10-20.14.41:591][355]LogModuleManager: Shutting down and abandoning module GeometryMode (700)
+[2020.08.10-20.14.41:591][355]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (698)
+[2020.08.10-20.14.41:608][355]LogModuleManager: Shutting down and abandoning module SmartSnapping (696)
+[2020.08.10-20.14.41:608][355]LogModuleManager: Shutting down and abandoning module SessionServices (694)
+[2020.08.10-20.14.41:608][355]LogModuleManager: Shutting down and abandoning module MeshPaint (692)
+[2020.08.10-20.14.41:620][355]LogModuleManager: Shutting down and abandoning module ViewportSnapping (690)
+[2020.08.10-20.14.41:620][355]LogModuleManager: Shutting down and abandoning module ViewportInteraction (688)
+[2020.08.10-20.14.41:620][355]LogModuleManager: Shutting down and abandoning module ClothPainter (686)
+[2020.08.10-20.14.41:657][355]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (685)
+[2020.08.10-20.14.41:667][355]LogModuleManager: Shutting down and abandoning module LogVisualizer (682)
+[2020.08.10-20.14.41:727][355]LogModuleManager: Shutting down and abandoning module IntroTutorials (680)
+[2020.08.10-20.14.41:756][355]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (679)
+[2020.08.10-20.14.41:779][355]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (676)
+[2020.08.10-20.14.41:779][355]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (674)
+[2020.08.10-20.14.41:796][355]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (672)
+[2020.08.10-20.14.41:796][355]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (671)
+[2020.08.10-20.14.43:234][355]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (668)
+[2020.08.10-20.14.43:234][355]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (666)
+[2020.08.10-20.14.43:234][355]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (664)
+[2020.08.10-20.14.43:234][355]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (662)
+[2020.08.10-20.14.43:234][355]LogModuleManager: Shutting down and abandoning module TraceInsights (660)
+[2020.08.10-20.14.43:289][355]LogModuleManager: Shutting down and abandoning module TraceServices (659)
+[2020.08.10-20.14.43:310][355]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (656)
+[2020.08.10-20.14.43:310][355]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (654)
+[2020.08.10-20.14.43:321][355]LogModuleManager: Shutting down and abandoning module InputBindingEditor (652)
+[2020.08.10-20.14.43:371][355]LogModuleManager: Shutting down and abandoning module MergeActors (650)
+[2020.08.10-20.14.43:387][355]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (648)
+[2020.08.10-20.14.43:402][355]LogModuleManager: Shutting down and abandoning module LocalizationService (647)
+[2020.08.10-20.14.43:420][355]LogModuleManager: Shutting down and abandoning module HardwareTargeting (644)
+[2020.08.10-20.14.43:420][355]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (642)
+[2020.08.10-20.14.43:432][355]LogModuleManager: Shutting down and abandoning module UndoHistory (640)
+[2020.08.10-20.14.43:447][355]LogModuleManager: Shutting down and abandoning module XmlParser (638)
+[2020.08.10-20.14.43:458][355]LogModuleManager: Shutting down and abandoning module Blutility (636)
+[2020.08.10-20.14.43:458][355]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (634)
+[2020.08.10-20.14.43:468][355]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (633)
+[2020.08.10-20.14.43:483][355]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (630)
+[2020.08.10-20.14.43:496][355]LogModuleManager: Shutting down and abandoning module SettingsEditor (628)
+[2020.08.10-20.14.43:507][355]LogModuleManager: Shutting down and abandoning module ProjectLauncher (626)
+[2020.08.10-20.14.43:523][355]LogModuleManager: Shutting down and abandoning module SessionFrontend (624)
+[2020.08.10-20.14.43:534][355]LogModuleManager: Shutting down and abandoning module ProfilerClient (622)
+[2020.08.10-20.14.43:543][355]LogModuleManager: Shutting down and abandoning module DeviceManager (620)
+[2020.08.10-20.14.43:563][355]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (619)
+[2020.08.10-20.14.43:608][355]LogModuleManager: Shutting down and abandoning module AutomationController (616)
+[2020.08.10-20.14.43:631][355]LogModuleManager: Shutting down and abandoning module AutomationWindow (614)
+[2020.08.10-20.14.43:647][355]LogModuleManager: Shutting down and abandoning module Layers (612)
+[2020.08.10-20.14.43:660][355]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (610)
+[2020.08.10-20.14.43:660][355]LogModuleManager: Shutting down and abandoning module DetailCustomizations (608)
+[2020.08.10-20.14.43:669][355]LogModuleManager: Shutting down and abandoning module PackagesDialog (606)
+[2020.08.10-20.14.43:669][355]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (604)
+[2020.08.10-20.14.43:696][355]LogModuleManager: Shutting down and abandoning module Persona (602)
+[2020.08.10-20.14.43:702][355]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (601)
+[2020.08.10-20.14.43:702][355]LogModuleManager: Shutting down and abandoning module AnimGraph (599)
+[2020.08.10-20.14.43:702][355]LogModuleManager: Shutting down and abandoning module Kismet (596)
+[2020.08.10-20.14.43:824][355]LogModuleManager: Shutting down and abandoning module KismetWidgets (595)
+[2020.08.10-20.14.43:824][355]LogModuleManager: Shutting down and abandoning module GraphEditor (592)
+[2020.08.10-20.14.43:880][355]LogModuleManager: Shutting down and abandoning module StructViewer (590)
+[2020.08.10-20.14.43:911][355]LogModuleManager: Shutting down and abandoning module ClassViewer (588)
+[2020.08.10-20.14.43:935][355]LogModuleManager: Shutting down and abandoning module Toolbox (586)
+[2020.08.10-20.14.43:963][355]LogModuleManager: Shutting down and abandoning module ModuleUI (584)
+[2020.08.10-20.14.43:974][355]LogModuleManager: Shutting down and abandoning module OutputLog (582)
+[2020.08.10-20.14.44:011][355]LogModuleManager: Shutting down and abandoning module GammaUI (580)
+[2020.08.10-20.14.44:019][355]LogModuleManager: Shutting down and abandoning module Documentation (578)
+[2020.08.10-20.14.44:058][355]LogModuleManager: Shutting down and abandoning module LiveCoding (576)
+[2020.08.10-20.14.44:081][355]LogModuleManager: Shutting down and abandoning module LevelSequence (574)
+[2020.08.10-20.14.44:081][355]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (572)
+[2020.08.10-20.14.44:119][355]LogModuleManager: Shutting down and abandoning module MovieScene (570)
+[2020.08.10-20.14.44:119][355]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (568)
+[2020.08.10-20.14.44:133][355]LogModuleManager: Shutting down and abandoning module LauncherPlatform (566)
+[2020.08.10-20.14.44:133][355]LogModuleManager: Shutting down and abandoning module AnalyticsET (564)
+[2020.08.10-20.14.44:133][355]LogModuleManager: Shutting down and abandoning module PortalServices (562)
+[2020.08.10-20.14.44:133][355]LogModuleManager: Shutting down and abandoning module PortalRpc (560)
+[2020.08.10-20.14.44:133][355]LogModuleManager: Shutting down and abandoning module MessagingRpc (558)
+[2020.08.10-20.14.44:133][355]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (556)
+[2020.08.10-20.14.44:133][355]LogModuleManager: Shutting down and abandoning module AudioMixerCore (555)
+[2020.08.10-20.14.44:133][355]LogModuleManager: Shutting down and abandoning module AIModule (552)
+[2020.08.10-20.14.44:145][355]LogModuleManager: Shutting down and abandoning module GameplayDebugger (551)
+[2020.08.10-20.14.44:145][355]LogModuleManager: Shutting down and abandoning module AITestSuite (549)
+[2020.08.10-20.14.44:145][355]LogModuleManager: Shutting down and abandoning module NavigationSystem (547)
+[2020.08.10-20.14.44:145][355]LogModuleManager: Shutting down and abandoning module ProfilerService (544)
+[2020.08.10-20.14.44:346][355]LogModuleManager: Shutting down and abandoning module TaskGraph (542)
+[2020.08.10-20.14.44:362][355]LogModuleManager: Shutting down and abandoning module ScreenshotTools (540)
+[2020.08.10-20.14.44:362][355]LogModuleManager: Shutting down and abandoning module SynthesisEditor (538)
+[2020.08.10-20.14.44:362][355]LogModuleManager: Shutting down and abandoning module Synthesis (536)
+[2020.08.10-20.14.44:373][355]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (534)
+[2020.08.10-20.14.44:395][355]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (532)
+[2020.08.10-20.14.44:395][355]LogModuleManager: Shutting down and abandoning module OculusEditor (530)
+[2020.08.10-20.14.44:395][355]LogModuleManager: Shutting down and abandoning module OculusInput (528)
+[2020.08.10-20.14.44:403][355]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (526)
+[2020.08.10-20.14.44:403][355]LogModuleManager: Shutting down and abandoning module GooglePAD (524)
+[2020.08.10-20.14.44:403][355]LogModuleManager: Shutting down and abandoning module EditableMesh (522)
+[2020.08.10-20.14.44:422][355]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (520)
+[2020.08.10-20.14.44:422][355]LogModuleManager: Shutting down and abandoning module CableComponent (518)
+[2020.08.10-20.14.44:422][355]LogModuleManager: Shutting down and abandoning module AudioCapture (516)
+[2020.08.10-20.14.44:422][355]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (515)
+[2020.08.10-20.14.44:432][355]LogModuleManager: Shutting down and abandoning module AssetTags (512)
+[2020.08.10-20.14.44:432][355]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (510)
+[2020.08.10-20.14.44:432][355]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (508)
+[2020.08.10-20.14.44:432][355]LogModuleManager: Shutting down and abandoning module AppleImageUtils (506)
+[2020.08.10-20.14.44:432][355]LogModuleManager: Shutting down and abandoning module AndroidPermission (504)
+[2020.08.10-20.14.44:432][355]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (502)
+[2020.08.10-20.14.44:444][355]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (500)
+[2020.08.10-20.14.44:466][355]LogModuleManager: Shutting down and abandoning module TemplateSequence (498)
+[2020.08.10-20.14.44:466][355]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineEditor (496)
+[2020.08.10-20.14.44:466][355]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineRenderPasses (494)
+[2020.08.10-20.14.44:471][355]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineSettings (492)
+[2020.08.10-20.14.44:471][355]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineCore (490)
+[2020.08.10-20.14.44:472][355]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (489)
+[2020.08.10-20.14.44:472][355]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (486)
+[2020.08.10-20.14.44:481][355]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (484)
+[2020.08.10-20.14.44:487][355]LogModuleManager: Shutting down and abandoning module MediaCompositing (482)
+[2020.08.10-20.14.44:487][355]LogModuleManager: Shutting down and abandoning module ImgMedia (480)
+[2020.08.10-20.14.44:487][355]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (478)
+[2020.08.10-20.14.44:487][355]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (476)
+[2020.08.10-20.14.44:488][355]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (474)
+[2020.08.10-20.14.44:499][355]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (472)
+[2020.08.10-20.14.44:499][355]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (470)
+[2020.08.10-20.14.44:499][355]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (468)
+[2020.08.10-20.14.44:538][355]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (466)
+[2020.08.10-20.14.44:547][355]LogModuleManager: Shutting down and abandoning module MeshConversion (464)
+[2020.08.10-20.14.44:560][355]LogModuleManager: Shutting down and abandoning module DynamicMesh (462)
+[2020.08.10-20.14.44:616][355]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (460)
+[2020.08.10-20.14.44:629][355]LogModuleManager: Shutting down and abandoning module GeometricObjects (458)
+[2020.08.10-20.14.44:643][355]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (456)
+[2020.08.10-20.14.44:643][355]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (455)
+[2020.08.10-20.14.44:643][355]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (452)
+[2020.08.10-20.14.44:644][355]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (450)
+[2020.08.10-20.14.44:644][355]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (448)
+[2020.08.10-20.14.44:644][355]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (446)
+[2020.08.10-20.14.44:644][355]LogModuleManager: Shutting down and abandoning module ChaosNiagara (444)
+[2020.08.10-20.14.44:644][355]LogModuleManager: Shutting down and abandoning module FractureEditor (442)
+[2020.08.10-20.14.44:649][355]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (440)
+[2020.08.10-20.14.44:649][355]LogModuleManager: Shutting down and abandoning module ChaosCloth (438)
+[2020.08.10-20.14.44:661][355]LogModuleManager: Shutting down and abandoning module BackChannel (436)
+[2020.08.10-20.14.44:668][355]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (434)
+[2020.08.10-20.14.44:668][355]LogModuleManager: Shutting down and abandoning module AutomationUtils (432)
+[2020.08.10-20.14.44:668][355]LogModuleManager: Shutting down and abandoning module AlembicImporter (430)
+[2020.08.10-20.14.44:668][355]LogModuleManager: Shutting down and abandoning module AlembicLibrary (429)
+[2020.08.10-20.14.44:668][355]LogModuleManager: Shutting down and abandoning module GeometryCache (428)
+[2020.08.10-20.14.44:668][355]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (427)
+[2020.08.10-20.14.44:668][355]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (422)
+[2020.08.10-20.14.44:676][355]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (420)
+[2020.08.10-20.14.44:691][355]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (418)
+[2020.08.10-20.14.44:691][355]LogModuleManager: Shutting down and abandoning module PluginBrowser (416)
+[2020.08.10-20.14.44:776][355]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (414)
+[2020.08.10-20.14.44:800][355]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (412)
+[2020.08.10-20.14.44:867][355]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (410)
+[2020.08.10-20.14.44:889][355]LogModuleManager: Shutting down and abandoning module CurveEditorTools (408)
+[2020.08.10-20.14.44:928][355]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (406)
+[2020.08.10-20.14.44:954][355]LogModuleManager: Shutting down and abandoning module CryptoKeys (404)
+[2020.08.10-20.14.44:954][355]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (402)
+[2020.08.10-20.14.44:954][355]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (400)
+[2020.08.10-20.14.44:954][355]LogModuleManager: Shutting down and abandoning module UObjectPlugin (398)
+[2020.08.10-20.14.44:954][355]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (396)
+[2020.08.10-20.14.44:996][355]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (394)
+[2020.08.10-20.14.44:996][355]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (392)
+[2020.08.10-20.14.45:056][355]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (390)
+[2020.08.10-20.14.45:122][355]LogModuleManager: Shutting down and abandoning module GitSourceControl (388)
+[2020.08.10-20.14.45:129][355]LogModuleManager: Shutting down and abandoning module SourceControl (387)
+[2020.08.10-20.14.45:145][355]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (384)
+[2020.08.10-20.14.45:160][355]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (382)
+[2020.08.10-20.14.45:160][355]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (380)
+[2020.08.10-20.14.45:174][355]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (378)
+[2020.08.10-20.14.45:174][355]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (376)
+[2020.08.10-20.14.45:184][355]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (374)
+[2020.08.10-20.14.45:184][355]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (372)
+[2020.08.10-20.14.45:184][355]LogModuleManager: Shutting down and abandoning module Paper2DEditor (370)
+[2020.08.10-20.14.45:210][355]LogModuleManager: Shutting down and abandoning module SoundFields (366)
+[2020.08.10-20.14.45:210][355]LogModuleManager: Shutting down and abandoning module SignificanceManager (364)
+[2020.08.10-20.14.45:210][355]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (362)
+[2020.08.10-20.14.45:210][355]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (360)
+[2020.08.10-20.14.45:210][355]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (356)
+[2020.08.10-20.14.45:210][355]LogModuleManager: Shutting down and abandoning module ActorSequence (354)
+[2020.08.10-20.14.45:210][355]LogModuleManager: Shutting down and abandoning module UdpMessaging (352)
+[2020.08.10-20.14.45:322][355]LogModuleManager: Shutting down and abandoning module TcpMessaging (350)
+[2020.08.10-20.14.45:446][355]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (348)
+[2020.08.10-20.14.45:446][355]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (346)
+[2020.08.10-20.14.45:446][355]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (344)
+[2020.08.10-20.14.45:446][355]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (342)
+[2020.08.10-20.14.45:446][355]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (340)
+[2020.08.10-20.14.45:460][355]LogMagicLeapPlanes: Planes tracker already destroyed.
+[2020.08.10-20.14.45:461][355]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (338)
+[2020.08.10-20.14.45:469][355]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (336)
+[2020.08.10-20.14.45:469][355]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (334)
+[2020.08.10-20.14.45:507][355]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (332)
+[2020.08.10-20.14.45:516][355]LogModuleManager: Shutting down and abandoning module MagicLeapController (330)
+[2020.08.10-20.14.45:540][355]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2020.08.10-20.14.45:558][355]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (328)
+[2020.08.10-20.14.45:592][355]LogModuleManager: Shutting down and abandoning module MagicLeapAR (326)
+[2020.08.10-20.14.45:592][355]LogModuleManager: Shutting down and abandoning module AugmentedReality (325)
+[2020.08.10-20.14.45:592][355]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (322)
+[2020.08.10-20.14.45:592][355]LogModuleManager: Shutting down and abandoning module Niagara (320)
+[2020.08.10-20.14.45:641][355]LogModuleManager: Shutting down and abandoning module SignalProcessing (319)
+[2020.08.10-20.14.45:641][355]LogModuleManager: Shutting down and abandoning module NiagaraEditor (317)
+[2020.08.10-20.14.45:721][355]LogModuleManager: Shutting down and abandoning module NiagaraCore (314)
+[2020.08.10-20.14.45:721][355]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (312)
+[2020.08.10-20.14.45:731][355]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (310)
+[2020.08.10-20.14.45:739][355]LogModuleManager: Shutting down and abandoning module FacialAnimation (308)
+[2020.08.10-20.14.45:739][355]LogModuleManager: Shutting down and abandoning module DataValidation (306)
+[2020.08.10-20.14.45:739][355]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (304)
+[2020.08.10-20.14.45:767][355]LogModuleManager: Shutting down and abandoning module LevelEditor (303)
+[2020.08.10-20.14.45:862][355]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (302)
+[2020.08.10-20.14.45:877][355]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (300)
+[2020.08.10-20.14.45:892][355]LogModuleManager: Shutting down and abandoning module MainFrame (298)
+[2020.08.10-20.14.45:892][355]LogModuleManager: Shutting down and abandoning module HotReload (297)
+[2020.08.10-20.14.45:893][355]LogModuleManager: Shutting down and abandoning module ToolMenus (293)
+[2020.08.10-20.14.45:893][355]LogModuleManager: Shutting down and abandoning module TreeMap (291)
+[2020.08.10-20.14.45:910][355]LogModuleManager: Shutting down and abandoning module AnimationSharing (288)
+[2020.08.10-20.14.45:910][355]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (286)
+[2020.08.10-20.14.45:916][355]LogModuleManager: Shutting down and abandoning module Paper2D (284)
+[2020.08.10-20.14.45:927][355]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (282)
+[2020.08.10-20.14.45:977][355]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (280)
+[2020.08.10-20.14.45:977][355]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (278)
+[2020.08.10-20.14.45:985][355]LogModuleManager: Shutting down and abandoning module PacketHandler (276)
+[2020.08.10-20.14.45:985][355]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (274)
+[2020.08.10-20.14.45:985][355]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (272)
+[2020.08.10-20.14.46:012][355]LogModuleManager: Shutting down and abandoning module MediaAssets (270)
+[2020.08.10-20.14.46:012][355]LogModuleManager: Shutting down and abandoning module Overlay (268)
+[2020.08.10-20.14.46:012][355]LogModuleManager: Shutting down and abandoning module OverlayEditor (267)
+[2020.08.10-20.14.46:012][355]LogModuleManager: Shutting down and abandoning module EnvironmentQueryEditor (264)
+[2020.08.10-20.14.46:072][355]LogModuleManager: Shutting down and abandoning module VREditor (262)
+[2020.08.10-20.14.46:090][355]LogModuleManager: Shutting down and abandoning module StringTableEditor (260)
+[2020.08.10-20.14.46:119][355]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (258)
+[2020.08.10-20.14.46:120][355]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (256)
+[2020.08.10-20.14.46:234][355]LogModuleManager: Shutting down and abandoning module FunctionalTesting (254)
+[2020.08.10-20.14.46:250][355]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (252)
+[2020.08.10-20.14.46:328][355]LogModuleManager: Shutting down and abandoning module UMG (250)
+[2020.08.10-20.14.46:328][355]LogModuleManager: Shutting down and abandoning module UMGEditor (249)
+[2020.08.10-20.14.46:359][355]LogModuleManager: Shutting down and abandoning module MessageLog (247)
+[2020.08.10-20.14.46:359][355]LogModuleManager: Shutting down and abandoning module MaterialEditor (245)
+[2020.08.10-20.14.46:504][355]LogModuleManager: Shutting down and abandoning module ContentBrowser (244)
+[2020.08.10-20.14.46:506][355]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (243)
+[2020.08.10-20.14.46:609][355]LogModuleManager: Shutting down and abandoning module SlateReflector (236)
+[2020.08.10-20.14.46:634][355]LogModuleManager: Shutting down and abandoning module Slate (234)
+[2020.08.10-20.14.46:634][355]LogModuleManager: Shutting down and abandoning module SlateCore (232)
+[2020.08.10-20.14.46:634][355]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (230)
+[2020.08.10-20.14.46:634][355]LogModuleManager: Shutting down and abandoning module UnrealEd (228)
+[2020.08.10-20.14.46:634][355]LogModuleManager: Shutting down and abandoning module MRMesh (226)
+[2020.08.10-20.14.46:634][355]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (224)
+[2020.08.10-20.14.46:634][355]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (222)
+[2020.08.10-20.14.46:648][355]LogModuleManager: Shutting down and abandoning module XAudio2 (220)
+[2020.08.10-20.14.46:655][355]LogModuleManager: Shutting down and abandoning module Networking (218)
+[2020.08.10-20.14.46:655][355]LogModuleManager: Shutting down and abandoning module Core (216)
+[2020.08.10-20.14.46:655][355]LogModuleManager: Shutting down and abandoning module MovieSceneTools (214)
+[2020.08.10-20.14.46:730][355]LogModuleManager: Shutting down and abandoning module CurveEditor (213)
+[2020.08.10-20.14.46:751][355]LogModuleManager: Shutting down and abandoning module Sequencer (211)
+[2020.08.10-20.14.46:765][355]LogModuleManager: Shutting down and abandoning module EditorStyle (210)
+[2020.08.10-20.14.46:886][355]LogModuleManager: Shutting down and abandoning module KismetCompiler (206)
+[2020.08.10-20.14.46:886][355]LogModuleManager: Shutting down and abandoning module MeshBuilder (204)
+[2020.08.10-20.14.46:903][355]LogModuleManager: Shutting down and abandoning module MeshUtilities (202)
+[2020.08.10-20.14.46:920][355]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (201)
+[2020.08.10-20.14.46:925][355]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (200)
+[2020.08.10-20.14.46:934][355]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (199)
+[2020.08.10-20.14.46:942][355]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (197)
+[2020.08.10-20.14.46:959][355]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (195)
+[2020.08.10-20.14.47:050][355]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (193)
+[2020.08.10-20.14.47:064][355]LogModuleManager: Shutting down and abandoning module MaterialBaking (189)
+[2020.08.10-20.14.47:078][355]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (184)
+[2020.08.10-20.14.47:078][355]LogModuleManager: Shutting down and abandoning module DerivedDataCache (182)
+[2020.08.10-20.14.47:093][355]LogModuleManager: Shutting down and abandoning module XGEController (180)
+[2020.08.10-20.14.47:104][355]LogXGEController: Cleaning working directory: C:/Users/DW/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.08.10-20.14.47:135][355]LogModuleManager: Shutting down and abandoning module TargetPlatform (178)
+[2020.08.10-20.14.47:159][355]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (177)
+[2020.08.10-20.14.47:169][355]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (175)
+[2020.08.10-20.14.47:175][355]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (173)
+[2020.08.10-20.14.47:188][355]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (171)
+[2020.08.10-20.14.47:202][355]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (169)
+[2020.08.10-20.14.47:225][355]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (167)
+[2020.08.10-20.14.47:238][355]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (165)
+[2020.08.10-20.14.47:254][355]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (163)
+[2020.08.10-20.14.47:268][355]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (161)
+[2020.08.10-20.14.47:354][355]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (159)
+[2020.08.10-20.14.47:354][355]LogModuleManager: Shutting down and abandoning module ImageWrapper (158)
+[2020.08.10-20.14.47:354][355]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (155)
+[2020.08.10-20.14.47:360][355]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (153)
+[2020.08.10-20.14.47:374][355]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (151)
+[2020.08.10-20.14.47:385][355]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (149)
+[2020.08.10-20.14.47:385][355]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (147)
+[2020.08.10-20.14.47:385][355]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (145)
+[2020.08.10-20.14.47:395][355]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (143)
+[2020.08.10-20.14.47:395][355]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (141)
+[2020.08.10-20.14.47:407][355]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (139)
+[2020.08.10-20.14.47:522][355]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (137)
+[2020.08.10-20.14.47:603][355]LogModuleManager: Shutting down and abandoning module LinuxAArch64ServerTargetPlatform (135)
+[2020.08.10-20.14.47:603][355]LogModuleManager: Shutting down and abandoning module LinuxAArch64ClientTargetPlatform (133)
+[2020.08.10-20.14.47:603][355]LogModuleManager: Shutting down and abandoning module LinuxAArch64NoEditorTargetPlatform (131)
+[2020.08.10-20.14.47:603][355]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (129)
+[2020.08.10-20.14.47:603][355]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (127)
+[2020.08.10-20.14.47:604][355]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (125)
+[2020.08.10-20.14.47:604][355]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
+[2020.08.10-20.14.47:604][355]LogModuleManager: Shutting down and abandoning module Messaging (121)
+[2020.08.10-20.14.47:604][355]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (119)
+[2020.08.10-20.14.47:644][355]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (117)
+[2020.08.10-20.14.47:711][355]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (115)
+[2020.08.10-20.14.47:722][355]LogModuleManager: Shutting down and abandoning module InputCore (112)
+[2020.08.10-20.14.47:722][355]LogModuleManager: Shutting down and abandoning module Settings (110)
+[2020.08.10-20.14.47:722][355]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (108)
+[2020.08.10-20.14.47:735][355]LogModuleManager: Shutting down and abandoning module PhysXCooking (106)
+[2020.08.10-20.14.47:735][355]LogModuleManager: Shutting down and abandoning module ChaosSolvers (104)
+[2020.08.10-20.14.47:801][355]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (103)
+[2020.08.10-20.14.47:801][355]LogModuleManager: Shutting down and abandoning module Chaos (100)
+[2020.08.10-20.14.47:810][355]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (98)
+[2020.08.10-20.14.47:811][355]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (97)
+[2020.08.10-20.14.47:811][355]LogModuleManager: Shutting down and abandoning module AVEncoder (96)
+[2020.08.10-20.14.47:821][355]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (92)
+[2020.08.10-20.14.47:835][355]LogModuleManager: Shutting down and abandoning module SteamVRInput (90)
+[2020.08.10-20.14.47:835][355]LogModuleManager: Shutting down and abandoning module SteamVR (88)
+[2020.08.10-20.14.47:843][355]LogHMD: Freeing OpenVRDLLHandle.
+[2020.08.10-20.14.47:843][355]LogModuleManager: Shutting down and abandoning module OculusHMD (86)
+[2020.08.10-20.14.47:857][355]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (84)
+[2020.08.10-20.14.47:857][355]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (82)
+[2020.08.10-20.14.47:857][355]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2020.08.10-20.14.47:857][355]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (76)
+[2020.08.10-20.14.47:880][355]LogModuleManager: Shutting down and abandoning module XMPP (71)
+[2020.08.10-20.14.47:898][355]LogModuleManager: Shutting down and abandoning module WebSockets (70)
+[2020.08.10-20.14.47:955][355]LogModuleManager: Shutting down and abandoning module HTTP (67)
+[2020.08.10-20.14.47:964][355]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2020.08.10-20.14.47:964][355]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BB913E1D7-4D0F-8568-D16E-7DA2DDB55A12%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.1-13594126%2B%2B%2BUE4%2BRelease-4.25&UserID=c70249fa4c45168e5e400dbdf38cf223%7C165d4cadac3948179fb86d3c7b140245%7C18afdf57-248a-4ca9-bc1d-fec345c77b9c&AppEnvironment=datacollector-source&UploadType=eteventstream] refs=[1] status=Processing
+[2020.08.10-20.14.48:017][355]LogModuleManager: Shutting down and abandoning module SSL (66)
+[2020.08.10-20.14.48:068][355]LogModuleManager: Shutting down and abandoning module WmfMedia (62)
+[2020.08.10-20.14.48:096][355]LogModuleManager: Shutting down and abandoning module Media (61)
+[2020.08.10-20.14.48:098][355]LogModuleManager: Shutting down and abandoning module MagicLeap (58)
+[2020.08.10-20.14.48:098][355]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (56)
+[2020.08.10-20.14.48:098][355]LogModuleManager: Shutting down and abandoning module NiagaraShader (54)
+[2020.08.10-20.14.48:098][355]LogModuleManager: Shutting down and abandoning module VariantManagerContent (52)
+[2020.08.10-20.14.48:098][355]LogModuleManager: Shutting down and abandoning module DatasmithContent (50)
+[2020.08.10-20.14.48:098][355]LogModuleManager: Shutting down and abandoning module AISupportModule (48)
+[2020.08.10-20.14.48:098][355]LogModuleManager: Shutting down and abandoning module DesktopPlatform (46)
+[2020.08.10-20.14.48:121][355]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (44)
+[2020.08.10-20.14.48:129][355]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (42)
+[2020.08.10-20.14.48:129][355]LogModuleManager: Shutting down and abandoning module PlatformCrypto (40)
+[2020.08.10-20.14.48:129][355]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2020.08.10-20.14.48:137][355]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2020.08.10-20.14.48:176][355]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2020.08.10-20.14.48:295][355]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2020.08.10-20.14.48:310][355]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2020.08.10-20.14.48:310][355]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2020.08.10-20.14.48:324][355]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2020.08.10-20.14.48:375][355]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2020.08.10-20.14.48:387][355]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2020.08.10-20.14.48:387][355]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2020.08.10-20.14.48:387][355]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2020.08.10-20.14.48:403][355]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2020.08.10-20.14.48:403][355]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2020.08.10-20.14.48:403][355]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2020.08.10-20.14.48:415][355]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2020.08.10-20.14.48:415][355]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2020.08.10-20.14.48:426][355]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2020.08.10-20.14.48:441][355]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2020.08.10-20.14.48:516][355]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2020.08.10-20.14.48:539][355]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2020.08.10-20.14.48:635][355]LogD3D11RHI: Shutdown
+[2020.08.10-20.14.48:635][355]LogD3D11RHI: CleanupD3DDevice
+[2020.08.10-20.14.49:278][355]LogExit: Exiting.
+[2020.08.10-20.14.49:335][355]Log file closed, 08/10/20 21:14:49

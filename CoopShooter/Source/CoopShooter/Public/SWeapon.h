@@ -77,8 +77,6 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Weapon")
 	float BaseDamage;
 
-	FHitScanTrace ReloadOnHit;
-
 	// Server: push request to hosting server
 // Reliable: Guaranteed to eventually get to the server
 // WithValidation: specify a server

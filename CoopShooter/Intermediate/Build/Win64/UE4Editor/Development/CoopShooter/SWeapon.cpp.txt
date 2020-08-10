@@ -27,4 +27,10 @@ D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\PhysicsEngine/PhysicsSettingsEnums.h
 D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PhysicsSettingsEnums.generated.h
 D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PhysicalMaterial.generated.h
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter/SCharacter.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Inc\CoopShooter\SCharacter.generated.h
 D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\Net/UnrealNetwork.h

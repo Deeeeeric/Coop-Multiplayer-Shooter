@@ -9,12 +9,12 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  SCharacter.cpp (0:02.28 at +0:00)
-  UE4Editor-CoopShooter-0007.dll (0:01.73 at +0:02)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0007.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0007.suppressed.exp
-  UE4Editor-CoopShooter-0007.lib (0:00.40 at +0:04)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0007.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0007.exp
-  CoopShooterEditor.target (0:00.43 at +0:04)
+  SWeapon.cpp (11:45.48 at +0:00)
+  UE4Editor-CoopShooter-0010.dll (0:03.79 at +11:45)
+     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0010.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0010.suppressed.exp
+  UE4Editor-CoopShooter-0010.lib (0:00.43 at +11:49)
+     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0010.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0010.exp
+  CoopShooterEditor.target (0:00.78 at +11:49)
   ---------------------- Done ----------------------
   
       Rebuild All: 1 succeeded, 0 failed, 0 skipped
@@ -22,5 +22,5 @@
   1 build system warning(s):
      - License is invalid
   
-  Total time in XGE executor: 6.23 seconds
-  Total execution time: 7.87 seconds
+  Total time in XGE executor: 711.69 seconds
+  Total execution time: 720.77 seconds
