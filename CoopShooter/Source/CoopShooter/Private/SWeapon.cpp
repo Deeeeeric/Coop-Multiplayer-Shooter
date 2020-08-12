@@ -31,7 +31,7 @@ ASWeapon::ASWeapon()
 
 	BaseDamage = 34.0f;
 	BulletSpread = 4.0f;
-	
+
 	// Replicate the weapon so that it spawns on the client side
 	SetReplicates(true);
 
@@ -54,7 +54,7 @@ void ASWeapon::Fire()
 		FVector EyeLocation;
 		FRotator EyeRotation;
 		MyOwner->GetActorEyesViewPoint(EyeLocation, EyeRotation); // GetActorEyesViewPoint: Returns the point of view of the actor. 
-		
+
 		FVector ShotDirection = EyeRotation.Vector();
 
 		// BulletSpread
@@ -80,7 +80,7 @@ void ASWeapon::Fire()
 		{
 			// blocking hit! process damage
 			AActor* HitActor = Hit.GetActor();
-		
+
 			// Get the material and determine the surface type
 			SurfaceType = UPhysicalMaterial::DetermineSurfaceType(Hit.PhysMaterial.Get());
 
@@ -89,20 +89,26 @@ void ASWeapon::Fire()
 			{
 				ActualDamage *= 3.0f;
 			}
+
+			if (SurfaceType == SURFACE_FLESHDEFAULT)
+			{
+				ASCharacter* Character = Cast<ASCharacter>(MyOwner);
+
+				if (Character)
+				{
+					if (Character->LoadedAmmo <= 4)
+					{
+						Character->LoadedAmmo++;
+					}
+				}
+			}
+
 			// APPLY DAMAGE
 			UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
-
 
 			PlayImpactEffects(SurfaceType, Hit.ImpactPoint);
 
 			TracerEndPoint = Hit.ImpactPoint;
-
-			ASCharacter* Character = Cast<ASCharacter>(this);
-
-			if (Character)
-			{
-				Character->LoadedAmmo = Character->LoadedAmmo + 1;
-			}
 		}
 
 		if (DebugWeaponDrawing > 0)
@@ -141,7 +147,7 @@ void ASWeapon::PlayFireEffects(FVector TraceEnd)
 	{
 		FVector MuzzleLocation = MeshComponent->GetSocketLocation(MuzzleSocketName);
 		UParticleSystemComponent* TracerComponent = UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), TracerEffect, MuzzleLocation);
-		
+
 		if (TracerComponent)
 		{
 			TracerComponent->SetVectorParameter(TracerTargetName, TraceEnd);
