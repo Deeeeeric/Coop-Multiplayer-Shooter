@@ -1,7 +1,7 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
   Building CoopShooterEditor...
   Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 4 actions to XGE
+  Distributing 6 actions to XGE
   --------------------Build System Warning---------------------------------------
   License is invalid:
       License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
@@ -9,18 +9,30 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  SWeapon.cpp (0:01.53 at +0:00)
-  UE4Editor-CoopShooter-0015.dll (0:01.00 at +0:01)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0015.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0015.suppressed.exp
-  UE4Editor-CoopShooter-0015.lib (0:00.28 at +0:02)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0015.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0015.exp
-  CoopShooterEditor.target (0:00.25 at +0:02)
+  CountdownTimer.cpp (0:00.45 at +0:00)
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\CountdownTimer.cpp(29): error C2100: illegal indirection
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\CountdownTimer.cpp(59): warning C4996: 'UTextRenderComponent::SetText': Passing text as FString is deprecated, please use FText instead (likely via a LOCTEXT). Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  
+  Error executing D:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\cl-filter\cl-filter.exe (tool returned code: 2)
+  SGameState.cpp (0:00.65 at +0:00)
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SGameState.cpp(8): error C2509: 'PostInitializeComponents': member function not declared in 'ASGameState'
+  D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\SGameState.h(34): note: see declaration of 'ASGameState'
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SGameState.cpp(16): error C2509: 'AddPlayerState': member function not declared in 'ASGameState'
+  D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\SGameState.h(34): note: see declaration of 'ASGameState'
+  
+  Error executing D:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\cl-filter\cl-filter.exe (tool returned code: 2)
+  SPlayerState.cpp (0:00.40 at +0:01)
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SPlayerState.cpp(8): warning C4996: 'APlayerState::Score': This member will be made private. Use GetScore or SetScore instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SPlayerState.cpp(21): warning C4996: 'APlayerState::Score': This member will be made private. Use GetScore or SetScore instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SPlayerState.cpp(27): error C2509: 'PostInitializeComponents': member function not declared in 'ASPlayerState'
+  D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\SPlayerState.h(13): note: see declaration of 'ASPlayerState'
+  
+  Error executing D:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\cl-filter\cl-filter.exe (tool returned code: 2)
   ---------------------- Done ----------------------
   
-      Rebuild All: 1 succeeded, 0 failed, 0 skipped
+      Rebuild All: 0 succeeded, 1 failed, 0 skipped
   
   1 build system warning(s):
      - License is invalid
   
-  Total time in XGE executor: 3.35 seconds
-  Total execution time: 4.26 seconds
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073: The command "chcp 65001 >NUL && "D:\Program Files\Epic Games\UE_4.25\Engine\Build\BatchFiles\Build.bat" CoopShooterEditor Win64 Development -Project="D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" -WaitMutex -FromMsBuild" exited with code 6.

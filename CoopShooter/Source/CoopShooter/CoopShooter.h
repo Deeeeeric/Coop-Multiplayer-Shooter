@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Net/UnrealNetwork.h"
 
 // giving alternative names to variable
 #define SURFACE_FLESHDEFAULT		SurfaceType1

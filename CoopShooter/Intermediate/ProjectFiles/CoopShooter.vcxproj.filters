@@ -115,9 +115,15 @@
     <ClInclude Include="..\..\Source\CoopShooter\Public\SCharacterMovementComponent.h">
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SGameMode.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SCharacterMovementComponent.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SGameMode.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
   </ItemGroup>

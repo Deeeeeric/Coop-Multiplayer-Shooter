@@ -15,7 +15,7 @@ class AController;
 #endif
 #define COOPSHOOTER_SGameModeBase_generated_h
 
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_10_DELEGATE \
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_9_DELEGATE \
 struct _Script_CoopShooter_eventOnActorKilled_Parms \
 { \
 	AActor* KilledActor; \
@@ -32,10 +32,10 @@ static inline void FOnActorKilled_DelegateWrapper(const FMulticastScriptDelegate
 }
 
 
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_SPARSE_DATA
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_RPC_WRAPPERS
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_RPC_WRAPPERS_NO_PURE_DECLS
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_INCLASS_NO_PURE_DECLS \
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_SPARSE_DATA
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_RPC_WRAPPERS
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_RPC_WRAPPERS_NO_PURE_DECLS
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASGameModeBase(); \
 	friend struct Z_Construct_UClass_ASGameModeBase_Statics; \
@@ -44,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(ASGameModeBase)
 
 
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_INCLASS \
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesASGameModeBase(); \
 	friend struct Z_Construct_UClass_ASGameModeBase_Statics; \
@@ -53,7 +53,7 @@ public: \
 	DECLARE_SERIALIZER(ASGameModeBase)
 
 
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_STANDARD_CONSTRUCTORS \
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASGameModeBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASGameModeBase) \
@@ -66,7 +66,7 @@ private: \
 public:
 
 
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_ENHANCED_CONSTRUCTORS \
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASGameModeBase(ASGameModeBase&&); \
@@ -77,28 +77,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASGameModeBase); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASGameModeBase)
 
 
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_PRIVATE_PROPERTY_OFFSET
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_15_PROLOG
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_GENERATED_BODY_LEGACY \
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_PRIVATE_PROPERTY_OFFSET
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_17_PROLOG
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_PRIVATE_PROPERTY_OFFSET \
-	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_SPARSE_DATA \
-	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_RPC_WRAPPERS \
-	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_INCLASS \
-	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_STANDARD_CONSTRUCTORS \
+	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_PRIVATE_PROPERTY_OFFSET \
+	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_SPARSE_DATA \
+	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_RPC_WRAPPERS \
+	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_INCLASS \
+	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_GENERATED_BODY \
+#define CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_PRIVATE_PROPERTY_OFFSET \
-	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_SPARSE_DATA \
-	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_INCLASS_NO_PURE_DECLS \
-	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_18_ENHANCED_CONSTRUCTORS \
+	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_PRIVATE_PROPERTY_OFFSET \
+	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_SPARSE_DATA \
+	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_INCLASS_NO_PURE_DECLS \
+	CoopShooter_Source_CoopShooter_Public_SGameModeBase_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

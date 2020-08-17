@@ -6,12 +6,14 @@
 #include "GameFramework/GameModeBase.h"
 #include "SGameModeBase.generated.h"
 
-
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FOnActorKilled, AActor*, KilledActor, AActor*, KillerActor, AController*, KillerController);
 
 /**
  * 
  */
+
+class FOnActorKilled;
+
 UCLASS()
 class COOPSHOOTER_API ASGameModeBase : public AGameModeBase
 {
@@ -25,6 +27,13 @@ protected:
 
 	void GameOver();
 
+	void RoundTimeRemaining();
+
+	void WinScreen();
+
+	void PlayerScore();
+	
+	
 public:
 
 	ASGameModeBase();
@@ -34,5 +43,5 @@ public:
 	virtual void Tick(float DeltaSeconds) override;
 
 	UPROPERTY(BlueprintAssignable, Category = "GameMode")
-	FOnActorKilled OnActorKilled;
+		FOnActorKilled OnActorKilled;
 };

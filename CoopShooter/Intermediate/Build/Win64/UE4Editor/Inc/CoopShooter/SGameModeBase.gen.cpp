@@ -88,7 +88,6 @@ void EmptyLinkFunctionForGeneratedCodeSGameModeBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASGameModeBase_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "SGameModeBase.h" },
 		{ "ModuleRelativePath", "Public/SGameModeBase.h" },
@@ -132,7 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeSGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASGameModeBase, 2362523559);
+	IMPLEMENT_CLASS(ASGameModeBase, 1717594053);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASGameModeBase>()
 	{
 		return ASGameModeBase::StaticClass();

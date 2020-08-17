@@ -18,4 +18,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "PlayerState")
 	void AddScore(float ScoreDelta);
+
+	// Used to copy properties from the current PlayerState to the passed one
+	virtual void CopyProperties(class APlayerState* PlayerState) override;
+
+	// Used to override the current PlayerState with the properties of the passed one
+	virtual void OverrideWith(class APlayerState* PlayerState);
 };

@@ -188,6 +188,7 @@ FRotator ASCharacter::GetAimOffsets() const
 	return AimRotLS;
 }
 
+
 void ASCharacter::Fire()
 {
 	// Check to see if there is any loaded ammo
