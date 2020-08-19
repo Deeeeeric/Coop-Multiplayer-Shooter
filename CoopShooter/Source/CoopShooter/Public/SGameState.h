@@ -51,16 +51,18 @@ protected:
 	UPROPERTY(Replicated)
 	int32 PlayerScore;
 
-	UPROPERTY(Replicated)
-	int32 OpponentScore;
-
 public:
+
+	int32 GetPlayerScore();
+
+	void AddScore(int32 Score);
+
+	ASGameState();
 
 	void SetRoundState(ERoundState NewState);
 
-	void AddScore(bool PlayerScored);
+	virtual void AddPlayerState(APlayerState* PlayerState) override;
 
-private:
-
+	virtual void RemovePlayerState(APlayerState* PlayerState) override;
 
 };

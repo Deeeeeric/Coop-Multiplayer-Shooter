@@ -47,8 +47,7 @@ public: \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		RoundState=NETFIELD_REP_START, \
 		PlayerScore, \
-		OpponentScore, \
-		NETFIELD_REP_END=OpponentScore	}; \
+		NETFIELD_REP_END=PlayerScore	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
@@ -65,14 +64,13 @@ public: \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		RoundState=NETFIELD_REP_START, \
 		PlayerScore, \
-		OpponentScore, \
-		NETFIELD_REP_END=OpponentScore	}; \
+		NETFIELD_REP_END=PlayerScore	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoopShooter_Source_CoopShooter_Public_SGameState_h_36_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ASGameState(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API ASGameState(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASGameState) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ASGameState); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASGameState); \
@@ -84,8 +82,6 @@ public:
 
 
 #define CoopShooter_Source_CoopShooter_Public_SGameState_h_36_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ASGameState(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASGameState(ASGameState&&); \
@@ -93,13 +89,12 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ASGameState); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASGameState); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASGameState)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASGameState)
 
 
 #define CoopShooter_Source_CoopShooter_Public_SGameState_h_36_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__RoundState() { return STRUCT_OFFSET(ASGameState, RoundState); } \
-	FORCEINLINE static uint32 __PPO__PlayerScore() { return STRUCT_OFFSET(ASGameState, PlayerScore); } \
-	FORCEINLINE static uint32 __PPO__OpponentScore() { return STRUCT_OFFSET(ASGameState, OpponentScore); }
+	FORCEINLINE static uint32 __PPO__PlayerScore() { return STRUCT_OFFSET(ASGameState, PlayerScore); }
 
 
 #define CoopShooter_Source_CoopShooter_Public_SGameState_h_33_PROLOG \

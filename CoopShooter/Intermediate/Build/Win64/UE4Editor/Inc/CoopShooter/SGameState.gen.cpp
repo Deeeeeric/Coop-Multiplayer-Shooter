@@ -197,10 +197,6 @@ void EmptyLinkFunctionForGeneratedCodeSGameState() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OpponentScore_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_OpponentScore;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerScore_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_PlayerScore;
@@ -231,12 +227,6 @@ void EmptyLinkFunctionForGeneratedCodeSGameState() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASGameState_Statics::NewProp_OpponentScore_MetaData[] = {
-		{ "ModuleRelativePath", "Public/SGameState.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASGameState_Statics::NewProp_OpponentScore = { "OpponentScore", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASGameState, OpponentScore), METADATA_PARAMS(Z_Construct_UClass_ASGameState_Statics::NewProp_OpponentScore_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASGameState_Statics::NewProp_OpponentScore_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASGameState_Statics::NewProp_PlayerScore_MetaData[] = {
 		{ "Comment", "//Replicated Specifier used to mark this variable to replicate\n" },
 		{ "ModuleRelativePath", "Public/SGameState.h" },
@@ -255,7 +245,6 @@ void EmptyLinkFunctionForGeneratedCodeSGameState() {}
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ASGameState_Statics::NewProp_RoundState = { "RoundState", "OnRep_RoundState", (EPropertyFlags)0x0020080100000034, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASGameState, RoundState), Z_Construct_UEnum_CoopShooter_ERoundState, METADATA_PARAMS(Z_Construct_UClass_ASGameState_Statics::NewProp_RoundState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASGameState_Statics::NewProp_RoundState_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_ASGameState_Statics::NewProp_RoundState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASGameState_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASGameState_Statics::NewProp_OpponentScore,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASGameState_Statics::NewProp_PlayerScore,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASGameState_Statics::NewProp_RoundState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASGameState_Statics::NewProp_RoundState_Underlying,
@@ -287,7 +276,7 @@ void EmptyLinkFunctionForGeneratedCodeSGameState() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASGameState, 3545535977);
+	IMPLEMENT_CLASS(ASGameState, 390478485);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASGameState>()
 	{
 		return ASGameState::StaticClass();
@@ -298,12 +287,10 @@ void EmptyLinkFunctionForGeneratedCodeSGameState() {}
 	{
 		static const FName Name_RoundState(TEXT("RoundState"));
 		static const FName Name_PlayerScore(TEXT("PlayerScore"));
-		static const FName Name_OpponentScore(TEXT("OpponentScore"));
 
 		const bool bIsValid = true
 			&& Name_RoundState == ClassReps[(int32)ENetFields_Private::RoundState].Property->GetFName()
-			&& Name_PlayerScore == ClassReps[(int32)ENetFields_Private::PlayerScore].Property->GetFName()
-			&& Name_OpponentScore == ClassReps[(int32)ENetFields_Private::OpponentScore].Property->GetFName();
+			&& Name_PlayerScore == ClassReps[(int32)ENetFields_Private::PlayerScore].Property->GetFName();
 
 		checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in ASGameState"));
 	}

@@ -13,11 +13,18 @@ UCLASS()
 class COOPSHOOTER_API ASPlayerState : public APlayerState
 {
 	GENERATED_BODY()
+
+	UPROPERTY(Transient, Replicated)
+	int32 NumKills;
 	
 public:
 
-	UFUNCTION(BlueprintCallable, Category = "PlayerState")
-	void AddScore(float ScoreDelta);
+	void AddKill();
+
+	void ScorePoints(int32 Points);
+
+	UFUNCTION(BlueprintCallable, Category = "Score")
+	int32 GetKills() const;
 
 	// Used to copy properties from the current PlayerState to the passed one
 	virtual void CopyProperties(class APlayerState* PlayerState) override;

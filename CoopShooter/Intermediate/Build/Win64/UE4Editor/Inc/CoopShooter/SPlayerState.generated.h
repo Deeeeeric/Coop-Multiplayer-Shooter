@@ -16,12 +16,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_15_SPARSE_DATA
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_15_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execAddScore);
+	DECLARE_FUNCTION(execGetKills);
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execAddScore);
+	DECLARE_FUNCTION(execGetKills);
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_15_INCLASS_NO_PURE_DECLS \
@@ -30,7 +30,14 @@ private: \
 	friend struct Z_Construct_UClass_ASPlayerState_Statics; \
 public: \
 	DECLARE_CLASS(ASPlayerState, APlayerState, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoopShooter"), NO_API) \
-	DECLARE_SERIALIZER(ASPlayerState)
+	DECLARE_SERIALIZER(ASPlayerState) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		NumKills=NETFIELD_REP_START, \
+		NETFIELD_REP_END=NumKills	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_15_INCLASS \
@@ -39,7 +46,14 @@ private: \
 	friend struct Z_Construct_UClass_ASPlayerState_Statics; \
 public: \
 	DECLARE_CLASS(ASPlayerState, APlayerState, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CoopShooter"), NO_API) \
-	DECLARE_SERIALIZER(ASPlayerState)
+	DECLARE_SERIALIZER(ASPlayerState) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		NumKills=NETFIELD_REP_START, \
+		NETFIELD_REP_END=NumKills	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_15_STANDARD_CONSTRUCTORS \
@@ -68,7 +82,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASPlayerState); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASPlayerState)
 
 
-#define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_15_PRIVATE_PROPERTY_OFFSET
+#define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__NumKills() { return STRUCT_OFFSET(ASPlayerState, NumKills); }
+
+
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_12_PROLOG
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -3,22 +3,23 @@
 
 #include "SGameState.h"
 #include "Net/UnrealNetwork.h"
+#include "SGameInstance.h"
 
-void ASGameState::PostInitializeComponents()
-{
-	
-	for (TActorIterator<APlayerState> It(World); It; ++It) 
-	{
-		AddPlayerState(*It);
-	}
-}
-void ASGameState::AddPlayerState(APlayerState* PlayerState) 
-{
-	if (!PlayerState->bIsInactive) 
-	{
-		PlayerArray.AddUnique(PlayerState);
-	}
-}
+//void AGameState::PostInitializeComponents()
+//{
+//	
+//	for (TActorIterator<APlayerState> It(World); It; ++It) 
+//	{
+//		AddPlayerState(*It);
+//	}
+//}
+//void AGameState::AddPlayerState(APlayerState* PlayerState) 
+//{
+//	if (!PlayerState->bIsInactive) 
+//	{
+//		PlayerArray.AddUnique(PlayerState);
+//	}
+//}
 
 
 void ASGameState::OnRep_RoundState(ERoundState OldState)
@@ -40,15 +41,36 @@ void ASGameState::SetRoundState(ERoundState NewState)
 
 
 
-void ASGameState::AddScore(bool PlayerScored)
+int32 ASGameState::GetPlayerScore()
 {
-	if (PlayerScored)
+	return PlayerScore;
+}
+
+void ASGameState::AddScore(int32 Score)
+{
+	PlayerScore += Score;
+}
+	
+
+void ASGameState::AddPlayerState(APlayerState* PlayerState)
+{
+	Super::RemovePlayerState(PlayerState);
+
+	USGameInstance* GI = GetWorld()->GetGameInstance<USGameInstance>();
+	if (ensure(GI))
 	{
-		PlayerScore++;
+		GI->OnPlayerStateRemoved.Broadcast(PlayerState);
 	}
-	else
+}
+
+void ASGameState::RemovePlayerState(APlayerState* PlayerState)
+{
+	Super::RemovePlayerState(PlayerState);
+
+	USGameInstance* GI = GetWorld()->GetGameInstance<USGameInstance>();
+	if (ensure(GI))
 	{
-		OpponentScore++;
+		GI->OnPlayerStateRemoved.Broadcast(PlayerState);
 	}
 }
 
@@ -58,5 +80,4 @@ void ASGameState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
 
 	DOREPLIFETIME(ASGameState, RoundState);
 	DOREPLIFETIME(ASGameState, PlayerScore);
-	DOREPLIFETIME(ASGameState, OpponentScore);
 }

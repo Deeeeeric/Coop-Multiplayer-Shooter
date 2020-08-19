@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CoopShooter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C4C594DA-72E4-4C77-94A0-741BB9A5284D}</UniqueIdentifier>
+      <UniqueIdentifier>{F502E0D6-966A-41C1-9873-606E6E33929D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoopShooter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{5D6BAD69-4897-4D63-AF88-576CFD65BD86}</UniqueIdentifier>
+      <UniqueIdentifier>{C51FEDD3-5077-48F0-BE45-4BE47CCE437B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\CoopShooter">
-      <UniqueIdentifier>{F22C39E9-F262-46D0-8041-6C8A756090FB}</UniqueIdentifier>
+      <UniqueIdentifier>{F180407E-A640-4A7E-9C55-585A94B21B4F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoopShooter\CoopShooter.Build.cs">
       <Filter>Source\CoopShooter</Filter>
@@ -45,9 +45,21 @@
       <Filter>Source\CoopShooter</Filter>
     </ClInclude>
     <Filter Include="Source\CoopShooter\Private">
-      <UniqueIdentifier>{C14572FE-0C54-45E3-B373-892A387052E6}</UniqueIdentifier>
+      <UniqueIdentifier>{AE7F0B1B-2233-4134-9C90-4D14D360243A}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\ChatComponent.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SAmmoCrate.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SCharacterMovementComponent.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SGameInstance.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SGameMode.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SGameModeBase.cpp">
@@ -78,9 +90,21 @@
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
     <Filter Include="Source\CoopShooter\Public">
-      <UniqueIdentifier>{4BA9D7C5-2AB2-4A2D-8EA6-4530EC41975E}</UniqueIdentifier>
+      <UniqueIdentifier>{67A67498-A01A-4805-A9EA-166B2B113B5E}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\ChatComponent.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\CoopShooter\Public\SAmmoCrate.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SCharacterMovementComponent.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SGameInstance.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SGameMode.h">
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\CoopShooter\Public\SGameModeBase.h">
@@ -110,21 +134,5 @@
     <ClInclude Include="..\..\Source\CoopShooter\Public\SWeapon.h">
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\SCharacterMovementComponent.h">
-      <Filter>Source\CoopShooter\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CoopShooter\Public\SGameMode.h">
-      <Filter>Source\CoopShooter\Public</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\CoopShooter\Private\SCharacterMovementComponent.cpp">
-      <Filter>Source\CoopShooter\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\CoopShooter\Private\SGameMode.cpp">
-      <Filter>Source\CoopShooter\Private</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

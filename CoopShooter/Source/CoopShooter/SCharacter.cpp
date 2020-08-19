@@ -205,12 +205,6 @@ void ASCharacter::Fire()
 	}
 }
 
-void ASCharacter::OnReload()
-{
-	FHitResult Hit;
-
-}
-
 void ASCharacter::OnHealthChanged(USHealthComponent* OwningHealthComponent, float Health, float HealthDelta,
 	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
 {
@@ -294,5 +288,5 @@ void ASCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
 
 	DOREPLIFETIME(ASCharacter, CurrentWeapon); // replicate to any client connected to us
 	DOREPLIFETIME(ASCharacter, bDied);
-	DOREPLIFETIME(ASCharacter, LoadedAmmo);
+	DOREPLIFETIME(ASCharacter, GetAimOffsets());
 }
