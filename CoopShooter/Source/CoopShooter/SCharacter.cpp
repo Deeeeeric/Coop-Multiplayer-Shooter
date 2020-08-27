@@ -9,6 +9,8 @@
 #include "Components/CapsuleComponent.h"
 #include "CoopShooter/CoopShooter.h"
 #include "SHealthComponent.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "Net/UnrealNetwork.h"
 #include "Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h"
 #include "SCharacterMovementComponent.h"
@@ -288,5 +290,4 @@ void ASCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
 
 	DOREPLIFETIME(ASCharacter, CurrentWeapon); // replicate to any client connected to us
 	DOREPLIFETIME(ASCharacter, bDied);
-	DOREPLIFETIME(ASCharacter, GetAimOffsets());
 }

@@ -52,6 +52,11 @@ void ASGameState::AddScore(int32 Score)
 }
 	
 
+ASGameState::ASGameState()
+{
+
+}
+
 void ASGameState::AddPlayerState(APlayerState* PlayerState)
 {
 	Super::RemovePlayerState(PlayerState);

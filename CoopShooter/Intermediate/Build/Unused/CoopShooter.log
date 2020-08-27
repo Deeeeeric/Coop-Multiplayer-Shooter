@@ -1,7 +1,7 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
   Building CoopShooterEditor...
   Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 2 actions to XGE
+  Distributing 4 actions to XGE
   --------------------Build System Warning---------------------------------------
   License is invalid:
       License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
@@ -9,26 +9,18 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  UE4Editor-CoopShooter.dll (0:00.76 at +0:00)
+  SCharacter.cpp (0:02.03 at +0:00)
+  UE4Editor-CoopShooter.dll (0:00.78 at +0:02)
      Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.exp
-SGameModeBase.cpp.obj : error LNK2019: unresolved external symbol "public: __cdecl ASGameState::ASGameState(void)" (??0ASGameState@@QEAA@XZ) referenced in function "public: static void __cdecl ASGameState::__DefaultConstructor(class FObjectInitializer const &)" (?__DefaultConstructor@ASGameState@@SAXAEBVFObjectInitializer@@@Z)
-SGameState.cpp.obj : error LNK2001: unresolved external symbol "public: __cdecl ASGameState::ASGameState(void)" (??0ASGameState@@QEAA@XZ)
-SPlayerState.cpp.obj : error LNK2001: unresolved external symbol "public: __cdecl ASGameState::ASGameState(void)" (??0ASGameState@@QEAA@XZ)
-SGameState.gen.cpp.obj : error LNK2001: unresolved external symbol "public: __cdecl ASGameState::ASGameState(void)" (??0ASGameState@@QEAA@XZ)
-SGameModeBase.cpp.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl ASPlayerState::CopyProperties(class APlayerState *)" (?CopyProperties@ASPlayerState@@UEAAXPEAVAPlayerState@@@Z)
-SPlayerState.cpp.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl ASPlayerState::CopyProperties(class APlayerState *)" (?CopyProperties@ASPlayerState@@UEAAXPEAVAPlayerState@@@Z)
-SPlayerState.gen.cpp.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl ASPlayerState::CopyProperties(class APlayerState *)" (?CopyProperties@ASPlayerState@@UEAAXPEAVAPlayerState@@@Z)
-SGameModeBase.cpp.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl ASPlayerState::OverrideWith(class APlayerState *)" (?OverrideWith@ASPlayerState@@UEAAXPEAVAPlayerState@@@Z)
-SPlayerState.cpp.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl ASPlayerState::OverrideWith(class APlayerState *)" (?OverrideWith@ASPlayerState@@UEAAXPEAVAPlayerState@@@Z)
-SPlayerState.gen.cpp.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl ASPlayerState::OverrideWith(class APlayerState *)" (?OverrideWith@ASPlayerState@@UEAAXPEAVAPlayerState@@@Z)
-D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter.dll : fatal error LNK1120: 3 unresolved externals
-  
-  Error executing D:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\link-filter\link-filter.exe (tool returned code: 1120)
+  UE4Editor-CoopShooter.lib (0:00.26 at +0:02)
+     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.exp
+  CoopShooterEditor.target (0:00.29 at +0:03)
   ---------------------- Done ----------------------
   
-      Rebuild All: 0 succeeded, 1 failed, 0 skipped
+      Rebuild All: 1 succeeded, 0 failed, 0 skipped
   
   1 build system warning(s):
      - License is invalid
   
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073: The command "chcp 65001 >NUL && "D:\Program Files\Epic Games\UE_4.25\Engine\Build\BatchFiles\Build.bat" CoopShooterEditor Win64 Development -Project="D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" -WaitMutex -FromMsBuild" exited with code 6.
+  Total time in XGE executor: 3.68 seconds
+  Total execution time: 4.85 seconds

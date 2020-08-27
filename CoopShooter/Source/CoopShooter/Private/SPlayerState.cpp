@@ -28,6 +28,15 @@ int32 ASPlayerState::GetKills() const
 	return NumKills;
 }
 
+void ASPlayerState::CopyProperties(APlayerState* PlayerState)
+{
+}
+
+void ASPlayerState::OverrideWith(class APlayerState* PlayerState)
+{
+
+}
+
 void ASPlayerState::GetLifetimeReplicatedProps(TArray< class FLifetimeProperty >& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
