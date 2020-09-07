@@ -655,3 +655,9 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.09.07-15.07.52:002][142]LogSlate: Window 'Plugins' being destroyed
 [2020.09.07-15.07.52:022][142]LogSlate: Window 'Plugins' being destroyed
 [2020.09.07-15.07.52:022][142]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
+[2020.09.07-15.56.53:084][100]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.09.07-15.56.58:106][115]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.09.07-15.57.17:219][172]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.09.07-15.59.39:276][596]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.09.07-16.00.50:379][808]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.09.07-16.02.31:377][109]LogAudioMixer: Display: Audio Buffer Underrun detected.

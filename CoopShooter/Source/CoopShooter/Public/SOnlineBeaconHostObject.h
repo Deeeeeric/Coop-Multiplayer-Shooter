@@ -16,4 +16,8 @@ class COOPSHOOTER_API ASOnlineBeaconHostObject : public AOnlineBeaconHostObject
 	
 public:
 	ASOnlineBeaconHostObject();
+
+protected:
+	virtual void OnClientConnected(AOnlineBeaconClient* NewClientActor, UNetConnection* ClientConnection) override;
+	
 };
