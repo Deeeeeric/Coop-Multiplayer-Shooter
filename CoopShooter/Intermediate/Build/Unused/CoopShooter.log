@@ -1,7 +1,12 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+﻿  Cleaning CoopShooterEditor and UnrealHeaderTool binaries...
+  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+  Creating makefile for CoopShooterEditor (no existing makefile)
+  Parsing headers for CoopShooterEditor
+    Running UnrealHeaderTool "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\CoopShooterEditor\Development\CoopShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\DW\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for CoopShooterEditor in 8.9960442 seconds
   Building CoopShooterEditor...
   Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 4 actions to XGE
+  Distributing 43 actions to XGE
   --------------------Build System Warning---------------------------------------
   License is invalid:
       License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
@@ -9,12 +14,51 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  SCharacter.cpp (0:02.03 at +0:00)
-  UE4Editor-CoopShooter.dll (0:00.78 at +0:02)
+  SharedPCH.Engine.ShadowErrors.cpp (0:40.09 at +0:00)
+  SAmmoCrate.cpp (0:01.06 at +0:40)
+  SCharacterMovementComponent.cpp (0:01.39 at +0:41)
+  SGameInstance.cpp (0:00.79 at +0:42)
+  SGameMode.cpp (0:01.00 at +0:43)
+  SGameModeBase.cpp (0:01.09 at +0:44)
+  SCharacter.cpp (0:01.57 at +0:45)
+  SHealthComponent.cpp (0:00.98 at +0:47)
+  MainMenuGMB.cpp (0:01.06 at +0:48)
+  SGameState.cpp (0:01.10 at +0:49)
+  SPickupActor.cpp (0:01.03 at +0:50)
+  SPlayerState.cpp (0:00.98 at +0:51)
+  SPowerUpActor.cpp (0:00.89 at +0:52)
+  SProjectileWeapon.cpp (0:00.75 at +0:53)
+  STrackerBot.cpp (0:03.09 at +0:54)
+  SWeapon.cpp (0:01.32 at +0:57)
+  SOnlineBeaconClient.cpp (0:00.73 at +0:59)
+  SOnlineBeaconHostObject.cpp (0:00.71 at +0:59)
+  CoopShooter.cpp (0:00.62 at +1:00)
+  ChatComponent.cpp (0:00.62 at +1:01)
+  ChatComponent.gen.cpp (0:00.81 at +1:01)
+  SAmmoCrate.gen.cpp (0:00.84 at +1:02)
+  SCharacter.gen.cpp (0:00.98 at +1:03)
+  SCharacterMovementComponent.gen.cpp (0:01.07 at +1:04)
+  SGameInstance.gen.cpp (0:00.84 at +1:05)
+  SGameMode.gen.cpp (0:00.92 at +1:06)
+  SGameModeBase.gen.cpp (0:00.90 at +1:07)
+  SGameState.gen.cpp (0:00.98 at +1:08)
+  CoopShooter.init.gen.cpp (0:00.73 at +1:09)
+  SHealthComponent.gen.cpp (0:00.85 at +1:10)
+  MainMenuGMB.gen.cpp (0:00.92 at +1:11)
+  SPickupActor.gen.cpp (0:00.84 at +1:12)
+  SPlayerState.gen.cpp (0:00.95 at +1:13)
+  SPowerUpActor.gen.cpp (0:00.96 at +1:14)
+  SProjectileWeapon.gen.cpp (0:00.90 at +1:15)
+  STrackerBot.gen.cpp (0:00.95 at +1:15)
+  SWeapon.gen.cpp (0:01.00 at +1:16)
+  SOnlineBeaconClient.gen.cpp (0:00.95 at +1:17)
+  SOnlineBeaconHostObject.gen.cpp (0:00.95 at +1:18)
+  Default.rc2 (0:00.17 at +1:19)
+  UE4Editor-CoopShooter.dll (0:00.86 at +1:20)
      Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.exp
-  UE4Editor-CoopShooter.lib (0:00.26 at +0:02)
+  UE4Editor-CoopShooter.lib (0:00.26 at +1:21)
      Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.exp
-  CoopShooterEditor.target (0:00.29 at +0:03)
+  CoopShooterEditor.target (0:00.40 at +1:21)
   ---------------------- Done ----------------------
   
       Rebuild All: 1 succeeded, 0 failed, 0 skipped
@@ -22,5 +66,5 @@
   1 build system warning(s):
      - License is invalid
   
-  Total time in XGE executor: 3.68 seconds
-  Total execution time: 4.85 seconds
+  Total time in XGE executor: 81.95 seconds
+  Total execution time: 108.96 seconds

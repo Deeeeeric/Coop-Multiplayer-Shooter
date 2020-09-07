@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CoopShooter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F502E0D6-966A-41C1-9873-606E6E33929D}</UniqueIdentifier>
+      <UniqueIdentifier>{13F550DD-426D-4274-B43D-C7CCB2F9B0D0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoopShooter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{C51FEDD3-5077-48F0-BE45-4BE47CCE437B}</UniqueIdentifier>
+      <UniqueIdentifier>{FA78E70C-AECE-4B01-A0C0-05B586D6AAB0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\CoopShooter">
-      <UniqueIdentifier>{F180407E-A640-4A7E-9C55-585A94B21B4F}</UniqueIdentifier>
+      <UniqueIdentifier>{E5E55C4B-50AF-4F28-9B51-8DDBDEBB4937}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CoopShooter\CoopShooter.Build.cs">
       <Filter>Source\CoopShooter</Filter>
@@ -45,9 +45,12 @@
       <Filter>Source\CoopShooter</Filter>
     </ClInclude>
     <Filter Include="Source\CoopShooter\Private">
-      <UniqueIdentifier>{AE7F0B1B-2233-4134-9C90-4D14D360243A}</UniqueIdentifier>
+      <UniqueIdentifier>{B8EFB9B5-492C-4DE6-A27B-59B7E41EF380}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\CoopShooter\Private\ChatComponent.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\MainMenuGMB.cpp">
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\CoopShooter\Private\SAmmoCrate.cpp">
@@ -90,9 +93,12 @@
       <Filter>Source\CoopShooter\Private</Filter>
     </ClCompile>
     <Filter Include="Source\CoopShooter\Public">
-      <UniqueIdentifier>{67A67498-A01A-4805-A9EA-166B2B113B5E}</UniqueIdentifier>
+      <UniqueIdentifier>{16CB92E3-80F3-4512-A738-92A6D1025703}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\CoopShooter\Public\ChatComponent.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\MainMenuGMB.h">
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\CoopShooter\Public\SAmmoCrate.h">
@@ -134,5 +140,21 @@
     <ClInclude Include="..\..\Source\CoopShooter\Public\SWeapon.h">
       <Filter>Source\CoopShooter\Public</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SOnlineBeaconHostObject.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CoopShooter\Public\SOnlineBeaconClient.h">
+      <Filter>Source\CoopShooter\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SOnlineBeaconHostObject.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CoopShooter\Private\SOnlineBeaconClient.cpp">
+      <Filter>Source\CoopShooter\Private</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

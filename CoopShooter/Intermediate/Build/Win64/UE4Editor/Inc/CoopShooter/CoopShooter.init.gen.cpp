@@ -29,8 +29,8 @@ void EmptyLinkFunctionForGeneratedCodeCoopShooter_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xDCB97910,
-				0x7E99512C,
+				0x10C328CD,
+				0x4B005200,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
