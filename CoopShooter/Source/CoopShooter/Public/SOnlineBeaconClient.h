@@ -16,4 +16,11 @@ class COOPSHOOTER_API ASOnlineBeaconClient : public AOnlineBeaconClient
 
 public:
 	ASOnlineBeaconClient();
+
+protected:
+	UFUNCTION(BlueprintCallable)
+		bool ConnectToServerHost(const FString& Address);
+
+	virtual void OnFailure() override;
+	virtual void OnConnected() override;
 };
