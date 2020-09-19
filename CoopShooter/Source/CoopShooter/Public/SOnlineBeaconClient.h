@@ -31,4 +31,10 @@ protected:
 
 	virtual void OnFailure() override;
 	virtual void OnConnected() override;
+
+public:
+	UFUNCTION(Client, Reliable)
+	void Client_OnDisconnected();
+
+	virtual void Client_Disconnected_Implementation();
 };

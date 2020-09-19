@@ -39,8 +39,3 @@ ASOnlineBeaconHostObject* AMainMenuGMB::GetBeaconHost()
 {
 	return HostObject;
 }
-
-class AOnlineBeaconHost* AMainMenuGMB::GetHost()
-{
-	return Host;
-}

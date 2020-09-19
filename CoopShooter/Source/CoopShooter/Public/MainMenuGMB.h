@@ -20,8 +20,6 @@ class COOPSHOOTER_API AMainMenuGMB : public AGameModeBase
 
 public:
 	AMainMenuGMB();
-
-	AOnlineBeaconHost* GetHost();
 	
 protected:
 	UFUNCTION(BlueprintCallable)

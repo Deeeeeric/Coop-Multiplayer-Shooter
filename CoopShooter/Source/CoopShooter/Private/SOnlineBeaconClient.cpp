@@ -21,6 +21,11 @@ void ASOnlineBeaconClient::OnConnected()
 	FConnected.Broadcast(true);
 }
 
+void ASOnlineBeaconClient::Client_Disconnected_Implementation()
+{
+	UE_LOG(LogTemp, Warning, TEXT("DISCONNECTED"));
+}
+
 bool ASOnlineBeaconClient::ConnectToServerHost(const FString& Address)
 {
 	FURL Destination = FURL(nullptr, *Address, ETravelType::TRAVEL_Absolute);

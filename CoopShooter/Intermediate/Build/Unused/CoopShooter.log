@@ -1,26 +1,9 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
-  Building CoopShooterEditor...
-  Using Visual Studio 2019 14.26.28806 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 4 actions to XGE
-  --------------------Build System Warning---------------------------------------
-  License is invalid:
-      License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
-      This build will run in standalone mode.
-  
-  -------------------------------------------------------------------------------
-  --------------------Project: Default-------------------------------------------
-  SOnlineBeaconHostObject.cpp (2:30.51 at +0:00)
-  UE4Editor-CoopShooter-0005.dll (0:03.23 at +2:30)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0005.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0005.suppressed.exp
-  UE4Editor-CoopShooter-0005.lib (0:00.37 at +2:33)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0005.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0005.exp
-  CoopShooterEditor.target (0:00.37 at +2:34)
-  ---------------------- Done ----------------------
-  
-      Rebuild All: 1 succeeded, 0 failed, 0 skipped
-  
-  1 build system warning(s):
-     - License is invalid
-  
-  Total time in XGE executor: 155.05 seconds
-  Total execution time: 156.37 seconds
+  Parsing headers for CoopShooterEditor
+    Running UnrealHeaderTool "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\CoopShooterEditor\Development\CoopShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\DW\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for CoopShooterEditor in 12.1868429 seconds
+  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter-0001.dll
+  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter-0002.dll
+  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter-0003.dll
+UnrealBuildTool : error : Unable to delete hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter-0005.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073: The command "chcp 65001 >NUL && "D:\Program Files\Epic Games\UE_4.25\Engine\Build\BatchFiles\Build.bat" CoopShooterEditor Win64 Development -Project="D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" -WaitMutex -FromMsBuild" exited with code 6.

@@ -57,6 +57,13 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconClient() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(ASOnlineBeaconClient::execClient_OnDisconnected)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Client_OnDisconnected_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ASOnlineBeaconClient::execLeaveLobby)
 	{
 		P_FINISH;
@@ -72,14 +79,42 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconClient() {}
 		*(bool*)Z_Param__Result=P_THIS->ConnectToServerHost(Z_Param_Address);
 		P_NATIVE_END;
 	}
+	static FName NAME_ASOnlineBeaconClient_Client_OnDisconnected = FName(TEXT("Client_OnDisconnected"));
+	void ASOnlineBeaconClient::Client_OnDisconnected()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ASOnlineBeaconClient_Client_OnDisconnected),NULL);
+	}
 	void ASOnlineBeaconClient::StaticRegisterNativesASOnlineBeaconClient()
 	{
 		UClass* Class = ASOnlineBeaconClient::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "Client_OnDisconnected", &ASOnlineBeaconClient::execClient_OnDisconnected },
 			{ "ConnectToServerHost", &ASOnlineBeaconClient::execConnectToServerHost },
 			{ "LeaveLobby", &ASOnlineBeaconClient::execLeaveLobby },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ASOnlineBeaconClient_Client_OnDisconnected_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASOnlineBeaconClient_Client_OnDisconnected_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/SOnlineBeaconClient.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASOnlineBeaconClient_Client_OnDisconnected_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASOnlineBeaconClient, nullptr, "Client_OnDisconnected", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x01020CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASOnlineBeaconClient_Client_OnDisconnected_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASOnlineBeaconClient_Client_OnDisconnected_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASOnlineBeaconClient_Client_OnDisconnected()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASOnlineBeaconClient_Client_OnDisconnected_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ASOnlineBeaconClient_ConnectToServerHost_Statics
 	{
@@ -176,6 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconClient() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CoopShooter,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASOnlineBeaconClient_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ASOnlineBeaconClient_Client_OnDisconnected, "Client_OnDisconnected" }, // 777103970
 		{ &Z_Construct_UFunction_ASOnlineBeaconClient_ConnectToServerHost, "ConnectToServerHost" }, // 3377222918
 		{ &Z_Construct_UFunction_ASOnlineBeaconClient_LeaveLobby, "LeaveLobby" }, // 727333084
 	};
@@ -221,7 +257,7 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconClient() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASOnlineBeaconClient, 3804278321);
+	IMPLEMENT_CLASS(ASOnlineBeaconClient, 856014585);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASOnlineBeaconClient>()
 	{
 		return ASOnlineBeaconClient::StaticClass();

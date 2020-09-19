@@ -45,18 +45,30 @@ void ASOnlineBeaconHostObject::DisconnectAllClients()
 	}
 }
 
+void ASOnlineBeaconHostObject::DisconnectClient(AOnlineBeaconClient* ClientActor)
+{
+	AOnlineBeaconHost* BeaconHost = Cast<AOnlineBeaconHost>(GetOwner());
+	if (BeaconHost)
+	{
+		if (ASOnlineBeaconClient* Client = Cast<ASOnlineBeaconClient>(ClientActor))
+		{
+			UE_LOG(LogTemp, Warning, TEXT("DISCONNECTING CLIENT %s"), *ClientActor->GetName());
+			Client->Client_OnDisconnected();
+		}
+		BeaconHost->DisconnectClient(ClientActor);
+	}
+}
+
 void ASOnlineBeaconHostObject::ShutdownServer()
 {
 	// Unregister server from database via web api
 	DisconnectAllClients();
 
-	if (AMainMenuGMB* GM = GetWorld()->GetAuthGameMode<AMainMenuGMB>())
+	if (AOnlineBeaconHost* Host = Cast<AOnlineBeaconHost>(GetOwner()))
 	{
-		if (AOnlineBeaconHost* Host = GM->GetHost())
-		{
-			UE_LOG(LogTemp, Warning, TEXT("DESTROYING HOST BEACON"));
-			Host->UnregisterHost(BeaconTypeName);
-			Host->DestroyBeacon();
-		}
+		UE_LOG(LogTemp, Warning, TEXT("DESTROYING HOST BEACON"));
+		Host->UnregisterHost(BeaconTypeName);
+		Host->DestroyBeacon();
 	}
+k
 }

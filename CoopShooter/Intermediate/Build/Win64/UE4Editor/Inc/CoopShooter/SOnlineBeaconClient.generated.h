@@ -28,17 +28,23 @@ static inline void FConnectSuccess_DelegateWrapper(const FMulticastScriptDelegat
 
 #define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_SPARSE_DATA
 #define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_RPC_WRAPPERS \
+	virtual void Client_OnDisconnected_Implementation(); \
  \
+	DECLARE_FUNCTION(execClient_OnDisconnected); \
 	DECLARE_FUNCTION(execLeaveLobby); \
 	DECLARE_FUNCTION(execConnectToServerHost);
 
 
 #define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void Client_OnDisconnected_Implementation(); \
  \
+	DECLARE_FUNCTION(execClient_OnDisconnected); \
 	DECLARE_FUNCTION(execLeaveLobby); \
 	DECLARE_FUNCTION(execConnectToServerHost);
 
 
+#define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_EVENT_PARMS
+#define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_CALLBACK_WRAPPERS
 #define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASOnlineBeaconClient(); \
@@ -85,13 +91,17 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASOnlineBeaconClient); \
 	FORCEINLINE static uint32 __PPO__FConnected() { return STRUCT_OFFSET(ASOnlineBeaconClient, FConnected); }
 
 
-#define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_14_PROLOG
+#define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_14_PROLOG \
+	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_EVENT_PARMS
+
+
 #define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_PRIVATE_PROPERTY_OFFSET \
 	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_SPARSE_DATA \
 	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_RPC_WRAPPERS \
+	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_CALLBACK_WRAPPERS \
 	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_INCLASS \
 	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_STANDARD_CONSTRUCTORS \
 public: \
@@ -104,6 +114,7 @@ public: \
 	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_PRIVATE_PROPERTY_OFFSET \
 	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_SPARSE_DATA \
 	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_CALLBACK_WRAPPERS \
 	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_INCLASS_NO_PURE_DECLS \
 	CoopShooter_Source_CoopShooter_Public_SOnlineBeaconClient_h_17_ENHANCED_CONSTRUCTORS \
 private: \
