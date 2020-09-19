@@ -19,5 +19,13 @@ public:
 
 protected:
 	virtual void OnClientConnected(AOnlineBeaconClient* NewClientActor, UNetConnection* ClientConnection) override;
+
+	virtual void NotifyClientDisconnected(AOnlineBeaconClient* LeavingClientActor) override;
+
+	UFUNCTION(BlueprintCallable)
+		void DisconnectAllClients();
+
+	UFUNCTION(BlueprintCallable)
+		void ShutdownServer();
 	
 };

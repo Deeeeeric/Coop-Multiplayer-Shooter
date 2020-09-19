@@ -17,7 +17,15 @@ void EmptyLinkFunctionForGeneratedCodeMainMenuGMB() {}
 	COOPSHOOTER_API UClass* Z_Construct_UClass_AMainMenuGMB();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_CoopShooter();
+	COOPSHOOTER_API UClass* Z_Construct_UClass_ASOnlineBeaconHostObject_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AMainMenuGMB::execGetBeaconHost)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(ASOnlineBeaconHostObject**)Z_Param__Result=P_THIS->GetBeaconHost();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMainMenuGMB::execCreateHostBeacon)
 	{
 		P_FINISH;
@@ -30,6 +38,7 @@ void EmptyLinkFunctionForGeneratedCodeMainMenuGMB() {}
 		UClass* Class = AMainMenuGMB::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "CreateHostBeacon", &AMainMenuGMB::execCreateHostBeacon },
+			{ "GetBeaconHost", &AMainMenuGMB::execGetBeaconHost },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -70,6 +79,38 @@ void EmptyLinkFunctionForGeneratedCodeMainMenuGMB() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics
+	{
+		struct MainMenuGMB_eventGetBeaconHost_Parms
+		{
+			ASOnlineBeaconHostObject* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MainMenuGMB_eventGetBeaconHost_Parms, ReturnValue), Z_Construct_UClass_ASOnlineBeaconHostObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/MainMenuGMB.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainMenuGMB, nullptr, "GetBeaconHost", nullptr, nullptr, sizeof(MainMenuGMB_eventGetBeaconHost_Parms), Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AMainMenuGMB_NoRegister()
 	{
 		return AMainMenuGMB::StaticClass();
@@ -90,10 +131,10 @@ void EmptyLinkFunctionForGeneratedCodeMainMenuGMB() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMainMenuGMB_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMainMenuGMB_CreateHostBeacon, "CreateHostBeacon" }, // 4258202234
+		{ &Z_Construct_UFunction_AMainMenuGMB_GetBeaconHost, "GetBeaconHost" }, // 2651306186
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainMenuGMB_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "MainMenuGMB.h" },
 		{ "ModuleRelativePath", "Public/MainMenuGMB.h" },
@@ -127,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeMainMenuGMB() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMainMenuGMB, 3492875397);
+	IMPLEMENT_CLASS(AMainMenuGMB, 1312563670);
 	template<> COOPSHOOTER_API UClass* StaticClass<AMainMenuGMB>()
 	{
 		return AMainMenuGMB::StaticClass();

@@ -3,6 +3,8 @@
 
 #include "SOnlineBeaconHostObject.h"
 #include "SOnlineBeaconClient.h"
+#include "MainMenuGMB.h"
+#include "OnlineBeaconHost.h"
 
 ASOnlineBeaconHostObject::ASOnlineBeaconHostObject()
 {
@@ -21,5 +23,40 @@ void ASOnlineBeaconHostObject::OnClientConnected(AOnlineBeaconClient* NewClientA
 	else
 	{
 		UE_LOG(LogTemp, Warning, TEXT("CONNECTED CLIENT INVALID"));
+	}
+}
+
+void ASOnlineBeaconHostObject::NotifyClientDisconnected(AOnlineBeaconClient* LeavingClientActor)
+{
+	Super::NotifyClientDisconnected(LeavingClientActor);
+
+	UE_LOG(LogTemp, Warning, TEXT("Client has DISCONNECTED."));
+}
+
+void ASOnlineBeaconHostObject::DisconnectAllClients()
+{
+	UE_LOG(LogTemp, Warning, TEXT("DISCONNECTING ALL CLIENTS."));
+	for (AOnlineBeaconClient* Client : ClientActors)
+	{
+		if (Client)
+		{
+			DisconnectClient(Client);
+		}
+	}
+}
+
+void ASOnlineBeaconHostObject::ShutdownServer()
+{
+	// Unregister server from database via web api
+	DisconnectAllClients();
+
+	if (AMainMenuGMB* GM = GetWorld()->GetAuthGameMode<AMainMenuGMB>())
+	{
+		if (AOnlineBeaconHost* Host = GM->GetHost())
+		{
+			UE_LOG(LogTemp, Warning, TEXT("DESTROYING HOST BEACON"));
+			Host->UnregisterHost(BeaconTypeName);
+			Host->DestroyBeacon();
+		}
 	}
 }

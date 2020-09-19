@@ -13,11 +13,5 @@
 				"OnlineSubsystemUtils"
 			]
 		}
-	],
-	"Plugins": [
-		{
-			"Name": "OnlineSubsystemSteam",
-			"Enabled": true
-		}
 	]
 }

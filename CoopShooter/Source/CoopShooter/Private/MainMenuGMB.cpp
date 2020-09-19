@@ -9,23 +9,38 @@
 AMainMenuGMB::AMainMenuGMB()
 {
 	HostObject = nullptr;
+	Host = nullptr;
 }
+
 
 bool AMainMenuGMB::CreateHostBeacon()
 {
-	if (AOnlineBeaconHost* Host = GetWorld()->SpawnActor<AOnlineBeaconHost>(AOnlineBeaconHost::StaticClass()))
+	Host = GetWorld()->SpawnActor<AOnlineBeaconHost>(AOnlineBeaconHost::StaticClass());
+	if (Host)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("SPAWNED AOnlineBeaconHost"))
 		if (Host->InitHost())
 		{
 			Host->PauseBeaconRequests(false);
-
+			UE_LOG(LogTemp, Warning, TEXT("INIT HOST"))
 			HostObject = GetWorld()->SpawnActor<ASOnlineBeaconHostObject>(ASOnlineBeaconHostObject::StaticClass());
 			if (HostObject)
 			{
+				UE_LOG(LogTemp, Warning, TEXT("SPAWNED HOST OBJECT"))
 				Host->RegisterHost(HostObject);
 				return true;
 			}
 		}
 	}
 	return false;
+}
+
+ASOnlineBeaconHostObject* AMainMenuGMB::GetBeaconHost()
+{
+	return HostObject;
+}
+
+class AOnlineBeaconHost* AMainMenuGMB::GetHost()
+{
+	return Host;
 }

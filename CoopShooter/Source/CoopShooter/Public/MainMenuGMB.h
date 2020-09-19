@@ -9,6 +9,10 @@
 /**
  * 
  */
+class AOnlineBeaconHost;
+class ASOnlineBeaconHostObject;
+
+
 UCLASS()
 class COOPSHOOTER_API AMainMenuGMB : public AGameModeBase
 {
@@ -16,11 +20,18 @@ class COOPSHOOTER_API AMainMenuGMB : public AGameModeBase
 
 public:
 	AMainMenuGMB();
+
+	AOnlineBeaconHost* GetHost();
 	
 protected:
 	UFUNCTION(BlueprintCallable)
 		bool CreateHostBeacon();
 
-	class ASOnlineBeaconHostObject* HostObject;
+	ASOnlineBeaconHostObject* HostObject;
+
+	AOnlineBeaconHost* Host;
+
+	UFUNCTION(BlueprintCallable)
+		ASOnlineBeaconHostObject* GetBeaconHost();
 
 };

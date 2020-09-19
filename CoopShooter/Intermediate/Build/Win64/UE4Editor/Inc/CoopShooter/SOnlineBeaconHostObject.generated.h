@@ -14,8 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define COOPSHOOTER_SOnlineBeaconHostObject_generated_h
 
 #define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconHostObject_h_15_SPARSE_DATA
-#define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconHostObject_h_15_RPC_WRAPPERS
-#define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconHostObject_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconHostObject_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execShutdownServer); \
+	DECLARE_FUNCTION(execDisconnectAllClients);
+
+
+#define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconHostObject_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execShutdownServer); \
+	DECLARE_FUNCTION(execDisconnectAllClients);
+
+
 #define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconHostObject_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASOnlineBeaconHostObject(); \
