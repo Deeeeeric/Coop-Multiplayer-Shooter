@@ -27,6 +27,11 @@ void ASOnlineBeaconClient::Client_OnDisconnected_Implementation()
 	FOnDisconnected.Broadcast();
 }
 
+void ASOnlineBeaconClient::Client_OnLobbyUpdated_Implementation(FCoopShooterLobbyInfo LobbyInfo)
+{
+	FOnLobbyUpdated.Broadcast(LobbyInfo);
+}
+
 bool ASOnlineBeaconClient::ConnectToServerHost(const FString& Address)
 {
 	FURL Destination = FURL(nullptr, *Address, ETravelType::TRAVEL_Absolute);

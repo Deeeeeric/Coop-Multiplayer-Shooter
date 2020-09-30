@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "OnlineBeaconClient.h"
+#include "SOnlineBeaconHostObject.h"
 #include "SOnlineBeaconClient.generated.h"
 
 /**
@@ -11,6 +12,8 @@
  */
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FConnectSuccess, bool, FOnConnected);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDisconnected);
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FLobbyUpdated, FCoopShooterLobbyInfo, FOnLobbyUpdated);
 
 UCLASS()
 class COOPSHOOTER_API ASOnlineBeaconClient : public AOnlineBeaconClient
@@ -27,6 +30,9 @@ protected:
 	UPROPERTY(BlueprintAssignable)
 		FDisconnected FOnDisconnected;
 
+	UPROPERTY(BlueprintAssignable)
+		FLobbyUpdated FOnLobbyUpdated;
+
 	UFUNCTION(BlueprintCallable)
 		bool ConnectToServerHost(const FString& Address);
 
@@ -39,6 +45,10 @@ protected:
 public:
 	UFUNCTION(Client, Reliable)
 	void Client_OnDisconnected();
-
 	virtual void Client_OnDisconnected_Implementation();
+
+	UFUNCTION(Client, Reliable)
+	void Client_OnLobbyUpdated(FCoopShooterLobbyInfo LobbyInfo);
+	void Client_OnLobbyUpdated_Implementation(FCoopShooterLobbyInfo LobbyInfo);
+
 };

@@ -12,6 +12,23 @@ ASOnlineBeaconHostObject::ASOnlineBeaconHostObject()
 	BeaconTypeName = ClientBeaconActorClass->GetName();
 }
 
+void ASOnlineBeaconHostObject::UpdateLobbyInfo(FCoopShooterLobbyInfo NewLobbyInfo)
+{
+	LobbyInfo.PlayerList = NewLobbyInfo.PlayerList;
+	UpdateClientLobbyInfo();
+}
+
+void ASOnlineBeaconHostObject::UpdateClientLobbyInfo()
+{
+	for (AOnlineBeaconClient* ClientBeacon : ClientActors)
+	{
+		if (ASOnlineBeaconClient* Client = Cast<AOnlineBeaconClient>(ClientBeacon))
+		{
+			Client->Client_OnLobbyUpdated(LobbyInfo);
+		}
+	}
+}
+
 void ASOnlineBeaconHostObject::OnClientConnected(AOnlineBeaconClient* NewClientActor, UNetConnection* ClientConnection)
 {
 	Super::OnClientConnected(NewClientActor, ClientConnection);
@@ -19,6 +36,10 @@ void ASOnlineBeaconHostObject::OnClientConnected(AOnlineBeaconClient* NewClientA
 	if (NewClientActor)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("CONNECTED CLIENT VALID"));
+		if (ASOnlineBeaconClient* Client = Cast<ASOnlineBeaconClient>(NewClientActor))
+		{
+			Client->Client_OnLobbyUpdated(LobbyInfo);
+		}
 	}
 	else
 	{

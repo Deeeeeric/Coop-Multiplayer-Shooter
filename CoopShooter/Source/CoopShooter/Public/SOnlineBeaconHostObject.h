@@ -9,6 +9,15 @@
 /**
  * 
  */
+USTRUCT(BlueprintType)
+struct FCoopShooterLobbyInfo
+{
+	GENERATED_BODY()
+public:
+	UPROPERTY(BlueprintReadOnly)
+	TArray<FString> PlayerList;
+};
+
 UCLASS()
 class COOPSHOOTER_API ASOnlineBeaconHostObject : public AOnlineBeaconHostObject
 {
@@ -16,6 +25,14 @@ class COOPSHOOTER_API ASOnlineBeaconHostObject : public AOnlineBeaconHostObject
 	
 public:
 	ASOnlineBeaconHostObject();
+
+protected:
+	FCoopShooterLobbyInfo LobbyInfo;
+
+	UFUNCTION(BlueprintCallable)
+	void UpdateLobbyInfo(FCoopShooterLobbyInfo NewLobbyInfo);
+
+	void UpdateClientLobbyInfo();
 
 protected:
 	virtual void OnClientConnected(AOnlineBeaconClient* NewClientActor, UNetConnection* ClientConnection) override;

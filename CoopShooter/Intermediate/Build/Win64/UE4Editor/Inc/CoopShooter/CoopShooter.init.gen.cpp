@@ -16,6 +16,7 @@ void EmptyLinkFunctionForGeneratedCodeCoopShooter_init() {}
 	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_OnHealthChangedSignature__DelegateSignature();
 	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature();
 	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature();
+	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_LobbyUpdated__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_CoopShooter()
 	{
 		static UPackage* ReturnPackage = nullptr;
@@ -27,14 +28,15 @@ void EmptyLinkFunctionForGeneratedCodeCoopShooter_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_CoopShooter_OnHealthChangedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_CoopShooter_LobbyUpdated__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/CoopShooter",
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x79A50475,
-				0x0DEBC6F0,
+				0xDA211431,
+				0x04614DAA,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

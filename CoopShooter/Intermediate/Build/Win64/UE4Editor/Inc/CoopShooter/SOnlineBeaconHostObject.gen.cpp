@@ -13,11 +13,100 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconHostObject() {}
 // Cross Module References
+	COOPSHOOTER_API UScriptStruct* Z_Construct_UScriptStruct_FCoopShooterLobbyInfo();
+	UPackage* Z_Construct_UPackage__Script_CoopShooter();
 	COOPSHOOTER_API UClass* Z_Construct_UClass_ASOnlineBeaconHostObject_NoRegister();
 	COOPSHOOTER_API UClass* Z_Construct_UClass_ASOnlineBeaconHostObject();
 	ONLINESUBSYSTEMUTILS_API UClass* Z_Construct_UClass_AOnlineBeaconHostObject();
-	UPackage* Z_Construct_UPackage__Script_CoopShooter();
 // End Cross Module References
+class UScriptStruct* FCoopShooterLobbyInfo::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern COOPSHOOTER_API uint32 Get_Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FCoopShooterLobbyInfo, Z_Construct_UPackage__Script_CoopShooter(), TEXT("CoopShooterLobbyInfo"), sizeof(FCoopShooterLobbyInfo), Get_Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Hash());
+	}
+	return Singleton;
+}
+template<> COOPSHOOTER_API UScriptStruct* StaticStruct<FCoopShooterLobbyInfo>()
+{
+	return FCoopShooterLobbyInfo::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FCoopShooterLobbyInfo(FCoopShooterLobbyInfo::StaticStruct, TEXT("/Script/CoopShooter"), TEXT("CoopShooterLobbyInfo"), false, nullptr, nullptr);
+static struct FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyInfo
+{
+	FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyInfo()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("CoopShooterLobbyInfo")),new UScriptStruct::TCppStructOps<FCoopShooterLobbyInfo>);
+	}
+} ScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyInfo;
+	struct Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerList_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_PlayerList;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_PlayerList_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "Comment", "/**\n * \n */" },
+		{ "ModuleRelativePath", "Public/SOnlineBeaconHostObject.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FCoopShooterLobbyInfo>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::NewProp_PlayerList_MetaData[] = {
+		{ "Category", "CoopShooterLobbyInfo" },
+		{ "ModuleRelativePath", "Public/SOnlineBeaconHostObject.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::NewProp_PlayerList = { "PlayerList", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCoopShooterLobbyInfo, PlayerList), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::NewProp_PlayerList_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::NewProp_PlayerList_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::NewProp_PlayerList_Inner = { "PlayerList", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::NewProp_PlayerList,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::NewProp_PlayerList_Inner,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_CoopShooter,
+		nullptr,
+		&NewStructOps,
+		"CoopShooterLobbyInfo",
+		sizeof(FCoopShooterLobbyInfo),
+		alignof(FCoopShooterLobbyInfo),
+		Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FCoopShooterLobbyInfo()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_CoopShooter();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("CoopShooterLobbyInfo"), sizeof(FCoopShooterLobbyInfo), Get_Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FCoopShooterLobbyInfo_Hash() { return 2853635064U; }
 	DEFINE_FUNCTION(ASOnlineBeaconHostObject::execShutdownServer)
 	{
 		P_FINISH;
@@ -32,12 +121,21 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconHostObject() {}
 		P_THIS->DisconnectAllClients();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ASOnlineBeaconHostObject::execUpdateLobbyInfo)
+	{
+		P_GET_STRUCT(FCoopShooterLobbyInfo,Z_Param_NewLobbyInfo);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UpdateLobbyInfo(Z_Param_NewLobbyInfo);
+		P_NATIVE_END;
+	}
 	void ASOnlineBeaconHostObject::StaticRegisterNativesASOnlineBeaconHostObject()
 	{
 		UClass* Class = ASOnlineBeaconHostObject::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "DisconnectAllClients", &ASOnlineBeaconHostObject::execDisconnectAllClients },
 			{ "ShutdownServer", &ASOnlineBeaconHostObject::execShutdownServer },
+			{ "UpdateLobbyInfo", &ASOnlineBeaconHostObject::execUpdateLobbyInfo },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -85,6 +183,38 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconHostObject() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics
+	{
+		struct SOnlineBeaconHostObject_eventUpdateLobbyInfo_Parms
+		{
+			FCoopShooterLobbyInfo NewLobbyInfo;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_NewLobbyInfo;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics::NewProp_NewLobbyInfo = { "NewLobbyInfo", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SOnlineBeaconHostObject_eventUpdateLobbyInfo_Parms, NewLobbyInfo), Z_Construct_UScriptStruct_FCoopShooterLobbyInfo, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics::NewProp_NewLobbyInfo,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/SOnlineBeaconHostObject.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASOnlineBeaconHostObject, nullptr, "UpdateLobbyInfo", nullptr, nullptr, sizeof(SOnlineBeaconHostObject_eventUpdateLobbyInfo_Parms), Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ASOnlineBeaconHostObject_NoRegister()
 	{
 		return ASOnlineBeaconHostObject::StaticClass();
@@ -106,10 +236,10 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconHostObject() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ASOnlineBeaconHostObject_DisconnectAllClients, "DisconnectAllClients" }, // 1802026208
 		{ &Z_Construct_UFunction_ASOnlineBeaconHostObject_ShutdownServer, "ShutdownServer" }, // 807250003
+		{ &Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo, "UpdateLobbyInfo" }, // 741659154
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "SOnlineBeaconHostObject.h" },
 		{ "ModuleRelativePath", "Public/SOnlineBeaconHostObject.h" },
 	};
@@ -141,7 +271,7 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconHostObject() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASOnlineBeaconHostObject, 3002988349);
+	IMPLEMENT_CLASS(ASOnlineBeaconHostObject, 2390726898);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASOnlineBeaconHostObject>()
 	{
 		return ASOnlineBeaconHostObject::StaticClass();
