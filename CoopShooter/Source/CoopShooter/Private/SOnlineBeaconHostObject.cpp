@@ -70,5 +70,4 @@ void ASOnlineBeaconHostObject::ShutdownServer()
 		Host->UnregisterHost(BeaconTypeName);
 		Host->DestroyBeacon();
 	}
-k
 }

@@ -13,33 +13,56 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconClient() {}
 // Cross Module References
-	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature();
+	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_CoopShooter();
+	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature();
 	COOPSHOOTER_API UClass* Z_Construct_UClass_ASOnlineBeaconClient_NoRegister();
 	COOPSHOOTER_API UClass* Z_Construct_UClass_ASOnlineBeaconClient();
 	ONLINESUBSYSTEMUTILS_API UClass* Z_Construct_UClass_AOnlineBeaconClient();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/SOnlineBeaconClient.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_CoopShooter, nullptr, "Disconnected__DelegateSignature", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics
 	{
 		struct _Script_CoopShooter_eventConnectSuccess_Parms
 		{
-			bool FConnected;
+			bool FOnConnected;
 		};
-		static void NewProp_FConnected_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_FConnected;
+		static void NewProp_FOnConnected_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_FOnConnected;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	void Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics::NewProp_FConnected_SetBit(void* Obj)
+	void Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics::NewProp_FOnConnected_SetBit(void* Obj)
 	{
-		((_Script_CoopShooter_eventConnectSuccess_Parms*)Obj)->FConnected = 1;
+		((_Script_CoopShooter_eventConnectSuccess_Parms*)Obj)->FOnConnected = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics::NewProp_FConnected = { "FConnected", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(_Script_CoopShooter_eventConnectSuccess_Parms), &Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics::NewProp_FConnected_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics::NewProp_FOnConnected = { "FOnConnected", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(_Script_CoopShooter_eventConnectSuccess_Parms), &Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics::NewProp_FOnConnected_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics::NewProp_FConnected,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics::NewProp_FOnConnected,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature_Statics::Function_MetaDataParams[] = {
@@ -199,9 +222,13 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconClient() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FConnected_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FOnDisconnected_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_FConnected;
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_FOnDisconnected;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FOnConnected_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_FOnConnected;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -222,13 +249,20 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconClient() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FConnected_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FOnDisconnected_MetaData[] = {
 		{ "ModuleRelativePath", "Public/SOnlineBeaconClient.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FConnected = { "FConnected", nullptr, (EPropertyFlags)0x0020080010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASOnlineBeaconClient, FConnected), Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FConnected_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FConnected_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FOnDisconnected = { "FOnDisconnected", nullptr, (EPropertyFlags)0x0020080010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASOnlineBeaconClient, FOnDisconnected), Z_Construct_UDelegateFunction_CoopShooter_Disconnected__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FOnDisconnected_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FOnDisconnected_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FOnConnected_MetaData[] = {
+		{ "ModuleRelativePath", "Public/SOnlineBeaconClient.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FOnConnected = { "FOnConnected", nullptr, (EPropertyFlags)0x0020080010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASOnlineBeaconClient, FOnConnected), Z_Construct_UDelegateFunction_CoopShooter_ConnectSuccess__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FOnConnected_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FOnConnected_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASOnlineBeaconClient_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FConnected,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FOnDisconnected,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASOnlineBeaconClient_Statics::NewProp_FOnConnected,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASOnlineBeaconClient_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASOnlineBeaconClient>::IsAbstract,
@@ -257,7 +291,7 @@ void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconClient() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASOnlineBeaconClient, 856014585);
+	IMPLEMENT_CLASS(ASOnlineBeaconClient, 3610270655);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASOnlineBeaconClient>()
 	{
 		return ASOnlineBeaconClient::StaticClass();

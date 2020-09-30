@@ -9,7 +9,8 @@
 /**
  * 
  */
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FConnectSuccess, bool, FConnected);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FConnectSuccess, bool, FOnConnected);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDisconnected);
 
 UCLASS()
 class COOPSHOOTER_API ASOnlineBeaconClient : public AOnlineBeaconClient
@@ -21,7 +22,10 @@ public:
 
 protected:
 	UPROPERTY(BlueprintAssignable)
-		FConnectSuccess FConnected;
+		FConnectSuccess FOnConnected;
+
+	UPROPERTY(BlueprintAssignable)
+		FDisconnected FOnDisconnected;
 
 	UFUNCTION(BlueprintCallable)
 		bool ConnectToServerHost(const FString& Address);
@@ -36,5 +40,5 @@ public:
 	UFUNCTION(Client, Reliable)
 	void Client_OnDisconnected();
 
-	virtual void Client_Disconnected_Implementation();
+	virtual void Client_OnDisconnected_Implementation();
 };

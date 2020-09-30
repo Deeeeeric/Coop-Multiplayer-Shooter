@@ -12,18 +12,19 @@ ASOnlineBeaconClient::ASOnlineBeaconClient()
 void ASOnlineBeaconClient::OnFailure()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Client failure to connect to host beacon."));
-	FConnected.Broadcast(false);
+	FOnConnected.Broadcast(false);
 }
 
 void ASOnlineBeaconClient::OnConnected()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Client connected to host beacon."));
-	FConnected.Broadcast(true);
+	FOnConnected.Broadcast(true);
 }
 
-void ASOnlineBeaconClient::Client_Disconnected_Implementation()
+void ASOnlineBeaconClient::Client_OnDisconnected_Implementation()
 {
 	UE_LOG(LogTemp, Warning, TEXT("DISCONNECTED"));
+	FOnDisconnected.Broadcast();
 }
 
 bool ASOnlineBeaconClient::ConnectToServerHost(const FString& Address)
