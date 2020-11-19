@@ -18,6 +18,8 @@ public:
 	TArray<FString> PlayerList;
 };
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FHostLobbyUpdated, FCoopShooterLobbyInfo, FOnHostLobbyUpdated);
+
 UCLASS()
 class COOPSHOOTER_API ASOnlineBeaconHostObject : public AOnlineBeaconHostObject
 {
@@ -27,6 +29,9 @@ public:
 	ASOnlineBeaconHostObject();
 
 protected:
+	UPROPERTY(BlueprintAssignable)
+		FHostLobbyUpdated FOnHostLobbyUpdated;
+
 	FCoopShooterLobbyInfo LobbyInfo;
 
 	UFUNCTION(BlueprintCallable)
@@ -34,7 +39,10 @@ protected:
 
 	void UpdateClientLobbyInfo();
 
+
 protected:
+	virtual void BeginPlay() override;
+
 	virtual void OnClientConnected(AOnlineBeaconClient* NewClientActor, UNetConnection* ClientConnection) override;
 
 	virtual void NotifyClientDisconnected(AOnlineBeaconClient* LeavingClientActor) override;

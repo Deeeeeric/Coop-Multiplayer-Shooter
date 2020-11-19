@@ -5,7 +5,7 @@
 
 ASOnlineBeaconClient::ASOnlineBeaconClient()
 {
-
+	PlayerIndex = 0;
 }
 
 
@@ -30,6 +30,16 @@ void ASOnlineBeaconClient::Client_OnDisconnected_Implementation()
 void ASOnlineBeaconClient::Client_OnLobbyUpdated_Implementation(FCoopShooterLobbyInfo LobbyInfo)
 {
 	FOnLobbyUpdated.Broadcast(LobbyInfo);
+}
+
+void ASOnlineBeaconClient::SetPlayerIndex(uint8 Index)
+{
+	PlayerIndex = Index;
+}
+
+uint8 ASOnlineBeaconClient::GetPlayerIndex()
+{
+	return PlayerIndex;
 }
 
 bool ASOnlineBeaconClient::ConnectToServerHost(const FString& Address)

@@ -33,6 +33,7 @@ protected:
 	UPROPERTY(BlueprintAssignable)
 		FLobbyUpdated FOnLobbyUpdated;
 
+protected:
 	UFUNCTION(BlueprintCallable)
 		bool ConnectToServerHost(const FString& Address);
 
@@ -42,6 +43,8 @@ protected:
 	virtual void OnFailure() override;
 	virtual void OnConnected() override;
 
+	uint8 PlayerIndex;
+
 public:
 	UFUNCTION(Client, Reliable)
 	void Client_OnDisconnected();
@@ -50,5 +53,9 @@ public:
 	UFUNCTION(Client, Reliable)
 	void Client_OnLobbyUpdated(FCoopShooterLobbyInfo LobbyInfo);
 	void Client_OnLobbyUpdated_Implementation(FCoopShooterLobbyInfo LobbyInfo);
+
+	void SetPlayerIndex(uint8 Index);
+
+	uint8 GetPlayerIndex();
 
 };

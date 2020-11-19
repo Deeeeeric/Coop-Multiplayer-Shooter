@@ -13,12 +13,45 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSOnlineBeaconHostObject() {}
 // Cross Module References
-	COOPSHOOTER_API UScriptStruct* Z_Construct_UScriptStruct_FCoopShooterLobbyInfo();
+	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_CoopShooter();
+	COOPSHOOTER_API UScriptStruct* Z_Construct_UScriptStruct_FCoopShooterLobbyInfo();
 	COOPSHOOTER_API UClass* Z_Construct_UClass_ASOnlineBeaconHostObject_NoRegister();
 	COOPSHOOTER_API UClass* Z_Construct_UClass_ASOnlineBeaconHostObject();
 	ONLINESUBSYSTEMUTILS_API UClass* Z_Construct_UClass_AOnlineBeaconHostObject();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics
+	{
+		struct _Script_CoopShooter_eventHostLobbyUpdated_Parms
+		{
+			FCoopShooterLobbyInfo FOnHostLobbyUpdated;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_FOnHostLobbyUpdated;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics::NewProp_FOnHostLobbyUpdated = { "FOnHostLobbyUpdated", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_CoopShooter_eventHostLobbyUpdated_Parms, FOnHostLobbyUpdated), Z_Construct_UScriptStruct_FCoopShooterLobbyInfo, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics::NewProp_FOnHostLobbyUpdated,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/SOnlineBeaconHostObject.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_CoopShooter, nullptr, "HostLobbyUpdated__DelegateSignature", nullptr, nullptr, sizeof(_Script_CoopShooter_eventHostLobbyUpdated_Parms), Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 class UScriptStruct* FCoopShooterLobbyInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -226,6 +259,11 @@ static struct FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyIn
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FOnHostLobbyUpdated_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_FOnHostLobbyUpdated;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -244,6 +282,15 @@ static struct FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyIn
 		{ "ModuleRelativePath", "Public/SOnlineBeaconHostObject.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::NewProp_FOnHostLobbyUpdated_MetaData[] = {
+		{ "ModuleRelativePath", "Public/SOnlineBeaconHostObject.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::NewProp_FOnHostLobbyUpdated = { "FOnHostLobbyUpdated", nullptr, (EPropertyFlags)0x0020080010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASOnlineBeaconHostObject, FOnHostLobbyUpdated), Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::NewProp_FOnHostLobbyUpdated_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::NewProp_FOnHostLobbyUpdated_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::NewProp_FOnHostLobbyUpdated,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASOnlineBeaconHostObject>::IsAbstract,
 	};
@@ -253,11 +300,11 @@ static struct FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyIn
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
-		nullptr,
+		Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::PropPointers),
 		0,
 		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::Class_MetaDataParams))
@@ -271,7 +318,7 @@ static struct FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyIn
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASOnlineBeaconHostObject, 2390726898);
+	IMPLEMENT_CLASS(ASOnlineBeaconHostObject, 702461431);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASOnlineBeaconHostObject>()
 	{
 		return ASOnlineBeaconHostObject::StaticClass();

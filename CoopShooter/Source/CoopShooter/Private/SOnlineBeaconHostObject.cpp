@@ -16,17 +16,23 @@ void ASOnlineBeaconHostObject::UpdateLobbyInfo(FCoopShooterLobbyInfo NewLobbyInf
 {
 	LobbyInfo.PlayerList = NewLobbyInfo.PlayerList;
 	UpdateClientLobbyInfo();
+	FOnHostLobbyUpdated.Broadcast(LobbyInfo);
 }
 
 void ASOnlineBeaconHostObject::UpdateClientLobbyInfo()
 {
 	for (AOnlineBeaconClient* ClientBeacon : ClientActors)
 	{
-		if (ASOnlineBeaconClient* Client = Cast<AOnlineBeaconClient>(ClientBeacon))
+		if (ASOnlineBeaconClient* Client = Cast<ASOnlineBeaconClient>(ClientBeacon))
 		{
 			Client->Client_OnLobbyUpdated(LobbyInfo);
 		}
 	}
+}
+
+void ASOnlineBeaconHostObject::BeginPlay()
+{
+	LobbyInfo.PlayerList.Add(FString("Host"));
 }
 
 void ASOnlineBeaconHostObject::OnClientConnected(AOnlineBeaconClient* NewClientActor, UNetConnection* ClientConnection)
@@ -35,11 +41,20 @@ void ASOnlineBeaconHostObject::OnClientConnected(AOnlineBeaconClient* NewClientA
 
 	if (NewClientActor)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("CONNECTED CLIENT VALID"));
+		FString PlayerName = FString("Player ");
+		uint8 Index = LobbyInfo.PlayerList.Num();
+		PlayerName.Append(FString::FromInt(Index));
+		LobbyInfo.PlayerList.Add(PlayerName);
+
 		if (ASOnlineBeaconClient* Client = Cast<ASOnlineBeaconClient>(NewClientActor))
 		{
-			Client->Client_OnLobbyUpdated(LobbyInfo);
+			Client->SetPlayerIndex(Index);
 		}
+
+		FOnHostLobbyUpdated.Broadcast(LobbyInfo);
+
+		UE_LOG(LogTemp, Warning, TEXT("CONNECTED CLIENT VALID"));
+		UpdateClientLobbyInfo();
 	}
 	else
 	{
@@ -52,6 +67,15 @@ void ASOnlineBeaconHostObject::NotifyClientDisconnected(AOnlineBeaconClient* Lea
 	Super::NotifyClientDisconnected(LeavingClientActor);
 
 	UE_LOG(LogTemp, Warning, TEXT("Client has DISCONNECTED."));
+
+	if (ASOnlineBeaconClient* Client = Cast<ASOnlineBeaconClient>(LeavingClientActor))
+	{
+		uint8 Index = Client->GetPlayerIndex();
+		LobbyInfo.PlayerList.RemoveAt(Index);
+	}
+
+	FOnHostLobbyUpdated.Broadcast(LobbyInfo);
+	UpdateClientLobbyInfo();
 }
 
 void ASOnlineBeaconHostObject::DisconnectAllClients()
