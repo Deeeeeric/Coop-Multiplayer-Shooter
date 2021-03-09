@@ -39,6 +39,8 @@ protected:
 
 	void UpdateClientLobbyInfo();
 
+	FTimerHandle TInitialLobbyHandle;
+	void InitialLobbyHandling();
 
 protected:
 	virtual void BeginPlay() override;
@@ -51,6 +53,9 @@ protected:
 		void DisconnectAllClients();
 
 	virtual void DisconnectClient(AOnlineBeaconClient* ClientActor) override;
+
+	UFUNCTION(BlueprintCallable)
+	void StartServer();
 
 	UFUNCTION(BlueprintCallable)
 		void ShutdownServer();

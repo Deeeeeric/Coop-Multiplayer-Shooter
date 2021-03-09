@@ -37,7 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeCoopShooter_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xB255D2A8,
+				0x6B8A5B0F,
 				0x500C3F32,
 				METADATA_PARAMS(nullptr, 0)
 			};

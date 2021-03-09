@@ -38,6 +38,7 @@ static inline void FHostLobbyUpdated_DelegateWrapper(const FMulticastScriptDeleg
 #define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconHostObject_h_26_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execShutdownServer); \
+	DECLARE_FUNCTION(execStartServer); \
 	DECLARE_FUNCTION(execDisconnectAllClients); \
 	DECLARE_FUNCTION(execUpdateLobbyInfo);
 
@@ -45,6 +46,7 @@ static inline void FHostLobbyUpdated_DelegateWrapper(const FMulticastScriptDeleg
 #define CoopShooter_Source_CoopShooter_Public_SOnlineBeaconHostObject_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execShutdownServer); \
+	DECLARE_FUNCTION(execStartServer); \
 	DECLARE_FUNCTION(execDisconnectAllClients); \
 	DECLARE_FUNCTION(execUpdateLobbyInfo);
 

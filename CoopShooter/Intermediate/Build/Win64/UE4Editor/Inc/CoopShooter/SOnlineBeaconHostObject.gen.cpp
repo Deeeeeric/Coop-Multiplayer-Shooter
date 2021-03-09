@@ -147,6 +147,13 @@ static struct FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyIn
 		P_THIS->ShutdownServer();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ASOnlineBeaconHostObject::execStartServer)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->StartServer();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ASOnlineBeaconHostObject::execDisconnectAllClients)
 	{
 		P_FINISH;
@@ -168,6 +175,7 @@ static struct FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyIn
 		static const FNameNativePtrPair Funcs[] = {
 			{ "DisconnectAllClients", &ASOnlineBeaconHostObject::execDisconnectAllClients },
 			{ "ShutdownServer", &ASOnlineBeaconHostObject::execShutdownServer },
+			{ "StartServer", &ASOnlineBeaconHostObject::execStartServer },
 			{ "UpdateLobbyInfo", &ASOnlineBeaconHostObject::execUpdateLobbyInfo },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -213,6 +221,28 @@ static struct FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyIn
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASOnlineBeaconHostObject_ShutdownServer_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ASOnlineBeaconHostObject_StartServer_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASOnlineBeaconHostObject_StartServer_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/SOnlineBeaconHostObject.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASOnlineBeaconHostObject_StartServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASOnlineBeaconHostObject, nullptr, "StartServer", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASOnlineBeaconHostObject_StartServer_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASOnlineBeaconHostObject_StartServer_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASOnlineBeaconHostObject_StartServer()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASOnlineBeaconHostObject_StartServer_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -274,6 +304,7 @@ static struct FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyIn
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASOnlineBeaconHostObject_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ASOnlineBeaconHostObject_DisconnectAllClients, "DisconnectAllClients" }, // 1802026208
 		{ &Z_Construct_UFunction_ASOnlineBeaconHostObject_ShutdownServer, "ShutdownServer" }, // 807250003
+		{ &Z_Construct_UFunction_ASOnlineBeaconHostObject_StartServer, "StartServer" }, // 699248057
 		{ &Z_Construct_UFunction_ASOnlineBeaconHostObject_UpdateLobbyInfo, "UpdateLobbyInfo" }, // 741659154
 	};
 #if WITH_METADATA
@@ -318,7 +349,7 @@ static struct FScriptStruct_CoopShooter_StaticRegisterNativesFCoopShooterLobbyIn
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASOnlineBeaconHostObject, 702461431);
+	IMPLEMENT_CLASS(ASOnlineBeaconHostObject, 127016749);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASOnlineBeaconHostObject>()
 	{
 		return ASOnlineBeaconHostObject::StaticClass();

@@ -5,6 +5,7 @@
 #include "SOnlineBeaconClient.h"
 #include "MainMenuGMB.h"
 #include "OnlineBeaconHost.h"
+#include "TimerManager.h"
 
 ASOnlineBeaconHostObject::ASOnlineBeaconHostObject()
 {
@@ -33,6 +34,12 @@ void ASOnlineBeaconHostObject::UpdateClientLobbyInfo()
 void ASOnlineBeaconHostObject::BeginPlay()
 {
 	LobbyInfo.PlayerList.Add(FString("Host"));
+	GetWorld()->GetTimerManager().SetTimer(TInitialLobbyHandle, this, &ASOnlineBeaconHostObject::InitialLobbyHandling, 0.2f, false);
+}
+
+void ASOnlineBeaconHostObject::InitialLobbyHandling()
+{
+	UpdateLobbyInfo(LobbyInfo);
 }
 
 void ASOnlineBeaconHostObject::OnClientConnected(AOnlineBeaconClient* NewClientActor, UNetConnection* ClientConnection)
@@ -102,6 +109,11 @@ void ASOnlineBeaconHostObject::DisconnectClient(AOnlineBeaconClient* ClientActor
 		}
 		BeaconHost->DisconnectClient(ClientActor);
 	}
+}
+
+void ASOnlineBeaconHostObject::StartServer()
+{
+
 }
 
 void ASOnlineBeaconHostObject::ShutdownServer()
