@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "OnlineBeaconHostObject.h"
+#include "Http.h"
 #include "SOnlineBeaconHostObject.generated.h"
 
 /**
@@ -29,10 +30,15 @@ public:
 	ASOnlineBeaconHostObject();
 
 protected:
-	UPROPERTY(BlueprintAssignable)
-		FHostLobbyUpdated FOnHostLobbyUpdated;
+	FHttpModule* Http;
 
+	void OnProcessRequestComplete(FHttpRequestPtr Request, FHttpResponsePtr Response, bool Success);
+
+protected:
 	FCoopShooterLobbyInfo LobbyInfo;
+
+	UPROPERTY(BlueprintAssignable)
+	FHostLobbyUpdated FOnHostLobbyUpdated;
 
 	UFUNCTION(BlueprintCallable)
 	void UpdateLobbyInfo(FCoopShooterLobbyInfo NewLobbyInfo);
@@ -50,7 +56,7 @@ protected:
 	virtual void NotifyClientDisconnected(AOnlineBeaconClient* LeavingClientActor) override;
 
 	UFUNCTION(BlueprintCallable)
-		void DisconnectAllClients();
+	void DisconnectAllClients();
 
 	virtual void DisconnectClient(AOnlineBeaconClient* ClientActor) override;
 
@@ -58,6 +64,6 @@ protected:
 	void StartServer();
 
 	UFUNCTION(BlueprintCallable)
-		void ShutdownServer();
+	void ShutdownServer();
 	
 };

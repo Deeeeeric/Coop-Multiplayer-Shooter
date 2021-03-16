@@ -11,6 +11,7 @@ ASOnlineBeaconHostObject::ASOnlineBeaconHostObject()
 {
 	ClientBeaconActorClass = ASOnlineBeaconClient::StaticClass();
 	BeaconTypeName = ClientBeaconActorClass->GetName();
+	Http = &FHttpModule::Get();
 }
 
 void ASOnlineBeaconHostObject::UpdateLobbyInfo(FCoopShooterLobbyInfo NewLobbyInfo)
@@ -40,6 +41,40 @@ void ASOnlineBeaconHostObject::BeginPlay()
 void ASOnlineBeaconHostObject::InitialLobbyHandling()
 {
 	UpdateLobbyInfo(LobbyInfo);
+
+	TSharedPtr<FJsonObject> JsonObject = MakeShareable(new FJsonObject);
+	JsonObject->SetNumberField("ServerID", 0);
+	JsonObject->SetStringField("IPAddress", "127.0.0.1");
+	JsonObject->SetStringField("ServerName", "TEST SERVER NAME");
+	JsonObject->SetNumberField("CurrentPlayers", 0);
+	JsonObject->SetNumberField("MaxPlayers", 0);
+
+	FString JsonString;
+	TSharedRef<TJsonWriter<TCHAR>> JsonWriter = TJsonWriterFactory<>::Create(&JsonString);
+	
+	//requests
+	TSharedRef<IHttpRequest> Request = Http->CreateRequest();
+
+	//Bind requests
+	Request->OnProcessRequestComplete().BindUObject(this, &ASOnlineBeaconHostObject::OnProcessRequestComplete);
+
+	Request->SetURL("https://localhost:44311/api/Host"); //Request URL to api URL
+	Request->SetVerb("POST"); //Verb to POST
+	Request->SetHeader(TEXT("Content-Type"), TEXT("application/json")); //Content-type header to application/json
+	Request->SetContentAsString(JsonString);
+	Request->ProcessRequest();
+}
+
+void ASOnlineBeaconHostObject::OnProcessRequestComplete(FHttpRequestPtr Request, FHttpResponsePtr Response, bool Success)
+{
+	if (Success)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("HttpRequest Success: %s"), *Response->GetContentAsString());
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("HttpRequest FAILED"));
+	}
 }
 
 void ASOnlineBeaconHostObject::OnClientConnected(AOnlineBeaconClient* NewClientActor, UNetConnection* ClientConnection)
