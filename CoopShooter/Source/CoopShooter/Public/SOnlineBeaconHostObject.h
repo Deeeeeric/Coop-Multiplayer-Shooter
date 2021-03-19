@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "OnlineBeaconHostObject.h"
 #include "Http.h"
+#include "OnlineJsonSerializer.h"
 #include "SOnlineBeaconHostObject.generated.h"
 
 /**

@@ -47,12 +47,12 @@ void ASOnlineBeaconHostObject::InitialLobbyHandling()
 	JsonObject->SetStringField("IPAddress", "127.0.0.1");
 	JsonObject->SetStringField("ServerName", "TEST SERVER NAME");
 	JsonObject->SetNumberField("CurrentPlayers", 0);
-	JsonObject->SetNumberField("MaxPlayers", 0);
+	JsonObject->SetNumberField("MaxPlayers", 2);
 
 	FString JsonString;
 	TSharedRef<TJsonWriter<TCHAR>> JsonWriter = TJsonWriterFactory<>::Create(&JsonString);
+	FJsonSerializer::Serialize(JsonObject.ToSharedRef(), JsonWriter);
 	
-	//requests
 	TSharedRef<IHttpRequest> Request = Http->CreateRequest();
 
 	//Bind requests
