@@ -12,6 +12,7 @@ ASOnlineBeaconHostObject::ASOnlineBeaconHostObject()
 	ClientBeaconActorClass = ASOnlineBeaconClient::StaticClass();
 	BeaconTypeName = ClientBeaconActorClass->GetName();
 	Http = &FHttpModule::Get();
+	ServerID;
 }
 
 void ASOnlineBeaconHostObject::UpdateLobbyInfo(FCoopShooterLobbyInfo NewLobbyInfo)
@@ -69,7 +70,8 @@ void ASOnlineBeaconHostObject::OnProcessRequestComplete(FHttpRequestPtr Request,
 {
 	if (Success)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("HttpRequest Success: %s"), *Response->GetContentAsString());
+		ServerID = FCString::Atoi(*Response->GetContentAsString());
+		UE_LOG(LogTemp, Warning, TEXT("Success, ID: %d"), ServerID);
 	}
 	else
 	{

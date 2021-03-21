@@ -8,12 +8,12 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  SOnlineBeaconHostObject.cpp (0:02.65 at +0:00)
-  UE4Editor-CoopShooter.dll (0:01.14 at +0:02)
+  SOnlineBeaconHostObject.cpp (0:11.78 at +0:00)
+  UE4Editor-CoopShooter.dll (0:01.03 at +0:11)
      Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.exp
-  UE4Editor-CoopShooter.lib (0:00.21 at +0:03)
+  UE4Editor-CoopShooter.lib (0:00.18 at +0:12)
      Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.exp
-  CoopShooterEditor.target (0:00.32 at +0:04)
+  CoopShooterEditor.target (0:00.25 at +0:13)
   ---------------------- Done ----------------------
   
       Rebuild All: 1 succeeded, 0 failed, 0 skipped
@@ -21,5 +21,5 @@
   1 build system warning(s):
      - Failed to connect to Coordinator
   
-  Total time in XGE executor: 4.71 seconds
-  Total execution time: 5.87 seconds
+  Total time in XGE executor: 13.47 seconds
+  Total execution time: 14.39 seconds

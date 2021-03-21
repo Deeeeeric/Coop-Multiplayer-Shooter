@@ -32,7 +32,7 @@ public:
 
 protected:
 	FHttpModule* Http;
-
+	int ServerID;
 	void OnProcessRequestComplete(FHttpRequestPtr Request, FHttpResponsePtr Response, bool Success);
 
 protected:
