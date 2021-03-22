@@ -1,4 +1,6 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
+  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter-0001.dll
+  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0001.lib
   Building CoopShooterEditor...
   Using Visual Studio 2019 14.28.29912 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Distributing 4 actions to XGE
@@ -8,12 +10,12 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  SOnlineBeaconHostObject.cpp (0:11.78 at +0:00)
-  UE4Editor-CoopShooter.dll (0:01.03 at +0:11)
+  SOnlineBeaconHostObject.cpp (0:22.92 at +0:00)
+  UE4Editor-CoopShooter.dll (0:01.34 at +0:22)
      Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.exp
-  UE4Editor-CoopShooter.lib (0:00.18 at +0:12)
+  UE4Editor-CoopShooter.lib (0:00.29 at +0:24)
      Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.exp
-  CoopShooterEditor.target (0:00.25 at +0:13)
+  CoopShooterEditor.target (0:00.31 at +0:24)
   ---------------------- Done ----------------------
   
       Rebuild All: 1 succeeded, 0 failed, 0 skipped
@@ -21,5 +23,5 @@
   1 build system warning(s):
      - Failed to connect to Coordinator
   
-  Total time in XGE executor: 13.47 seconds
-  Total execution time: 14.39 seconds
+  Total time in XGE executor: 25.68 seconds
+  Total execution time: 26.83 seconds
