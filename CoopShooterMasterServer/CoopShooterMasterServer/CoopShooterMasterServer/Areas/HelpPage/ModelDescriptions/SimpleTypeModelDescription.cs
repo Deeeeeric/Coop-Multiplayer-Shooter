@@ -1,0 +1,6 @@
+namespace CoopShooterMasterServer.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}
