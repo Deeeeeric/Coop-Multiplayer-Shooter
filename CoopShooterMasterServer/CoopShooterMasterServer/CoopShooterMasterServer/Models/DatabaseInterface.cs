@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using MySql.Data.MySqlClient;
@@ -82,6 +83,30 @@ namespace CoopShooterMasterServer.Models
             catch (Exception e)
             {
 
+            }
+        }
+
+        public DataTable GetAllServers()
+        {
+            try
+            {
+                SqlConnection.Open();
+
+                MySqlCommand Command = new MySqlCommand("GetAllServerEntries", SqlConnection);
+                Command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                DataTable DT = new DataTable();
+                DT.Load(Command.ExecuteReader());
+
+                Command.ExecuteNonQuery();
+                SqlConnection.Close();
+
+                return DT;
+
+            }
+            catch (Exception e)
+            {
+                return new DataTable();
             }
         }
     }
