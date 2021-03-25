@@ -3,7 +3,7 @@
 
 #include "SGameState.h"
 #include "Net/UnrealNetwork.h"
-#include "SGameInstance.h"
+#include "SCoopShooterGameInstance.h"
 
 //void AGameState::PostInitializeComponents()
 //{
@@ -61,7 +61,7 @@ void ASGameState::AddPlayerState(APlayerState* PlayerState)
 {
 	Super::RemovePlayerState(PlayerState);
 
-	USGameInstance* GI = GetWorld()->GetGameInstance<USGameInstance>();
+	USCoopShooterGameInstance* GI = GetWorld()->GetGameInstance<USCoopShooterGameInstance>();
 	if (ensure(GI))
 	{
 		GI->OnPlayerStateRemoved.Broadcast(PlayerState);
@@ -72,7 +72,7 @@ void ASGameState::RemovePlayerState(APlayerState* PlayerState)
 {
 	Super::RemovePlayerState(PlayerState);
 
-	USGameInstance* GI = GetWorld()->GetGameInstance<USGameInstance>();
+	USCoopShooterGameInstance* GI = GetWorld()->GetGameInstance<USCoopShooterGameInstance>();
 	if (ensure(GI))
 	{
 		GI->OnPlayerStateRemoved.Broadcast(PlayerState);

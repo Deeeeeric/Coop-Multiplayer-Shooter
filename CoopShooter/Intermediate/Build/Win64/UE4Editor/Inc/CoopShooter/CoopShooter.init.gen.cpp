@@ -12,6 +12,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCoopShooter_init() {}
 	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_PlayerArrayChanged__DelegateSignature();
+	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_ServersReceived__DelegateSignature();
 	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_OnActorKilled__DelegateSignature();
 	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_OnHealthChangedSignature__DelegateSignature();
 	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature();
@@ -25,6 +26,7 @@ void EmptyLinkFunctionForGeneratedCodeCoopShooter_init() {}
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_CoopShooter_PlayerArrayChanged__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_CoopShooter_ServersReceived__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_CoopShooter_OnActorKilled__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_CoopShooter_OnHealthChangedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_CoopShooter_HostLobbyUpdated__DelegateSignature,
@@ -37,8 +39,8 @@ void EmptyLinkFunctionForGeneratedCodeCoopShooter_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x6B8A5B0F,
-				0x500C3F32,
+				0x9AE41346,
+				0x316085AC,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
