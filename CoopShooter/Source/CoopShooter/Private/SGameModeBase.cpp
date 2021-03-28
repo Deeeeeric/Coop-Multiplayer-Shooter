@@ -5,6 +5,7 @@
 #include "SHealthComponent.h"
 #include "SGameState.h"
 #include "SPlayerState.h"
+#include "CoopShooter/SCharacter.h"
 
 ASGameModeBase::ASGameModeBase()
 {
@@ -15,33 +16,16 @@ ASGameModeBase::ASGameModeBase()
 	PrimaryActorTick.TickInterval = 1.0f;
 }
 
-void ASGameModeBase::CheckAnyPlayerAlive()
+bool ASGameModeBase::CheckIfTeamScoreWins()
 {
-	for (FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
-	{
-		APlayerController* PC = It->Get();
-		if (PC && PC->GetPawn())
-		{
-			APawn* MyPawn = PC->GetPawn();
-			USHealthComponent* HealthComponent = Cast<USHealthComponent>(MyPawn->GetComponentByClass(USHealthComponent::StaticClass()));
-			if (ensure(HealthComponent) && HealthComponent->GetHealth() > 0.0f)
-			{
-				// Player is still alive
-				return;
-			}
-		}
-	
-	}
-
-	GameOver();
-	// RoundRestart
+	return false;
 }
 
-void ASGameModeBase::GameOver()
+void ASGameModeBase::PlayerKilled(ACharacterBase* Killer, ACharacterBase* Killed)
 {
-	//TODO: present 'game over' to players and winner
-
-	UE_LOG(LogTemp, Log, TEXT("%s died!"), *GetWorld()->GetName());
+	// Go to Team State and add point for team killer
+	// add point to killer player state
+	// add death to killed player state
 }
 
 void ASGameModeBase::StartPlay()
@@ -52,5 +36,5 @@ void ASGameModeBase::StartPlay()
 void ASGameModeBase::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	CheckAnyPlayerAlive();
+	
 }

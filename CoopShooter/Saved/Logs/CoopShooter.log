@@ -1,8 +1,8 @@
-﻿Log file open, 03/28/21 15:57:05
+﻿Log file open, 03/28/21 17:40:51
 LogInit: Display: Running engine for game: CoopShooter
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 1.209490
+LogStats: Stats thread started at 0.424479
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -192,504 +192,862 @@ LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2021.03.28-14.57.05:984][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2021.03.28-14.57.05:984][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
-[2021.03.28-14.57.05:985][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
-[2021.03.28-14.57.05:985][  0]LogConfig: Setting CVar [[n.VerifyPeer:0]]
-[2021.03.28-14.57.05:985][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
-[2021.03.28-14.57.05:992][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.03.28-14.57.05:992][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.03.28-14.57.05:993][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.03.28-14.57.05:994][  0]LogInit: Selected Device Profile: [Windows]
-[2021.03.28-14.57.05:994][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2021.03.28-14.57.05:996][  0]LogHAL: Display: Platform has ~ 16 GB [17059516416 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2021.03.28-14.57.05:996][  0]LogInit: Going up to parent DeviceProfile []
-[2021.03.28-14.57.05:996][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:996][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.03.28-14.57.05:996][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:0.8]]
-[2021.03.28-14.57.05:996][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:3]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.AOQuality:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.6]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:3]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:0.8]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:1    ; no background occlusion]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:0      ; no bokeh simulation when scattering]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.04        ; only a maximum of 4% of scattered bokeh]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.012   ; required because of AccumulatorQuality=0]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.012   ; required because of AccumulatorQuality=0]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Applying CVar settings from Section [TextureQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:4]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:800]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:48]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.SSR.Quality:2]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.SceneColorFormat:3]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.DetailMode:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.SSS.Quality:-1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.SSGI.Quality:2]]
-[2021.03.28-14.57.05:997][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:0.5]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:1]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[foliage.DensityScale:0.8]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[grass.DensityScale:0.8]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
-[2021.03.28-14.57.05:998][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
-[2021.03.28-14.57.06:002][  0]LogInit: Computer: LAPTOP-205H8F92
-[2021.03.28-14.57.06:002][  0]LogInit: User: DW
-[2021.03.28-14.57.06:002][  0]LogInit: CPU Page size=4096, Cores=4
-[2021.03.28-14.57.06:002][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2021.03.28-14.57.06:002][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2021.03.28-14.57.06:002][  0]LogMemory: Platform Memory Stats for Windows
-[2021.03.28-14.57.06:002][  0]LogMemory: Process Physical Memory: 114.62 MB used, 114.62 MB peak
-[2021.03.28-14.57.06:002][  0]LogMemory: Process Virtual Memory: 104.20 MB used, 104.20 MB peak
-[2021.03.28-14.57.06:002][  0]LogMemory: Physical Memory: 9807.38 MB used,  6461.85 MB free, 16269.22 MB total
-[2021.03.28-14.57.06:002][  0]LogMemory: Virtual Memory: 5150.15 MB used,  134212576.00 MB free, 134217728.00 MB total
-[2021.03.28-14.57.06:016][  0]LogWindows: WindowsPlatformFeatures enabled
-[2021.03.28-14.57.06:338][  0]LogInit: Physics initialised using underlying interface: PhysX
-[2021.03.28-14.57.06:344][  0]LogInit: Using OS detected language (en-GB).
-[2021.03.28-14.57.06:344][  0]LogInit: Using OS detected locale (en-GB).
-[2021.03.28-14.57.06:360][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
-[2021.03.28-14.57.06:648][  0]LogInit: Setting process to per monitor DPI aware
-[2021.03.28-14.57.06:722][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2021.03.28-14.57.06:722][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2021.03.28-14.57.07:259][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2021.03.28-14.57.07:259][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2021.03.28-14.57.07:259][  0]LogD3D11RHI: D3D11 adapters:
-[2021.03.28-14.57.07:835][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
-[2021.03.28-14.57.07:836][  0]LogD3D11RHI:       4019/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2021.03.28-14.57.07:899][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
-[2021.03.28-14.57.07:899][  0]LogD3D11RHI:       128/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2021.03.28-14.57.07:912][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2021.03.28-14.57.07:912][  0]LogD3D11RHI:       0/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2021.03.28-14.57.07:912][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2021.03.28-14.57.07:928][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2021.03.28-14.57.07:928][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
-[2021.03.28-14.57.07:928][  0]LogWindows: EnumDisplayDevices:
-[2021.03.28-14.57.07:928][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
-[2021.03.28-14.57.07:929][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
-[2021.03.28-14.57.07:929][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
-[2021.03.28-14.57.07:930][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050' (P:0 D:0)
-[2021.03.28-14.57.07:930][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter 
-[2021.03.28-14.57.07:930][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
-[2021.03.28-14.57.07:931][  0]LogD3D11RHI:   Driver Version: 461.09 (internal:27.21.14.6109, unified:461.09)
-[2021.03.28-14.57.07:931][  0]LogD3D11RHI:      Driver Date: 12-31-2020
-[2021.03.28-14.57.07:931][  0]LogRHI: Texture pool is 2813 MB (70% of 4019 MB)
-[2021.03.28-14.57.08:074][  0]LogD3D11RHI: RHI has support for 64 bit atomics
-[2021.03.28-14.57.08:075][  0]LogD3D11RHI: Async texture creation enabled
-[2021.03.28-14.57.08:076][  0]LogD3D11RHI: Array index from any shader is supported
-[2021.03.28-14.57.08:128][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2021.03.28-14.57.08:702][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2021.03.28-14.57.08:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2021.03.28-14.57.08:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2021.03.28-14.57.08:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2021.03.28-14.57.08:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2021.03.28-14.57.08:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2021.03.28-14.57.08:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2021.03.28-14.57.08:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2021.03.28-14.57.08:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2021.03.28-14.57.08:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2021.03.28-14.57.08:734][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2021.03.28-14.57.08:787][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2021.03.28-14.57.08:787][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2021.03.28-14.57.08:808][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
-[2021.03.28-14.57.08:824][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2021.03.28-14.57.08:840][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2021.03.28-14.57.08:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2021.03.28-14.57.08:872][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2021.03.28-14.57.08:889][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2021.03.28-14.57.08:905][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2021.03.28-14.57.08:943][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2021.03.28-14.57.08:943][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2021.03.28-14.57.08:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2021.03.28-14.57.08:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2021.03.28-14.57.08:984][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2021.03.28-14.57.09:003][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2021.03.28-14.57.09:017][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2021.03.28-14.57.09:031][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2021.03.28-14.57.09:031][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2021.03.28-14.57.09:055][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2021.03.28-14.57.09:282][  0]LogShaderCompilers: Guid format shader working directory is -32 characters bigger than the processId version (../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Intermediate/Shaders/WorkingDirectory/10120/).
-[2021.03.28-14.57.09:282][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/DW/AppData/Local/Temp/UnrealShaderWorkingDir/77303BD543C37B728B7C78BD93A7467B/'.
-[2021.03.28-14.57.09:285][  0]LogXGEController: Cleaning working directory: C:/Users/DW/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2021.03.28-14.57.09:285][  0]LogShaderCompilers: Display: Using XGE Shader Compiler (Interception Interface).
-[2021.03.28-14.57.10:507][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2021.03.28-14.57.11:010][  0]LogDerivedDataCache: Loaded boot cache 0.50s 75MB C:/Users/DW/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.03.28-14.57.11:011][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/DW/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
-[2021.03.28-14.57.11:011][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2021.03.28-14.57.11:011][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2021.03.28-14.57.11:011][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.03.28-14.57.11:011][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2021.03.28-14.57.11:026][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2021.03.28-14.57.11:026][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.03.28-14.57.11:026][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2021.03.28-14.57.11:028][  0]LogDerivedDataCache: Using Local data cache path C:/Users/DW/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2021.03.28-14.57.11:028][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2021.03.28-14.57.11:028][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2021.03.28-14.57.11:101][  0]LogSlate: Using FreeType 2.10.0
-[2021.03.28-14.57.11:109][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2021.03.28-14.57.11:188][  0]LogAssetRegistry: FAssetRegistry took 0.0101 seconds to start up
-[2021.03.28-14.57.11:808][  0]LogInit: Selected Device Profile: [Windows]
-[2021.03.28-14.57.12:136][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2021.03.28-14.57.12:136][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2021.03.28-14.57.12:136][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2021.03.28-14.57.12:136][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2021.03.28-14.57.12:137][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2021.03.28-14.57.12:197][  0]LogNetVersion: CoopShooter 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1129434258)
-[2021.03.28-14.57.13:322][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001F71B84BAC0), frame # 0
-[2021.03.28-14.57.13:322][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F71B862AC0), frame # 0
-[2021.03.28-14.57.13:329][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F71B9A6400), frame # 0
-[2021.03.28-14.57.13:460][  0]LogPackageLocalizationCache: Processed 17 localized package path(s) for 1 prioritized culture(s) in 0.079724 seconds
-[2021.03.28-14.57.13:465][  0]LogUObjectArray: 15756 objects as part of root set at end of initial load.
-[2021.03.28-14.57.13:466][  0]LogUObjectAllocator: 3925280 out of 0 bytes used by permanent object pool.
-[2021.03.28-14.57.13:466][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2021.03.28-14.57.14:749][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2021.03.28-14.57.14:762][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2021.03.28-14.57.18:135][  0]SourceControl: Source control is disabled
-[2021.03.28-14.57.18:135][  0]SourceControl: Source control is disabled
-[2021.03.28-14.57.18:154][  0]SourceControl: Source control is disabled
-[2021.03.28-14.57.18:165][  0]SourceControl: Source control is disabled
-[2021.03.28-14.57.18:187][  0]SourceControl: Source control is disabled
-[2021.03.28-14.57.18:998][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2021.03.28-14.57.19:057][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.03.28-14.57.19:057][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.03.28-14.57.19:459][  0]LogEngine: Initializing Engine...
-[2021.03.28-14.57.19:465][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
-[2021.03.28-14.57.19:472][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.002 s
-[2021.03.28-14.57.19:667][  0]LogInit: Initializing FReadOnlyCVARCache
-[2021.03.28-14.57.19:753][  0]LogAIModule: Creating AISystem for world Untitled
-[2021.03.28-14.57.19:753][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F721C39600), frame # 0
-[2021.03.28-14.57.19:753][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F721C2F100), frame # 0
-[2021.03.28-14.57.19:783][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.03.28-14.57.19:783][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.03.28-14.57.19:783][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.03.28-14.57.19:783][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.03.28-14.57.19:783][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.03.28-14.57.19:783][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.03.28-14.57.19:783][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.03.28-14.57.19:783][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.03.28-14.57.19:785][  0]LogAudio: Display: Using built-in audio occlusion.
-[2021.03.28-14.57.19:786][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2021.03.28-14.57.19:832][  0]LogAudioMixer: Display: 0: FrontLeft
-[2021.03.28-14.57.19:832][  0]LogAudioMixer: Display: 1: FrontRight
-[2021.03.28-14.57.21:075][  0]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
-[2021.03.28-14.57.21:084][  0]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.03.28-14.57.21:088][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.03.28-14.57.21:088][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.03.28-14.57.21:092][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.03.28-14.57.21:094][  0]LogInit: FAudioDevice initialized.
-[2021.03.28-14.57.21:096][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2021.03.28-14.57.21:343][  0]LogDerivedDataCache: Saved boot cache 0.25s 75MB C:/Users/DW/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.03.28-14.57.21:348][  0]LogInit: Texture streaming: Enabled
-[2021.03.28-14.57.21:402][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2021.03.28-14.57.21:402][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=AbnormalShutdown, SessionId={0D36AEDC-476C-3F98-AC38-E6AB54D5EE57}
-[2021.03.28-14.57.21:402][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2021.03.28-14.57.21:421][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2021.03.28-14.57.21:506][  0]LogInit: Transaction tracking system initialized
-[2021.03.28-14.57.21:587][  0]BlueprintLog: New page: Editor Load
-[2021.03.28-14.57.21:883][  0]LocalizationService: Localization service is disabled
-[2021.03.28-14.57.22:326][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2021.03.28-14.57.22:327][  0]LogCook: Display: Mobile HDR setting 1
-[2021.03.28-14.57.22:803][  0]LogFileCache: Scanning file cache for directory 'D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/' took 0.01s
-[2021.03.28-14.57.22:803][  0]SourceControl: Source control is disabled
-[2021.03.28-14.57.22:804][  0]LogUnrealEdMisc: Loading editor; pre map load, took 20.529
-[2021.03.28-14.57.22:809][  0]Cmd: MAP LOAD FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/MainMenu/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2021.03.28-14.57.22:815][  0]LightingResults: New page: Lighting Build
-[2021.03.28-14.57.22:825][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2021.03.28-14.57.22:826][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.28-14.57.22:829][  0]MapCheck: New page: Map Check
-[2021.03.28-14.57.22:829][  0]LightingResults: New page: Lighting Build
-[2021.03.28-14.57.22:867][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F721C39600), frame # 0
-[2021.03.28-14.57.22:867][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F721C2F100), frame # 0
-[2021.03.28-14.57.22:869][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
-[2021.03.28-14.57.22:972][  0]LogAIModule: Creating AISystem for world MainMenu
-[2021.03.28-14.57.22:972][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F71347D000), frame # 0
-[2021.03.28-14.57.22:972][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F713447B00), frame # 0
-[2021.03.28-14.57.22:979][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.03.28-14.57.23:001][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
-[2021.03.28-14.57.23:002][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.03.28-14.57.23:002][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.085ms to complete.
-[2021.03.28-14.57.23:002][  0]LogFileHelpers: Loading map 'MainMenu' took 0.196
-[2021.03.28-14.57.23:057][  0]LogUnrealEdMisc: Total Editor Startup Time, took 20.781
-[2021.03.28-14.57.23:310][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.28-14.57.23:319][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.28-14.57.23:327][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.28-14.57.23:335][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.28-14.57.23:362][  0]LogCollectionManager: Loaded 0 collections in 0.001387 seconds
-[2021.03.28-14.57.23:427][  0]LogFileCache: Scanning file cache for directory 'D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Collections/' took 0.00s
-[2021.03.28-14.57.23:427][  0]LogFileCache: Scanning file cache for directory 'D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Developers/DW/Collections/' took 0.00s
-[2021.03.28-14.57.23:427][  0]LogFileCache: Scanning file cache for directory 'D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Collections/' took 0.00s
-[2021.03.28-14.57.23:427][  0]LogContentBrowser: Native class hierarchy populated in 0.0143 seconds. Added 3425 classes and 808 folders.
-[2021.03.28-14.57.23:444][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2021.03.28-14.57.23:665][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2021.03.28-14.57.24:011][  0]LogSlate: Took 0.001361 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2021.03.28-14.57.24:023][  0]LogSlate: Took 0.001463 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2021.03.28-14.57.24:032][  0]LogSlate: Took 0.001101 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2021.03.28-14.57.24:171][  0]LogRenderer: Reallocating scene render targets to support 1216x652 Format 9 NumSamples 1 (Frame:1).
-[2021.03.28-14.57.24:505][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2021.03.28-14.57.24:505][  0]LogLoad: (Engine Initialization) Total time: 22.23 seconds
-[2021.03.28-14.57.24:505][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2021.03.28-14.57.24:583][  0]LogAssetRegistry: Asset discovery search completed in 13.3996 seconds
-[2021.03.28-14.57.24:588][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
-[2021.03.28-14.57.24:603][  0]LogContentStreaming: Texture pool size now 800 MB
-[2021.03.28-14.57.24:655][  0]LogSlate: Took 0.001444 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2021.03.28-15.01.47:502][982]LogSlate: Took 0.000260 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2021.03.28-15.01.47:899][982]LogClass: Warning: Property SCharacter::LoadedAmmo (SourceClass: SCharacter) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
-[2021.03.28-15.01.47:899][982]LogClass: Warning: Property SCharacter::AmmoPool (SourceClass: SCharacter) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
-[2021.03.28-15.01.48:461][982]LogMaterial: Display: Missing cached shader map for material M_Powerup, compiling. 
-[2021.03.28-15.01.48:513][982]LogMaterial: Display: Missing cached shader map for material M_PowerupDecal, compiling. 
-[2021.03.28-15.01.48:615][982]LogMaterial: Display: Missing cached shader map for material M_Weapon01, compiling. 
-[2021.03.28-15.01.48:659][982]LogMaterial: Display: Missing cached shader map for material M_Crosshairs_MultiHolo_Scanline, compiling. 
-[2021.03.28-15.01.48:734][982]LogMaterial: Display: Missing cached shader map for material MuzzleFlash_Master, compiling. 
-[2021.03.28-15.01.48:800][982]LogMaterial: Display: Missing cached shader map for material M_spark_subUV, compiling. 
-[2021.03.28-15.01.48:815][982]LogMaterial: Display: Missing cached shader map for material M_blood_splash_01, compiling. 
-[2021.03.28-15.01.48:917][982]LogMaterial: Display: Missing cached shader map for material M_blood_cloud_01, compiling. 
-[2021.03.28-15.01.48:992][982]LogMaterial: Display: Missing cached shader map for material M_blood_splash_03, compiling. 
-[2021.03.28-15.01.49:054][982]LogMaterial: Display: Missing cached shader map for material M_LensFlare_02, compiling. 
-[2021.03.28-15.01.49:071][982]LogMaterial: Display: Missing cached shader map for material M_Beam, compiling. 
-[2021.03.28-15.01.49:113][982]LogMaterial: Display: Missing cached shader map for material M_UE4Man_Body, compiling. 
-[2021.03.28-15.01.49:188][982]LogMaterial: Display: Missing cached shader map for material M_UE4Man_Body, compiling. 
-[2021.03.28-15.01.49:309][982]LogMaterial: Display: Missing cached shader map for material M_Hit_Effect, compiling. 
-[2021.03.28-15.01.49:435][982]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Level/Gulag.Gulag
-[2021.03.28-15.01.49:456][982]LogUObjectHash: Compacting FUObjectHashTables data took   1.05ms
-[2021.03.28-15.01.49:457][982]Cmd: MAP LOAD FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/Gulag.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2021.03.28-15.01.49:457][982]LightingResults: New page: Lighting Build
-[2021.03.28-15.01.49:457][982]LoadErrors: New page: Loading map: Gulag.umap
-[2021.03.28-15.01.49:499][982]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
-[2021.03.28-15.01.49:500][982]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.28-15.01.49:500][982]MapCheck: New page: Map Check
-[2021.03.28-15.01.49:500][982]LightingResults: New page: Lighting Build
-[2021.03.28-15.01.49:513][982]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F71347D000), frame # 982
-[2021.03.28-15.01.49:513][982]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F713447B00), frame # 982
-[2021.03.28-15.01.49:515][982]LogUObjectHash: Compacting FUObjectHashTables data took   1.03ms
-[2021.03.28-15.01.49:736][982]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.03.28-15.01.49:736][982]LogAIModule: Creating AISystem for world Gulag
-[2021.03.28-15.01.49:737][982]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F74E2B8600), frame # 982
-[2021.03.28-15.01.49:737][982]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F7484525C0), frame # 982
-[2021.03.28-15.01.49:762][982]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
-[2021.03.28-15.01.49:780][982]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.03.28-15.01.49:780][982]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.104ms to complete.
-[2021.03.28-15.01.49:780][982]LogFileHelpers: Loading map 'Gulag' took 0.324
-[2021.03.28-15.02.26:968][ 78]LogSlate: WidgetSwitcher ('None') active index changed to -1
-[2021.03.28-15.02.26:969][ 78]LogSlate: WidgetSwitcher ('None') active index changed to 1
-[2021.03.28-15.02.27:054][ 78]LogSlate: Took 0.001247 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2021.03.28-15.02.41:946][933]LogClass: Warning: Property SPlayerState::NumKills (SourceClass: SPlayerState) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
-[2021.03.28-15.02.41:986][933]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_SPlayerState.BP_SPlayerState
-[2021.03.28-15.02.42:360][933]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0011 seconds. Added 125 classes and 0 folders.
-[2021.03.28-15.02.43:606][933]LogSlate: Window 'Add Blueprint Class' being destroyed
-[2021.03.28-15.02.47:591][145]LogRenderer: Reallocating scene render targets to support 1296x760 Format 9 NumSamples 1 (Frame:208).
-[2021.03.28-15.02.47:865][160]LogSlate: Window 'BP_SPlayerState' being destroyed
-[2021.03.28-15.02.48:096][174]LogSlate: Took 0.003138 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2021.03.28-15.05.25:091][423]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_SPlayerState" FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/BP_SPlayerState.uasset" SILENT=true
-[2021.03.28-15.05.25:118][423]LogSavePackage: Moving '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/BP_SPlayerStateF78F660F425E79B06D35FE9AC4883B2B.tmp' to '../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Blueprints/BP_SPlayerState.uasset'
-[2021.03.28-15.05.25:152][423]AssetCheck: New page: Asset Save: BP_SPlayerState
-[2021.03.28-15.05.25:152][423]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_SPlayerState.BP_SPlayerState
-[2021.03.28-15.05.37:536][126]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
+[2021.03.28-16.40.51:786][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.03.28-16.40.51:786][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
+[2021.03.28-16.40.51:787][  0]LogConfig: Setting CVar [[n.VerifyPeer:0]]
+[2021.03.28-16.40.51:787][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
+[2021.03.28-16.40.51:790][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.03.28-16.40.51:790][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.03.28-16.40.51:791][  0]LogInit: Selected Device Profile: [Windows]
+[2021.03.28-16.40.51:791][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.03.28-16.40.51:791][  0]LogHAL: Display: Platform has ~ 16 GB [17059516416 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.03.28-16.40.51:791][  0]LogInit: Going up to parent DeviceProfile []
+[2021.03.28-16.40.51:791][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:0.8]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:3]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.6]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:3]]
+[2021.03.28-16.40.51:791][  0]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:0.8]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:1    ; no background occlusion]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:0      ; no bokeh simulation when scattering]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.04        ; only a maximum of 4% of scattered bokeh]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Applying CVar settings from Section [TextureQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:4]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:800]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:48]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SSR.Quality:2]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SceneColorFormat:3]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.DetailMode:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SSS.Quality:-1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SSGI.Quality:2]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:0.5]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[foliage.DensityScale:0.8]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[grass.DensityScale:0.8]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@2] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Scalability.ini]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.03.28-16.40.51:792][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.03.28-16.40.51:793][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.03.28-16.40.51:793][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.03.28-16.40.51:793][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.03.28-16.40.51:793][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Config/Windows/Engine.ini]
+[2021.03.28-16.40.51:794][  0]LogInit: Computer: LAPTOP-205H8F92
+[2021.03.28-16.40.51:794][  0]LogInit: User: DW
+[2021.03.28-16.40.51:794][  0]LogInit: CPU Page size=4096, Cores=4
+[2021.03.28-16.40.51:794][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.03.28-16.40.51:794][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.03.28-16.40.51:794][  0]LogMemory: Platform Memory Stats for Windows
+[2021.03.28-16.40.51:794][  0]LogMemory: Process Physical Memory: 114.74 MB used, 114.74 MB peak
+[2021.03.28-16.40.51:794][  0]LogMemory: Process Virtual Memory: 98.23 MB used, 98.23 MB peak
+[2021.03.28-16.40.51:794][  0]LogMemory: Physical Memory: 11057.41 MB used,  5211.81 MB free, 16269.22 MB total
+[2021.03.28-16.40.51:794][  0]LogMemory: Virtual Memory: 5143.96 MB used,  134212584.00 MB free, 134217728.00 MB total
+[2021.03.28-16.40.51:810][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.03.28-16.40.52:023][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.03.28-16.40.52:024][  0]LogInit: Using OS detected language (en-GB).
+[2021.03.28-16.40.52:024][  0]LogInit: Using OS detected locale (en-GB).
+[2021.03.28-16.40.52:049][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2021.03.28-16.40.52:365][  0]LogInit: Setting process to per monitor DPI aware
+[2021.03.28-16.40.52:441][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.03.28-16.40.52:441][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.03.28-16.40.52:952][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.03.28-16.40.52:952][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.03.28-16.40.52:952][  0]LogD3D11RHI: D3D11 adapters:
+[2021.03.28-16.40.53:219][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
+[2021.03.28-16.40.53:219][  0]LogD3D11RHI:       4019/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.03.28-16.40.53:318][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2021.03.28-16.40.53:318][  0]LogD3D11RHI:       128/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2021.03.28-16.40.53:331][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.03.28-16.40.53:331][  0]LogD3D11RHI:       0/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.03.28-16.40.53:331][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.03.28-16.40.53:338][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.03.28-16.40.53:338][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
+[2021.03.28-16.40.53:338][  0]LogWindows: EnumDisplayDevices:
+[2021.03.28-16.40.53:339][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
+[2021.03.28-16.40.53:339][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2021.03.28-16.40.53:340][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2021.03.28-16.40.53:340][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050' (P:0 D:0)
+[2021.03.28-16.40.53:341][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter 
+[2021.03.28-16.40.53:341][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
+[2021.03.28-16.40.53:341][  0]LogD3D11RHI:   Driver Version: 461.09 (internal:27.21.14.6109, unified:461.09)
+[2021.03.28-16.40.53:341][  0]LogD3D11RHI:      Driver Date: 12-31-2020
+[2021.03.28-16.40.53:341][  0]LogRHI: Texture pool is 2813 MB (70% of 4019 MB)
+[2021.03.28-16.40.53:452][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.03.28-16.40.53:452][  0]LogD3D11RHI: Async texture creation enabled
+[2021.03.28-16.40.53:452][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.03.28-16.40.53:479][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.03.28-16.40.54:342][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.03.28-16.40.54:369][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.03.28-16.40.54:369][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.03.28-16.40.54:369][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.03.28-16.40.54:369][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.03.28-16.40.54:369][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.03.28-16.40.54:369][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.03.28-16.40.54:369][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.03.28-16.40.54:369][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.03.28-16.40.54:369][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.03.28-16.40.54:369][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.03.28-16.40.54:409][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.03.28-16.40.54:409][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.03.28-16.40.54:426][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.03.28-16.40.54:442][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.03.28-16.40.54:456][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.03.28-16.40.54:471][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.03.28-16.40.54:485][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.03.28-16.40.54:498][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.03.28-16.40.54:512][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.03.28-16.40.54:544][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.03.28-16.40.54:544][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.03.28-16.40.54:565][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.03.28-16.40.54:565][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.03.28-16.40.54:579][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.03.28-16.40.54:594][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.03.28-16.40.54:608][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.03.28-16.40.54:621][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.03.28-16.40.54:621][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.03.28-16.40.54:645][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.03.28-16.40.54:817][  0]LogShaderCompilers: Guid format shader working directory is -31 characters bigger than the processId version (../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Intermediate/Shaders/WorkingDirectory/9120/).
+[2021.03.28-16.40.54:817][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/DW/AppData/Local/Temp/UnrealShaderWorkingDir/E9DF990844109FC8ABB6A1A7FA39F0A3/'.
+[2021.03.28-16.40.54:818][  0]LogXGEController: Cleaning working directory: C:/Users/DW/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.03.28-16.40.54:819][  0]LogShaderCompilers: Display: Using XGE Shader Compiler (Interception Interface).
+[2021.03.28-16.40.55:951][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.03.28-16.40.56:537][  0]LogDerivedDataCache: Loaded boot cache 0.58s 75MB C:/Users/DW/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.03.28-16.40.56:538][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/DW/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.03.28-16.40.56:538][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.03.28-16.40.56:538][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.03.28-16.40.56:538][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.03.28-16.40.56:538][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.03.28-16.40.56:551][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.03.28-16.40.56:551][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.03.28-16.40.56:551][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.03.28-16.40.56:553][  0]LogDerivedDataCache: Using Local data cache path C:/Users/DW/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.03.28-16.40.56:553][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.03.28-16.40.56:553][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.03.28-16.40.56:612][  0]LogSlate: Using FreeType 2.10.0
+[2021.03.28-16.40.56:616][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.03.28-16.40.56:673][  0]LogAssetRegistry: FAssetRegistry took 0.0028 seconds to start up
+[2021.03.28-16.40.57:048][  0]LogInit: Selected Device Profile: [Windows]
+[2021.03.28-16.40.57:287][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.03.28-16.40.57:287][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.03.28-16.40.57:287][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.03.28-16.40.57:287][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.03.28-16.40.57:288][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.03.28-16.40.57:319][  0]LogNetVersion: CoopShooter 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1129434258)
+[2021.03.28-16.40.58:090][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000002A1F43C2AC0), frame # 0
+[2021.03.28-16.40.58:090][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002A1F434B740), frame # 0
+[2021.03.28-16.40.58:092][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002A1F43E8200), frame # 0
+[2021.03.28-16.40.58:170][  0]LogPackageLocalizationCache: Processed 17 localized package path(s) for 1 prioritized culture(s) in 0.061090 seconds
+[2021.03.28-16.40.58:175][  0]LogUObjectArray: 15756 objects as part of root set at end of initial load.
+[2021.03.28-16.40.58:175][  0]LogUObjectAllocator: 3925280 out of 0 bytes used by permanent object pool.
+[2021.03.28-16.40.58:175][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.03.28-16.40.59:085][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.03.28-16.40.59:098][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.03.28-16.40.59:350][  0]SourceControl: Source control is disabled
+[2021.03.28-16.40.59:350][  0]SourceControl: Source control is disabled
+[2021.03.28-16.40.59:362][  0]SourceControl: Source control is disabled
+[2021.03.28-16.40.59:371][  0]SourceControl: Source control is disabled
+[2021.03.28-16.40.59:395][  0]SourceControl: Source control is disabled
+[2021.03.28-16.41.00:140][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.03.28-16.41.00:189][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.28-16.41.00:189][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.28-16.41.00:414][  0]LogEngine: Initializing Engine...
+[2021.03.28-16.41.00:415][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.03.28-16.41.00:418][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.001 s
+[2021.03.28-16.41.00:617][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.03.28-16.41.00:635][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.03.28-16.41.00:635][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002A1F70A5600), frame # 0
+[2021.03.28-16.41.00:635][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002A1F7077B00), frame # 0
+[2021.03.28-16.41.00:652][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.03.28-16.41.00:652][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.03.28-16.41.00:652][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.03.28-16.41.00:652][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.03.28-16.41.00:652][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.03.28-16.41.00:652][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.03.28-16.41.00:652][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.03.28-16.41.00:652][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.03.28-16.41.00:653][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.03.28-16.41.00:653][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.03.28-16.41.00:685][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.28-16.41.00:685][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.03.28-16.41.01:488][  0]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek High Definition Audio)
+[2021.03.28-16.41.01:492][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.03.28-16.41.01:497][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.03.28-16.41.01:497][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.03.28-16.41.01:499][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.03.28-16.41.01:500][  0]LogInit: FAudioDevice initialized.
+[2021.03.28-16.41.01:500][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.03.28-16.41.01:710][  0]LogDerivedDataCache: Saved boot cache 0.21s 75MB C:/Users/DW/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.03.28-16.41.01:715][  0]LogInit: Texture streaming: Enabled
+[2021.03.28-16.41.01:758][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.03.28-16.41.01:758][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.03.28-16.41.01:772][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.03.28-16.41.01:852][  0]LogInit: Transaction tracking system initialized
+[2021.03.28-16.41.01:911][  0]BlueprintLog: New page: Editor Load
+[2021.03.28-16.41.02:109][  0]LocalizationService: Localization service is disabled
+[2021.03.28-16.41.02:417][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.03.28-16.41.02:417][  0]LogCook: Display: Mobile HDR setting 1
+[2021.03.28-16.41.02:683][  0]LogFileCache: Scanning file cache for directory 'D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/' took 0.01s
+[2021.03.28-16.41.02:782][  0]SourceControl: Source control is disabled
+[2021.03.28-16.41.02:782][  0]LogUnrealEdMisc: Loading editor; pre map load, took 14.023
+[2021.03.28-16.41.02:782][  0]Cmd: MAP LOAD FILE="../../../../../../DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Level/MainMenu/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.03.28-16.41.02:782][  0]LightingResults: New page: Lighting Build
+[2021.03.28-16.41.02:784][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.03.28-16.41.02:784][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.28-16.41.02:784][  0]MapCheck: New page: Map Check
+[2021.03.28-16.41.02:784][  0]LightingResults: New page: Lighting Build
+[2021.03.28-16.41.02:795][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002A1F70A5600), frame # 0
+[2021.03.28-16.41.02:795][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002A1F7077B00), frame # 0
+[2021.03.28-16.41.02:796][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2021.03.28-16.41.02:879][  0]LogAIModule: Creating AISystem for world MainMenu
+[2021.03.28-16.41.02:880][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002A1EBAA9000), frame # 0
+[2021.03.28-16.41.02:880][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002A1F6CB6700), frame # 0
+[2021.03.28-16.41.02:881][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.03.28-16.41.02:893][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2021.03.28-16.41.02:894][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.03.28-16.41.02:894][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.116ms to complete.
+[2021.03.28-16.41.02:894][  0]LogFileHelpers: Loading map 'MainMenu' took 0.113
+[2021.03.28-16.41.02:898][  0]LogUnrealEdMisc: Total Editor Startup Time, took 14.139
+[2021.03.28-16.41.03:083][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.28-16.41.03:090][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.28-16.41.03:099][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.28-16.41.03:106][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.28-16.41.03:124][  0]LogCollectionManager: Loaded 0 collections in 0.000989 seconds
+[2021.03.28-16.41.03:147][  0]LogFileCache: Scanning file cache for directory 'D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Saved/Collections/' took 0.00s
+[2021.03.28-16.41.03:147][  0]LogFileCache: Scanning file cache for directory 'D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Developers/DW/Collections/' took 0.00s
+[2021.03.28-16.41.03:147][  0]LogFileCache: Scanning file cache for directory 'D:/DW/Documents/GitHub/Coop-Multiplayer-Shooter/CoopShooter/Content/Collections/' took 0.00s
+[2021.03.28-16.41.03:147][  0]LogContentBrowser: Native class hierarchy populated in 0.0110 seconds. Added 3425 classes and 808 folders.
+[2021.03.28-16.41.03:156][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2021.03.28-16.41.03:508][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2021.03.28-16.41.03:696][  0]LogSlate: Took 0.001365 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.03.28-16.41.03:704][  0]LogSlate: Took 0.001433 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.03.28-16.41.03:707][  0]LogSlate: Took 0.000926 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.03.28-16.41.03:785][  0]LogRenderer: Reallocating scene render targets to support 1216x652 Format 9 NumSamples 1 (Frame:1).
+[2021.03.28-16.41.03:917][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2021.03.28-16.41.03:917][  0]LogLoad: (Engine Initialization) Total time: 15.16 seconds
+[2021.03.28-16.41.03:917][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.03.28-16.41.03:972][  0]LogAssetRegistry: Asset discovery search completed in 7.2988 seconds
+[2021.03.28-16.41.03:976][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2021.03.28-16.41.03:977][  0]LogContentStreaming: Texture pool size now 800 MB
+[2021.03.28-16.41.04:007][  0]LogSlate: Took 0.001399 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.03.28-16.41.04:983][ 55]LogSlate: Took 0.000321 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.03.28-16.41.09:159][280]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2021.03.28-16.41.09:208][280]LogSlate: Window 'CoopShooter - Unreal Editor' being destroyed
+[2021.03.28-16.41.09:210][280]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.03.28-16.41.09:365][281]Cmd: QUIT_EDITOR
+[2021.03.28-16.41.09:365][281]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.03.28-16.41.09:380][281]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2021.03.28-16.41.09:428][281]LogExit: Preparing to exit.
+[2021.03.28-16.41.10:233][281]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2021.03.28-16.41.10:237][281]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.03.28-16.41.10:237][281]LogExit: Editor shut down
+[2021.03.28-16.41.10:237][281]LogExit: Transaction tracking system shut down
+[2021.03.28-16.41.10:364][281]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (000002A1F43C2AC0), frame # 281
+[2021.03.28-16.41.10:364][281]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002A1F434B740), frame # 281
+[2021.03.28-16.41.10:365][281]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002A1F43E8200), frame # 281
+[2021.03.28-16.41.10:378][281]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002A1EBAA9000), frame # 281
+[2021.03.28-16.41.10:378][281]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002A1F6CB6700), frame # 281
+[2021.03.28-16.41.10:405][281]LogExit: Object subsystem successfully closed.
+[2021.03.28-16.41.10:436][281]LogShaderCompilers: Display: Shaders left to compile 0
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (776)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module AddContentDialog (774)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module WidgetCarousel (773)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module EditorWidgets (770)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module CollectionManager (768)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module SceneOutliner (766)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module StatsViewer (764)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (762)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module FoliageEdit (760)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module LandscapeEditor (758)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module MeshPaintMode (756)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (754)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module ActorPickerMode (752)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (750)
+[2021.03.28-16.41.10:452][281]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (748)
+[2021.03.28-16.41.10:453][281]LogModuleManager: Shutting down and abandoning module AutomationWorker (746)
+[2021.03.28-16.41.10:454][281]LogModuleManager: Shutting down and abandoning module GooglePADEditor (744)
+[2021.03.28-16.41.10:454][281]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (742)
+[2021.03.28-16.41.10:454][281]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (740)
+[2021.03.28-16.41.10:454][281]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (738)
+[2021.03.28-16.41.10:454][281]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (736)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (734)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (732)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (730)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (728)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (726)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module WebMMedia (724)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (722)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (720)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module SequenceRecorder (719)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (716)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (714)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (712)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (710)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (708)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (706)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (704)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (702)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (700)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (698)
+[2021.03.28-16.41.10:455][281]LogModuleManager: Shutting down and abandoning module PlanarCut (696)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module CharacterAI (694)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module TextureAlignMode (692)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module BspMode (690)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module PlacementMode (689)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module GeometryMode (686)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (684)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module SmartSnapping (682)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module SessionServices (680)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module MeshPaint (678)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module ViewportSnapping (676)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module ViewportInteraction (674)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module ClothPainter (672)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (671)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module LogVisualizer (668)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module IntroTutorials (666)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (665)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (662)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (660)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (658)
+[2021.03.28-16.41.10:456][281]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (657)
+[2021.03.28-16.41.11:271][281]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (654)
+[2021.03.28-16.41.11:271][281]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (652)
+[2021.03.28-16.41.11:271][281]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (650)
+[2021.03.28-16.41.11:271][281]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (648)
+[2021.03.28-16.41.11:271][281]LogModuleManager: Shutting down and abandoning module TraceInsights (646)
+[2021.03.28-16.41.11:271][281]LogModuleManager: Shutting down and abandoning module TraceServices (645)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (642)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (640)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module InputBindingEditor (638)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module MergeActors (636)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (634)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module LocalizationService (633)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module HardwareTargeting (630)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (628)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module UndoHistory (626)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module XmlParser (624)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module Blutility (622)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (620)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (619)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (616)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module SettingsEditor (614)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module ProjectLauncher (612)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module SessionFrontend (610)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module ProfilerClient (608)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module DeviceManager (606)
+[2021.03.28-16.41.11:272][281]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (605)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module AutomationController (602)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module AutomationWindow (600)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module Layers (598)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (596)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module DetailCustomizations (594)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module PackagesDialog (592)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (590)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module Persona (588)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (587)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module AnimGraph (585)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module Kismet (582)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module KismetWidgets (581)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module GraphEditor (578)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module StructViewer (576)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module ClassViewer (574)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module Toolbox (572)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module ModuleUI (570)
+[2021.03.28-16.41.11:305][281]LogModuleManager: Shutting down and abandoning module OutputLog (568)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module GammaUI (566)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module Documentation (564)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module LiveCoding (562)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module LevelSequence (560)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (558)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module MovieScene (556)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (554)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module LauncherPlatform (552)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module AnalyticsET (550)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module PortalServices (548)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module PortalRpc (546)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module MessagingRpc (544)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (542)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module AudioMixerCore (541)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module AIModule (538)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module GameplayDebugger (537)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module AITestSuite (535)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module NavigationSystem (533)
+[2021.03.28-16.41.11:306][281]LogModuleManager: Shutting down and abandoning module ProfilerService (530)
+[2021.03.28-16.41.11:381][281]LogModuleManager: Shutting down and abandoning module TaskGraph (528)
+[2021.03.28-16.41.11:381][281]LogModuleManager: Shutting down and abandoning module ScreenshotTools (526)
+[2021.03.28-16.41.11:381][281]LogModuleManager: Shutting down and abandoning module SynthesisEditor (524)
+[2021.03.28-16.41.11:381][281]LogModuleManager: Shutting down and abandoning module Synthesis (522)
+[2021.03.28-16.41.11:381][281]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (520)
+[2021.03.28-16.41.11:381][281]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (518)
+[2021.03.28-16.41.11:381][281]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (516)
+[2021.03.28-16.41.11:381][281]LogModuleManager: Shutting down and abandoning module GooglePAD (514)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module EditableMesh (512)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (510)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module CableComponent (508)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module AudioCapture (506)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (505)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module AssetTags (502)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (500)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (498)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module AppleImageUtils (496)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module AndroidPermission (494)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (492)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (490)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module TemplateSequence (488)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineEditor (486)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineRenderPasses (484)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineSettings (482)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineCore (480)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (479)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (476)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (474)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MediaCompositing (472)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module ImgMedia (470)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (468)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (466)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (464)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (462)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (460)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (458)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (456)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module MeshConversion (454)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module DynamicMesh (452)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (450)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module GeometricObjects (448)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (446)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (445)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (442)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (440)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (438)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (436)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module ChaosNiagara (434)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module FractureEditor (432)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (430)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module ChaosCloth (428)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module BackChannel (426)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (424)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module AutomationUtils (422)
+[2021.03.28-16.41.11:382][281]LogModuleManager: Shutting down and abandoning module AlembicImporter (420)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module AlembicLibrary (419)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module GeometryCache (418)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (417)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (412)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (410)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (408)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module PluginBrowser (406)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (404)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (402)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (400)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module CurveEditorTools (398)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (396)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module CryptoKeys (394)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (392)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (390)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module UObjectPlugin (388)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (386)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (384)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (382)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (380)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module GitSourceControl (378)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module SourceControl (377)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (374)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (372)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (370)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (368)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (366)
+[2021.03.28-16.41.11:383][281]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (364)
+[2021.03.28-16.41.11:384][281]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (362)
+[2021.03.28-16.41.11:384][281]LogModuleManager: Shutting down and abandoning module Paper2DEditor (360)
+[2021.03.28-16.41.11:384][281]LogModuleManager: Shutting down and abandoning module CoopShooter (358)
+[2021.03.28-16.41.11:384][281]LogModuleManager: Shutting down and abandoning module SoundFields (356)
+[2021.03.28-16.41.11:384][281]LogModuleManager: Shutting down and abandoning module SignificanceManager (354)
+[2021.03.28-16.41.11:384][281]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (352)
+[2021.03.28-16.41.11:384][281]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (350)
+[2021.03.28-16.41.11:384][281]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (346)
+[2021.03.28-16.41.11:384][281]LogModuleManager: Shutting down and abandoning module ActorSequence (344)
+[2021.03.28-16.41.11:384][281]LogModuleManager: Shutting down and abandoning module UdpMessaging (342)
+[2021.03.28-16.41.11:485][281]LogModuleManager: Shutting down and abandoning module TcpMessaging (340)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (338)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (336)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (334)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (332)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (330)
+[2021.03.28-16.41.11:586][281]LogMagicLeapPlanes: Planes tracker already destroyed.
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (328)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (326)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (324)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (322)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapController (320)
+[2021.03.28-16.41.11:586][281]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (318)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module MagicLeapAR (316)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module AugmentedReality (315)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (312)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module Niagara (310)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module SignalProcessing (309)
+[2021.03.28-16.41.11:586][281]LogModuleManager: Shutting down and abandoning module NiagaraEditor (307)
+[2021.03.28-16.41.11:587][281]LogModuleManager: Shutting down and abandoning module NiagaraCore (304)
+[2021.03.28-16.41.11:587][281]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (302)
+[2021.03.28-16.41.11:587][281]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (300)
+[2021.03.28-16.41.11:587][281]LogModuleManager: Shutting down and abandoning module FacialAnimation (298)
+[2021.03.28-16.41.11:587][281]LogModuleManager: Shutting down and abandoning module DataValidation (296)
+[2021.03.28-16.41.11:587][281]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (294)
+[2021.03.28-16.41.11:587][281]LogModuleManager: Shutting down and abandoning module LevelEditor (293)
+[2021.03.28-16.41.11:587][281]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (292)
+[2021.03.28-16.41.11:587][281]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (290)
+[2021.03.28-16.41.11:587][281]LogModuleManager: Shutting down and abandoning module MainFrame (288)
+[2021.03.28-16.41.11:588][281]LogModuleManager: Shutting down and abandoning module HotReload (287)
+[2021.03.28-16.41.11:588][281]LogModuleManager: Shutting down and abandoning module ToolMenus (283)
+[2021.03.28-16.41.11:588][281]LogModuleManager: Shutting down and abandoning module TreeMap (281)
+[2021.03.28-16.41.11:588][281]LogModuleManager: Shutting down and abandoning module AnimationSharing (278)
+[2021.03.28-16.41.11:588][281]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (276)
+[2021.03.28-16.41.11:588][281]LogModuleManager: Shutting down and abandoning module Paper2D (274)
+[2021.03.28-16.41.11:588][281]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (272)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (270)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (268)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module PacketHandler (266)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (264)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (262)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module MediaAssets (260)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module Overlay (258)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module OverlayEditor (257)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module VREditor (254)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module StringTableEditor (252)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (250)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (248)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module FunctionalTesting (246)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (244)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module UMG (242)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module UMGEditor (241)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module MessageLog (239)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module MaterialEditor (237)
+[2021.03.28-16.41.11:589][281]LogModuleManager: Shutting down and abandoning module ContentBrowser (236)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (235)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module SlateReflector (228)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module Slate (226)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module SlateCore (224)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (222)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module UnrealEd (220)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module MRMesh (218)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (216)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (214)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module XAudio2 (212)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module Networking (210)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module Core (208)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module MovieSceneTools (206)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module CurveEditor (205)
+[2021.03.28-16.41.11:590][281]LogModuleManager: Shutting down and abandoning module Sequencer (203)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module EditorStyle (202)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module KismetCompiler (198)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module MeshBuilder (196)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module MeshUtilities (194)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (193)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (192)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (191)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (189)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (187)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (185)
+[2021.03.28-16.41.11:591][281]LogModuleManager: Shutting down and abandoning module MaterialBaking (181)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (176)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module DerivedDataCache (174)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module XGEController (172)
+[2021.03.28-16.41.11:592][281]LogXGEController: Cleaning working directory: C:/Users/DW/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module TargetPlatform (170)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (169)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (167)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (165)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (163)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (161)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (159)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (157)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (155)
+[2021.03.28-16.41.11:592][281]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (153)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (151)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module ImageWrapper (150)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (147)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (145)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (143)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (141)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (139)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (137)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (135)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (133)
+[2021.03.28-16.41.11:593][281]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (131)
+[2021.03.28-16.41.11:594][281]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (129)
+[2021.03.28-16.41.11:594][281]LogModuleManager: Shutting down and abandoning module LinuxAArch64ServerTargetPlatform (127)
+[2021.03.28-16.41.11:594][281]LogModuleManager: Shutting down and abandoning module LinuxAArch64ClientTargetPlatform (125)
+[2021.03.28-16.41.11:594][281]LogModuleManager: Shutting down and abandoning module LinuxAArch64NoEditorTargetPlatform (123)
+[2021.03.28-16.41.11:594][281]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (121)
+[2021.03.28-16.41.11:594][281]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (119)
+[2021.03.28-16.41.11:594][281]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (117)
+[2021.03.28-16.41.11:594][281]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (115)
+[2021.03.28-16.41.11:594][281]LogModuleManager: Shutting down and abandoning module Messaging (113)
+[2021.03.28-16.41.11:594][281]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (111)
+[2021.03.28-16.41.11:595][281]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (109)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (107)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module InputCore (104)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module Settings (102)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (100)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module PhysXCooking (98)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module ChaosSolvers (96)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (95)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module Chaos (92)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (90)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (89)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module AVEncoder (88)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (84)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (82)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2021.03.28-16.41.11:598][281]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (76)
+[2021.03.28-16.41.11:599][281]LogModuleManager: Shutting down and abandoning module XMPP (71)
+[2021.03.28-16.41.11:599][281]LogModuleManager: Shutting down and abandoning module WebSockets (70)
+[2021.03.28-16.41.11:610][281]LogModuleManager: Shutting down and abandoning module HTTP (67)
+[2021.03.28-16.41.11:610][281]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2021.03.28-16.41.11:610][281]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BC145C266-4F03-3101-EE72-FEBB4B4B245F%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=c70249fa4c45168e5e400dbdf38cf223%7C165d4cadac3948179fb86d3c7b140245%7C18afdf57-248a-4ca9-bc1d-fec345c77b9c&AppEnvironment=datacollector-source&UploadType=eteventstream] refs=[1] status=Processing
+[2021.03.28-16.41.11:632][281]LogModuleManager: Shutting down and abandoning module SSL (66)
+[2021.03.28-16.41.11:633][281]LogModuleManager: Shutting down and abandoning module WmfMedia (62)
+[2021.03.28-16.41.11:635][281]LogModuleManager: Shutting down and abandoning module Media (61)
+[2021.03.28-16.41.11:636][281]LogModuleManager: Shutting down and abandoning module MagicLeap (58)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (56)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module NiagaraShader (54)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module VariantManagerContent (52)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module DatasmithContent (50)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module AISupportModule (48)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module DesktopPlatform (46)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (44)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (42)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module PlatformCrypto (40)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2021.03.28-16.41.11:637][281]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2021.03.28-16.41.11:638][281]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2021.03.28-16.41.11:638][281]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2021.03.28-16.41.11:638][281]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2021.03.28-16.41.11:638][281]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2021.03.28-16.41.11:638][281]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2021.03.28-16.41.11:639][281]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2021.03.28-16.41.12:086][281]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2021.03.28-16.41.12:087][281]LogD3D11RHI: Shutdown
+[2021.03.28-16.41.12:087][281]LogD3D11RHI: CleanupD3DDevice
+[2021.03.28-16.41.12:097][281]LogExit: Exiting.
+[2021.03.28-16.41.12:105][281]Log file closed, 03/28/21 17:41:12

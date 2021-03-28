@@ -13,6 +13,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FOnActorKilled, AActor*, KilledAc
  */
 
 class FOnActorKilled;
+class ACharacterBase;
 
 UCLASS()
 class COOPSHOOTER_API ASGameModeBase : public AGameModeBase
@@ -20,23 +21,15 @@ class COOPSHOOTER_API ASGameModeBase : public AGameModeBase
 	GENERATED_BODY()
 	
 protected:
-
-	void CheckAnyPlayerAlive();
-
-	void RoundRestart();
-
-	void GameOver();
-
-	void RoundTimeRemaining();
-
-	void WinScreen();
-
-	void PlayerScore();
+	// Returns true if a team has won
+	bool CheckIfTeamScoreWins();
 	
 	
 public:
-
 	ASGameModeBase();
+	
+public:
+	void PlayerKilled(ACharacterBase* Killer, ACharacterBase* Killed);
 
 	virtual void StartPlay() override;
 

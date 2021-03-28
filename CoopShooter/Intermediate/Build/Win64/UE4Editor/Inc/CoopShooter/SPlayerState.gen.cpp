@@ -84,13 +84,6 @@ void EmptyLinkFunctionForGeneratedCodeSPlayerState() {}
 		}
 		return ReturnEnum;
 	}
-	DEFINE_FUNCTION(ASPlayerState::execGetKills)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(int32*)Z_Param__Result=P_THIS->GetKills();
-		P_NATIVE_END;
-	}
 	DEFINE_FUNCTION(ASPlayerState::execSetTeam)
 	{
 		P_GET_ENUM(ETeam,Z_Param_JoinTeam);
@@ -110,44 +103,10 @@ void EmptyLinkFunctionForGeneratedCodeSPlayerState() {}
 	{
 		UClass* Class = ASPlayerState::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "GetKills", &ASPlayerState::execGetKills },
 			{ "GetTeam", &ASPlayerState::execGetTeam },
 			{ "SetTeam", &ASPlayerState::execSetTeam },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_ASPlayerState_GetKills_Statics
-	{
-		struct SPlayerState_eventGetKills_Parms
-		{
-			int32 ReturnValue;
-		};
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ASPlayerState_GetKills_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SPlayerState_eventGetKills_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASPlayerState_GetKills_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASPlayerState_GetKills_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASPlayerState_GetKills_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Score" },
-		{ "ModuleRelativePath", "Public/SPlayerState.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASPlayerState_GetKills_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASPlayerState, nullptr, "GetKills", nullptr, nullptr, sizeof(SPlayerState_eventGetKills_Parms), Z_Construct_UFunction_ASPlayerState_GetKills_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASPlayerState_GetKills_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASPlayerState_GetKills_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASPlayerState_GetKills_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ASPlayerState_GetKills()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASPlayerState_GetKills_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ASPlayerState_GetTeam_Statics
 	{
@@ -246,10 +205,6 @@ void EmptyLinkFunctionForGeneratedCodeSPlayerState() {}
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_Team;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_Team_Underlying;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NumKills_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_NumKills;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -259,7 +214,6 @@ void EmptyLinkFunctionForGeneratedCodeSPlayerState() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CoopShooter,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASPlayerState_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ASPlayerState_GetKills, "GetKills" }, // 3870747711
 		{ &Z_Construct_UFunction_ASPlayerState_GetTeam, "GetTeam" }, // 3191079982
 		{ &Z_Construct_UFunction_ASPlayerState_SetTeam, "SetTeam" }, // 2399041512
 	};
@@ -278,16 +232,9 @@ void EmptyLinkFunctionForGeneratedCodeSPlayerState() {}
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ASPlayerState_Statics::NewProp_Team = { "Team", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASPlayerState, Team), Z_Construct_UEnum_CoopShooter_ETeam, METADATA_PARAMS(Z_Construct_UClass_ASPlayerState_Statics::NewProp_Team_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASPlayerState_Statics::NewProp_Team_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_ASPlayerState_Statics::NewProp_Team_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASPlayerState_Statics::NewProp_NumKills_MetaData[] = {
-		{ "ModuleRelativePath", "Public/SPlayerState.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASPlayerState_Statics::NewProp_NumKills = { "NumKills", nullptr, (EPropertyFlags)0x0010000000002020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASPlayerState, NumKills), METADATA_PARAMS(Z_Construct_UClass_ASPlayerState_Statics::NewProp_NumKills_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASPlayerState_Statics::NewProp_NumKills_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASPlayerState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASPlayerState_Statics::NewProp_Team,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASPlayerState_Statics::NewProp_Team_Underlying,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASPlayerState_Statics::NewProp_NumKills,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASPlayerState_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASPlayerState>::IsAbstract,
@@ -316,7 +263,7 @@ void EmptyLinkFunctionForGeneratedCodeSPlayerState() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASPlayerState, 2668731119);
+	IMPLEMENT_CLASS(ASPlayerState, 1753856762);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASPlayerState>()
 	{
 		return ASPlayerState::StaticClass();
@@ -325,11 +272,9 @@ void EmptyLinkFunctionForGeneratedCodeSPlayerState() {}
 
 	void ASPlayerState::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
 	{
-		static const FName Name_NumKills(TEXT("NumKills"));
 		static const FName Name_Team(TEXT("Team"));
 
 		const bool bIsValid = true
-			&& Name_NumKills == ClassReps[(int32)ENetFields_Private::NumKills].Property->GetFName()
 			&& Name_Team == ClassReps[(int32)ENetFields_Private::Team].Property->GetFName();
 
 		checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in ASPlayerState"));

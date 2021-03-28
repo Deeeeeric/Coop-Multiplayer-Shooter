@@ -17,14 +17,12 @@ enum class ETeam : uint8;
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_21_SPARSE_DATA
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_21_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetKills); \
 	DECLARE_FUNCTION(execSetTeam); \
 	DECLARE_FUNCTION(execGetTeam);
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetKills); \
 	DECLARE_FUNCTION(execSetTeam); \
 	DECLARE_FUNCTION(execGetTeam);
 
@@ -40,8 +38,7 @@ public: \
 	enum class ENetFields_Private : uint16 \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
-		NumKills=NETFIELD_REP_START, \
-		Team, \
+		Team=NETFIELD_REP_START, \
 		NETFIELD_REP_END=Team	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
@@ -57,8 +54,7 @@ public: \
 	enum class ENetFields_Private : uint16 \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
-		NumKills=NETFIELD_REP_START, \
-		Team, \
+		Team=NETFIELD_REP_START, \
 		NETFIELD_REP_END=Team	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
