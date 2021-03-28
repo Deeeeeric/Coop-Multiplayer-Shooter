@@ -5,6 +5,29 @@
 #include "Net/UnrealNetwork.h"
 #include "SGameState.h"
 
+ASPlayerState::ASPlayerState()
+{
+	Team = ETeam::None;
+}
+
+void ASPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ASPlayerState, Team); // replicate to any client connected to us
+}
+
+bool ASPlayerState::SetTeam(ETeam JoinTeam)
+{
+	if (HasAuthority())
+	{
+		//Perform to see if joining team is full	
+		Team = JoinTeam;
+		return true;
+	}
+	return false;
+}
+
 void ASPlayerState::AddKill()
 {
 	NumKills++;
@@ -35,13 +58,6 @@ void ASPlayerState::CopyProperties(APlayerState* PlayerState)
 void ASPlayerState::OverrideWith(class APlayerState* PlayerState)
 {
 
-}
-
-void ASPlayerState::GetLifetimeReplicatedProps(TArray< class FLifetimeProperty >& OutLifetimeProps) const
-{
-	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
-	DOREPLIFETIME(ASPlayerState, NumKills);
 }
 
 //void ASPlayerState::CopyProperties(class APlayerState* PlayerState)

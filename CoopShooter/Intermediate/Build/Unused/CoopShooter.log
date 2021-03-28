@@ -1,12 +1,4 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
-  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter-0001.dll
-  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter-0002.dll
-  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter-0003.dll
-  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Binaries\Win64\UE4Editor-CoopShooter-0004.dll
-  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0001.lib
-  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0002.lib
-  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0003.lib
-  Deleted hot-reload file: D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0004.lib
   Building CoopShooterEditor...
   Using Visual Studio 2019 14.28.29912 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Distributing 4 actions to XGE
@@ -16,12 +8,12 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  SCoopShooterGameInstance.cpp (0:01.46 at +0:00)
-  UE4Editor-CoopShooter.dll (0:01.00 at +0:01)
+  SPlayerState.cpp (0:01.37 at +0:00)
+  UE4Editor-CoopShooter.dll (0:01.28 at +0:01)
      Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.suppressed.exp
-  UE4Editor-CoopShooter.lib (0:00.18 at +0:02)
+  UE4Editor-CoopShooter.lib (0:00.21 at +0:02)
      Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter.exp
-  CoopShooterEditor.target (0:00.25 at +0:02)
+  CoopShooterEditor.target (0:00.26 at +0:02)
   ---------------------- Done ----------------------
   
       Rebuild All: 1 succeeded, 0 failed, 0 skipped
@@ -29,5 +21,5 @@
   1 build system warning(s):
      - Failed to connect to Coordinator
   
-  Total time in XGE executor: 3.57 seconds
-  Total execution time: 4.48 seconds
+  Total time in XGE executor: 3.45 seconds
+  Total execution time: 4.37 seconds

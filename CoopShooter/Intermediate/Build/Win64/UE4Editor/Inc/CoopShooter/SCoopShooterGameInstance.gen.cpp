@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeSCoopShooterGameInstance() {}
 	UPackage* Z_Construct_UPackage__Script_CoopShooter();
 	COOPSHOOTER_API UFunction* Z_Construct_UDelegateFunction_CoopShooter_PlayerArrayChanged__DelegateSignature();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerState_NoRegister();
+	COOPSHOOTER_API UScriptStruct* Z_Construct_UScriptStruct_FServerData();
 	COOPSHOOTER_API UClass* Z_Construct_UClass_USCoopShooterGameInstance_NoRegister();
 	COOPSHOOTER_API UClass* Z_Construct_UClass_USCoopShooterGameInstance();
 	ENGINE_API UClass* Z_Construct_UClass_UGameInstance();
@@ -77,6 +78,138 @@ void EmptyLinkFunctionForGeneratedCodeSCoopShooterGameInstance() {}
 		}
 		return ReturnFunction;
 	}
+class UScriptStruct* FServerData::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern COOPSHOOTER_API uint32 Get_Z_Construct_UScriptStruct_FServerData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FServerData, Z_Construct_UPackage__Script_CoopShooter(), TEXT("ServerData"), sizeof(FServerData), Get_Z_Construct_UScriptStruct_FServerData_Hash());
+	}
+	return Singleton;
+}
+template<> COOPSHOOTER_API UScriptStruct* StaticStruct<FServerData>()
+{
+	return FServerData::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FServerData(FServerData::StaticStruct, TEXT("/Script/CoopShooter"), TEXT("ServerData"), false, nullptr, nullptr);
+static struct FScriptStruct_CoopShooter_StaticRegisterNativesFServerData
+{
+	FScriptStruct_CoopShooter_StaticRegisterNativesFServerData()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("ServerData")),new UScriptStruct::TCppStructOps<FServerData>);
+	}
+} ScriptStruct_CoopShooter_StaticRegisterNativesFServerData;
+	struct Z_Construct_UScriptStruct_FServerData_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxPlayers_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_MaxPlayers;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentPlayers_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_CurrentPlayers;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ServerName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ServerName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IPAddress_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_IPAddress;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ServerID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ServerID;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FServerData_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/SCoopShooterGameInstance.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FServerData_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FServerData>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FServerData_Statics::NewProp_MaxPlayers_MetaData[] = {
+		{ "Category", "ServerData" },
+		{ "ModuleRelativePath", "Public/SCoopShooterGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FServerData_Statics::NewProp_MaxPlayers = { "MaxPlayers", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FServerData, MaxPlayers), METADATA_PARAMS(Z_Construct_UScriptStruct_FServerData_Statics::NewProp_MaxPlayers_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FServerData_Statics::NewProp_MaxPlayers_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FServerData_Statics::NewProp_CurrentPlayers_MetaData[] = {
+		{ "Category", "ServerData" },
+		{ "ModuleRelativePath", "Public/SCoopShooterGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FServerData_Statics::NewProp_CurrentPlayers = { "CurrentPlayers", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FServerData, CurrentPlayers), METADATA_PARAMS(Z_Construct_UScriptStruct_FServerData_Statics::NewProp_CurrentPlayers_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FServerData_Statics::NewProp_CurrentPlayers_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FServerData_Statics::NewProp_ServerName_MetaData[] = {
+		{ "Category", "ServerData" },
+		{ "ModuleRelativePath", "Public/SCoopShooterGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FServerData_Statics::NewProp_ServerName = { "ServerName", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FServerData, ServerName), METADATA_PARAMS(Z_Construct_UScriptStruct_FServerData_Statics::NewProp_ServerName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FServerData_Statics::NewProp_ServerName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FServerData_Statics::NewProp_IPAddress_MetaData[] = {
+		{ "Category", "ServerData" },
+		{ "ModuleRelativePath", "Public/SCoopShooterGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FServerData_Statics::NewProp_IPAddress = { "IPAddress", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FServerData, IPAddress), METADATA_PARAMS(Z_Construct_UScriptStruct_FServerData_Statics::NewProp_IPAddress_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FServerData_Statics::NewProp_IPAddress_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FServerData_Statics::NewProp_ServerID_MetaData[] = {
+		{ "Category", "ServerData" },
+		{ "ModuleRelativePath", "Public/SCoopShooterGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FServerData_Statics::NewProp_ServerID = { "ServerID", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FServerData, ServerID), METADATA_PARAMS(Z_Construct_UScriptStruct_FServerData_Statics::NewProp_ServerID_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FServerData_Statics::NewProp_ServerID_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FServerData_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FServerData_Statics::NewProp_MaxPlayers,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FServerData_Statics::NewProp_CurrentPlayers,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FServerData_Statics::NewProp_ServerName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FServerData_Statics::NewProp_IPAddress,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FServerData_Statics::NewProp_ServerID,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FServerData_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_CoopShooter,
+		nullptr,
+		&NewStructOps,
+		"ServerData",
+		sizeof(FServerData),
+		alignof(FServerData),
+		Z_Construct_UScriptStruct_FServerData_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FServerData_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FServerData_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FServerData_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FServerData()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FServerData_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_CoopShooter();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ServerData"), sizeof(FServerData), Get_Z_Construct_UScriptStruct_FServerData_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FServerData_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FServerData_Hash() { return 2841928974U; }
 	DEFINE_FUNCTION(USCoopShooterGameInstance::execGetServerList)
 	{
 		P_FINISH;

@@ -13,6 +13,24 @@ class APlayerState;
 // Event hook for any time a player is added/removed (triggers via GameState)
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FPlayerArrayChanged, APlayerState*, PlayerState);
 
+USTRUCT (BlueprintType)
+struct FServerData
+{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		int ServerID;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		FString IPAddress;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		FString ServerName;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		int CurrentPlayers;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		int MaxPlayers;
+};
+
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FServersReceived);
 /**
  * 
