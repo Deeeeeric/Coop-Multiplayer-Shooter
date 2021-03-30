@@ -31,6 +31,23 @@ void EmptyLinkFunctionForGeneratedCodeSGameState() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BravoTeamScore_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_BravoTeamScore;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AlphaTeamScore_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_AlphaTeamScore;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IncrementScoreValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_IncrementScoreValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ScoreToWin_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ScoreToWin;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -40,13 +57,46 @@ void EmptyLinkFunctionForGeneratedCodeSGameState() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASGameState_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "SGameState.h" },
 		{ "ModuleRelativePath", "Public/SGameState.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASGameState_Statics::NewProp_BravoTeamScore_MetaData[] = {
+		{ "Category", "SGameState" },
+		{ "ModuleRelativePath", "Public/SGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ASGameState_Statics::NewProp_BravoTeamScore = { "BravoTeamScore", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASGameState, BravoTeamScore), METADATA_PARAMS(Z_Construct_UClass_ASGameState_Statics::NewProp_BravoTeamScore_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASGameState_Statics::NewProp_BravoTeamScore_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASGameState_Statics::NewProp_AlphaTeamScore_MetaData[] = {
+		{ "Category", "SGameState" },
+		{ "ModuleRelativePath", "Public/SGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ASGameState_Statics::NewProp_AlphaTeamScore = { "AlphaTeamScore", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASGameState, AlphaTeamScore), METADATA_PARAMS(Z_Construct_UClass_ASGameState_Statics::NewProp_AlphaTeamScore_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASGameState_Statics::NewProp_AlphaTeamScore_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASGameState_Statics::NewProp_IncrementScoreValue_MetaData[] = {
+		{ "Category", "SGameState" },
+		{ "ModuleRelativePath", "Public/SGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ASGameState_Statics::NewProp_IncrementScoreValue = { "IncrementScoreValue", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASGameState, IncrementScoreValue), METADATA_PARAMS(Z_Construct_UClass_ASGameState_Statics::NewProp_IncrementScoreValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASGameState_Statics::NewProp_IncrementScoreValue_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASGameState_Statics::NewProp_ScoreToWin_MetaData[] = {
+		{ "Category", "SGameState" },
+		{ "ModuleRelativePath", "Public/SGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ASGameState_Statics::NewProp_ScoreToWin = { "ScoreToWin", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASGameState, ScoreToWin), METADATA_PARAMS(Z_Construct_UClass_ASGameState_Statics::NewProp_ScoreToWin_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASGameState_Statics::NewProp_ScoreToWin_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASGameState_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASGameState_Statics::NewProp_BravoTeamScore,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASGameState_Statics::NewProp_AlphaTeamScore,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASGameState_Statics::NewProp_IncrementScoreValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASGameState_Statics::NewProp_ScoreToWin,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASGameState_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASGameState>::IsAbstract,
 	};
@@ -56,11 +106,11 @@ void EmptyLinkFunctionForGeneratedCodeSGameState() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ASGameState_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ASGameState_Statics::PropPointers),
 		0,
 		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ASGameState_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ASGameState_Statics::Class_MetaDataParams))
@@ -74,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeSGameState() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASGameState, 1022854183);
+	IMPLEMENT_CLASS(ASGameState, 3062686043);
 	template<> COOPSHOOTER_API UClass* StaticClass<ASGameState>()
 	{
 		return ASGameState::StaticClass();

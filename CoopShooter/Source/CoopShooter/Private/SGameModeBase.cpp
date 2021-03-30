@@ -9,11 +9,7 @@
 
 ASGameModeBase::ASGameModeBase()
 {
-	PlayerStateClass = ASPlayerState::StaticClass();
-	GameStateClass = ASGameState::StaticClass();
 
-	PrimaryActorTick.bCanEverTick = true;
-	PrimaryActorTick.TickInterval = 1.0f;
 }
 
 bool ASGameModeBase::CheckIfTeamScoreWins()
@@ -21,20 +17,21 @@ bool ASGameModeBase::CheckIfTeamScoreWins()
 	return false;
 }
 
-void ASGameModeBase::PlayerKilled(ACharacterBase* Killer, ACharacterBase* Killed)
+void ASGameModeBase::PlayerKilled(ASCharacter* Killer, ASCharacter* Killed)
 {
 	// Go to Team State and add point for team killer
 	// add point to killer player state
 	// add death to killed player state
+
+	if (ASGameState* GS = GetGameState<ASGameState>())
+	{
+		if (Killer)
+		{
+			if (ASPlayerState* PS = Killer->GetPlayerState<ASPlayerState>())
+			{
+				GS->AddScoreToTeam(PS->GetTeam());
+			}
+		}
+	}
 }
 
-void ASGameModeBase::StartPlay()
-{
-	Super::StartPlay();
-}
-
-void ASGameModeBase::Tick(float DeltaSeconds)
-{
-	Super::Tick(DeltaSeconds);
-	
-}

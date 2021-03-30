@@ -5,11 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameFramework/GameStateBase.h"
 #include "Net/UnrealNetwork.h"
+#include "SPlayerState.h"
 #include "SGameState.generated.h"
 
-/**
- * 
- */
 
 UCLASS()
 class COOPSHOOTER_API ASGameState : public AGameStateBase
@@ -20,6 +18,19 @@ public:
 	ASGameState();
 
 protected:
+	UPROPERTY(EditDefaultsOnly)
+	int ScoreToWin;
 
+	UPROPERTY(EditDefaultsOnly)
+	int IncrementScoreValue;
+
+	UPROPERTY(BlueprintReadOnly)
+	int AlphaTeamScore;
+
+	UPROPERTY(BlueprintReadOnly)
+	int BravoTeamScore;
+
+public:
+	void AddScoreToTeam(ETeam Team);
 
 };

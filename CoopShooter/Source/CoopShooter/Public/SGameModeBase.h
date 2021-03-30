@@ -12,28 +12,23 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FOnActorKilled, AActor*, KilledAc
  * 
  */
 
+class ASCharacter;
 class FOnActorKilled;
-class ACharacterBase;
 
 UCLASS()
 class COOPSHOOTER_API ASGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+public:
+	ASGameModeBase();
+
 protected:
 	// Returns true if a team has won
 	bool CheckIfTeamScoreWins();
 	
-	
 public:
-	ASGameModeBase();
-	
-public:
-	void PlayerKilled(ACharacterBase* Killer, ACharacterBase* Killed);
-
-	virtual void StartPlay() override;
-
-	virtual void Tick(float DeltaSeconds) override;
+	void PlayerKilled(ASCharacter* Killer, ASCharacter* Killed);
 
 	UPROPERTY(BlueprintAssignable, Category = "GameMode")
 		FOnActorKilled OnActorKilled;

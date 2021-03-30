@@ -2,8 +2,10 @@
 
 #include "SWeapon.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "SGameModeBase.h"
 #include "CoopShooter/CoopShooter.h"
 #include "DrawDebugHelpers.h"
+#include "SHealthComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystem.h"
 #include "Particles/ParticleSystemComponent.h"
@@ -30,9 +32,8 @@ ASWeapon::ASWeapon()
 	TracerTargetName = "Target";
 
 	BaseDamage = 34.0f;
-	BulletSpread = 4.0f;
-
-	// Replicate the weapon so that it spawns on the client side
+	BulletSpread = 2.5f;
+		// Replicate the weapon so that it spawns on the client side
 	SetReplicates(true);
 
 	NetUpdateFrequency = 66.0f;
@@ -85,6 +86,7 @@ void ASWeapon::Fire()
 			SurfaceType = UPhysicalMaterial::DetermineSurfaceType(Hit.PhysMaterial.Get());
 
 			float ActualDamage = BaseDamage;
+
 			if (SurfaceType == SURFACE_FLESHVUNERABLE)
 			{
 				ActualDamage *= 3.0f;
@@ -93,7 +95,6 @@ void ASWeapon::Fire()
 			if (SurfaceType == SURFACE_FLESHDEFAULT)
 			{
 				ASCharacter* Character = Cast<ASCharacter>(MyOwner);
-
 				if (Character)
 				{
 					if (Character->LoadedAmmo <= 4)
@@ -103,11 +104,27 @@ void ASWeapon::Fire()
 				}
 			}
 
+			if (ASCharacter* ShotPlayer = Cast<ASCharacter>(MyOwner))
+			{
+				if (GetWorld()->IsServer())
+				{
+					UE_LOG(LogTemp, Warning, TEXT("Dealing damage from server"));
+					if (ASGameModeBase* GM = GetWorld()->GetAuthGameMode<ASGameModeBase>())
+					{
+						if (AActor* CurrentWeapon = GetOwner())
+						{
+							if (ASCharacter* Shooter = Cast<ASCharacter>(CurrentWeapon->GetOwner()))
+							{
+								GM->PlayerKilled(Shooter, ShotPlayer);
+							}
+						}
+					}
+				}
+			}
+
 			// APPLY DAMAGE
 			UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
-
 			PlayImpactEffects(SurfaceType, Hit.ImpactPoint);
-
 			TracerEndPoint = Hit.ImpactPoint;
 		}
 
