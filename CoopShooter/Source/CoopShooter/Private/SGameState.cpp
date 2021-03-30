@@ -13,7 +13,7 @@ ASGameState::ASGameState()
 	BravoTeamScore = 0;
 }
 
-void ASGameState::AddScoreToTeam(ETeam Team)
+ETeam ASGameState::AddScoreToTeam(ETeam Team)
 {
 	if (Team == ETeam::Alpha)
 	{
@@ -24,4 +24,22 @@ void ASGameState::AddScoreToTeam(ETeam Team)
 		BravoTeamScore += IncrementScoreValue;
 	}
 	UE_LOG(LogTemp, Warning, TEXT("TESTING TO ADD SCORE"));
+
+	return GetWinningTeam();
+}
+
+ETeam ASGameState::GetWinningTeam()
+{
+	if (AlphaTeamScore >= ScoreToWin)
+	{
+		return ETeam::Alpha;
+	}
+	else if (BravoTeamScore >= ScoreToWin)
+	{
+		return ETeam::Bravo;
+	}
+	else
+	{
+		return ETeam::None;
+	}
 }

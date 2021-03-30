@@ -8,6 +8,8 @@
 ASPlayerState::ASPlayerState()
 {
 	Team = ETeam::None;
+	Kills = 0;
+	Deaths = 0;
 }
 
 void ASPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
@@ -15,6 +17,8 @@ void ASPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLif
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ASPlayerState, Team); // replicate to any client connected to us
+	DOREPLIFETIME(ASPlayerState, Kills);
+	DOREPLIFETIME(ASPlayerState, Deaths);
 }
 
 bool ASPlayerState::SetTeam(ETeam JoinTeam)

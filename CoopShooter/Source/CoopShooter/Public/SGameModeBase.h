@@ -24,6 +24,9 @@ public:
 	ASGameModeBase();
 
 protected:
+	bool bGameInProgress;
+
+protected:
 	// Returns true if a team has won
 	bool CheckIfTeamScoreWins();
 	

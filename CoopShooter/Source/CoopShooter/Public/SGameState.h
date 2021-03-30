@@ -31,6 +31,8 @@ protected:
 	int BravoTeamScore;
 
 public:
-	void AddScoreToTeam(ETeam Team);
+	// Returns None if neither team has >= ScoreTowin
+	ETeam AddScoreToTeam(ETeam Team);
 
+	ETeam GetWinningTeam();
 };

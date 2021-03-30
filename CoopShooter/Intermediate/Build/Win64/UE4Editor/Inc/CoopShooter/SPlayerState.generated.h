@@ -18,12 +18,16 @@ enum class ETeam : uint8;
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_21_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetTeam); \
+	DECLARE_FUNCTION(execGetDeaths); \
+	DECLARE_FUNCTION(execGetKills); \
 	DECLARE_FUNCTION(execGetTeam);
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetTeam); \
+	DECLARE_FUNCTION(execGetDeaths); \
+	DECLARE_FUNCTION(execGetKills); \
 	DECLARE_FUNCTION(execGetTeam);
 
 
@@ -39,7 +43,9 @@ public: \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		Team=NETFIELD_REP_START, \
-		NETFIELD_REP_END=Team	}; \
+		Kills, \
+		Deaths, \
+		NETFIELD_REP_END=Deaths	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
@@ -55,7 +61,9 @@ public: \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		Team=NETFIELD_REP_START, \
-		NETFIELD_REP_END=Team	}; \
+		Kills, \
+		Deaths, \
+		NETFIELD_REP_END=Deaths	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
@@ -84,7 +92,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASPlayerState); \
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_21_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Team() { return STRUCT_OFFSET(ASPlayerState, Team); }
+	FORCEINLINE static uint32 __PPO__Team() { return STRUCT_OFFSET(ASPlayerState, Team); } \
+	FORCEINLINE static uint32 __PPO__Kills() { return STRUCT_OFFSET(ASPlayerState, Kills); } \
+	FORCEINLINE static uint32 __PPO__Deaths() { return STRUCT_OFFSET(ASPlayerState, Deaths); }
 
 
 #define CoopShooter_Source_CoopShooter_Public_SPlayerState_h_18_PROLOG

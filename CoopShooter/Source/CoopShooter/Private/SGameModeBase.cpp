@@ -9,7 +9,7 @@
 
 ASGameModeBase::ASGameModeBase()
 {
-
+	bGameInProgress = true;
 }
 
 bool ASGameModeBase::CheckIfTeamScoreWins()
@@ -19,6 +19,10 @@ bool ASGameModeBase::CheckIfTeamScoreWins()
 
 void ASGameModeBase::PlayerKilled(ASCharacter* Killer, ASCharacter* Killed)
 {
+	if (!bGameInProgress)
+	{
+		return;
+	}
 	// Go to Team State and add point for team killer
 	// add point to killer player state
 	// add death to killed player state
@@ -29,7 +33,20 @@ void ASGameModeBase::PlayerKilled(ASCharacter* Killer, ASCharacter* Killed)
 		{
 			if (ASPlayerState* PS = Killer->GetPlayerState<ASPlayerState>())
 			{
-				GS->AddScoreToTeam(PS->GetTeam());
+				PS->AddKill();
+				ETeam WinningTeam = GS->AddScoreToTeam(PS->GetTeam());
+				if (WinningTeam != ETeam::None)
+				{
+					// A team has won
+					bGameInProgress = false;
+				}
+			}
+		}
+		if (Killed)
+		{
+			if (ASPlayerState* PS = Killed->GetPlayerState<ASPlayerState>())
+			{
+				PS->AddDeath();
 			}
 		}
 	}
