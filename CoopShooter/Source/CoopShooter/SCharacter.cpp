@@ -9,6 +9,7 @@
 #include "Components/CapsuleComponent.h"
 #include "CoopShooter/CoopShooter.h"
 #include "SHealthComponent.h"
+#include "SGameModeBase.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Net/UnrealNetwork.h"

@@ -108,22 +108,18 @@ void ASWeapon::Fire()
 			{
 				if (GetWorld()->IsServer())
 				{
-					UE_LOG(LogTemp, Warning, TEXT("Dealing damage from server"));
-					if (ASGameModeBase* GM = GetWorld()->GetAuthGameMode<ASGameModeBase>())
+					if (AActor* OwningWeapon = GetOwner())
 					{
-						if (AActor* CurrentWeapon = GetOwner())
+						if (ASCharacter* Shooter = Cast<ASCharacter>(OwningWeapon->GetOwner()))
 						{
-							if (ASCharacter* Shooter = Cast<ASCharacter>(CurrentWeapon->GetOwner()))
-							{
-								GM->PlayerKilled(Shooter, ShotPlayer);
-							}
+							UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
 						}
 					}
 				}
 			}
 
 			// APPLY DAMAGE
-			UGameplayStatics::ApplyPointDamage(HitActor, ActualDamage, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
+			
 			PlayImpactEffects(SurfaceType, Hit.ImpactPoint);
 			TracerEndPoint = Hit.ImpactPoint;
 		}

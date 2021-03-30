@@ -1,31 +1,47 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter).
-  Parsing headers for CoopShooterEditor
-    Running UnrealHeaderTool "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" "D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\CoopShooterEditor\Development\CoopShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\DW\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for CoopShooterEditor in 6.7758778 seconds
   Building CoopShooterEditor...
   Using Visual Studio 2019 14.28.29912 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 7 actions to XGE
+  Distributing 4 actions to XGE
   --------------------Build System Warning---------------------------------------
   Failed to connect to Coordinator:
       All builds will run in standalone mode.
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  SGameState.gen.cpp (0:01.29 at +0:00)
-  SGameModeBase.cpp (0:01.31 at +0:01)
-  SGameState.cpp (0:01.23 at +0:02)
-  SPlayerState.cpp (0:01.20 at +0:03)
-  UE4Editor-CoopShooter-0068.dll (0:01.11 at +0:05)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0068.suppressed.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0068.suppressed.exp
-  UE4Editor-CoopShooter-0068.lib (0:00.20 at +0:06)
-     Creating library D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0068.lib and object D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Intermediate\Build\Win64\UE4Editor\Development\CoopShooter\UE4Editor-CoopShooter-0068.exp
-  CoopShooterEditor.target (0:00.29 at +0:06)
+  SHealthComponent.cpp (0:01.14 at +0:00)
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Templates/PointerIsConvertibleFromTo.h(19): error C2027: use of undefined type 'ASCharacter'
+  D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Public\SGameModeBase.h(15): note: see declaration of 'ASCharacter'
+  D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Templates/PointerIsConvertibleFromTo.h(60): note: see reference to class template instantiation 'UE4PointerIsConvertibleFromTo_Private::TImpl<From,To,ASCharacter,UObject>' being compiled
+          with
+          [
+              From=ASCharacter,
+              To=volatile const UObject
+          ]
+  D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\Templates/Casts.h(95): note: see reference to class template instantiation 'TPointerIsConvertibleFromTo<T,volatile const UObject>' being compiled
+          with
+          [
+              T=ASCharacter
+          ]
+  D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\Source\CoopShooter\Private\SHealthComponent.cpp(66): note: see reference to function template instantiation 'To *Cast<ASCharacter,AActor>(From *)' being compiled
+          with
+          [
+              To=ASCharacter,
+              From=AActor
+          ]
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Templates/PointerIsConvertibleFromTo.h(19): error C2338: TPointerIsConvertibleFromTo must not be instantiated with incomplete types
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\Templates/Casts.h(95): error C2976: 'TIsIInterface': too few template arguments
+  D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\Templates/Casts.h(42): note: see declaration of 'TIsIInterface'
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\Templates/Casts.h(113): error C2976: 'TGetCastType': too few template arguments
+  D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\Templates/Casts.h(97): note: see declaration of 'TGetCastType'
+D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\Templates/Casts.h(221): error C2976: 'TCastImpl': too few template arguments
+  D:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\Templates/Casts.h(115): note: see declaration of 'TCastImpl'
+  
+  Error executing D:\Program Files\Epic Games\UE_4.25\Engine\Build\Windows\cl-filter\cl-filter.exe (tool returned code: 2)
   ---------------------- Done ----------------------
   
-      Rebuild All: 1 succeeded, 0 failed, 0 skipped
+      Rebuild All: 0 succeeded, 1 failed, 0 skipped
   
   1 build system warning(s):
      - Failed to connect to Coordinator
   
-  Total time in XGE executor: 6.94 seconds
-  Total execution time: 14.74 seconds
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073: The command ""D:\Program Files\Epic Games\UE_4.25\Engine\Build\BatchFiles\Build.bat" CoopShooterEditor Win64 Development -Project="D:\DW\Documents\GitHub\Coop-Multiplayer-Shooter\CoopShooter\CoopShooter.uproject" -WaitMutex -FromMsBuild" exited with code 6.
